@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<h2>What up</h2>
+<h2>Mark Mac Wong</h2>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
