@@ -1,0 +1,18 @@
+/* Footer */
+
+.site-footer {
+    background: url(../../images/dark-wood.png);
+    background-size: 350px 512px;
+    color: #fff;
+    height: 350px;
+}
+.overall-block {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.block{
+  h3 {
+    color: #d99054;
+  }
+}
