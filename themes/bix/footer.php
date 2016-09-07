@@ -29,3 +29,8 @@
 				<i class="fa fa-google-plus-square"></i>
 			</p>
 			</footer>
+
+			<?php wp_footer(); ?>
+
+		</body>
+	</html>
