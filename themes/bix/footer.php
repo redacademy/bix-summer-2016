@@ -10,7 +10,7 @@
 		<div class="footer-container">
 			<footer>
        <div class="footer-top">
-        <h1>Lets Talk</h1>
+        <h1>Let's Talk</h1>
 				<h2> BIX BICKSON </h2>
 				<h2> Bix(at)Bickson2.COM </h2>
 			</div>
@@ -19,7 +19,7 @@
  				<form action="#" method="post">
 
  					<input type="text" name="email" placeholder="Your Email" />
- 					<textarea name="message" placeholder="Talk To Bix"></textarea>
+ 					<textarea name="message" placeholder="Drop A Line..."></textarea>
  					<button>Send</button>
 
  				</form>

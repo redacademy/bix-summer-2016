@@ -795,12 +795,12 @@ object {
   height: 250px;
   background-color: #70b3cb;
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+}
   .sample-story-front .btn-download {
+  }
+  .sample-story .btn-download {
     color: #fff;
     text-decoration: none;
     border: solid #fff 2px;
@@ -854,10 +854,13 @@ form {
   -ms-flex-direction: column;}
 
 input {
+  -ms-flex-item-align: center;
+  width: 100%;
   margin-bottom: 10px;
   border: #F9AC31 solid 2px; }
 
 textarea {
+  -ms-flex-item-align: center;
   width: 100%;
   height: 100px;
   background: #F9AC31 solid 2px; }
@@ -867,10 +870,12 @@ input {
 button {
   -ms-flex-item-align: center;
   color: #ffffff;
-  width: 33%;
+  width: 50%;
   background-color: royalblue;
-  border-radius: 10%;
-  margin-top: 5px; }
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border: 1px solid #FFFFFF;
+  padding: 5px; }
 
 .icons {
   margin-left: 50px;
