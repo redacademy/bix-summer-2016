@@ -694,6 +694,7 @@ object {
 .footer-container {
   display: -ms-flexbox;
   -ms-flex-direction: column;
+<<<<<<< HEAD
   -ms-flex-pack: center;
   -ms-flex-align: center;
   height: 100vh;
@@ -810,6 +811,14 @@ object {
     padding: 8px 46px; }
 
 
+.footer-top {
+  font-family: "Titillium Web", sans-serif;
+  color: #ffffff;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  margin: 5px;
+  padding: 5px; }
+
 .home-book {
   margin-top: 20px;
   height: auto;
@@ -837,17 +846,16 @@ object {
   font-family: "Titillium Web", sans-serif;
   color: #F9AC31;
   -ms-flex-align: center;
-      -ms-grid-row-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -ms-grid-row-align: center;
+  -ms-flex-pack: center;}
 
 form {
   display: -ms-flexbox;
   -ms-flex-direction: column;}
 
 input {
-  background: #F9AC31 solid 2px; }
+  margin-bottom: 10px;
+  border: #F9AC31 solid 2px; }
 
 textarea {
   width: 100%;
@@ -856,10 +864,8 @@ textarea {
 
 input {
   width: 100%; }
-
 button {
   -ms-flex-item-align: center;
-      align-self: center;
   color: #ffffff;
   width: 33%;
   background-color: royalblue;

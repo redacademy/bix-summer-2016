@@ -10,7 +10,7 @@
 		<div class="footer-container">
 			<footer>
        <div class="footer-top">
-        <h1>Talk To Us</h1>
+        <h1>Lets Talk</h1>
 				<h2> BIX BICKSON </h2>
 				<h2> Bix(at)Bickson2.COM </h2>
 			</div>
