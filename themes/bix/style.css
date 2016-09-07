@@ -834,7 +834,13 @@ object {
 
 
 .footer-top h1 {
-  color: #F9AC31; }
+  font-family: "Titillium Web", sans-serif;
+  color: #F9AC31;
+  -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 form {
   display: -ms-flexbox;
@@ -847,3 +853,25 @@ textarea {
   width: 100%;
   height: 100px;
   background: #F9AC31 solid 2px; }
+
+input {
+  width: 100%; }
+
+button {
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #ffffff;
+  width: 33%;
+  background-color: royalblue;
+  border-radius: 10%;
+  margin-top: 5px; }
+
+.icons {
+  margin-left: 50px;
+  line-height: 1.5; }
+
+.icons i {
+  font-size: 1.25rem;
+  padding-right: 7px; }
+
+/* If you don't want the footer to be responsive, remove these media queries */
