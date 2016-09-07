@@ -34,11 +34,12 @@
 					</a>
 
 					<div class="menu-button">
-						<i class="fa fa-bars" aria-hidden="true"></i>
+						<i class="fa fa-bars" aria-hidden="true" class="menu-show"></i>
+						<!-- <i class="fa fa-chevron-right" aria-hidden="true" class="menu-hide"></i> -->
 					</div>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					
+
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
