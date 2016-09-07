@@ -645,7 +645,7 @@ object {
 .gallery-caption {
   display: block; }
 
-.site-content {
+.content-area {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -655,7 +655,7 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
-.content-area {
+.site-main {
   width: 100%; }
 
 .bix-book-title {
@@ -672,6 +672,11 @@ object {
   border-top: solid #fff 2px;
   border-bottom: solid #fff 2px;
   color: #fff; }
+
+.quotes {
+  color: #F9AC31;
+  font-size: 30px;
+  font-weight: bold; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -731,20 +736,26 @@ object {
     .home-banner .btn-down .fa {
       font-size: 30px; }
 
-.quote-one {
-  height: 600px; }
-  .quote-one .quote-one-img {
-    background: url(../../images/bix-book-sky.png) no-repeat center top;
+.quote-wrapper {
+  height: auto; }
+  .quote-wrapper .quote-img {
+    background: url(../../images/bix-homepage-ocean.png) no-repeat center top;
     background-size: cover;
-    height: 350px;
+    height: 250px;
     overflow: hidden;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center; }
-  .quote-one .quote-one-img:after {
+    position: relative; }
+  .quote-wrapper .quote-img-2 {
+    background: url(../../images/bix-homepage-business.png) no-repeat center top;
+    background-size: cover;
+    height: 250px;
+    overflow: hidden;
+    position: relative; }
+  .quote-wrapper .quote-img:after, .quote-wrapper .quote-img-2:after {
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     content: " ";
     bottom: 0px;
     width: 0;
@@ -752,6 +763,33 @@ object {
     border-style: solid;
     border-width: 0 40px 12px;
     border-color: transparent transparent #fcfcfc transparent; }
-  .quote-one .quote-one-text {
+  .quote-wrapper .quote-wrapper-text {
     text-align: center;
-    font-size: 20px; }
+    font-size: 20px;
+    padding: 10px 15px; }
+  .quote-wrapper .quotes-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px; }
+  .quote-wrapper .quotes-text-orange {
+    color: #F9AC31; }
+
+.sample-story {
+  height: 250px;
+  background-color: #70b3cb;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .sample-story .btn-download {
+    color: #fff;
+    text-decoration: none;
+    border: solid #fff 2px;
+    border-radius: 30px;
+    background-color: #70b3cb;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 46px; }

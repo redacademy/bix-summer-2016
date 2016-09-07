@@ -1,11 +1,11 @@
-.site-content{
+.content-area{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.content-area{
+.site-main{
 	width: 100%;
 }
 
@@ -26,3 +26,10 @@
   border-bottom: solid #fff 2px;
   color: #fff;
 }
+//quotes 
+.quotes{
+  color:$color__orange;
+  font-size: 30px;
+  font-weight: bold;
+}
+
