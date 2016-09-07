@@ -686,17 +686,16 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+
 .home-banner {
   background: url(../../images/bix_book_homepage.png) no-repeat center top;
   background-size: cover;
+}
+.footer-container {
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
   height: 100vh;
   overflow: hidden;
   position: relative; }
@@ -810,17 +809,14 @@ object {
     font-size: 20px;
     padding: 8px 46px; }
 
+
 .home-book {
   margin-top: 20px;
   height: auto;
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+  -ms-flex-align: center;}
   .home-book .book-logo {
     width: 80%;
     height: auto; }
@@ -835,3 +831,19 @@ object {
     border-color: #444444;
     padding: 5px 5px;
     font-size: 1rem; }
+
+
+.footer-top h1 {
+  color: #F9AC31; }
+
+form {
+  display: -ms-flexbox;
+  -ms-flex-direction: column;}
+
+input {
+  background: #F9AC31 solid 2px; }
+
+textarea {
+  width: 100%;
+  height: 100px;
+  background: #F9AC31 solid 2px; }
