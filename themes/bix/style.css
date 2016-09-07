@@ -573,6 +573,21 @@ object {
 .content-area {
   width: 100%; }
 
+.bix-book-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+  color: #fff; }
+
+.bix-book-subheading {
+  font-weight: 100;
+  padding: 5px 20px;
+  border-top: solid #fff 2px;
+  border-bottom: solid #fff 2px;
+  color: #fff; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -597,21 +612,11 @@ object {
   .home-banner .site-logo {
     max-width: 250px;
     height: auto;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 40px; }
   .home-banner h2, .home-banner h3 {
-    color: #fff;
     margin-bottom: 0; }
-  .home-banner h2 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Titillium Web", sans-serif;
-    letter-spacing: 1px;
-    font-size: 30px; }
   .home-banner h3 {
-    font-weight: 100;
-    padding: 5px 20px;
-    border-top: solid #fff 2px;
-    border-bottom: solid #fff 2px;
     margin-bottom: 20%; }
   .home-banner .btn-download {
     color: #fff;
@@ -636,6 +641,32 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    text-decoration: none; }
+    text-decoration: none;
+    margin-bottom: 10px; }
     .home-banner .btn-down .fa {
       font-size: 30px; }
+
+.quote-one {
+  height: 600px; }
+  .quote-one .quote-one-img {
+    background: url(../../images/bix-book-sky.png) no-repeat center top;
+    background-size: cover;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .quote-one .quote-one-img:after {
+    position: absolute;
+    content: " ";
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 40px 12px;
+    border-color: transparent transparent #fcfcfc transparent; }
+  .quote-one .quote-one-text {
+    text-align: center;
+    font-size: 20px; }

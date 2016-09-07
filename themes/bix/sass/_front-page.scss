@@ -17,24 +17,13 @@
     max-width: 250px;
     height: auto;
     margin-bottom:0;
+    margin-top: 40px;
   }
 
   h2,h3{
-    color: #fff;
     margin-bottom:0;
   }
-  h2{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: $font__header;
-    letter-spacing: 1px;
-    font-size: 30px;
-  }
   h3{
-    font-weight: 100;
-    padding: 5px 20px;
-    border-top: solid #fff 2px;
-    border-bottom: solid #fff 2px;
     margin-bottom: 20%;
   }
   .btn-download{
@@ -45,9 +34,40 @@
 
   .btn-down{
      @include down-arrow;
+     margin-bottom: 10px;
     .fa{
       font-size: 30px;
     }
   }
 }
+//home Quote One
+.quote-one{
+  height: 600px; 
+  .quote-one-img{
+    background: url(../../images/bix-book-sky.png) no-repeat center top;
+    background-size: cover;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .quote-one-img:after{
+    position: absolute;
+    content:" ";
+    bottom:0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 40px 12px;
+    border-color: transparent transparent #fcfcfc transparent;
+  }
+  .quote-one-text{
+    text-align: center;
+    font-size: 20px;
+  }
+
+}
+
+
 
