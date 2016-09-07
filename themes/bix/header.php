@@ -26,7 +26,7 @@
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
-
+			<div class="nav-wrapper">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
 					<a href="<?php echo home_url()?>" class="logo-link">
@@ -34,13 +34,16 @@
 					</a>
 
 					<div class="menu-button">
-						<i class="fa fa-bars" aria-hidden="true" class="menu-show"></i>
-						<!-- <i class="fa fa-chevron-right" aria-hidden="true" class="menu-hide"></i> -->
+						<div class="menu-button-wrapper">
+							<i class="fa fa-bars" aria-hidden="true" class="menu-show"></i>
+							<i class="fa fa-chevron-up" aria-hidden="true" class="menu-hide"></i>
+						</div>
 					</div>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 				</nav><!-- #site-navigation -->
+			</div>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

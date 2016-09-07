@@ -392,6 +392,10 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.nav-wrapper {
+  width: 100vw;
+  height: 46px; }
+
 .main-navigation {
   height: auto;
   padding: 10px;
@@ -402,7 +406,11 @@ textarea {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  border-bottom: solid 1px #fde8c6; }
+  border-bottom: solid 1px #fde8c6;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  background: white; }
 
 .logo-link {
   height: auto;
@@ -420,6 +428,23 @@ textarea {
   line-height: 0;
   color: #444444;
   z-index: 3; }
+
+.menu-button-wrapper {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .menu-button-wrapper i {
+    position: absolute;
+    top: 0; }
+
+i.fa-chevron-up {
+  display: none; }
 
 .menu-main-menu-container {
   z-index: 2;
@@ -439,6 +464,7 @@ textarea {
     position: absolute;
     top: 0;
     right: 0;
+    width: 50vw;
     list-style: none;
     text-align: right;
     background: white; }
