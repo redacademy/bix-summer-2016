@@ -10,3 +10,27 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+//down arrow on banner-header images
+@mixin down-arrow {
+	border: solid #fff 2px;
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@mixin btn {
+	color: #fff;
+  text-decoration: none;
+  border: solid #fff 2px;
+  border-radius: 30px;
+  background-color: $color__blue;
+  font-weight: bold;
+  font-size: 20px;
+}

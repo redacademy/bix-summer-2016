@@ -18,6 +18,11 @@ get_header(); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
+			<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
+			<h2>The Bix Book</h2>
+			<h3>Transformational Stories</h3>
+			<a class="btn btn-download" href="#">Download Book</a>
+			<a class="btn btn-down" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i> </a>
 		</section>
 
 

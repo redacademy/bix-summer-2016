@@ -586,8 +586,56 @@ object {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-  height: 90vh;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh;
+  overflow: hidden;
   position: relative; }
   .home-banner header {
     position: absolute;
     left: 9999px; }
+  .home-banner .site-logo {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 0; }
+  .home-banner h2, .home-banner h3 {
+    color: #fff;
+    margin-bottom: 0; }
+  .home-banner h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Titillium Web", sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px; }
+  .home-banner h3 {
+    font-weight: 100;
+    padding: 5px 20px;
+    border-top: solid #fff 2px;
+    border-bottom: solid #fff 2px;
+    margin-bottom: 20%; }
+  .home-banner .btn-download {
+    color: #fff;
+    text-decoration: none;
+    border: solid #fff 2px;
+    border-radius: 30px;
+    background-color: #70b3cb;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 46px;
+    margin-bottom: 10%; }
+  .home-banner .btn-down {
+    border: solid #fff 2px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    padding: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none; }
+    .home-banner .btn-down .fa {
+      font-size: 30px; }
