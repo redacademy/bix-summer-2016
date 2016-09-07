@@ -419,12 +419,10 @@ textarea {
   font-size: 25px;
   line-height: 0;
   color: #444444;
-  z-index: 2; }
-
-div ul.menu-active {
-  transform: translateX(0); }
+  z-index: 3; }
 
 .menu-main-menu-container {
+  z-index: 2;
   display: none;
   position: absolute;
   top: 0;
@@ -678,7 +676,7 @@ object {
   .home-banner h2, .home-banner h3 {
     margin-bottom: 0; }
   .home-banner h3 {
-    margin-bottom: 20%; }
+    margin-bottom: 10%; }
   .home-banner .btn-download {
     color: #fff;
     text-decoration: none;

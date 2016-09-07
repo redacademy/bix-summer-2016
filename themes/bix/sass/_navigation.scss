@@ -157,10 +157,11 @@
 	font-size: 25px;
 	line-height: 0;
 	color: $color__gray;
-	z-index: 2;
+	z-index: 3;
 }
 
 .menu-main-menu-container {
+	z-index: 2;
 	display: none;
 	position: absolute;
 	top: 0;
