@@ -424,9 +424,6 @@ textarea {
 div ul.menu-active {
   transform: translateX(0); }
 
-div.display-show {
-  display: block; }
-
 .menu-main-menu-container {
   display: none;
   position: absolute;
@@ -437,13 +434,13 @@ div.display-show {
   height: 100vh;
   overflow: hidden; }
   .menu-main-menu-container ul {
+    display: none;
     margin: 0;
     padding: 10px 25px;
     border-top: 46px solid #70b3cb;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX(130px);
     list-style: none;
     text-align: right;
     background: white; }
