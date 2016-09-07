@@ -29,6 +29,10 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
+					<a href="<?php echo home_url()?>" class="logo-link">
+						<img src="<?php echo get_template_directory_uri() . "/images/bix-logo.png"?>" alt="">
+					</a>
+
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
