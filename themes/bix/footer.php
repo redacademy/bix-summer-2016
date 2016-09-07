@@ -16,7 +16,7 @@
 			</div>
 
 
- 				<form action="#" method="post">
+ 				<form class ="footer-form" action="#" method="post">
 
  					<input type="text" name="email" placeholder="Your Email" />
  					<textarea name="message" placeholder="Drop A Line..."></textarea>
