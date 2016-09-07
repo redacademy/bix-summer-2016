@@ -20,7 +20,7 @@
         </form>
        <div class="icons">
 				 <p>
-								<i class="fa fa-facebook-square"></i>
+					      <i class="fa fa-facebook-square"></i>
 								<i class="fa fa-twitter-square"></i>
 								<i class="fa fa-google-plus-square"></i>
 							 </p>
