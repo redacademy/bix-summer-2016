@@ -560,7 +560,34 @@ object {
 .gallery-caption {
   display: block; }
 
+.site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.content-area {
+  width: 100%; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home-banner {
+  background: url(../../images/bix_book_homepage.png) no-repeat center top;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 90vh;
+  position: relative; }
+  .home-banner header {
+    position: absolute;
+    left: 9999px; }

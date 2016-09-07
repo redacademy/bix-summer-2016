@@ -1,0 +1,15 @@
+.home-banner{
+	background: url(../../images/bix_book_homepage.png) no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  position: relative;
+	header{
+		position: absolute;
+		left: 9999px;
+	}
+
+}
+
