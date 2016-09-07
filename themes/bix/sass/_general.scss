@@ -9,13 +9,17 @@
 	width: 100%;
 }
 
+.entry-title{
+	position: absolute;
+	left: 9999px;
+}
 //Headings for Top Banner Titles
 .bix-book-title{
 	text-transform: uppercase;
   font-weight: bold;
   font-family: $font__header;
   letter-spacing: 1px;
-  font-size: 30px;
+  font-size: 1.8rem;
   color: #fff;
 }
 
@@ -29,7 +33,7 @@
 //quotes 
 .quotes{
   color:$color__orange;
-  font-size: 30px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 

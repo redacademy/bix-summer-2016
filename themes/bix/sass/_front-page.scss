@@ -12,8 +12,15 @@
 		position: absolute;
 		left: 9999px;
 	}
-  
-  .site-logo{
+}
+.banner-info-wrapper{
+  min-height: 430px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    .site-logo{
     max-width: 250px;
     height: auto;
     margin-bottom:0;
@@ -41,9 +48,8 @@
   }
 }
 
-
 //home page quotes
-.quote-wrapper{
+.quote-wrapper-front{
   height: auto; 
   .quote-img{
     background: url(../../images/bix-homepage-ocean.png) no-repeat center top;
@@ -76,7 +82,7 @@
   .quote-wrapper-text{
     text-align: center;
     font-size: 20px;
-    padding: 10px 15px;
+    padding: 30px 15px;
   }
   .quotes-text{
     text-transform: uppercase;
@@ -90,7 +96,7 @@
 }
 
 //read sample stories
-.sample-story{
+.sample-story-front{
   height:250px;
   background-color: $color__blue;
   display: flex;
@@ -102,4 +108,31 @@
   }
 }
 
+//bix book summary
+.home-book{
+  margin-top: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .book-logo{
+    width: 80%;
+    height: auto;
+  }
+  .home-book-text{
+    text-align: center;
+  }
+  .bix-book-title{
+    color: $color__gray;
+    margin-bottom:0;
+    line-height: 0;
+  }
+  .bix-book-subheading{
+    color: $color__gray;
+    border-color:$color__gray;
+    padding: 5px 5px; 
+    font-size: 1rem; 
+  }
+}
 

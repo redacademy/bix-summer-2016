@@ -658,12 +658,16 @@ object {
 .site-main {
   width: 100%; }
 
+.entry-title {
+  position: absolute;
+  left: 9999px; }
+
 .bix-book-title {
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Titillium Web", sans-serif;
   letter-spacing: 1px;
-  font-size: 30px;
+  font-size: 1.8rem;
   color: #fff; }
 
 .bix-book-subheading {
@@ -675,7 +679,7 @@ object {
 
 .quotes {
   color: #F9AC31;
-  font-size: 30px;
+  font-size: 1.2rem;
   font-weight: bold; }
 
 /*--------------------------------------------------------------
@@ -699,16 +703,28 @@ object {
   .home-banner header {
     position: absolute;
     left: 9999px; }
-  .home-banner .site-logo {
+
+.banner-info-wrapper {
+  min-height: 430px;
+  margin-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .banner-info-wrapper .site-logo {
     max-width: 250px;
     height: auto;
     margin-bottom: 0;
     margin-top: 40px; }
-  .home-banner h2, .home-banner h3 {
+  .banner-info-wrapper h2, .banner-info-wrapper h3 {
     margin-bottom: 0; }
-  .home-banner h3 {
+  .banner-info-wrapper h3 {
     margin-bottom: 10%; }
-  .home-banner .btn-download {
+  .banner-info-wrapper .btn-download {
     color: #fff;
     text-decoration: none;
     border: solid #fff 2px;
@@ -718,7 +734,7 @@ object {
     font-size: 20px;
     padding: 8px 46px;
     margin-bottom: 10%; }
-  .home-banner .btn-down {
+  .banner-info-wrapper .btn-down {
     border: solid #fff 2px;
     border-radius: 50%;
     width: 50px;
@@ -733,24 +749,24 @@ object {
         align-items: center;
     text-decoration: none;
     margin-bottom: 10px; }
-    .home-banner .btn-down .fa {
+    .banner-info-wrapper .btn-down .fa {
       font-size: 30px; }
 
-.quote-wrapper {
+.quote-wrapper-front {
   height: auto; }
-  .quote-wrapper .quote-img {
+  .quote-wrapper-front .quote-img {
     background: url(../../images/bix-homepage-ocean.png) no-repeat center top;
     background-size: cover;
     height: 250px;
     overflow: hidden;
     position: relative; }
-  .quote-wrapper .quote-img-2 {
+  .quote-wrapper-front .quote-img-2 {
     background: url(../../images/bix-homepage-business.png) no-repeat center top;
     background-size: cover;
     height: 250px;
     overflow: hidden;
     position: relative; }
-  .quote-wrapper .quote-img:after, .quote-wrapper .quote-img-2:after {
+  .quote-wrapper-front .quote-img:after, .quote-wrapper-front .quote-img-2:after {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -763,19 +779,19 @@ object {
     border-style: solid;
     border-width: 0 40px 12px;
     border-color: transparent transparent #fcfcfc transparent; }
-  .quote-wrapper .quote-wrapper-text {
+  .quote-wrapper-front .quote-wrapper-text {
     text-align: center;
     font-size: 20px;
-    padding: 10px 15px; }
-  .quote-wrapper .quotes-text {
+    padding: 30px 15px; }
+  .quote-wrapper-front .quotes-text {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
     line-height: 30px; }
-  .quote-wrapper .quotes-text-orange {
+  .quote-wrapper-front .quotes-text-orange {
     color: #F9AC31; }
 
-.sample-story {
+.sample-story-front {
   height: 250px;
   background-color: #70b3cb;
   display: -ms-flexbox;
@@ -784,7 +800,7 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
-  .sample-story .btn-download {
+  .sample-story-front .btn-download {
     color: #fff;
     text-decoration: none;
     border: solid #fff 2px;
@@ -793,3 +809,29 @@ object {
     font-weight: bold;
     font-size: 20px;
     padding: 8px 46px; }
+
+.home-book {
+  margin-top: 20px;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .home-book .book-logo {
+    width: 80%;
+    height: auto; }
+  .home-book .home-book-text {
+    text-align: center; }
+  .home-book .bix-book-title {
+    color: #444444;
+    margin-bottom: 0;
+    line-height: 0; }
+  .home-book .bix-book-subheading {
+    color: #444444;
+    border-color: #444444;
+    padding: 5px 5px;
+    font-size: 1rem; }

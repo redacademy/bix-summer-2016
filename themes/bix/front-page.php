@@ -18,14 +18,16 @@ get_header(); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
+			<div class="banner-info-wrapper">
 			<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
 			<h2 class="bix-book-title">The Bix Book</h2>
 			<h3 class="bix-book-subheading">Transformational Stories</h3>
 			<a class="btn btn-download" href="#">Download Book</a>
 			<a class="btn btn-down" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+			</div>
 		</section>
 		
-		<section class="quote-wrapper">
+		<section class="quote-wrapper-front">
 			<div class="quote-img"></div>
 			<div class="quote-wrapper-text">
 				<p class="quotes-text"><span class="quotes">"</span> There is an ocean between saying &amp; doing.</p>
@@ -34,7 +36,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="quote-wrapper">
+		<section class="quote-wrapper-front">
 			<div class="quote-img-2"></div>
 			<div class="quote-wrapper-text">
 				<p class="quotes-text"><span class="quotes">"</span> It is the creation of <span class="quotes-text-orange">Knowledge</span> that will afford and Organization continued success <span class="quotes">"</span></p>
@@ -42,9 +44,22 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="sample-story">
+		<section class="sample-story-front">
 			<a class="btn btn-download" href="#">Read a Sample Story</a>
 		</section>
+
+		<section class="home-book">
+			<img class="book-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo-black.png" alt="bix logo"/>
+			<div class="home-book-text">
+				<h2 class="bix-book-title">The Bix Book</h2>
+				<h3 class="bix-book-subheading">Transformational Stories</h3>
+				<h3>Bix Bixon</h3>
+				<p><span>with</span> Annika Martins</p>
+				
+			</div>
+		</section>
+
+
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
