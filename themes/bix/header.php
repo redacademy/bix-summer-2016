@@ -30,10 +30,15 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
 					<a href="<?php echo home_url()?>" class="logo-link">
-						<img src="<?php echo get_template_directory_uri() . "/images/bix-logo.png"?>" alt="">
+						<img src="<?php echo get_template_directory_uri() . "/images/bix-logo-blue.png"?>" alt="">
 					</a>
 
+					<div class="menu-button">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

@@ -392,6 +392,25 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.main-navigation {
+  height: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.logo-link {
+  height: 90%; }
+  .logo-link img {
+    height: 90%; }
+
+.menu-main-menu-container {
+  display: none;
+  position: absolute; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
