@@ -164,10 +164,6 @@ body {
 	z-index: 2;
 }
 
-div ul.menu-active {
-	transform: translateX(0);
-}
-
 .menu-main-menu-container {
 	display: none;
 	position: absolute;
@@ -185,7 +181,6 @@ div ul.menu-active {
 		position: absolute;
 		top: 0;
 		right: 0;
-		//transform: translateX(130px);
 		list-style: none;
 		text-align: right;
 		background: white;
