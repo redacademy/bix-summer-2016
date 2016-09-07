@@ -443,7 +443,11 @@ textarea {
     position: absolute;
     top: 0; }
 
+i.fa-bars {
+  color: #70b3cb; }
+
 i.fa-chevron-up {
+  color: white;
   display: none; }
 
 .menu-main-menu-container {
@@ -475,7 +479,15 @@ i.fa-chevron-up {
         text-decoration: none;
         color: #70b3cb;
         text-transform: uppercase;
-        font-weight: bold; }
+        font-weight: 500; }
+
+.menu-item a {
+  padding-right: 8px;
+  border-right: 8px solid white; }
+
+ul li.current-menu-item a {
+  color: #F9AC31;
+  border-color: #F9AC31; }
 
 /*--------------------------------------------------------------
 # Accessibility

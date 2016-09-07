@@ -184,7 +184,12 @@
 	}
 }
 
+i.fa-bars {
+	color: $color__blue;
+}
+
 i.fa-chevron-up {
+	color: white;
 	display: none;
 }
 
@@ -217,9 +222,19 @@ i.fa-chevron-up {
 				text-decoration: none;
 				color: $color__blue;
 				text-transform: uppercase;
-				font-weight: bold;
+				font-weight: 500;
 			}
 		}
 		
 	}
+}
+
+.menu-item a {
+	padding-right: 8px;
+	border-right: 8px solid white;
+}
+
+ul li.current-menu-item a {
+	color: $color__orange;
+	border-color: $color__orange;
 }
