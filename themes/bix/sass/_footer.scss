@@ -9,11 +9,13 @@
 
 .footer-top h1 {
 	color: #F9AC31;
+	align-items: center;
+	justify-content: center;
 }
 form {
 	display: flex;
 	flex-direction: column;
-
+	background: red solid 10px;
 }
 input {
 background: #F9AC31 solid 2px;
@@ -22,7 +24,22 @@ background: #F9AC31 solid 2px;
 textarea {
 	width: 100%;
 	height: 100px;
-	background: #F9AC31 solid 2px;
+
+}
+
+button {
+	width: 20px;
+}
+
+.icons {
+  margin-left: 50px;
+  line-height: 1.5;
+
+  }
+  i {
+    font-size: 1.25rem;
+    padding-right: 7px;
+  }
 }
 /* If you don't want the footer to be responsive, remove these media queries */
 
