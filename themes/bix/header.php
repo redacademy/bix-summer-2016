@@ -32,4 +32,7 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
+			<h1>hello</h1>
+			<p>world</p>
+
 			<div id="content" class="site-content">
