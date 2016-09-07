@@ -489,6 +489,28 @@ ul li.current-menu-item a {
   color: #F9AC31;
   border-color: #F9AC31; }
 
+@media all and (min-width: 600px) {
+  .main-navigation {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .menu-button {
+    display: none; }
+  .menu-main-menu-container {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    background: none; }
+    .menu-main-menu-container ul {
+      width: auto;
+      display: -ms-flexbox;
+      display: flex;
+      border: none; }
+      .menu-main-menu-container ul li:first-child {
+        display: none; }
+      .menu-main-menu-container ul li a {
+        margin: 0 5vw; } }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

@@ -238,3 +238,36 @@ ul li.current-menu-item a {
 	color: $color__orange;
 	border-color: $color__orange;
 }
+
+// breakpoints
+
+@media all and (min-width: 600px) {
+	.main-navigation {
+		justify-content: space-around;
+	}
+
+	.menu-button {
+		display: none;
+	}
+	.menu-main-menu-container {
+		display: block;
+		position: static;
+		width: auto;
+		height: auto;
+		background: none;
+		ul {
+			width: auto;
+			display: flex;
+			border: none;
+			li:first-child {
+				display: none;
+			}
+			li{
+				a{
+					margin: 0 5vw;
+				}
+			}
+
+		}
+	}
+}
