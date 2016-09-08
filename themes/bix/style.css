@@ -393,7 +393,6 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 .nav-wrapper {
-  width: 100vw;
   height: 46px; }
 
 .main-navigation {
@@ -409,6 +408,7 @@ textarea {
   border-bottom: solid 1px #fde8c6;
   position: fixed;
   width: 100vw;
+  max-width: 100%;
   z-index: 1;
   background: white; }
 
@@ -475,11 +475,11 @@ i.fa-chevron-up {
     .menu-main-menu-container ul li {
       margin: 15px 0; }
       .menu-main-menu-container ul li a {
+        font-family: "Titillium Web", sans-serif;
         font-size: 18px;
         text-decoration: none;
         color: #70b3cb;
-        text-transform: uppercase;
-        font-weight: 500; }
+        text-transform: uppercase; }
 
 .menu-item a {
   padding-right: 8px;
@@ -490,12 +490,24 @@ ul li.current-menu-item a {
   border-color: #F9AC31; }
 
 @media all and (min-width: 600px) {
+  .nav-wrapper {
+    height: 0px; }
   .main-navigation {
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0 10px; }
   .menu-button {
     display: none; }
+  .logo-link {
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+    border-top: solid 10px #F9AC31; }
+    .logo-link img {
+      height: 40px;
+      margin: 13px 0; }
   .menu-main-menu-container {
+    -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
     display: block;
     position: static;
     width: auto;
@@ -505,11 +517,24 @@ ul li.current-menu-item a {
       width: auto;
       display: -ms-flexbox;
       display: flex;
-      border: none; }
+      border: none;
+      padding: 0;
+      position: static; }
       .menu-main-menu-container ul li:first-child {
         display: none; }
-      .menu-main-menu-container ul li a {
-        margin: 0 5vw; } }
+      .menu-main-menu-container ul li {
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+        border-top: solid 10px white;
+        text-align: center;
+        margin: 0;
+        padding: 17.5px 0; }
+        .menu-main-menu-container ul li.current-menu-item {
+          border-top: solid 10px #F9AC31; }
+        .menu-main-menu-container ul li a {
+          font-size: 21px;
+          border-right: none;
+          padding: 0; } }
 
 /*--------------------------------------------------------------
 # Accessibility
