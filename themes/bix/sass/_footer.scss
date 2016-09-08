@@ -6,8 +6,8 @@
 }
 
 .footer-top {
-	text-align: left;
 	margin-left: 10%;
+	text-align: left;
 }
 
 .footer-top h2 {
@@ -37,7 +37,7 @@ margin-bottom: 10px;
 	border: #F9AC31 solid 2px;
 }
 
-.footer-form button {
+.form-position button {
  @include btn;
  font-size: 12px;
  width: 40%;
@@ -49,45 +49,12 @@ margin-bottom: 10px;
 .footer-orange {
 	color: $color__orange;
 }
-.icons {
-	height: 30px;
-	width: 30px;
-	border-radius: 90%;
-	border: 2px solid white;
-	color: #444444;
-	background-color: #ffffff;
-
-}
-.icons i {
-background-color: #ffffff;
-
-}
-
-
-/* If you don't want the footer to be responsive, remove these media queries */
 
 @media all and (min-width: 600px) {
-
-
-	.footer-form {
-	  max-width: none;
-
-	}
-   .footer-top{
-		text-align: left;
-    line-height: 1.5;
-    padding-left: 10px;
-    margin: 0 auto;
+   .footer-form {
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: space-between;
+		 padding: 5%;
 	 }
-
-	 .form-position {
-		display: flex;
-		flex-direction: column;
-    font-weight: normal;
-    padding: 65px 15px 0 0;
-    width: 120px;
-    text-align: left;
-	 }
-
-
 }
