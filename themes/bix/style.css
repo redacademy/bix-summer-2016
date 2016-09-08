@@ -679,18 +679,15 @@ object {
 .gallery-caption {
   display: block; }
 
+
 * {
   box-size: border-box; }
 
 .content-area {
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+  -ms-flex-align: center;}
 
 .site-main {
   width: 100%; }
@@ -704,6 +701,7 @@ object {
   color: #F9AC31;
   font-size: 1.2rem;
   font-weight: bold; }
+
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -924,8 +922,9 @@ object {
 .footer-form {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+  -ms-flex-align: center;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   max-width: 480px;
   background-color: #545454; }
 
@@ -939,25 +938,37 @@ object {
   color: #F9AC31; }
 
 .footer-form input {
-  width: 80%;
+  width: 66%;
   border: #F9AC31 solid 2px;
   margin-bottom: 10px; }
 
 .footer-form textarea {
   -ms-flex-item-align: center;
-      align-self: center;
   width: 80%;
   height: 30vh;
-  margin-bottom: 10px;
   border: #F9AC31 solid 2px; }
 
 .footer-form button {
+  color: #fff;
+  text-decoration: none;
+  border: solid #fff 2px;
+  border-radius: 20px;
+  background-color: #70b3cb;
+  font-weight: bold;
+  font-size: 16px;
+  -ms-flex-item-align: center;
+   }
+
+.footer-orange {
+  color: #F9AC31; }
+
+.icons {
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+   }
+
+.icons i {
   color: #ffffff;
-  width: 50%;
-  background-color: royalblue;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  padding: 5px;
-  margin-bottom: 10px; }
+  border-radius: 50%; }
 
 /* If you don't want the footer to be responsive, remove these media queries */

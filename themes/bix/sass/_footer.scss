@@ -1,5 +1,7 @@
 .footer-form {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	flex-wrap: nowrap;
 	max-width: 480px;
 	background-color: #545454;
@@ -16,27 +18,40 @@
 }
 
 .footer-form input{
-width: 80%;
+width: 66%;
 border: #F9AC31 solid 2px;
 margin-bottom: 10px;
 }
 
 .footer-form textarea {
 	align-self: center;
-	width: 80%;
+	width: 66%;
 	height: 30vh;
-	margin-bottom: 10px;
 	border: #F9AC31 solid 2px;
 }
 
 .footer-form button {
+	color: #fff;
+	text-decoration: none;
+	border: solid #fff 2px;
+	border-radius: 20px;
+	background-color: $color__blue;
+	font-weight: bold;
+	font-size: 16px;
+	align-self: center;
+	}
+
+
+.footer-orange {
+	color: $color__orange;
+}
+.icons {
+	display: flex;
+	align-items: center;
+}
+.icons i {
 	color: #ffffff;
-	width: 50%;
-	background-color: $color__link;
-	-moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  padding: 5px;
-	margin-bottom: 10px;
+	border-radius: 50%;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
