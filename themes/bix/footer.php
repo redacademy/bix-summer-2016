@@ -6,7 +6,7 @@
  */
 ?>
 			</div><!-- #content -->
-		<div class="content-area">
+		<div class="footer-content-area">
 			<footer class="footer-form">
        <div class="footer-top">
         <h1>Let's Talk</h1>
@@ -22,7 +22,7 @@
 				</div>
         </form>
     	<div class="icons">
-							 <i class="fa fa-facebook fa-lg"></i>
+							 <i class="fa fa-linkedin fa-lg"></i>
 							 <i class="fa fa-twitter fa-lg"></i>
 							 <i class="fa fa-google-plus fa-lg"></i>
 		 </div>

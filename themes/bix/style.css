@@ -967,6 +967,7 @@ object {
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       line-height: 25px;
+<<<<<<< HEAD
       max-width: 450px; }
     .home-book .book-summary .btn-discover {
       color: #fff;
@@ -980,14 +981,13 @@ object {
 
 .home-author div {
   padding: 20px 40px;
+      max-width: 400px; }
+
+.footer-content-area {
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+  -ms-flex-align: center;}
 
 .home-author .home-subheading {
   width: 100%;
@@ -1000,6 +1000,10 @@ object {
   width: 300px;
   text-align: center;
   text-transform: uppercase; }
+
+.footer-form {
+  -ms-flex-line-pack: center;
+}
 
 .home-author .btn-explore {
   color: #fff;
@@ -1021,18 +1025,15 @@ object {
 .footer-top {
   font-family: "Titillium Web", sans-serif;
   color: #ffffff;
-  padding: 5px; }
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .footer-top h1 {
   font-family: "Titillium Web", sans-serif;
   color: #F9AC31; }
 
-.footer-top {
-  -ms-flex-pack: center;
-      justify-content: center; }
-
 .footer-form input {
-  width: 66%;
+  width: 60%;
   border: #F9AC31 solid 2px;
   margin-bottom: 10px; }
 
@@ -1043,6 +1044,7 @@ object {
   border: #F9AC31 solid 2px; }
 
 .footer-form button {
+  width: 60%;
   color: #fff;
   text-decoration: none;
   border: solid #fff 2px;
@@ -1054,42 +1056,28 @@ object {
       align-self: center; }
 
 
+.form-position {
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 .footer-orange {
   color: #F9AC31; }
 
-.icons {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center; }
-
 .icons i {
   color: #ffffff;
-  border-radius: 50%; }
+  border-top: #F9AC31 2px solid;
+  border-bottom: #F9AC31 2px solid;
+  margin: 25px; }
 
 /* If you don't want the footer to be responsive, remove these media queries */
 @media all and (min-width: 600px) {
-  .footer-form {
-    min-width: 100%;
+  .footer-content-area {
     display: -ms-flexbox;
     display: flex;
+    min-width: 100%;
+    -ms-flex-pack: justify;
+    -ms-flex-align: center;
+   }
+  .footer-form {
     -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 10px; }
-  .footer-form input textarea {
-    min-width: 100%; }
-  .footer-form button {
-    width: 65%;
-    -ms-flex-item-align: center;
-        align-self: center; }
-  .icons {
-    -ms-flex-align: start;
-        -ms-grid-row-align: flex-start;
-        align-items: flex-start;
-    -ms-flex-order: 1;
-        order: 1; }
-  .icons i {
-    -ms-flex-direction: row;
-        flex-direction: row; } }
+    padding: 10px; } }
