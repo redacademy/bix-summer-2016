@@ -1,4 +1,6 @@
 .footer-form {
+	display: flex;
+	flex-wrap: nowrap;
 	max-width: 480px;
 	background-color: #545454;
 }
@@ -12,23 +14,22 @@
 	font-family: $font__header;
 	color: #F9AC31;
 }
+
 .footer-form input{
-align-self: center;
-width: 100%;
+width: 80%;
 border: #F9AC31 solid 2px;
 margin-bottom: 10px;
 }
 
 .footer-form textarea {
 	align-self: center;
-	width: 100%;
+	width: 80%;
 	height: 30vh;
 	margin-bottom: 10px;
 	border: #F9AC31 solid 2px;
 }
 
 .footer-form button {
-	align-self: center;
 	color: #ffffff;
 	width: 50%;
 	background-color: $color__link;
@@ -43,5 +44,5 @@ margin-bottom: 10px;
 @media (max-width: 1000px) {
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 }

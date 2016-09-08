@@ -813,6 +813,10 @@ object {
     padding: 8px 46px; }
 
 .footer-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   max-width: 480px;
   background-color: #545454; }
 
@@ -856,15 +860,14 @@ form {
   -ms-flex-direction: column;}
 
 .footer-form input {
-  -ms-flex-item-align: center;
-      align-self: center;
-  width: 100%;
+  width: 80%;
   border: #F9AC31 solid 2px;
   margin-bottom: 10px; }
 
 .footer-form textarea {
   -ms-flex-item-align: center;
       align-self: center;
+<<<<<<< HEAD
   width: 100%;
 <<<<<<< HEAD
   height: 100px;
@@ -873,8 +876,10 @@ form {
 input {
   width: 100%; }
 button {
+  width: 80%;
   height: 30vh;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border: #F9AC31 solid 2px; }
 
 .footer-form button {
   -ms-flex-item-align: center;
