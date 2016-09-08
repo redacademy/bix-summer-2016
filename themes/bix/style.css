@@ -679,7 +679,9 @@ object {
 .gallery-caption {
   display: block; }
 
-<<<<<<< HEAD
+* {
+  box-size: border-box; }
+
 .content-area {
   display: -ms-flexbox;
   display: flex;
@@ -695,22 +697,8 @@ object {
 
 .entry-title {
   position: absolute;
-  left: 9999px; }
-
-.bix-book-title {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Titillium Web", sans-serif;
-  letter-spacing: 1px;
-  font-size: 1.8rem;
-  color: #fff; }
-
-.bix-book-subheading {
-  font-weight: 100;
-  padding: 5px 20px;
-  border-top: solid #fff 2px;
-  border-bottom: solid #fff 2px;
-  color: #fff; }
+  top: -9999px;
+  left: -9999px; }
 
 .quotes {
   color: #F9AC31;
@@ -737,7 +725,8 @@ object {
   position: relative; }
   .home-banner header {
     position: absolute;
-    left: 9999px; }
+    top: -9999px;
+    left: -9999px; }
 
 .banner-info-wrapper {
   min-height: 430px;
@@ -755,10 +744,21 @@ object {
     height: auto;
     margin-bottom: 0;
     margin-top: 40px; }
-  .banner-info-wrapper h2, .banner-info-wrapper h3 {
+  .banner-info-wrapper .bix-book-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Titillium Web", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    color: #fff;
     margin-bottom: 0; }
-  .banner-info-wrapper h3 {
-    margin-bottom: 10%; }
+  .banner-info-wrapper .bix-book-subheading {
+    font-weight: 100;
+    padding: 5px 20px;
+    border-top: solid #fff 2px;
+    border-bottom: solid #fff 2px;
+    color: #fff;
+    margin-bottom: 70px; }
   .banner-info-wrapper .btn-download {
     color: #fff;
     text-decoration: none;
@@ -768,7 +768,7 @@ object {
     font-weight: bold;
     font-size: 20px;
     padding: 8px 46px;
-    margin-bottom: 10%; }
+    margin-bottom: 30px; }
   .banner-info-wrapper .btn-down {
     border: solid #fff 2px;
     border-radius: 50%;
@@ -821,7 +821,7 @@ object {
   .quote-wrapper-front .quotes-text {
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 30px; }
   .quote-wrapper-front .quotes-text-orange {
     color: #F9AC31; }
@@ -830,13 +830,12 @@ object {
   height: 250px;
   background-color: #70b3cb;
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: center;
-}
+      align-items: center; }
   .sample-story-front .btn-download {
-  }
-
-  .sample-story .btn-download {
     color: #fff;
     text-decoration: none;
     border: solid #fff 2px;
@@ -845,6 +844,82 @@ object {
     font-weight: bold;
     font-size: 20px;
     padding: 8px 46px; }
+
+.home-book {
+  margin-top: 20px;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .home-book .book-logo {
+    max-width: 300px;
+    height: auto; }
+  .home-book .home-book-text {
+    text-align: center; }
+  .home-book .book-title {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: "Titillium Web", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    color: #444444;
+    margin-bottom: 0;
+    line-height: 0; }
+  .home-book .book-subheading {
+    font-weight: 100;
+    padding: 5px 5px;
+    border-top: solid #444444 2px;
+    border-bottom: solid #444444 2px;
+    color: #444444;
+    font-size: .8rem;
+    margin-bottom: 0; }
+  .home-book h3 {
+    font-size: 1.3rem;
+    line-height: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0; }
+  .home-book p {
+    font-size: .8rem;
+    letter-spacing: .3px;
+    line-height: 10px; }
+    .home-book p span {
+      font-size: .6rem;
+      letter-spacing: .2px; }
+  .home-book .book-summary {
+    padding: 20px 40px; }
+    .home-book .book-summary div {
+      max-width: 500px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+    .home-book .book-summary h4 {
+      display: inline-block;
+      color: #F9AC31;
+      border-bottom: solid 2px #F9AC31;
+      border-top: solid 2px #F9AC31;
+      font-size: 1.3rem;
+      letter-spacing: 1.4px;
+      padding: 5px 0;
+      width: 300px;
+      text-align: center; }
+    .home-book .book-summary .summary-one {
+      display: none; }
+    .home-book .book-summary p {
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      line-height: 25px;
+      max-width: 400px; }
 
 .footer-form {
   display: -ms-flexbox;
@@ -859,39 +934,9 @@ object {
   color: #ffffff;
   padding: 5px; }
 
-.home-book {
-  margin-top: 20px;
-  height: auto;
-  display: -ms-flexbox;
-  -ms-flex-direction: column;
-  -ms-flex-pack: center;
-  -ms-flex-align: center;}
-  .home-book .book-logo {
-    width: 80%;
-    height: auto; }
-  .home-book .home-book-text {
-    text-align: center; }
-  .home-book .bix-book-title {
-    color: #444444;
-    margin-bottom: 0;
-    line-height: 0; }
-  .home-book .bix-book-subheading {
-    color: #444444;
-    border-color: #444444;
-    padding: 5px 5px;
-    font-size: 1rem; }
-
-
 .footer-top h1 {
   font-family: "Titillium Web", sans-serif;
-  color: #F9AC31;
-  -ms-flex-align: center;
-  -ms-grid-row-align: center;
-  -ms-flex-pack: center;}
-
-form {
-  display: -ms-flexbox;
-  -ms-flex-direction: column;}
+  color: #F9AC31; }
 
 .footer-form input {
   width: 80%;
@@ -901,22 +946,12 @@ form {
 .footer-form textarea {
   -ms-flex-item-align: center;
       align-self: center;
-<<<<<<< HEAD
-  width: 100%;
-<<<<<<< HEAD
-  height: 100px;
-  background: #F9AC31 solid 2px; }
-
-input {
-  width: 100%; }
-button {
   width: 80%;
   height: 30vh;
   margin-bottom: 10px;
   border: #F9AC31 solid 2px; }
 
 .footer-form button {
-  -ms-flex-item-align: center;
   color: #ffffff;
   width: 50%;
   background-color: royalblue;

@@ -51,11 +51,22 @@ get_header(); ?>
 		<section class="home-book">
 			<img class="book-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo-black.png" alt="bix logo"/>
 			<div class="home-book-text">
-				<h2 class="bix-book-title">The Bix Book</h2>
-				<h3 class="bix-book-subheading">Transformational Stories</h3>
+				<h2 class="book-title">The Bix Book</h2>
+				<h4 class="book-subheading">Transformational Stories</h4>
 				<h3>Bix Bixon</h3>
-				<p><span>with</span> Annika Martins</p>
-				
+				<p><span>with</span> Annika Martins</p>	
+			</div>
+			<div class="book-summary">
+			<div>
+				<h4>The Bix Book</h4>
+				<p class="summary-one">
+					This is a book of stories that I have experienced through my 30 years of consulting with corporations, institutions, non-profit organizations and individuals.
+				</p>
+				<p>
+					Stories that I hope allow you access, an opening, a possibility that allow your courage, your persistence, your compassion, your intelligence and your resilience to soar to its greatest heights knowing you may have to plumb your deepest depths to find it.  You can do this.  These are not my stories.  These are our stories said through my life to share with you.
+				</p>
+				<a href="#">Discover</a>
+			</div>
 			</div>
 		</section>
 

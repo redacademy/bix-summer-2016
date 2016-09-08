@@ -1,3 +1,7 @@
+
+*{
+	box-size: border-box;
+}
 .content-area{
 	display: flex;
 	flex-direction: column;
@@ -11,25 +15,10 @@
 
 .entry-title{
 	position: absolute;
-	left: 9999px;
-}
-//Headings for Top Banner Titles
-.bix-book-title{
-	text-transform: uppercase;
-  font-weight: bold;
-  font-family: $font__header;
-  letter-spacing: 1px;
-  font-size: 1.8rem;
-  color: #fff;
+  top: -9999px;
+  left: -9999px;
 }
 
-.bix-book-subheading{
-	font-weight: 100;
-  padding: 5px 20px;
-  border-top: solid #fff 2px;
-  border-bottom: solid #fff 2px;
-  color: #fff;
-}
 //quotes 
 .quotes{
   color:$color__orange;

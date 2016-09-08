@@ -10,7 +10,8 @@
   position: relative;
 	header{
 		position: absolute;
-		left: 9999px;
+    top: -9999px;
+    left: -9999px;
 	}
 }
 .banner-info-wrapper{
@@ -26,17 +27,27 @@
     margin-bottom:0;
     margin-top: 40px;
   }
-
-  h2,h3{
+  .bix-book-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font__header;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    color: #fff;
     margin-bottom:0;
   }
-  h3{
-    margin-bottom: 10%;
+  .bix-book-subheading{
+    font-weight: 100;
+    padding: 5px 20px;
+    border-top: solid #fff 2px;
+    border-bottom: solid #fff 2px;
+    color: #fff;
+    margin-bottom: 70px;
   }
   .btn-download{
    @include btn;
     padding: 8px 46px;
-    margin-bottom: 10%;
+    margin-bottom: 30px;
   }
 
   .btn-down{
@@ -87,7 +98,7 @@
   .quotes-text{
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 30px;
   }
   .quotes-text-orange{
@@ -117,22 +128,77 @@
   justify-content: center;
   align-items: center;
   .book-logo{
-    width: 80%;
+    max-width: 300px;
     height: auto;
   }
   .home-book-text{
     text-align: center;
   }
-  .bix-book-title{
-    color: $color__gray;
+  .book-title{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: $font__header;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    color:$color__gray;
     margin-bottom:0;
     line-height: 0;
   }
-  .bix-book-subheading{
+  .book-subheading{
+    font-weight: 100;
+    padding: 5px 5px;
+    border-top: solid $color__gray 2px;
+    border-bottom: solid $color__gray 2px;
     color: $color__gray;
-    border-color:$color__gray;
-    padding: 5px 5px; 
-    font-size: 1rem; 
+    font-size: .8rem;
+    margin-bottom: 0;
+  }
+  h3{
+    font-size: 1.3rem;
+    line-height: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+  p{
+    font-size: .8rem;
+    letter-spacing: .3px;
+    line-height: 10px;
+    span{
+      font-size: .6rem;
+      letter-spacing: .2px;
+    }
+  }
+  .book-summary{
+     padding:20px 40px;
+     div{
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+    h4{
+      display: inline-block;
+      color:$color__orange;
+      border-bottom: solid 2px $color__orange;
+      border-top: solid 2px $color__orange;
+      font-size: 1.3rem;
+      letter-spacing: 1.4px;
+      padding:5px 0;
+      width: 300px;
+      text-align: center;
+    }
+    .summary-one{
+      display: none;
+    }
+
+    p{
+      font-family: $font__main;
+      font-size: 1rem;
+      line-height: 25px;
+      max-width: 400px;
+    }
   }
 }
 
