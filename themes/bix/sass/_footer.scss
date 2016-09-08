@@ -1,19 +1,14 @@
 .footer-content-area {
 	background-color: #545454;
-}
-
-.footer-form {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
 }
 
 .footer-top {
 	font-family: $font__header;
 	color: #ffffff;
-	justify-content: center;
 }
 
 .footer-top h1 {
@@ -63,15 +58,23 @@ margin-bottom: 10px;
 
 
 	.footer-form {
-		display: flex;
-    flex-direction: row;
-		align-items: center;
+	  max-width: none;
 
 	}
-   .form-position {
-		 
+   .footer-top{
+		text-align: left;
+    line-height: 1.5;
+    padding-left: 10px;
+    margin: 0 auto;
+	 }
 
-
+	 .form-position {
+		display: flex;
+		flex-direction: column;
+    font-weight: normal;
+    padding: 65px 15px 0 0;
+    width: 120px;
+    text-align: left;
 	 }
 
 
