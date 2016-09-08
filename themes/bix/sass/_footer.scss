@@ -1,4 +1,7 @@
-
+.footer-form {
+	max-width: 480px;
+	background-color: #545454;
+}
 .footer-top {
 	font-family: $font__header;
 	color: #ffffff;
@@ -9,12 +12,6 @@
 	font-family: $font__header;
 	color: #F9AC31;
 }
-
-.footer-form {
-  padding: 2px;
-
-}
-
 .footer-form input{
 align-self: center;
 width: 100%;

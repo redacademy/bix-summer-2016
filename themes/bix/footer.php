@@ -6,7 +6,6 @@
  */
 ?>
 			</div><!-- #content -->
-		<div>
 			<footer class="footer-form">
        <div class="footer-top">
         <h1>Let's Talk</h1>

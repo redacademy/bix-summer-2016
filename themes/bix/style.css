@@ -645,6 +645,7 @@ object {
 .gallery-caption {
   display: block; }
 
+<<<<<<< HEAD
 .content-area {
   display: -ms-flexbox;
   display: flex;
@@ -686,18 +687,17 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-
 .home-banner {
   background: url(../../images/bix_book_homepage.png) no-repeat center top;
   background-size: cover;
-}
-.footer-container {
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
+      flex-direction: column;
   -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: center;
+      align-items: center;
   height: 100vh;
   overflow: hidden;
   position: relative; }
@@ -801,6 +801,7 @@ object {
 }
   .sample-story-front .btn-download {
   }
+
   .sample-story .btn-download {
     color: #fff;
     text-decoration: none;
@@ -811,12 +812,13 @@ object {
     font-size: 20px;
     padding: 8px 46px; }
 
+.footer-form {
+  max-width: 480px;
+  background-color: #545454; }
+
 .footer-top {
   font-family: "Titillium Web", sans-serif;
   color: #ffffff;
-  -ms-flex-align: center;
-  -ms-grid-row-align: center;
-  margin: 5px;
   padding: 5px; }
 
 .home-book {
@@ -853,28 +855,34 @@ form {
   display: -ms-flexbox;
   -ms-flex-direction: column;}
 
-input {
+.footer-form input {
   -ms-flex-item-align: center;
+      align-self: center;
   width: 100%;
   border: #F9AC31 solid 2px;
   margin-bottom: 10px; }
 
-textarea {
+.footer-form textarea {
   -ms-flex-item-align: center;
+      align-self: center;
   width: 100%;
+<<<<<<< HEAD
   height: 100px;
   background: #F9AC31 solid 2px; }
 
 input {
   width: 100%; }
 button {
+  height: 30vh;
+  margin-bottom: 10px; }
+
+.footer-form button {
   -ms-flex-item-align: center;
   color: #ffffff;
   width: 50%;
   background-color: royalblue;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  border: 1px solid #FFFFFF;
   padding: 5px;
   margin-bottom: 10px; }
 
