@@ -1,8 +1,11 @@
 .footer-content-area {
+	background-color: #545454;
+}
+
+.footer-form {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-  background-color: #545454;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -25,7 +28,7 @@ margin-bottom: 10px;
 
 .footer-form textarea {
 	width: 60%;
-	height: 30vh;
+	height: 110%;
 	border: #F9AC31 solid 2px;
 }
 
@@ -57,17 +60,19 @@ margin-bottom: 10px;
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media all and (min-width: 600px) {
-	.footer-content-area {
-		justify-content: space-between;
 
-	}
+
 	.footer-form {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-	  background-color: #545454;
+    flex-direction: row;
 		align-items: center;
+
 	}
+   .form-position {
+		 
+
+
+	 }
 
 
 }

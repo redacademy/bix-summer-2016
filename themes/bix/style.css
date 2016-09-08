@@ -967,7 +967,6 @@ object {
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       line-height: 25px;
-<<<<<<< HEAD
       max-width: 450px; }
     .home-book .book-summary .btn-discover {
       color: #fff;
@@ -981,14 +980,14 @@ object {
 
 .home-author div {
   padding: 20px 40px;
-      max-width: 400px; }
-
-.footer-content-area {
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: column;
-<<<<<<< HEAD
+      flex-direction: column;
   -ms-flex-pack: center;
-  -ms-flex-align: center;}
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .home-author .home-subheading {
   width: 100%;
@@ -1002,10 +1001,6 @@ object {
   text-align: center;
   text-transform: uppercase; }
 
-.footer-form {
-  -ms-flex-line-pack: center;
-}
-
 .home-author .btn-explore {
   color: #fff;
   text-decoration: none;
@@ -1016,13 +1011,20 @@ object {
   font-size: 20px;
   padding: 10px 80px; }
 
+.footer-content-area {
+  background-color: #545454; }
+
 .footer-form {
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: column;
-  -ms-flex-align: center;
+      flex-direction: column;
   -ms-flex-wrap: nowrap;
-  max-width: 480px;
-  background-color: #545454; }
+      flex-wrap: nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .footer-top {
   font-family: "Titillium Web", sans-serif;
@@ -1040,9 +1042,8 @@ object {
   margin-bottom: 10px; }
 
 .footer-form textarea {
-  -ms-flex-item-align: center;
-  width: 66%;
-  height: 30vh;
+  width: 60%;
+  height: 110%;
   border: #F9AC31 solid 2px; }
 
 .footer-form button {
@@ -1053,10 +1054,7 @@ object {
   border-radius: 20px;
   background-color: #70b3cb;
   font-weight: bold;
-  font-size: 16px;
-  -ms-flex-item-align: center;
-      align-self: center; }
-
+  font-size: 16px; }
 
 .form-position {
   -ms-flex-pack: center;
@@ -1073,12 +1071,10 @@ object {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 @media all and (min-width: 600px) {
-  .footer-content-area {
-    -ms-flex-pack: justify;
-    -ms-flex-align: center;
-   }
-
   .footer-form {
     display: -ms-flexbox;
+    display: flex;
     -ms-flex-direction: row;
-    padding: 10px; } }
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center; } }

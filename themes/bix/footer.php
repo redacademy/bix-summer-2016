@@ -21,12 +21,12 @@
  					<button>Send</button>
 				</div>
         </form>
-    	<div class="icons">
-							 <i class="fa fa-linkedin fa-lg"></i>
-							 <i class="fa fa-twitter fa-lg"></i>
-							 <i class="fa fa-google-plus fa-lg"></i>
-		 </div>
 		 </footer>
+		 <div class="icons">
+							<i class="fa fa-linkedin fa-lg"></i>
+							<i class="fa fa-twitter fa-lg"></i>
+							<i class="fa fa-google-plus fa-lg"></i>
+		</div>
 	 </div>
 		<?php wp_footer(); ?>
 	</body>
