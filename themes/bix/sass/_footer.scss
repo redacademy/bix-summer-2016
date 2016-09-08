@@ -1,56 +1,68 @@
 .footer-content-area {
-	background-color: #545454;
+	background-color: #444444;
   max-width: 1240px;
-  margin: 0 auto;
   text-align: center;
   overflow: hidden;
 }
 
 .footer-top {
+	text-align: left;
+	margin-left: 10%;
+}
+
+.footer-top h2 {
 	font-family: $font__header;
+	font-weight: 300;
 	color: #ffffff;
+	text-transform: uppercase;
 }
 
 .footer-top h1 {
 	font-family: $font__header;
+	font-weight: 300;
 	color: #F9AC31;
+	text-transform: uppercase;
 }
-.footer-form input{
-width: 60%;
+
+.form-position input{
+width: 80%;
 border: #F9AC31 solid 2px;
 margin-bottom: 10px;
 }
 
-.footer-form textarea {
-	width: 60%;
-	height: 110%;
+.form-position textarea {
+	margin-left: 1px;
+	width: 80%;
+	height: 40vh;
 	border: #F9AC31 solid 2px;
 }
 
 .footer-form button {
-	width: 60%;
-	color: #fff;
-	text-decoration: none;
-	border: solid #fff 2px;
-	border-radius: 20px;
-	background-color: $color__blue;
-	font-weight: bold;
-	font-size: 16px;
-	}
-.form-position {
-	justify-content:  center;
+ @include btn;
+ font-size: 12px;
+ width: 40%;
+ height: 4vh;
+ text-align: center;
 }
+
 
 .footer-orange {
 	color: $color__orange;
 }
+.icons {
+	height: 30px;
+	width: 30px;
+	border-radius: 90%;
+	border: 2px solid white;
+	color: #444444;
+	background-color: #ffffff;
 
-.icons i {
-	color: #ffffff;
-	border-top: #F9AC31 2px solid;
-	border-bottom: #F9AC31 2px solid;
-	margin: 25px;
 }
+.icons i {
+background-color: #ffffff;
+
+}
+
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
