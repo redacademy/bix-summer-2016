@@ -59,24 +59,19 @@ get_header(); ?>
 			<div class="book-summary">
 			<div>
 				<h3 class="bix-book-title">The Bix Book</h3>
-				<p class="summary-one">
-					This is a book of stories that I have experienced through my 30 years of consulting with corporations, institutions, non-profit organizations and individuals.
-				</p>
-				<p>
-					Stories that I hope allow you access, an opening, a possibility that allow your courage, your persistence, your compassion, your intelligence and your resilience to soar to its greatest heights knowing you may have to plumb your deepest depths to find it.  You can do this.  These are not my stories.  These are our stories said through my life to share with you.
-				</p>
+				<p><?php echo CFS()->get( 'bix_book_summary' ); ?></p>
 				<a class="btn-discover" href="#">Discover</a>
 			</div>
 			</div>
 		</section>
 
 		<section class="home-author"><!--Section 6-->
-			<img class="author-img" src="<?php echo(get_template_directory_uri());?>/images/bix-bixson.png" alt="bix bixson the author"/>
+			<img class="author-img" src="	<?php echo CFS()->get( 'author_picture' ); ?>" alt="bix bixson the author"/>
 			<div>
 			<h3 class="home-subheading">About the Author</h3>
 				
 			<p>
-				Educated at Trinity University, Bix has been a member of the faculty of the Graduate Management Program at Antioch University in Seattle and served as the Chairman of the Board of Washington Works, a non-profit organization designed to provide women on public assistance the training and support needed to gain sustainable employment.
+				<?php echo CFS()->get( 'bix_bixson_author_summary' ); ?>
 			</p>
 			<a class="btn-explore" href="#">Explore</a>
 			</div>
