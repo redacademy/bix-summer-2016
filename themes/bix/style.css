@@ -482,7 +482,7 @@ textarea {
 
 .desktop-nav-wrapper {
   display: none;
-  height: 0px; }
+  height: 76px; }
   .desktop-nav-wrapper .main-navigation {
     -ms-flex-pack: center;
         justify-content: center;
