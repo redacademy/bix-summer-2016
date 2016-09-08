@@ -21,14 +21,13 @@
  					<button>Send</button>
 				</div>
         </form>
-       <div class="icons">
-				 <p>
-					      <i class="fa fa-facebook-square"></i>
-								<i class="fa fa-twitter-square"></i>
-								<i class="fa fa-google-plus-square"></i>
-							 </p>
-						 </div>
-			</footer>
+    	<div class="icons">
+							 <i class="fa fa-facebook fa-lg"></i>
+							 <i class="fa fa-twitter fa-lg"></i>
+							 <i class="fa fa-google-plus fa-lg"></i>
+		 </div>
+		 </footer>
+	 </div>
 		<?php wp_footer(); ?>
 	</body>
 </html>
