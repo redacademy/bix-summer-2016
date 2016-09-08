@@ -856,8 +856,8 @@ form {
 input {
   -ms-flex-item-align: center;
   width: 100%;
-  margin-bottom: 10px;
-  border: #F9AC31 solid 2px; }
+  border: #F9AC31 solid 2px;
+  margin-bottom: 10px; }
 
 textarea {
   -ms-flex-item-align: center;
@@ -875,14 +875,7 @@ button {
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border: 1px solid #FFFFFF;
-  padding: 5px; }
-
-.icons {
-  margin-left: 50px;
-  line-height: 1.5; }
-
-.icons i {
-  font-size: 1.25rem;
-  padding-right: 7px; }
+  padding: 5px;
+  margin-bottom: 10px; }
 
 /* If you don't want the footer to be responsive, remove these media queries */
