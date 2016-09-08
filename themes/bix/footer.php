@@ -11,7 +11,7 @@
        <div class="footer-top">
         <h1>Let's Talk</h1>
 				<h2> BIX BICKSON </h2>
-				<h2> Bix<span class="footer-orange">(at)</span>Bickson2.COM </h2>
+				<h2> Bix<span class="footer-orange">{At}</span>Bickson2.COM </h2>
 			</div>
 			 <div class ="form-position">
  				<form action="#" method="post">
