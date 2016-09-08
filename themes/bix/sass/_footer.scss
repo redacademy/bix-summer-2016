@@ -37,7 +37,7 @@ margin-bottom: 10px;
 	border: #F9AC31 solid 2px;
 }
 
-.form-position button {
+.footer_button {
  @include btn;
  font-size: 12px;
  width: 40%;
@@ -45,6 +45,15 @@ margin-bottom: 10px;
  text-align: center;
 }
 
+.icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.icon-background {
+    color: white;
+}
 
 .footer-orange {
 	color: $color__orange;
@@ -56,5 +65,10 @@ margin-bottom: 10px;
 		 flex-direction: row;
 		 justify-content: space-between;
 		 padding: 5%;
+	 }
+
+	 .icons {
+		  justify-content: flex-start;
+		 	margin-left: 15%
 	 }
 }

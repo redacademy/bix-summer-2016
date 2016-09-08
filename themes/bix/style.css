@@ -1042,7 +1042,7 @@ object {
   height: 40vh;
   border: #F9AC31 solid 2px; }
 
-.form-position button {
+.footer_button {
   color: #fff;
   text-decoration: none;
   border: solid #fff 2px;
@@ -1055,6 +1055,17 @@ object {
   height: 4vh;
   text-align: center; }
 
+.icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.icon-background {
+  color: white; }
+
 .footer-orange {
   color: #F9AC31; }
 
@@ -1066,4 +1077,8 @@ object {
         flex-direction: row;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    padding: 5%; } }
+    padding: 5%; }
+  .icons {
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    margin-left: 15%; } }

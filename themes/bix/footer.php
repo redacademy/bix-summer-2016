@@ -18,15 +18,23 @@
           <input type="text" name="email" placeholder="Your Email" />
  					<textarea name="message" placeholder="Drop A Line..."></textarea>
 					<br>
- 					<button>Send</button>
+ 					<button class="footer_button">Send</button>
 				</div>
         </form>
 		 </footer>
-		 <div class="icons">
-							<i class="fa fa-linkedin fa-lg"></i>
-							<i class="fa fa-twitter fa-lg"></i>
-							<i class="fa fa-google-plus fa-lg"></i>
-		</div>
+		 <div class ="icons">
+		 		<span class="fa-stack fa-2x">
+			 		<i class="fa fa-circle fa-stack-2x icon-background"></i>
+					<i class="fa fa-facebook fa-stack-1x"></i>
+				</span>
+				<span class="fa-stack fa-2x">
+			 		<i class="fa fa-circle fa-stack-2x icon-background"></i>
+			 		<i class="fa fa-linkedin fa-stack-1x"></i>
+	 		  </span>
+	 		<span class="fa-stack fa-2x">
+					<i class="fa fa-circle fa-stack-2x icon-background"></i>
+					<i class="fa fa-twitter fa-stack-1x"></i>
+			</span>
 	 </div>
 		<?php wp_footer(); ?>
 	</body>
