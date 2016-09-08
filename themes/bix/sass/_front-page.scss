@@ -1,3 +1,4 @@
+//Section 1
 .home-banner{
 	background: url(../../images/bix_book_homepage.png) no-repeat center top;
   background-size: cover;
@@ -59,7 +60,7 @@
   }
 }
 
-//home page quotes
+//Section 2 and 3 - Home page image and Quotes
 .quote-wrapper-front{
   height: auto; 
   .quote-img{
@@ -100,13 +101,10 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-  }
-  .quotes-text-orange{
-    color: $color__orange;
-  }
+  } 
 }
 
-//read sample stories
+//Section 4 - Home page - Read sample stories
 .sample-story-front{
   height:250px;
   background-color: $color__blue;
@@ -119,7 +117,7 @@
   }
 }
 
-//bix book summary
+//Section 5 - About Bix summary
 .home-book{
   margin-top: 20px;
   height: auto;
@@ -171,21 +169,21 @@
   }
   .book-summary{
      padding:20px 40px;
-     div{
+   div{
       max-width: 500px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-     }
-    h4{
-      display: inline-block;
+    }
+    .bix-book-title{
+      width: 100%;
       color:$color__orange;
       border-bottom: solid 2px $color__orange;
       border-top: solid 2px $color__orange;
       font-size: 1.3rem;
       letter-spacing: 1.4px;
-      padding:5px 0;
+      padding:20px 0;
       width: 300px;
       text-align: center;
     }
@@ -197,8 +195,38 @@
       font-family: $font__main;
       font-size: 1rem;
       line-height: 25px;
-      max-width: 400px;
+      max-width: 450px;
+    }
+    .btn-discover{
+      @include btn;
+      padding: 10px 80px;
     }
   }
 }
 
+.home-author{
+  
+  div{
+    padding:20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-subheading{
+    width: 100%;
+    color:$color__orange;
+    border-bottom: solid 2px $color__orange;
+    border-top: solid 2px $color__orange;
+    font-size: 1.3rem;
+    letter-spacing: 1.4px;
+    padding:5px 0;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .btn-explore{
+    @include btn;
+    padding: 10px 80px;
+  }
+}

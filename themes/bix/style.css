@@ -679,15 +679,18 @@ object {
 .gallery-caption {
   display: block; }
 
-
 * {
   box-size: border-box; }
 
 .content-area {
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-pack: center;
-  -ms-flex-align: center;}
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .site-main {
   width: 100%; }
@@ -701,7 +704,6 @@ object {
   color: #F9AC31;
   font-size: 1.2rem;
   font-weight: bold; }
-
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -821,8 +823,6 @@ object {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px; }
-  .quote-wrapper-front .quotes-text-orange {
-    color: #F9AC31; }
 
 .sample-story-front {
   height: 250px;
@@ -901,14 +901,14 @@ object {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
-    .home-book .book-summary h4 {
-      display: inline-block;
+    .home-book .book-summary .bix-book-title {
+      width: 100%;
       color: #F9AC31;
       border-bottom: solid 2px #F9AC31;
       border-top: solid 2px #F9AC31;
       font-size: 1.3rem;
       letter-spacing: 1.4px;
-      padding: 5px 0;
+      padding: 20px 0;
       width: 300px;
       text-align: center; }
     .home-book .book-summary .summary-one {
@@ -917,14 +917,59 @@ object {
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       line-height: 25px;
-      max-width: 400px; }
+      max-width: 450px; }
+    .home-book .book-summary .btn-discover {
+      color: #fff;
+      text-decoration: none;
+      border: solid #fff 2px;
+      border-radius: 30px;
+      background-color: #70b3cb;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px 80px; }
+
+.home-author div {
+  padding: 20px 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.home-author .home-subheading {
+  width: 100%;
+  color: #F9AC31;
+  border-bottom: solid 2px #F9AC31;
+  border-top: solid 2px #F9AC31;
+  font-size: 1.3rem;
+  letter-spacing: 1.4px;
+  padding: 5px 0;
+  width: 300px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.home-author .btn-explore {
+  color: #fff;
+  text-decoration: none;
+  border: solid #fff 2px;
+  border-radius: 30px;
+  background-color: #70b3cb;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 80px; }
 
 .footer-form {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-align: center;
+      align-items: center;
   -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   max-width: 480px;
   background-color: #545454; }
 
@@ -944,7 +989,8 @@ object {
 
 .footer-form textarea {
   -ms-flex-item-align: center;
-  width: 80%;
+      align-self: center;
+  width: 66%;
   height: 30vh;
   border: #F9AC31 solid 2px; }
 
@@ -957,15 +1003,16 @@ object {
   font-weight: bold;
   font-size: 16px;
   -ms-flex-item-align: center;
-   }
+      align-self: center; }
 
 .footer-orange {
   color: #F9AC31; }
 
 .icons {
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-align: center;
-   }
+      align-items: center; }
 
 .icons i {
   color: #ffffff;
