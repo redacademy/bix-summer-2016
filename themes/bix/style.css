@@ -1013,16 +1013,11 @@ object {
 
 .footer-form {
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
   -ms-flex-align: center;
-      align-items: center;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   max-width: 480px;
   background-color: #545454; }
-
 .footer-top {
   font-family: "Titillium Web", sans-serif;
   color: #ffffff;
@@ -1032,6 +1027,10 @@ object {
   font-family: "Titillium Web", sans-serif;
   color: #F9AC31; }
 
+.footer-top {
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 .footer-form input {
   width: 66%;
   border: #F9AC31 solid 2px;
@@ -1039,7 +1038,6 @@ object {
 
 .footer-form textarea {
   -ms-flex-item-align: center;
-      align-self: center;
   width: 66%;
   height: 30vh;
   border: #F9AC31 solid 2px; }
@@ -1055,6 +1053,7 @@ object {
   -ms-flex-item-align: center;
       align-self: center; }
 
+
 .footer-orange {
   color: #F9AC31; }
 
@@ -1069,3 +1068,28 @@ object {
   border-radius: 50%; }
 
 /* If you don't want the footer to be responsive, remove these media queries */
+@media all and (min-width: 600px) {
+  .footer-form {
+    min-width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 10px; }
+  .footer-form input textarea {
+    min-width: 100%; }
+  .footer-form button {
+    width: 65%;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  .icons {
+    -ms-flex-align: start;
+        -ms-grid-row-align: flex-start;
+        align-items: flex-start;
+    -ms-flex-order: 1;
+        order: 1; }
+  .icons i {
+    -ms-flex-direction: row;
+        flex-direction: row; } }

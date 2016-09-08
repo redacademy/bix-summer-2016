@@ -19,7 +19,7 @@
  					<textarea name="message" placeholder="Drop A Line..."></textarea>
 					<br>
  					<button>Send</button>
-				<div>
+				</div>
         </form>
        <div class="icons">
 				 <p>
@@ -29,7 +29,6 @@
 							 </p>
 						 </div>
 			</footer>
-		</div>
 		<?php wp_footer(); ?>
 	</body>
 </html>

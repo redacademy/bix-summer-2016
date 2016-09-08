@@ -3,8 +3,9 @@
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: nowrap;
-	max-width: 480px;
+	max-width: 1240px;
 	background-color: #545454;
+	padding-left: 90px;
 }
 .footer-top {
 	font-family: $font__header;
@@ -16,7 +17,9 @@
 	font-family: $font__header;
 	color: #F9AC31;
 }
-
+.footer-top {
+    justify-content: center;
+}
 .footer-form input{
 width: 66%;
 border: #F9AC31 solid 2px;
@@ -24,7 +27,6 @@ margin-bottom: 10px;
 }
 
 .footer-form textarea {
-	align-self: center;
 	width: 66%;
 	height: 30vh;
 	border: #F9AC31 solid 2px;
@@ -38,7 +40,6 @@ margin-bottom: 10px;
 	background-color: $color__blue;
 	font-weight: bold;
 	font-size: 16px;
-	align-self: center;
 	}
 
 
@@ -56,8 +57,30 @@ margin-bottom: 10px;
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 1000px) {
-}
+@media all and (min-width: 600px) {
+	 .footer-form {
+		 min-width: 100%;
+		 display: flex;
+		 flex-direction: row;
+		 justify-content: space-around;
+     padding: 10px;
+	 }
 
-@media (max-width: 600px) {
-}
+	 .footer-form input textarea {
+      min-width: 100%;
+	 }
+
+	 .footer-form button {
+		 width: 65%;
+		 align-self: center;
+	 }
+
+	 .icons {
+		 align-items: flex-start;
+		 order: 1;
+	 }
+
+  .icons i {
+    flex-direction: row;
+	}
+ }
