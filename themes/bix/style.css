@@ -392,149 +392,174 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.nav-wrapper {
+.mobile-nav-wrapper {
   height: 46px; }
-
-.main-navigation {
-  height: auto;
-  padding: 10px;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  border-bottom: solid 1px #fde8c6;
-  position: fixed;
-  width: 100vw;
-  max-width: 100%;
-  z-index: 1;
-  background: white; }
-
-.logo-link {
-  height: auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .logo-link img {
-    height: 25px; }
-
-.menu-button {
-  font-size: 25px;
-  line-height: 0;
-  color: #444444;
-  z-index: 3; }
-
-.menu-button-wrapper {
-  position: relative;
-  height: 25px;
-  width: 25px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .menu-button-wrapper i {
-    position: absolute;
-    top: 0; }
-
-i.fa-bars {
-  color: #70b3cb; }
-
-i.fa-chevron-up {
-  color: white;
-  display: none; }
-
-.menu-main-menu-container {
-  z-index: 2;
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; }
-  .menu-main-menu-container ul {
+  .mobile-nav-wrapper .main-navigation {
+    height: auto;
+    padding: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    border-bottom: solid 1px #fde8c6;
+    position: fixed;
+    width: 100vw;
+    max-width: 100%;
+    z-index: 1;
+    background: white; }
+  .mobile-nav-wrapper .logo-link {
+    height: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .mobile-nav-wrapper .logo-link img {
+      height: 25px; }
+  .mobile-nav-wrapper .menu-button {
+    font-size: 25px;
+    line-height: 0;
+    color: #444444;
+    z-index: 3; }
+  .mobile-nav-wrapper .menu-button-wrapper {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .mobile-nav-wrapper .menu-button-wrapper i {
+      position: absolute;
+      top: 0; }
+  .mobile-nav-wrapper i.fa-bars {
+    color: #70b3cb; }
+  .mobile-nav-wrapper i.fa-chevron-up {
+    color: white;
+    display: none; }
+  .mobile-nav-wrapper .menu-main-menu-container {
+    z-index: 2;
     display: none;
-    margin: 0;
-    padding: 10px 25px;
-    border-top: 46px solid #70b3cb;
     position: absolute;
     top: 0;
     right: 0;
-    width: 50vw;
-    list-style: none;
-    text-align: right;
-    background: white; }
-    .menu-main-menu-container ul li {
-      margin: 15px 0; }
-      .menu-main-menu-container ul li a {
-        font-family: "Titillium Web", sans-serif;
-        font-size: 18px;
-        text-decoration: none;
-        color: #70b3cb;
-        text-transform: uppercase; }
+    background: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; }
+    .mobile-nav-wrapper .menu-main-menu-container ul {
+      display: none;
+      margin: 0;
+      padding: 10px 25px;
+      border-top: 46px solid #70b3cb;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50vw;
+      list-style: none;
+      text-align: right;
+      background: white; }
+      .mobile-nav-wrapper .menu-main-menu-container ul li {
+        margin: 15px 0; }
+        .mobile-nav-wrapper .menu-main-menu-container ul li a {
+          font-family: "Titillium Web", sans-serif;
+          font-size: 18px;
+          text-decoration: none;
+          color: #70b3cb;
+          text-transform: uppercase; }
+  .mobile-nav-wrapper .menu-item a {
+    padding-right: 8px;
+    border-right: 8px solid white; }
+  .mobile-nav-wrapper ul li.current-menu-item a {
+    color: #F9AC31;
+    border-color: #F9AC31; }
 
-.menu-item a {
-  padding-right: 8px;
-  border-right: 8px solid white; }
-
-ul li.current-menu-item a {
-  color: #F9AC31;
-  border-color: #F9AC31; }
-
-@media all and (min-width: 600px) {
-  .nav-wrapper {
-    height: 0px; }
-  .main-navigation {
+.desktop-nav-wrapper {
+  display: none;
+  height: 0px; }
+  .desktop-nav-wrapper .main-navigation {
     -ms-flex-pack: center;
         justify-content: center;
-    padding: 0 10px; }
-  .menu-button {
-    display: none; }
-  .logo-link {
+    padding: 0 10px;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-align: center;
+        align-items: center;
+    border-bottom: solid 1px #fde8c6;
+    position: fixed;
+    width: 100vw;
+    max-width: 100%;
+    z-index: 1;
+    background: white; }
+  .desktop-nav-wrapper .logo-link {
     -ms-flex: 0 0 25%;
         flex: 0 0 25%;
-    border-top: solid 10px #F9AC31; }
-    .logo-link img {
+    border-top: solid 10px white;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .desktop-nav-wrapper .logo-link img {
       height: 40px;
       margin: 13px 0; }
-  .menu-main-menu-container {
+  .desktop-nav-wrapper .current-page {
+    border-top: solid 10px #F9AC31; }
+  .desktop-nav-wrapper .menu-main-menu-container {
     -ms-flex: 0 0 75%;
         flex: 0 0 75%;
-    display: block;
-    position: static;
     width: auto;
     height: auto;
-    background: none; }
-    .menu-main-menu-container ul {
+    background: none;
+    z-index: 2;
+    overflow: hidden; }
+    .desktop-nav-wrapper .menu-main-menu-container ul {
       width: auto;
       display: -ms-flexbox;
       display: flex;
-      border: none;
       padding: 0;
-      position: static; }
-      .menu-main-menu-container ul li:first-child {
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      background: white; }
+      .desktop-nav-wrapper .menu-main-menu-container ul li:first-child {
         display: none; }
-      .menu-main-menu-container ul li {
+      .desktop-nav-wrapper .menu-main-menu-container ul li {
         -ms-flex: 0 0 33%;
             flex: 0 0 33%;
         border-top: solid 10px white;
         text-align: center;
         margin: 0;
         padding: 17.5px 0; }
-        .menu-main-menu-container ul li.current-menu-item {
+        .desktop-nav-wrapper .menu-main-menu-container ul li.current-menu-item {
           border-top: solid 10px #F9AC31; }
-        .menu-main-menu-container ul li a {
+        .desktop-nav-wrapper .menu-main-menu-container ul li a {
           font-size: 21px;
           border-right: none;
-          padding: 0; } }
+          padding: 0;
+          font-family: "Titillium Web", sans-serif;
+          text-decoration: none;
+          color: #70b3cb;
+          text-transform: uppercase; }
+  .desktop-nav-wrapper ul li.current-menu-item a {
+    color: #F9AC31;
+    border-color: #F9AC31; }
+
+@media all and (min-width: 600px) {
+  .mobile-nav-wrapper {
+    display: none; }
+  .desktop-nav-wrapper {
+    display: block; } }
 
 /*--------------------------------------------------------------
 # Accessibility
