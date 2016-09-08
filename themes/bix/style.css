@@ -986,6 +986,7 @@ object {
 .footer-content-area {
   display: -ms-flexbox;
   -ms-flex-direction: column;
+<<<<<<< HEAD
   -ms-flex-pack: center;
   -ms-flex-align: center;}
 
@@ -1022,6 +1023,7 @@ object {
   -ms-flex-wrap: nowrap;
   max-width: 480px;
   background-color: #545454; }
+
 .footer-top {
   font-family: "Titillium Web", sans-serif;
   color: #ffffff;
@@ -1072,12 +1074,11 @@ object {
 /* If you don't want the footer to be responsive, remove these media queries */
 @media all and (min-width: 600px) {
   .footer-content-area {
-    display: -ms-flexbox;
-    display: flex;
-    min-width: 100%;
     -ms-flex-pack: justify;
     -ms-flex-align: center;
    }
+
   .footer-form {
+    display: -ms-flexbox;
     -ms-flex-direction: row;
     padding: 10px; } }

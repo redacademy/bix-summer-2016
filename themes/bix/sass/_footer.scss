@@ -2,16 +2,11 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-  max-width: 1240px;
-	background-color: #545454;
-	display: flex;
+  background-color: #545454;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.footer-form {
-		align-content: center;
-}
 .footer-top {
 	font-family: $font__header;
 	color: #ffffff;
@@ -62,25 +57,15 @@ margin-bottom: 10px;
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media all and (min-width: 600px) {
-
 	.footer-content-area {
-		display: flex;
-    min-width: 100%;
 		justify-content: space-between;
+
+	}
+	.footer-form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	  background-color: #545454;
 		align-items: center;
 	}
-	 .footer-form {
-		flex-direction: row;
-		padding: 10px;
-
-	 }
-
-	 .footer-form textarea {
-
-	 }
-
-	 .footer-form button {
-
-	 }
-
- }
+}
