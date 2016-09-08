@@ -22,7 +22,7 @@ $(document).ready(function(){
 	    	$('.fa-chevron-up').slideToggle(750);
 		}
 	});
-	
+
 
 });
 }(jQuery));
