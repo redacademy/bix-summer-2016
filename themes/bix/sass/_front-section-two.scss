@@ -1,0 +1,51 @@
+//Section 2 and 3 - Home page image and Quotes
+.quote-wrapper-front{
+  height: auto; 
+  .quote-img{
+    background: url(../../images/bix-homepage-ocean.png) no-repeat center top;
+    background-size: cover;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+  .quote-img-2 {
+   background: url(../../images/bix-homepage-business.png) no-repeat center top;
+    background-size: cover;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+  .quote-img:after, .quote-img-2:after{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    content:" ";
+    bottom:0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 40px 12px;
+    border-color: transparent transparent #fcfcfc transparent;
+  }
+  .quote-wrapper-text{
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 15px;
+  }
+  .quotes-text{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+  } 
+}
+
+@media #{$tablet} {
+  .quote-wrapper-text{
+   
+  }
+}

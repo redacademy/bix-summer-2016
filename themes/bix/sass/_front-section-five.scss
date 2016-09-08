@@ -1,0 +1,26 @@
+.home-author{
+  
+  div{
+    padding:20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-subheading{
+    width: 100%;
+    color:$color__orange;
+    border-bottom: solid 2px $color__orange;
+    border-top: solid 2px $color__orange;
+    font-size: 1.3rem;
+    letter-spacing: 1.4px;
+    padding:5px 0;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .btn-explore{
+    @include btn;
+    padding: 10px 80px;
+  }
+}

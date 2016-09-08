@@ -1,0 +1,83 @@
+//Section 5 - About Bix summary
+.home-book{
+  margin-top: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .book-logo{
+    max-width: 300px;
+    height: auto;
+  }
+  .home-book-text{
+    text-align: center;
+  }
+  .book-title{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: $font__header;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    color:$color__gray;
+    margin-bottom:0;
+    line-height: 0;
+  }
+  .book-subheading{
+    font-weight: 100;
+    padding: 5px 5px;
+    border-top: solid $color__gray 2px;
+    border-bottom: solid $color__gray 2px;
+    color: $color__gray;
+    font-size: .8rem;
+    margin-bottom: 0;
+  }
+  h3{
+    font-size: 1.3rem;
+    line-height: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+  p{
+    font-size: .8rem;
+    letter-spacing: .3px;
+    line-height: 10px;
+    span{
+      font-size: .6rem;
+      letter-spacing: .2px;
+    }
+  }
+  .book-summary{
+     padding:20px 40px;
+   div{
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .bix-book-title{
+      width: 100%;
+      color:$color__orange;
+      border-bottom: solid 2px $color__orange;
+      border-top: solid 2px $color__orange;
+      font-size: 1.3rem;
+      letter-spacing: 1.4px;
+      padding:20px 0;
+      width: 300px;
+      text-align: center;
+    }
+    
+    p{
+      font-family: $font__main;
+      font-size: 1rem;
+      line-height: 25px;
+      max-width: 450px;
+    }
+    .btn-discover{
+      @include btn;
+      padding: 10px 80px;
+    }
+  }
+}

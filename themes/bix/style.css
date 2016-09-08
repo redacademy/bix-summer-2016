@@ -745,15 +745,13 @@ object {
 .site-main {
   width: 100%; }
 
-.entry-title {
-  position: absolute;
-  top: -9999px;
-  left: -9999px; }
-
 .quotes {
   color: #F9AC31;
   font-size: 1.2rem;
   font-weight: bold; }
+
+.quotes-text-orange {
+  color: #F9AC31; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -872,7 +870,9 @@ object {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px; }
+    line-height: 30px;
+    max-width: 400px;
+    margin: 0 auto; }
 
 .sample-story-front {
   height: 250px;
@@ -961,8 +961,6 @@ object {
       padding: 20px 0;
       width: 300px;
       text-align: center; }
-    .home-book .book-summary .summary-one {
-      display: none; }
     .home-book .book-summary p {
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
@@ -1012,15 +1010,22 @@ object {
   padding: 10px 80px; }
 
 .footer-content-area {
+<<<<<<< 2a71e706f36685da746b27ea7fd1b6f6112516ec
   background-color: #545454; }
 
 .footer-form {
+=======
+>>>>>>> front-page cleanup php page and scss
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+<<<<<<< 2a71e706f36685da746b27ea7fd1b6f6112516ec
+=======
+  background-color: #545454;
+>>>>>>> front-page cleanup php page and scss
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
@@ -1043,7 +1048,7 @@ object {
 
 .footer-form textarea {
   width: 60%;
-  height: 110%;
+  height: 30vh;
   border: #F9AC31 solid 2px; }
 
 .footer-form button {
@@ -1071,10 +1076,17 @@ object {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 @media all and (min-width: 600px) {
+  .footer-content-area {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+
   .footer-form {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    background-color: #545454;
     -ms-flex-align: center;
-        align-items: center; } }
+        align-items: center; }}

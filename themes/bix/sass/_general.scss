@@ -13,12 +13,6 @@
 	width: 100%;
 }
 
-.entry-title{
-	position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
 //quotes 
 .quotes{
   color:$color__orange;
@@ -26,3 +20,6 @@
   font-weight: bold;
 }
 
+.quotes-text-orange{
+    color: $color__orange;
+  }

@@ -1,0 +1,12 @@
+//Section 4 - Home page - Read sample stories
+.sample-story-front{
+  height:250px;
+  background-color: $color__blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn-download{
+     @include btn;
+     padding: 8px 46px;
+  }
+}
