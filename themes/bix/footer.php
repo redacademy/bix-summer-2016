@@ -36,6 +36,7 @@
 					<i class="fa fa-twitter fa-stack-1x"></i>
 			</span>
 	 </div>
+ </div>
 		<?php wp_footer(); ?>
 	</body>
 </html>
