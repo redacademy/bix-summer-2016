@@ -7,11 +7,9 @@ $(document).ready(function(){
 	window.onscroll = function() {
 	    if (window.scrollY > 76) {
 	    	$(".desktop-nav-wrapper .main-navigation").addClass("transparent-background");
-	    	// $(".desktop-nav-wrapper ul").addClass("transparent-background");
 	    }
 	    else {
 	    	$(".desktop-nav-wrapper .main-navigation").removeClass("transparent-background");
-	    	// $(".desktop-nav-wrapper ul").removeClass("transparent-background");
 	    };
 	},false;
    
