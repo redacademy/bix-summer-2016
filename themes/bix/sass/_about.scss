@@ -15,8 +15,11 @@ h3 {
 }
 
 .about-page-banner{
+	display: none;
+	width: 100vw;
 	img {
-		max-width: none;
+		max-width: 100%;
+		width: 100vw;
 	}
 }
 
@@ -205,6 +208,10 @@ h3 {
 // breakpoints
 
 	@media all and (min-width: 600px) {
+		.about-page-banner{
+			display: block;
+		}
+
 		.author-section, .company-section {
 			margin: 7rem 0;
 		}

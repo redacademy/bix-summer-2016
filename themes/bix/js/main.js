@@ -6,10 +6,10 @@ $(document).ready(function(){
 	// nav bar fading
 	window.onscroll = function() {
 	    if (window.scrollY > 76) {
-	    	$(".desktop-nav-wrapper .main-navigation").addClass("transparent-background");
+	    	$(".desktop-nav-wrapper .desktop-nav-container").addClass("transparent-background");
 	    }
 	    else {
-	    	$(".desktop-nav-wrapper .main-navigation").removeClass("transparent-background");
+	    	$(".desktop-nav-wrapper .desktop-nav-container").removeClass("transparent-background");
 	    };
 	},false;
    

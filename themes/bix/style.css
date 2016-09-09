@@ -483,7 +483,21 @@ textarea {
 .desktop-nav-wrapper {
   display: none;
   height: 76px; }
+  .desktop-nav-wrapper .desktop-nav-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    position: fixed;
+    width: 100vw;
+    background: white;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: 1s; }
   .desktop-nav-wrapper .main-navigation {
+    max-width: 1000px;
     -ms-flex-pack: center;
         justify-content: center;
     padding: 0 10px;
@@ -493,13 +507,7 @@ textarea {
     position: relative;
     -ms-flex-align: center;
         align-items: center;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    width: 100vw;
-    max-width: 100%;
-    z-index: 1;
-    transition: 1s;
-    background: white; }
+    width: 100vw; }
   .desktop-nav-wrapper .logo-link {
     -ms-flex: 0 0 25%;
         flex: 0 0 25%;
@@ -787,8 +795,12 @@ h3 {
   -ms-flex-align: center;
       align-items: center; }
 
-.about-page-banner img {
-  max-width: none; }
+.about-page-banner {
+  display: none;
+  width: 100vw; }
+  .about-page-banner img {
+    max-width: 100%;
+    width: 100vw; }
 
 strong {
   font-weight: bold; }
@@ -950,6 +962,8 @@ strong {
     color: #70b3cb; }
 
 @media all and (min-width: 600px) {
+  .about-page-banner {
+    display: block; }
   .author-section, .company-section {
     margin: 7rem 0; }
   .author-section-intro img {

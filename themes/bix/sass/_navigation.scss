@@ -244,7 +244,20 @@
 	display: none;
 	height: 76px;
 
+	.desktop-nav-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		width: 100vw;
+		background: rgba(255,255,255,1);
+		border-bottom: solid 1px rgba(0,0,0,0.2);
+		z-index: 1;
+		transition: 1s;
+	}
+
 	.main-navigation {
+		max-width: 1000px;
 		justify-content: center;
 		padding: 0 10px;
 
@@ -252,13 +265,8 @@
 		display: flex;
 		position: relative;
 		align-items: center;
-		border-bottom: solid 1px rgba(0,0,0,0.2);
-		position: fixed;
+		
 		width: 100vw;
-		max-width: 100%;
-		z-index: 1;
-		transition: 1s;
-		background: rgba(255,255,255,1);
 	}
 
 	.logo-link {

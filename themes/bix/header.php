@@ -48,30 +48,32 @@
 			</div>
 
 			<div class="desktop-nav-wrapper">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
-					<a href="<?php echo home_url()?>" class="logo-link <?php 
+				<div class="desktop-nav-container">
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
+						<a href="<?php echo home_url()?>" class="logo-link <?php 
 
-						if (is_front_page()) {
-							echo "current-page";
-						}
-						?>
-
-					">
-						<img src="
-							<?php 
-								if (is_front_page()) {
-									echo get_template_directory_uri() . "/images/bix-logo-orange.png";
-								} else {
-									echo get_template_directory_uri() . "/images/bix-logo-blue.png";
-								}
+							if (is_front_page()) {
+								echo "current-page";
+							}
 							?>
-						" alt="">
-					</a>
 
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						">
+							<img src="
+								<?php 
+									if (is_front_page()) {
+										echo get_template_directory_uri() . "/images/bix-logo-orange.png";
+									} else {
+										echo get_template_directory_uri() . "/images/bix-logo-blue.png";
+									}
+								?>
+							" alt="">
+						</a>
 
-				</nav><!-- #site-navigation -->
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+					</nav><!-- #site-navigation -->
+				</div>
 			</div>
 
 			</header><!-- #masthead -->
