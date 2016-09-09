@@ -1,63 +1,7 @@
-//Section 1 Front Page
-.home-banner{
-	background: url(../../images/bix_book_homepage.png) no-repeat center top;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-	header{
-		position: absolute;
-    top: -9999px;
-    left: -9999px;
-	}
-}
-.banner-info-wrapper{
-  min-height: 430px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-    .site-logo{
-    max-width: 250px;
-    height: auto;
-    margin-bottom:0;
-    margin-top: 40px;
-  }
-  .bix-book-title{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: $font__header;
-    letter-spacing: 1px;
-    font-size: 1.8rem;
-    color: #fff;
-    margin-bottom:0;
-  }
-  .bix-book-subheading{
-    font-weight: 100;
-    padding: 5px 20px;
-    border-top: solid #fff 2px;
-    border-bottom: solid #fff 2px;
-    color: #fff;
-    margin-bottom: 70px;
-  }
-  .btn-download{
-   @include btn;
-    padding: 8px 46px;
-    margin-bottom: 30px;
-  }
 
-  .btn-down{
-     @include down-arrow;
-     margin-bottom: 10px;
-    .fa{
-      font-size: 30px;
-    }
-  }
-}
-
+@import "front-sections/front-section-one";
+@import "front-sections/front-section-two";
+@import "front-sections/front-section-three";
+@import "front-sections/front-section-four";
+@import "front-sections/front-section-five";
 
