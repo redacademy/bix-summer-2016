@@ -1,5 +1,5 @@
 //Section 2 and 3 - Home page image and Quotes
-.quote-wrapper-front{
+.quote-wrapper-front,.quote-wrapper-front-2{
   height: auto; 
   .quote-img{
     background: url(../../images/bix-homepage-ocean.png) no-repeat center top;
@@ -45,7 +45,62 @@
 }
 
 @media #{$tablet} {
-  .quote-wrapper-text{
-   
+  .quote-wrapper-front{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    .quote-img{
+      width: 50%;
+      height: 300px;
+    }
+    .quote-img:after{
+      position: absolute;
+      content:" ";
+      margin:0;
+      left: auto;
+      right: 0;
+      bottom:110px;
+      top: auto;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 40px 12px 40px 0;
+      border-color: transparent #ffffff transparent transparent;
+    }
+    .quote-wrapper-text{
+      width: 50%;
+    }
+  }
+  .quote-wrapper-front-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 60px;
+    .quote-img-2{
+      width: 50%;
+      height: 300px;
+      order:2;
+    }
+    .quote-img-2:after{
+      position: absolute;
+      content:" ";
+      margin:0;
+      left: 0;
+      right: auto;
+      bottom:110px;
+      top: auto;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 40px 0 40px 12px;
+      border-color: transparent transparent transparent #ffffff;
+    }
+    .quote-wrapper-text{
+      width: 50%;
+    }
   }
 }

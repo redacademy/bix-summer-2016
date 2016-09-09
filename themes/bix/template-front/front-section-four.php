@@ -7,10 +7,10 @@
 		<p><span>with</span> Annika Martins</p>	
 	</div>
 	<div class="book-summary">
-	<div>
-		<h3 class="bix-book-title">The Bix Book</h3>
-		<p><?php echo CFS()->get( 'bix_book_summary' ); ?></p>
-		<a class="btn-discover" href="#">Discover</a>
-	</div>
+		<div>
+			<h3 class="bix-book-title">The Bix Book</h3>
+			<?php echo CFS()->get( 'bix_book_summary' ); ?>
+			<a class="btn-discover" href="#">Discover</a>
+		</div>
 	</div>
 </section>
