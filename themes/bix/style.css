@@ -1096,14 +1096,8 @@ object {
       padding: 10px 80px; }
 
 .footer-content-area {
-<<<<<<< 48ea308c58ab8edce953bf56080087f635548d63
   background-color: #444444;
   max-width: 1240px;
-
-  background-color: #545454;
-  max-width: 1240px;
-  margin: 0 auto;
->>>>>>> front-page responsive section2
   text-align: center;
   overflow: hidden; }
 
@@ -1132,7 +1126,7 @@ object {
   margin-left: 1px;
   width: 80%;
   height: 40vh;
-}
+  border: #F9AC31 solid 2px; }
 
 .footer_button {
   color: #fff;
@@ -1165,7 +1159,6 @@ object {
   .footer-form {
     display: -ms-flexbox;
     display: flex;
-
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-pack: justify;
@@ -1175,5 +1168,3 @@ object {
     -ms-flex-pack: start;
         justify-content: flex-start;
     margin-left: 15%; } }
-
-    
