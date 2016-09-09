@@ -1495,6 +1495,71 @@ strong {
       font-size: 1.1rem;
       padding: 10px 80px; }
 
+@media (min-width: 600px) {
+  .home-author {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-bottom: 60px; }
+    .home-author .author-img-wrapper {
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+      max-height: 450px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .home-author .author-img-wrapper .author-img {
+        height: 450px;
+        max-width: none; }
+    .home-author .home-author-info {
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+      padding: 0 40px;
+      height: 450px; }
+      .home-author .home-author-info div {
+        max-width: 200px;
+        height: 100%; }
+      .home-author .home-author-info .home-subheading {
+        width: 200px; }
+      .home-author .home-author-info p {
+        font-size: .8rem;
+        line-height: 20px; } }
+
+@media (min-width: 900px) {
+  .home-author {
+    width: 100%;
+    margin-bottom: 80px; }
+    .home-author .author-img-wrapper {
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+      max-height: 450px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .home-author .author-img-wrapper .author-img {
+        height: 450px;
+        max-width: none; }
+    .home-author .home-author-info {
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+      padding: 0 40px;
+      margin-top: 0px; }
+      .home-author .home-author-info div {
+        max-width: 100%; }
+      .home-author .home-author-info .home-subheading {
+        width: 300px;
+        font-size: 1.8rem;
+        font-weight: 500; }
+      .home-author .home-author-info p {
+        font-size: 1.1rem;
+        line-height: 28px;
+        max-width: none; } }
+
 .footer-content-area {
   background-color: #444444;
   max-width: 1240px;
