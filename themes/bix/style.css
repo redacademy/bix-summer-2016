@@ -1137,9 +1137,11 @@ object {
   font-weight: bold;
   font-size: 20px;
   font-size: 12px;
-  width: 40%;
+  width: 30%;
   height: 4vh;
-  text-align: center; }
+  text-align: center;
+  box-shadow: none;
+  text-shadow: none; }
 
 .icons {
   display: -ms-flexbox;

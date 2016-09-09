@@ -23,15 +23,15 @@
         </form>
 		 </footer>
 		 <div class ="icons">
-		 		<span class="fa-stack fa-2x">
+		 		<span class="fa-stack fa-1x">
 			 		<i class="fa fa-circle fa-stack-2x icon-background"></i>
 					<i class="fa fa-facebook fa-stack-1x"></i>
 				</span>
-				<span class="fa-stack fa-2x">
+				<span class="fa-stack fa-1x">
 			 		<i class="fa fa-circle fa-stack-2x icon-background"></i>
 			 		<i class="fa fa-linkedin fa-stack-1x"></i>
 	 		  </span>
-	 		<span class="fa-stack fa-2x">
+	 		<span class="fa-stack fa-1x">
 					<i class="fa fa-circle fa-stack-2x icon-background"></i>
 					<i class="fa fa-twitter fa-stack-1x"></i>
 			</span>

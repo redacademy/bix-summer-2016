@@ -40,10 +40,14 @@ margin-bottom: 10px;
 .footer_button {
  @include btn;
  font-size: 12px;
- width: 40%;
+ width: 30%;
  height: 4vh;
  text-align: center;
+ box-shadow: none;
+ text-shadow: none;
 }
+
+
 
 .icons {
 	display: flex;
