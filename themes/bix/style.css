@@ -771,6 +771,9 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
 .home-banner {
   background: url(../../images/bix_book_homepage.png) no-repeat center top;
   background-size: cover;
