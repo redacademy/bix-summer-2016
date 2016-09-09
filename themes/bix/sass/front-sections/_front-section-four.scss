@@ -73,11 +73,111 @@
       font-family: $font__main;
       font-size: 1rem;
       line-height: 25px;
-      max-width: 450px;
+      margin-bottom:0px;
     }
     .btn-discover{
       @include btn;
       padding: 10px 80px;
+      margin-top: 20px;
     }
   }
 }
+
+@media #{$tablet} {
+  .home-book{
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    margin-top: -15px;
+    .book-logo-wrapper{
+      order: 2;
+      max-width: 300px;
+      width: 45%;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .book-logo{
+      max-width: 200px;
+      margin-top:0;
+    }
+    .book-summary{
+      width: 50%;
+      padding:0px 0px;
+      order:1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      div{
+        max-width: 800px;
+        padding:0 10px;
+      }
+      p{
+        font-size: .8rem;
+        line-height: 20px;
+      }  
+    }
+  }
+}
+
+@media #{$tablet-large} {
+  .home-book{
+    margin-bottom: 80px;
+    .book-logo-wrapper{
+      max-width: 400px;
+      width: 30%;
+    }
+    .book-logo{
+      max-width: 300px;
+    }
+    .book-summary{
+      width: 60%;
+      div{
+        max-width: 800px;
+      }
+      p{
+        font-size: 1rem;
+        line-height: 25px;
+      }  
+    }
+  }
+}
+
+@media #{$desktop} {
+  .home-book{
+    margin-bottom: 100px;
+    .book-logo-wrapper{
+      order: 2;
+      max-width: 410px;
+      width: 30%;
+    }
+    .book-logo{
+      max-width: 310px;
+    }
+    .book-summary{
+      width: 65%;
+      div{
+        max-width: 820px;
+      }
+      .bix-book-title{
+        font-size: 1.8rem;
+        letter-spacing: 1.4px;
+        padding:25px 0;
+        font-weight: 500;
+      }
+      p{
+        font-size: 1.1rem;
+        line-height: 28px;
+      }  
+    }
+  }
+}
+
+
+
+

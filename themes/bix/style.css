@@ -881,7 +881,7 @@ object {
     height: 0;
     border-style: solid;
     border-width: 0 40px 12px;
-    border-color: transparent transparent #fcfcfc transparent; }
+    border-color: transparent transparent #fff transparent; }
   .quote-wrapper-front .quote-wrapper-text, .quote-wrapper-front-2 .quote-wrapper-text {
     text-align: center;
     padding: 30px 15px; }
@@ -906,7 +906,8 @@ object {
   height: 100%;
   background-color: rgba(112, 179, 203, 0.8);
   opacity: 0;
-  transition: opacity .3s ease; }
+  transition: opacity .3s ease;
+  visibility: hidden; }
   .quote-img .overlay .btn, .quote-img-2 .overlay .btn {
     text-decoration: none;
     background-color: transparent;
@@ -979,6 +980,8 @@ object {
       border-color: transparent transparent transparent #ffffff; }
     .quote-wrapper-front-2 .quote-wrapper-text {
       width: 50%; }
+  .quote-img .overlay, .quote-img-2 .overlay {
+    visibility: visible; }
   .quote-img .overlay:hover, .quote-img-2 .overlay:hover {
     opacity: 1; }
     .quote-img .overlay:hover .btn, .quote-img-2 .overlay:hover .btn {
@@ -1058,6 +1061,10 @@ object {
     font-size: 1.1rem;
     padding: 8px 46px; }
 
+@media (min-width: 600px) {
+  .sample-story-front {
+    display: none; } }
+
 .home-book {
   margin-top: 20px;
   height: auto;
@@ -1130,7 +1137,7 @@ object {
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       line-height: 25px;
-      max-width: 450px; }
+      margin-bottom: 0px; }
     .home-book .book-summary .btn-discover {
       color: #fff;
       text-decoration: none;
@@ -1139,7 +1146,95 @@ object {
       background-color: #70b3cb;
       font-weight: bold;
       font-size: 1.1rem;
-      padding: 10px 80px; }
+      padding: 10px 80px;
+      margin-top: 20px; }
+
+@media (min-width: 600px) {
+  .home-book {
+    margin-top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
+    margin-top: -15px; }
+    .home-book .book-logo-wrapper {
+      -ms-flex-order: 2;
+          order: 2;
+      max-width: 300px;
+      width: 45%;
+      padding: 0 20px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+    .home-book .book-logo {
+      max-width: 200px;
+      margin-top: 0; }
+    .home-book .book-summary {
+      width: 50%;
+      padding: 0px 0px;
+      -ms-flex-order: 1;
+          order: 1;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .home-book .book-summary div {
+        max-width: 800px;
+        padding: 0 10px; }
+      .home-book .book-summary p {
+        font-size: .8rem;
+        line-height: 20px; } }
+
+@media (min-width: 900px) {
+  .home-book {
+    margin-bottom: 80px; }
+    .home-book .book-logo-wrapper {
+      max-width: 400px;
+      width: 30%; }
+    .home-book .book-logo {
+      max-width: 300px; }
+    .home-book .book-summary {
+      width: 60%; }
+      .home-book .book-summary div {
+        max-width: 800px; }
+      .home-book .book-summary p {
+        font-size: 1rem;
+        line-height: 25px; } }
+
+@media (min-width: 1024px) {
+  .home-book {
+    margin-bottom: 100px; }
+    .home-book .book-logo-wrapper {
+      -ms-flex-order: 2;
+          order: 2;
+      max-width: 410px;
+      width: 30%; }
+    .home-book .book-logo {
+      max-width: 310px; }
+    .home-book .book-summary {
+      width: 65%; }
+      .home-book .book-summary div {
+        max-width: 820px; }
+      .home-book .book-summary .bix-book-title {
+        font-size: 1.8rem;
+        letter-spacing: 1.4px;
+        padding: 25px 0;
+        font-weight: 500; }
+      .home-book .book-summary p {
+        font-size: 1.1rem;
+        line-height: 28px; } }
 
 .home-author {
   margin-bottom: 0; }

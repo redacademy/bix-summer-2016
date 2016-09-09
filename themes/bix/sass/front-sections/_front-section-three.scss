@@ -10,3 +10,9 @@
      padding: 8px 46px;
   }
 }
+
+@media #{$tablet} {
+	.sample-story-front{
+		display: none;
+	}
+}

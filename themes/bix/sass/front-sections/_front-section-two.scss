@@ -30,7 +30,7 @@
     height: 0;
     border-style: solid;
     border-width: 0 40px 12px;
-    border-color: transparent transparent #fcfcfc transparent;
+    border-color: transparent transparent #fff transparent;
   }
   .quote-wrapper-text{
     text-align: center;
@@ -59,6 +59,7 @@
       background-color: rgba(112,179,203,.8);
       opacity: 0;
       transition: opacity .3s ease;
+      visibility: hidden;
       .btn{
          text-decoration: none;
          background-color: transparent;
@@ -136,6 +137,9 @@
 
 //hover overlay for images
 .quote-img,.quote-img-2{
+  .overlay{
+    visibility: visible;
+  }
   .overlay:hover{
     opacity: 1;
     .btn{
