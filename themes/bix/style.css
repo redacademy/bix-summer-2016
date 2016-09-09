@@ -774,6 +774,62 @@ object {
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
+strong {
+  font-weight: bold; }
+
+.orange-highlight {
+  color: #F9AC31; }
+
+.author-section {
+  min-width: 320px; }
+
+.author-section-title {
+  background: rgba(0, 0, 0, 0.35);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: "Titillium Web", sans-serif;
+  color: #444444; }
+  .author-section-title h2 {
+    font-size: 18px;
+    text-transform: uppercase; }
+
+.author-section-intro p {
+  font-family: "Titillium Web", sans-serif;
+  margin: 1rem 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center; }
+  .author-section-intro p span:first-child {
+    font-style: italic; }
+
+.author-section-content-wrapper div {
+  margin: 1rem 2rem; }
+  .author-section-content-wrapper div h3 {
+    font-family: "Titillium Web", sans-serif;
+    color: #F9AC31;
+    text-transform: uppercase;
+    font-weight: 300; }
+  .author-section-content-wrapper div p {
+    font-weight: 300;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .author-section-content-wrapper div p span {
+      margin-bottom: 1rem; }
+
 .home-banner {
   background: url(../../images/bix_book_homepage.png) no-repeat center top;
   background-size: cover;

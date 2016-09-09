@@ -1,3 +1,69 @@
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
+
+// author section
+
+	strong {
+		font-weight: bold;
+	}
+
+	.orange-highlight {
+		color: $color__orange;
+	}
+
+	.author-section {
+		min-width: 320px;
+	}
+
+	.author-section-title {
+		background: rgba(0,0,0,0.35);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: $font__header;
+		color: $color__gray;
+		h2 {
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+	}
+
+	.author-section-intro {
+		p {
+			font-family: $font__header;
+			margin: 1rem 2rem;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			span:first-child {
+				font-style: italic;
+			}
+		}
+	}
+
+	.author-section-content-wrapper {
+		div {
+			margin: 1rem 2rem;
+			h3 {
+				font-family: $font__header;
+				color: $color__orange;
+				text-transform: uppercase;
+				font-weight: 300;
+			}
+			p {
+				font-weight: 300;
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: center;
+				span{
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+
+// company section
+

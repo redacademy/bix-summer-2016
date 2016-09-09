@@ -15,10 +15,10 @@ get_header(); ?>
 
 			<div class="author-section">
 				<div class="author-section-title">
-					<h2>About Bix Bickson</h2>
+					<h2>About <span class="orange-highlight">Bix</span> Bickson</h2>
 				</div>
 				<div class="author-section-intro">
-					<img src="" alt="">
+					<img src="<?php echo get_template_directory_uri() . "/images/bix-bixson.png"?>" alt="">
 					<p>
 						<span>“ This book happened because my co-author, Anika Martins, said to me, “Have you written your book yet?” and I said to her “No, I need someone to say my book to.” She said, “Let’s go.” We began our conversations in coffee shops, Thai restaurants, Skype and by phone. With her generosity, she listened and formed conversations into these stories. I can’t thank her enough. “</span>
 						<span>-- Bix Bickson</span>
@@ -37,7 +37,7 @@ get_header(); ?>
 					<div>
 						<h3>The world has changed.</h3>
 						<p>
-							<span>The only resource not subject to diminishing returns is knowledge. It is the creation of knowledge that will provide an organization with continued success. Our ability to learn – learning to learn – is the most needed transformation in ourselves and in our organizations if we are going to successfully meet the challenges of the global marketplace.</span>
+							<span>The only resource not subject to diminishing returns is knowledge. It is the creation of knowledge that will provide an organization with continued success. Our ability to learn – <strong>learning to learn</strong> – is the most needed transformation in ourselves and in our organizations if we are going to successfully meet the challenges of the global marketplace.</span>
 						</p>
 					</div>
 					<div>
@@ -52,6 +52,12 @@ get_header(); ?>
 							<span>Currently Bix is channelling his energy into Bickson2, a company where he is continuing helping others achieve impactful transformations. There he is joined by another Bickson, his son Joe. Together they make a tandem that is creating change by helping organizations revitalize their DNA.</span>
 						</p>
 					</div>
+				</div>
+			</div>
+
+			<div class="company-section">
+				<div class="company-section-title">
+					<h3>About Bickson<sup>2</sup></h3>
 				</div>
 			</div>
 
