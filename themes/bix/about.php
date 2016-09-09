@@ -57,9 +57,42 @@ get_header(); ?>
 
 			<div class="company-section">
 				<div class="company-section-title">
-					<h3>About Bickson<sup>2</sup></h3>
+					<img src="<?php echo get_template_directory_uri() . "/images/about-bickson2.png"?>" alt="">
+					<h2>About <span class="orange-highlight">Bickson<sup>2</sup></span></h2>
 				</div>
+
+				<div class="company-section-content-wrapper">
+					<div>
+						<h3>We call ourselves Bickson<sup>2</sup></h3>
+						<p>
+							<span>We are not ‘consultants.’ We engage people, your people. What we engage you in is seeing past the fundamental patterns that limit your organization. Engaging people in this way produces profound and lasting change.</span>
+							<span>We are a team of baby boomer and millennial. We focus on creating new organizational DNA.</span>
+							<span>We combine over 30 years of consulting experience with the passion and perspective of a new generation. We bring a track record of tapping the collective creativity of groups, inspiring others toward action, and accelerating significant measurable change across large, complex projects.</span>
+						</p>
+					</div>
+					<div>
+						<h3>Our work includes:</h3>
+						<ul>
+							<li>Executive consultation / coaching</li>
+							<li>Organizational design and development</li>
+							<li>Transforming areas of under-performance into high-performance</li>
+							<li>Inventing competitive strategies</li>
+							<li>Designing and leading executive and management development initiatives</li>
+							<li>Engaging and aligning people throughout organizations</li>
+						</ul>
+					</div>
+				</div>
+				<div class="company-section-clients">
+					<h3>Clients inculde executives and their teams at:</h3>
+				</div>
+				<div class="company-section-website">
+					<h3>Visit our site and learn more.</h3>
+					<a href="" class="website-img-link"><img src="<?php echo get_template_directory_uri() . "/images/bickson2-logo-black.png"?>" alt=""></a>
+					<a href="" class="website-text-link">www.bickson2.com</a>
+				</div>
+
 			</div>
+			
 
 
 
