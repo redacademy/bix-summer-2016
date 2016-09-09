@@ -2,6 +2,24 @@
 # About Page
 --------------------------------------------------------------*/
 
+h3 {
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.about-page-container {
+	max-width: 1000px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.about-page-banner{
+	img {
+		max-width: none;
+	}
+}
+
 // author section
 
 	strong {
@@ -17,6 +35,10 @@
 	}
 
 	.author-section-title {
+		img {
+			display: none;
+			visibility: hidden;
+		}
 		background: rgba(0,0,0,0.35);
 		h2 {
 			margin: 0;
@@ -30,6 +52,12 @@
 	}
 
 	.author-section-intro {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		img {
+			max-width: 400px;
+		}
 		p {
 			font-family: $font__header;
 			margin: 1rem 2rem;
@@ -46,7 +74,7 @@
 
 	.author-section-content-wrapper {
 		div {
-			margin: 1rem 2rem;
+			margin: 0 2rem 1rem 2rem;
 			h3 {
 				font-family: $font__header;
 				color: $color__orange;
@@ -95,7 +123,7 @@
 
 	.company-section-content-wrapper {
 		div {
-			margin: 1rem 2rem;
+			margin: 0 2rem 1rem 2rem;
 			h3 {
 				font-family: $font__header;
 				color: $color__orange;
@@ -162,11 +190,51 @@
 			font-weight: 300;
 		}
 		.website-img-link {
+			max-width: 400px;
 			border: solid 1px $color__blue;
 		}
 		.website-text-link {
 			font-family: $font__header;
 			text-decoration: none;
 			color: $color__blue;
+		}
+	}
+
+// border: 1px solid rgba(0,0,0,0.3);
+
+// breakpoints
+
+	@media all and (min-width: 600px) {
+		.author-section, .company-section {
+			margin: 7rem 0;
+		}
+		.author-section-intro {
+		
+			img {
+				order: 2;
+			}
+			p {
+				order: 1;
+			}
+		}
+
+		.author-section-title {
+			position: relative;
+			background: url(../../images/about-bix-bickson.png);
+			background-size: cover;
+			img {
+				display: block;
+			}
+			h2 {
+				top: 70%;
+				width: 100%;
+				position: absolute;
+				background: rgba(255,255,255,0.8);
+			}
+		}
+		.border-wrapper {
+			padding: 0 4rem;
+			border: 1px solid rgba(0,0,0,0.3);
+			border-top: 0;
 		}
 	}

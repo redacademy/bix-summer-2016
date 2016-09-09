@@ -774,6 +774,22 @@ object {
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
+h3 {
+  margin: 0;
+  padding: 1rem 0; }
+
+.about-page-container {
+  max-width: 1000px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.about-page-banner img {
+  max-width: none; }
+
 strong {
   font-weight: bold; }
 
@@ -785,6 +801,9 @@ strong {
 
 .author-section-title {
   background: rgba(0, 0, 0, 0.35); }
+  .author-section-title img {
+    display: none;
+    visibility: hidden; }
   .author-section-title h2 {
     margin: 0;
     padding: 1rem;
@@ -794,23 +813,32 @@ strong {
     font-size: 18px;
     text-transform: uppercase; }
 
-.author-section-intro p {
-  font-family: "Titillium Web", sans-serif;
-  margin: 1rem 2rem;
+.author-section-intro {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
-  text-align: center; }
-  .author-section-intro p span:first-child {
-    font-style: italic; }
+      align-items: center; }
+  .author-section-intro img {
+    max-width: 400px; }
+  .author-section-intro p {
+    font-family: "Titillium Web", sans-serif;
+    margin: 1rem 2rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center; }
+    .author-section-intro p span:first-child {
+      font-style: italic; }
 
 .author-section-content-wrapper div {
-  margin: 1rem 2rem; }
+  margin: 0 2rem 1rem 2rem; }
   .author-section-content-wrapper div h3 {
     font-family: "Titillium Web", sans-serif;
     color: #F9AC31;
@@ -850,7 +878,7 @@ strong {
     text-transform: uppercase; }
 
 .company-section-content-wrapper div {
-  margin: 1rem 2rem; }
+  margin: 0 2rem 1rem 2rem; }
   .company-section-content-wrapper div h3 {
     font-family: "Titillium Web", sans-serif;
     color: #F9AC31;
@@ -914,11 +942,37 @@ strong {
     text-transform: uppercase;
     font-weight: 300; }
   .company-section-website .website-img-link {
+    max-width: 400px;
     border: solid 1px #70b3cb; }
   .company-section-website .website-text-link {
     font-family: "Titillium Web", sans-serif;
     text-decoration: none;
     color: #70b3cb; }
+
+@media all and (min-width: 600px) {
+  .author-section, .company-section {
+    margin: 7rem 0; }
+  .author-section-intro img {
+    -ms-flex-order: 2;
+        order: 2; }
+  .author-section-intro p {
+    -ms-flex-order: 1;
+        order: 1; }
+  .author-section-title {
+    position: relative;
+    background: url(../../images/about-bix-bickson.png);
+    background-size: cover; }
+    .author-section-title img {
+      display: block; }
+    .author-section-title h2 {
+      top: 70%;
+      width: 100%;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8); }
+  .border-wrapper {
+    padding: 0 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 0; } }
 
 .home-banner {
   background: url(../../images/bix_book_homepage.png) no-repeat center top;
