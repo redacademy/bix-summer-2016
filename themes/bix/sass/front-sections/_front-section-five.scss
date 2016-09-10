@@ -46,22 +46,22 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 60px;
+    width: 100%;
     .author-img-wrapper{
       flex-basis: 60%;
       max-height: 450px;
       display: flex;
-      justify-content: center;
       .author-img{
         height: 450px;
         max-width: none;
       }
     }
     .home-author-info{
-      flex-basis: 40%;
-      padding:0 40px;
+      flex-basis: 50%;
+      padding:0 10px;
       height: 450px;
       div{
-        max-width: 200px;
+        max-width: 300px;
         height: 100%;
       }
       .home-subheading{
@@ -91,8 +91,8 @@
       }
     }
     .home-author-info{
-      flex-basis: 60%;
-      padding:0 40px;
+      flex-basis: 55%;
+      padding:0px;
       margin-top: 0px;
       div{
         max-width: 100%;

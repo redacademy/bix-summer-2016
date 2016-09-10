@@ -48,6 +48,18 @@
     margin-bottom: 15px;
   }
 }
+
+//quotes 
+.quotes{
+  color:$color__orange;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.quotes-text-orange{
+    color: $color__orange;
+ }
+
 //hover lay for images
 .quote-img,.quote-img-2{
   .overlay{
@@ -157,20 +169,20 @@
     margin-bottom: 80px;
     margin-top: 80px;
     .quote-img{
-      height: 400px;
+      height: 380px;
     }
     .quote-img:after{
-      bottom:calc(400px/2 - 40px);
+      bottom:calc(380px/2 - 40px);
     }
 
   }
   .quote-wrapper-front-2{
     margin-bottom: 80px;
     .quote-img-2{
-      height: 400px;
+      height: 380px;
     }
     .quote-img-2:after{
-      bottom:calc(400px/2 - 40px);
+      bottom:calc(380px/2 - 40px);
     }
   }
 
@@ -202,14 +214,8 @@
   .quote-wrapper-front{
     margin-bottom: 100px;
     margin-top: 100px;
-    .quote-img{
-      height: 450px;
-    }
-    .quote-img:after{
-      bottom:calc(450px/2 - 40px);
-    }
     .quotes-text-top{
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
   }
   .quote-wrapper-front-2{
@@ -217,23 +223,35 @@
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
-    margin-bottom: 80px;
-    .quote-img-2{
-      height: 450px;
-    }
-    .quote-img-2:after{
-      bottom:calc(450px/2 - 40px);
-    }
+    margin-bottom: 100px;
   }
   .quote-wrapper-front,.quote-wrapper-front-2{
+    .quote-wrapper-text{
+      width: 45%;
+    }
     .quotes-text{
-      font-size: 1.5rem;
+      font-size: 1.7rem;
+      letter-spacing: 2px;
       line-height: 40px;
     } 
   }
+    //quotes 
+  .quotes{
+    font-size: 1.8rem;
+  }
 }
 
-
+@media #{$desktop-large}{
+  .quote-wrapper-front{
+    .quotes-text{
+      width: 500px;
+      max-width: none;
+    } 
+    .quote-wrapper-text{
+      width: 50%;
+    }
+  }
+}
 
 
 

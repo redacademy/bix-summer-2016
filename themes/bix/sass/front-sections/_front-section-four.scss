@@ -35,7 +35,7 @@
   h3{
     font-size: 1.3rem;
     line-height: 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 2px;
     margin-bottom: 0;
   }
@@ -136,7 +136,7 @@
       width: 30%;
     }
     .book-logo{
-      max-width: 280px;
+      max-width: 260px;
     }
     .book-summary{
       width: 70%;
@@ -163,10 +163,10 @@
       padding:0;
     }
     .book-logo{
-      max-width: 360px;
+      max-width: 300px;
     }
     .book-summary{
-      width: 60%;
+      width: 65%;
       div{
         max-width: 820px;
       }

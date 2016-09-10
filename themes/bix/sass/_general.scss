@@ -12,21 +12,10 @@
 .site-main{
 	width: 100%;
 }
-
-//quotes 
-.quotes{
-  color:$color__orange;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.quotes-text-orange{
-    color: $color__orange;
- }
  
 @media #{$tablet} {
  .container{
- 	max-width: 1280px;
+ 	max-width: 1024px;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
