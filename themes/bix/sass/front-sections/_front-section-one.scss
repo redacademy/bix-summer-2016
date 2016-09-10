@@ -23,11 +23,11 @@
   justify-content: center;
   align-items: center;
     .site-logo{
-    max-width: 250px;
-    height: auto;
-    margin-bottom:0;
-    margin-top: 40px;
-  }
+      max-width: 250px;
+      height: auto;
+      margin-bottom:-10px;
+      margin-top: 40px;
+    }
   .bix-book-title{
     text-transform: uppercase;
     font-weight: bold;
@@ -35,7 +35,7 @@
     letter-spacing: 1px;
     font-size: 1.8rem;
     color: #fff;
-    margin-bottom:0;
+    margin-bottom:15px;
   }
   .bix-book-subheading{
     font-weight: 100;
@@ -43,12 +43,13 @@
     border-top: solid #fff 2px;
     border-bottom: solid #fff 2px;
     color: #fff;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
   .btn-download{
    @include btn;
     padding: 8px 46px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    font-weight: 300;
   }
 
   .btn-down{
@@ -59,3 +60,23 @@
     }
   }
 }
+
+@media #{$desktop} {
+  .banner-info-wrapper{
+    .site-logo{
+    max-width: 310px;
+  }
+    .bix-book-title{
+      letter-spacing: 1.3px;
+      font-size: 2.3rem;
+    }
+    .bix-book-subheading{
+      font-size: 1.3rem;
+      letter-spacing: 1.5px;
+      padding: 5px 5px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+

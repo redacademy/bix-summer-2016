@@ -1022,7 +1022,7 @@ strong {
   .banner-info-wrapper .site-logo {
     max-width: 250px;
     height: auto;
-    margin-bottom: 0;
+    margin-bottom: -10px;
     margin-top: 40px; }
   .banner-info-wrapper .bix-book-title {
     text-transform: uppercase;
@@ -1031,14 +1031,14 @@ strong {
     letter-spacing: 1px;
     font-size: 1.8rem;
     color: #fff;
-    margin-bottom: 0; }
+    margin-bottom: 15px; }
   .banner-info-wrapper .bix-book-subheading {
     font-weight: 100;
     padding: 5px 20px;
     border-top: solid #fff 2px;
     border-bottom: solid #fff 2px;
     color: #fff;
-    margin-bottom: 70px; }
+    margin-bottom: 60px; }
   .banner-info-wrapper .btn-download {
     color: #fff;
     text-decoration: none;
@@ -1048,7 +1048,8 @@ strong {
     font-weight: bold;
     font-size: 1.1rem;
     padding: 8px 46px;
-    margin-bottom: 30px; }
+    margin-bottom: 25px;
+    font-weight: 300; }
   .banner-info-wrapper .btn-down {
     border: solid #fff 2px;
     border-radius: 50%;
@@ -1066,6 +1067,19 @@ strong {
     margin-bottom: 10px; }
     .banner-info-wrapper .btn-down .fa {
       font-size: 30px; }
+
+@media (min-width: 1024px) {
+  .banner-info-wrapper .site-logo {
+    max-width: 310px; }
+  .banner-info-wrapper .bix-book-title {
+    letter-spacing: 1.3px;
+    font-size: 2.3rem; }
+  .banner-info-wrapper .bix-book-subheading {
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    padding: 5px 5px;
+    width: 100%;
+    text-align: center; } }
 
 .quote-wrapper-front, .quote-wrapper-front-2 {
   height: auto; }
