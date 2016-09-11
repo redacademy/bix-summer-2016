@@ -33,5 +33,13 @@ $(document).ready(function(){
 	});
 
 
+//Flickity Carousel
+	$('.main-carousel').flickity({
+	  // options
+	  cellAlign: 'left',
+	  contain: true
+	});
+
+
 });
 }(jQuery));

@@ -7,7 +7,6 @@
 		display: none;
 	}	
 }
-
 .the-bix-book-title{
   width: 100%;
   color:$color__orange;
@@ -48,25 +47,53 @@
   	}
 	}
 }
-.book-section2{
-  background: 
-  linear-gradient(
+
+.main-carousel{
+  .carousel-cell{
+    width: 100%; /* full width */
+    height: auto; /* height of carousel */
+    margin-right: 10px;
+  }
+  .bix-carousel-img-1{
+    background: 
+      linear-gradient(
       rgba(255, 255, 255, 0.45), 
       rgba(255, 255, 255, 0.45)
     ), 
-    url(../../images/bix-book-sky.png) no-repeat 20% top;
+    url(../../images/bix-book-1.png) no-repeat 20% top;
+  }
+  .bix-carousel-img-2{
+    background: 
+      linear-gradient(
+      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45)
+    ), 
+    url(../../images/bix-book-2.png) no-repeat 20% top;
+  }
+  .bix-carousel-img-3{
+    background: 
+      linear-gradient(
+      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45)
+    ), 
+    url(../../images/bix-book-3.png) no-repeat 20% top;
+  }
+  .bix-carousel-img{
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 150px 0;
-
-  .book-section2-inside{
-    padding: 5px 5px;
+    height: 500px;
+  } 
+  .bix-carousel-info{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top: 125px;
+    padding: 0px 45px;
     background-color:rgba(230,230,230,.7);
     width: 100%;
-     text-align: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
      ul{
       padding:0;
      }
@@ -74,7 +101,44 @@
       font-weight: 300;
       list-style-type: none;
     }
+    p{
+      font-weight: 300;
+    }
+  }
+  //Flickity Style
+  .flickity-page-dots{
+    bottom:10px;
+  }  
+  .flickity-page-dots .dot{
+    background: $color__blue;
+    width: 20px;
+    height: 20px;
+  }
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+  }
+  .flickity-prev-next-button:hover {
+    background: transparent;
+  }
+  /* arrow color */
+  .flickity-prev-next-button .arrow {
+    fill: $color__blue;
+  }
+  .flickity-prev-next-button.no-svg {
+    color: $color__blue;
+  }
+  /* hide disabled button */
+  .flickity-prev-next-button:disabled {
+    display: none;
   }
 }
+
+
+
+
+
+
 
 

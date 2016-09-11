@@ -280,6 +280,123 @@ mark, ins {
 big {
   font-size: 125%; }
 
+/*! Flickity v2.0.3
+http://flickity.metafizzy.co
+---------------------------------------------- */
+.flickity-enabled {
+  position: relative; }
+
+.flickity-enabled:focus {
+  outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/* draggable */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
+
+/* ---- previous/next buttons ---- */
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  /* vertically center */
+  transform: translateY(-50%); }
+
+.flickity-prev-next-button:hover {
+  background: white; }
+
+.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #09F; }
+
+.flickity-prev-next-button:active {
+  opacity: 0.6; }
+
+.flickity-prev-next-button.previous {
+  left: 10px; }
+
+.flickity-prev-next-button.next {
+  right: 10px; }
+
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px; }
+
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px; }
+
+.flickity-prev-next-button:disabled {
+  opacity: 0.3;
+  cursor: auto; }
+
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%; }
+
+.flickity-prev-next-button .arrow {
+  fill: #333; }
+
+/* ---- page dots ---- */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1; }
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer; }
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -1645,28 +1762,64 @@ strong {
     .book-section1 .book-section1-inside p {
       font-weight: 300; }
 
-.book-section2 {
-  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-sky.png) no-repeat 20% top;
-  background-size: cover;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 150px 0; }
-  .book-section2 .book-section2-inside {
-    padding: 5px 5px;
+.main-carousel {
+  /* arrow color */
+  /* hide disabled button */ }
+  .main-carousel .carousel-cell {
+    width: 100%;
+    /* full width */
+    height: auto;
+    /* height of carousel */
+    margin-right: 10px; }
+  .main-carousel .bix-carousel-img-1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-1.png) no-repeat 20% top; }
+  .main-carousel .bix-carousel-img-2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-2.png) no-repeat 20% top; }
+  .main-carousel .bix-carousel-img-3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-3.png) no-repeat 20% top; }
+  .main-carousel .bix-carousel-img {
+    background-size: cover;
+    height: 500px; }
+  .main-carousel .bix-carousel-info {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top: 125px;
+    padding: 0px 45px;
     background-color: rgba(230, 230, 230, 0.7);
     width: 100%;
-    text-align: center; }
-    .book-section2 .book-section2-inside ul {
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .main-carousel .bix-carousel-info ul {
       padding: 0; }
-    .book-section2 .book-section2-inside li {
+    .main-carousel .bix-carousel-info li {
       font-weight: 300;
       list-style-type: none; }
+    .main-carousel .bix-carousel-info p {
+      font-weight: 300; }
+  .main-carousel .flickity-page-dots {
+    bottom: 10px; }
+  .main-carousel .flickity-page-dots .dot {
+    background: #70b3cb;
+    width: 20px;
+    height: 20px; }
+  .main-carousel .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    background: transparent; }
+  .main-carousel .flickity-prev-next-button:hover {
+    background: transparent; }
+  .main-carousel .flickity-prev-next-button .arrow {
+    fill: #70b3cb; }
+  .main-carousel .flickity-prev-next-button.no-svg {
+    color: #70b3cb; }
+  .main-carousel .flickity-prev-next-button:disabled {
+    display: none; }
 
 .footer-content-area {
   background-color: #444444;
