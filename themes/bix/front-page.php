@@ -19,11 +19,11 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 			<div class="banner-info-wrapper">
-			<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
-			<h2 class="bix-book-title">The Bix Book</h2>
-			<h3 class="bix-book-subheading">Transformational Stories</h3>
-			<a class="btn btn-download" href="#">Download Book</a>
-			<a class="btn btn-down" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
+					<h2 class="bix-book-title">The Bix Book</h2>
+					<h3 class="bix-book-subheading">Transformational Stories</h3>
+					<a class="btn btn-download" href="#">Download Book</a>
+					<a class="btn btn-down" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i> </a>
 			</div>
 		</section>
 
