@@ -42,8 +42,10 @@
 	.book-section1-inside{
 		padding: 5px 20px;
 		background-color:rgba(230,230,230,.7);
+    display: block;
+    max-width: 100%;
   	p{
-  		font-weight: 300;
+  		font-weight: 300;  
   	}
 	}
 }
@@ -94,9 +96,9 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-     ul{
+    ul{
       padding:0;
-     }
+    }
     li{
       font-weight: 300;
       list-style-type: none;

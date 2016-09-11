@@ -1475,7 +1475,8 @@ strong {
       font-size: .6rem;
       letter-spacing: .2px; }
   .home-book .book-summary {
-    padding: 20px 40px; }
+    padding: 20px 40px;
+    max-width: 100%; }
     .home-book .book-summary div {
       max-width: 500px;
       display: -ms-flexbox;
@@ -1500,7 +1501,9 @@ strong {
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       line-height: 25px;
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      display: block;
+      max-width: 100%; }
     .home-book .book-summary .btn-discover {
       color: #fff;
       text-decoration: none;
@@ -1543,7 +1546,7 @@ strong {
       max-width: 200px;
       margin-top: 0; }
     .home-book .book-summary {
-      width: 50%;
+      max-width: 50%;
       padding: 0px 10px;
       -ms-flex-order: 1;
           order: 1;
@@ -1556,11 +1559,14 @@ strong {
       -ms-flex-align: center;
           align-items: center; }
       .home-book .book-summary div {
-        max-width: 800px;
+        max-width: 300px;
+        height: auto;
         padding: 0; }
       .home-book .book-summary p {
         font-size: .8rem;
-        line-height: 20px; } }
+        line-height: 20px;
+        display: block;
+        max-width: 100%; } }
 
 @media (min-width: 900px) {
   .home-book {
@@ -1572,9 +1578,9 @@ strong {
     .home-book .book-logo {
       max-width: 260px; }
     .home-book .book-summary {
-      width: 70%; }
+      max-width: 70%; }
       .home-book .book-summary div {
-        max-width: 800px;
+        max-width: 500px;
         padding: 0 0px; }
       .home-book .book-summary p {
         font-size: 1rem;
@@ -1593,9 +1599,9 @@ strong {
     .home-book .book-logo {
       max-width: 300px; }
     .home-book .book-summary {
-      width: 65%; }
+      max-width: 65%; }
       .home-book .book-summary div {
-        max-width: 820px; }
+        max-width: 700px; }
       .home-book .book-summary .bix-book-title {
         font-size: 1.8rem;
         letter-spacing: 1.4px;
@@ -1638,7 +1644,8 @@ strong {
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       line-height: 25px;
-      max-width: 450px; }
+      display: block;
+      max-width: 100%; }
     .home-author .home-author-info .btn-explore {
       color: #fff;
       text-decoration: none;
@@ -1710,8 +1717,7 @@ strong {
         font-weight: 500; }
       .home-author .home-author-info p {
         font-size: 1.1rem;
-        line-height: 28px;
-        max-width: none; } }
+        line-height: 28px; } }
 
 .bix-book-banner {
   display: -ms-flexbox;
@@ -1758,7 +1764,9 @@ strong {
   padding: 100px 0; }
   .book-section1 .book-section1-inside {
     padding: 5px 20px;
-    background-color: rgba(230, 230, 230, 0.7); }
+    background-color: rgba(230, 230, 230, 0.7);
+    display: block;
+    max-width: 100%; }
     .book-section1 .book-section1-inside p {
       font-weight: 300; }
 

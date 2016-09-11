@@ -31,7 +31,9 @@
       font-family: $font__main;
       font-size: 1rem;
       line-height: 25px;
-      max-width: 450px;
+      //max-width: 450px;
+      display: block;
+      max-width: 100%;
     }
     .btn-explore{
       @include btn;
@@ -105,7 +107,7 @@
       p{
         font-size:1.1rem;
         line-height: 28px;
-        max-width: none;
+        //max-width: none;
       }
     }
   }

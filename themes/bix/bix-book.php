@@ -66,15 +66,37 @@ get_header(); ?>
   				<div class="bix-carousel-info bix-carousel-info-3">
 						<p>
 						Create impactful change with the powerful messages available in this book. Get the edge you need to empower your aspirations and make changing circumstances work for the ever changing organism that you are. 
-
 					</p>
 					</div>
   			</div>
 			</div>
-			<div class="book-title-wrapper">
-				<h2 class="the-bix-book-title">Paying for the Bix Book</h2>
-			</div>
+			
+			<section class="book-purchase">
+				<div class="book-title-wrapper">
+					<h2 class="the-bix-book-title">Paying for the Bix Book</h2>
+				</div>
 
+				<div class="book-purchase-info">
+					<p>
+						The Bix Book runs on a “Pay-What-Feels-Right” business model.
+					</p>
+					<p>
+						You might ask: Why?
+					</p>
+					<p>
+						It personalizes the experience of this book to the value you received from it.
+					</p>
+					<p>
+						Sometimes people buy a book and it ends up not meaning much to them, but on the other hand, a different book might end up being so deeply meaningful that it impacts the reader in a transformative way. 
+
+						The idea is: I cannot know what the book is worth to you as an individual, so I’m not sure having a fixed price will make sense.
+
+						Creating a fixed price is unfair because it’s too transaction-focused. It doesn’t honour the exchange that happens between the relationship of you and I as reader and author.
+
+						This “Pay-What-Feels-Right” model invites us to be more conscious with buying and to reflect on the value we bring to one another, even at a distance through a book.
+					</p>
+				</div>
+			</section>
 
 		</div>
 
