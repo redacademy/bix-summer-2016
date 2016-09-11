@@ -5,40 +5,76 @@
 	align-items: center;
 	.site-logo{
 		display: none;
-	}
-	.bix-book-title{
-		width: 100%;
-    color:$color__orange;
-    border-bottom: solid 2px $color__orange;
-    border-top: solid 2px $color__orange;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    padding:3px 0;
-    width: 200px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-	}
+	}	
+}
+
+.the-bix-book-title{
+  width: 100%;
+  color:$color__orange;
+  border-bottom: solid 2px $color__orange;
+  border-top: solid 2px $color__orange;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding:3px 0;
+  width: 230px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.book-title-wrapper{
+  display: flex;
+  justify-content: center;
 }
 
 .book-section1{
-	background: linear-gradient(
+	background: 
+  linear-gradient(
       rgba(255, 255, 255, 0.45), 
       rgba(255, 255, 255, 0.45)
-    ), url(../../images/bix-book-banner.png) no-repeat 20% top;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 0;
+    ), 
+    url(../../images/bix-book-banner.png) no-repeat 20% top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
 
 	.book-section1-inside{
 		padding: 5px 20px;
 		background-color:rgba(230,230,230,.7);
-	p{
-		font-weight: 300;
-	}
-
+  	p{
+  		font-weight: 300;
+  	}
 	}
 }
+.book-section2{
+  background: 
+  linear-gradient(
+      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45)
+    ), 
+    url(../../images/bix-book-sky.png) no-repeat 20% top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+
+  .book-section2-inside{
+    padding: 5px 5px;
+    background-color:rgba(230,230,230,.7);
+    width: 100%;
+     text-align: center;
+     ul{
+      padding:0;
+     }
+    li{
+      font-weight: 300;
+      list-style-type: none;
+    }
+  }
+}
+
+

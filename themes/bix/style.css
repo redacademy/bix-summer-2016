@@ -1607,18 +1607,25 @@ strong {
       align-items: center; }
   .bix-book-banner .site-logo {
     display: none; }
-  .bix-book-banner .bix-book-title {
-    width: 100%;
-    color: #F9AC31;
-    border-bottom: solid 2px #F9AC31;
-    border-top: solid 2px #F9AC31;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    padding: 3px 0;
-    width: 200px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500; }
+
+.the-bix-book-title {
+  width: 100%;
+  color: #F9AC31;
+  border-bottom: solid 2px #F9AC31;
+  border-top: solid 2px #F9AC31;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 3px 0;
+  width: 230px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.book-title-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .book-section1 {
   background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-banner.png) no-repeat 20% top;
@@ -1637,6 +1644,29 @@ strong {
     background-color: rgba(230, 230, 230, 0.7); }
     .book-section1 .book-section1-inside p {
       font-weight: 300; }
+
+.book-section2 {
+  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-sky.png) no-repeat 20% top;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 150px 0; }
+  .book-section2 .book-section2-inside {
+    padding: 5px 5px;
+    background-color: rgba(230, 230, 230, 0.7);
+    width: 100%;
+    text-align: center; }
+    .book-section2 .book-section2-inside ul {
+      padding: 0; }
+    .book-section2 .book-section2-inside li {
+      font-weight: 300;
+      list-style-type: none; }
 
 .footer-content-area {
   background-color: #444444;

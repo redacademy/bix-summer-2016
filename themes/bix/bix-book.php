@@ -16,7 +16,7 @@ get_header(); ?>
 		<section class="bix-book-banner">
 			<div class="bix-book-header">
 				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
-				<h2 class="bix-book-title">The Bix Book</h2>
+				<h2 class="the-bix-book-title">The Bix Book</h2>
 			</div>		
 		</section>
 
@@ -31,6 +31,21 @@ get_header(); ?>
 					</p>
 				</div>
 			</section>
+			<div class="book-title-wrapper">
+				<h2 class="the-bix-book-title">Whats in the bix book</h2>
+			</div>
+			<section class="book-section2">
+				<div class="book-section2-inside">
+					<ul>
+						<li>38 quality stories</li>
+						<li>Interactive workbook section for every chapter</li>  
+						<li>Backed by 30 years of real world experience </li>
+						<li>Transformational content</li> 
+						<li>Empower yourself to change</li>
+					</ul>
+				</div>
+			</section>
+			
 		</div>
 
 		</main><!-- #main -->
