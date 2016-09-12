@@ -20,8 +20,12 @@ get_header(); ?>
 			</div>		
 		</section>
 
-		<div>
+		<div class="container">
+			<div>
 			<section class="book-section1">
+			<img class="ribbon" src="<?php echo(get_template_directory_uri());?>/images/yellow-ribbon.svg" alt="yellow ribbon"/>
+			<h2 class="ribbon-heading">The Bix Book</h2>
+
 				<div class="book-section1-inside">
 					<p>
 						This is a book of stories that I have experienced through my 30 years of consulting with corporations, institutions, non-profit organizations and individuals. 
@@ -108,7 +112,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
-
+			</div>
 		</div>
 
 		</main><!-- #main -->

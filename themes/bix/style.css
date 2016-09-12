@@ -1779,13 +1779,17 @@ strong {
   -ms-flex-align: center;
       align-items: center;
   padding: 100px 0; }
-  .book-section1 .book-section1-inside {
-    padding: 5px 20px;
-    background-color: rgba(230, 230, 230, 0.7);
-    display: block;
-    max-width: 100%; }
-    .book-section1 .book-section1-inside p {
-      font-weight: 300; }
+
+.book-section1-inside {
+  padding: 5px 20px;
+  background-color: rgba(230, 230, 230, 0.7);
+  display: block;
+  max-width: 100%; }
+  .book-section1-inside p {
+    font-weight: 300; }
+
+.ribbon, .ribbon-heading {
+  display: none; }
 
 .main-carousel {
   /* arrow color */
@@ -1825,6 +1829,17 @@ strong {
     .main-carousel .bix-carousel-info li {
       font-weight: 300;
       list-style-type: none; }
+    .main-carousel .bix-carousel-info li:before {
+      content: "";
+      border-color: transparent #F9AC31;
+      border-style: solid;
+      border-width: 0.35em 0 0.35em 0.45em;
+      display: block;
+      height: 0;
+      width: 0;
+      left: -1em;
+      top: 1.1em;
+      position: relative; }
     .main-carousel .bix-carousel-info p {
       font-weight: 300; }
   .main-carousel .flickity-page-dots {
@@ -1864,7 +1879,8 @@ strong {
     .book-purchase .book-purchase-info p {
       font-weight: 300;
       display: block;
-      max-width: 100%; }
+      max-width: 100%;
+      text-align: center; }
     .book-purchase .book-purchase-info .book-buy {
       font-weight: 700; }
     .book-purchase .book-purchase-info .book-buy-light {
@@ -1905,6 +1921,53 @@ strong {
       display: block;
       text-align: center;
       width: 230px; }
+
+@media (min-width: 600px) {
+  .bix-book-banner {
+    background: url(../../images/bix-book-banner.png) no-repeat center left;
+    background-size: cover;
+    height: 70vh;
+    overflow: hidden;
+    position: relative; }
+    .bix-book-banner .site-logo {
+      display: unset;
+      max-width: 250px; }
+    .bix-book-banner .the-bix-book-title {
+      color: #fff;
+      border-bottom: solid 2px #fff;
+      border-top: solid 2px #fff;
+      font-size: 1.5rem;
+      padding: 10px 0;
+      width: 250px;
+      text-transform: capitalize;
+      font-weight: 500; }
+  .book-section1 {
+    background: none;
+    padding: 0px 0; }
+  .book-section1-inside {
+    background-color: #fff; } }
+
+@media (min-width: 900px) {
+  .book-section1 {
+    border: solid 1px #444444;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-top: 50px;
+    position: relative; }
+    .book-section1 .ribbon {
+      display: unset;
+      position: absolute;
+      top: 35px;
+      left: -45px; }
+    .book-section1 .ribbon-heading {
+      display: unset;
+      position: absolute;
+      top: 23px;
+      left: 23px;
+      font-weight: 500;
+      font-size: 1.5rem;
+      text-transform: uppercase; } }
 
 .footer-content-area {
   background-color: #444444;
