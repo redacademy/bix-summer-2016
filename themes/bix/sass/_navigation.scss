@@ -242,7 +242,7 @@
 
 .desktop-nav-wrapper {
 	display: none;
-	height: 76px;
+	height: 60px;
 
 	.desktop-nav-container {
 		display: flex;
@@ -275,8 +275,8 @@
 		align-items: center;
 		justify-content: center;
 		img {
-			height: 40px;
-			margin: 13px 0;
+			height: 30px;
+			margin: 10px 0;
 		}
 		&:hover {
 			transition: 1s;
@@ -315,7 +315,7 @@
 				border-top: solid 10px rgba(0,0,0,0);
 				text-align: center;
 				margin: 0;
-				padding: 17.5px 0;
+				padding: 9.5px 0;
 				&.current-menu-item {
 					border-top: solid 10px $color__orange;
 				}

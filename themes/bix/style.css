@@ -599,7 +599,7 @@ textarea {
 
 .desktop-nav-wrapper {
   display: none;
-  height: 76px; }
+  height: 60px; }
   .desktop-nav-wrapper .desktop-nav-container {
     display: -ms-flexbox;
     display: flex;
@@ -635,8 +635,8 @@ textarea {
     -ms-flex-pack: center;
         justify-content: center; }
     .desktop-nav-wrapper .logo-link img {
-      height: 40px;
-      margin: 13px 0; }
+      height: 30px;
+      margin: 10px 0; }
     .desktop-nav-wrapper .logo-link:hover {
       transition: 1s;
       border-color: #F9AC31;
@@ -668,7 +668,7 @@ textarea {
         border-top: solid 10px transparent;
         text-align: center;
         margin: 0;
-        padding: 17.5px 0; }
+        padding: 9.5px 0; }
         .desktop-nav-wrapper .menu-main-menu-container ul li.current-menu-item {
           border-top: solid 10px #F9AC31; }
         .desktop-nav-wrapper .menu-main-menu-container ul li a {
@@ -1891,7 +1891,7 @@ strong {
 
 .footer-content-area {
   background-color: #444444;
-  max-width: 1240px;
+  max-width: 100%;
   text-align: center;
   overflow: hidden; }
 
