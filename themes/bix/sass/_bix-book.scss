@@ -279,6 +279,24 @@
     height: auto;
     margin: 0 auto;
     border: solid 1px $color__gray;
+    position: relative;
+    .ribbon{
+      display: unset;
+      position: absolute;
+      top: 35px;
+      left: -45px;
+      z-index: 1;
+    }
+    .ribbon-heading{
+      display: unset;
+      position: absolute;
+      top: 23px;
+      left: 23px;
+      font-weight: 500;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      z-index: 2;
+    }
   }
   .main-carousel{
     .carousel-cell{

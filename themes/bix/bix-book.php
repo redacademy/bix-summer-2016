@@ -44,7 +44,7 @@ get_header(); ?>
 
 			<section class="book-section2">
 				<img class="ribbon" src="<?php echo(get_template_directory_uri());?>/images/yellow-ribbon.svg" alt="yellow ribbon"/>
-				<h2 class="ribbon-heading">The Bix Book</h2>
+				<h2 class="ribbon-heading">Features</h2>
 				<div class="main-carousel">
 				<!--flickity Carousel-->
 	  			<div class="carousel-cell bix-carousel-1">
