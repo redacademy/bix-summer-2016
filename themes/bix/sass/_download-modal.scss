@@ -1,0 +1,24 @@
+.modal-container {
+position:fixed;
+background-color: #fff;
+border: 1px solid black;
+width: 70%;
+max-width: 400px;
+left: 50%;
+padding: 20px;
+border-radius: 5px;
+-webkit-transform: translate(-50%, -200%);
+-ms-transform: translate(-50%, -200%);
+transform: translate(-50%, -200%);
+}
+
+.modal:before {
+  content: "";
+  position: fixed;
+  display: none;
+  background: rgba(0,0,0,0.8);
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+}
