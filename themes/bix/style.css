@@ -1952,9 +1952,23 @@ strong {
       font-weight: 500; }
   .book-section1 {
     background: none;
-    padding: 0px 0; }
+    padding: 0px 0;
+    max-width: 80vw;
+    margin: 0 auto; }
   .book-section1-inside {
-    background-color: #fff; } }
+    background-color: #fff;
+    display: block;
+    width: 100%; }
+  .bix-carousel-info p {
+    max-width: 500px; }
+  .main-carousel .bix-carousel-img-1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-1.png) no-repeat 20% top; }
+  .main-carousel .bix-carousel-img-2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-2.png) no-repeat 20% top; }
+  .main-carousel .bix-carousel-img-3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-3.png) no-repeat 20% top; }
+  .book-purchase {
+    max-width: 80vw; } }
 
 @media (min-width: 900px) {
   .book-section1 {
@@ -1982,7 +1996,8 @@ strong {
     height: auto;
     margin: 0 auto;
     border: solid 1px #444444;
-    position: relative; }
+    position: relative;
+    margin-top: 50px; }
     .book-section2 .ribbon {
       display: unset;
       position: absolute;
@@ -1998,6 +2013,8 @@ strong {
       font-size: 1.5rem;
       text-transform: uppercase;
       z-index: 2; }
+  .book-title-wrapper-2 {
+    display: none; }
   .main-carousel .carousel-cell {
     width: 100%;
     /* full width */
@@ -2026,7 +2043,15 @@ strong {
     width: 25px;
     height: 25px; }
   .main-carousel .flickity-prev-next-button {
-    display: none; } }
+    display: none; }
+  .book-section3 {
+    max-width: 100vw; }
+  .book-purchase {
+    border: solid 1px #444444;
+    width: 80%;
+    margin: 50px auto;
+    padding-top: 50px;
+    position: relative; } }
 
 .footer-content-area {
   background-color: #444444;

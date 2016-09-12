@@ -35,7 +35,7 @@ get_header(); ?>
 					</p>
 				</div>
 			</section>
-			<div class="book-title-wrapper">
+			<div class="book-title-wrapper book-title-wrapper-2">
 				<h2 class="the-bix-book-title">Whats in the bix book</h2>
 			</div>
 			
@@ -79,8 +79,9 @@ get_header(); ?>
 	  			</div>
 				</div>
 			</section>
+			
 
-			<section class="book-purchase">
+			<section class="book-section3 book-purchase">
 				<div class="book-title-wrapper">
 					<h2 class="the-bix-book-title">Paying for the Bix Book</h2>
 				</div>
