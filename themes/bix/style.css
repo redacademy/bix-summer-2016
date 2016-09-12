@@ -1162,7 +1162,7 @@ strong {
     border: solid #fff 2px;
     border-radius: 30px;
     background-color: #70b3cb;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1.1rem;
     padding: 8px 46px;
     margin-bottom: 25px;
@@ -1420,7 +1420,7 @@ strong {
     border: solid #fff 2px;
     border-radius: 30px;
     background-color: #70b3cb;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1.1rem;
     padding: 8px 46px; }
 
@@ -1510,7 +1510,7 @@ strong {
       border: solid #fff 2px;
       border-radius: 30px;
       background-color: #70b3cb;
-      font-weight: bold;
+      font-weight: 500;
       font-size: 1.1rem;
       padding: 10px 80px;
       margin-top: 20px; }
@@ -1652,7 +1652,7 @@ strong {
       border: solid #fff 2px;
       border-radius: 30px;
       background-color: #70b3cb;
-      font-weight: bold;
+      font-weight: 500;
       font-size: 1.1rem;
       padding: 10px 80px; }
 
@@ -1829,6 +1829,66 @@ strong {
   .main-carousel .flickity-prev-next-button:disabled {
     display: none; }
 
+.book-purchase {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 25px 0;
+  margin-top: 0; }
+  .book-purchase .book-purchase-info {
+    padding: 5px 20px;
+    display: block;
+    max-width: 100%; }
+    .book-purchase .book-purchase-info p {
+      font-weight: 300;
+      display: block;
+      max-width: 100%; }
+    .book-purchase .book-purchase-info .book-buy {
+      font-weight: 700; }
+    .book-purchase .book-purchase-info .book-buy-light {
+      font-weight: 300;
+      font-size: .8rem;
+      text-align: center;
+      letter-spacing: 1.5px; }
+      .book-purchase .book-purchase-info .book-buy-light span {
+        color: #70b3cb; }
+    .book-purchase .book-purchase-info .fa-cc-paypal {
+      color: #253b80;
+      font-size: 2.5rem;
+      top: 20px;
+      vertical-align: text-middle;
+      position: relative;
+      top: 10px; }
+    .book-purchase .book-purchase-info .donate-now {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .book-purchase .book-purchase-info .donate-now .book-buy-light {
+        margin-bottom: 0;
+        letter-spacing: 1px; }
+    .book-purchase .book-purchase-info .btn-donate {
+      color: #fff;
+      text-decoration: none;
+      border: solid #fff 2px;
+      border-radius: 30px;
+      background-color: #70b3cb;
+      font-weight: 500;
+      font-size: 1.1rem;
+      padding: 10px 30px;
+      display: block;
+      text-align: center;
+      width: 230px; }
+
 .footer-content-area {
   background-color: #444444;
   max-width: 1240px;
@@ -1868,7 +1928,7 @@ strong {
   border: solid #fff 2px;
   border-radius: 30px;
   background-color: #70b3cb;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.1rem;
   font-size: 12px;
   width: 30%;

@@ -95,6 +95,17 @@ get_header(); ?>
 
 						This “Pay-What-Feels-Right” model invites us to be more conscious with buying and to reflect on the value we bring to one another, even at a distance through a book.
 					</p>
+					<p class="book-buy">So, the decision is in your hands to give back what The Bix Book is worth to you:
+					</p>
+					<p class="book-buy-light">Customize your contribution amount in  <i class="fa fa-cc-paypal"></i>
+					</p>
+
+					<div class="donate-now">
+						<a class="btn btn-donate" href="#">Donate Now</a>
+						<p class="book-buy-light">Download <span>The Bix Book</span> first
+					</p>
+						<a class="btn btn-donate" href="#">Donate Later</a>
+					</div>
 				</div>
 			</section>
 
