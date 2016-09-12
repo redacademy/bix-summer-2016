@@ -143,12 +143,16 @@
 		position: relative;
 		align-items: center;
 		justify-content: space-between;
-		border-bottom: solid 1px rgba(0,0,0,0.5);
+		border-bottom: solid 1px rgba(0,0,0,0.2);
 		position: fixed;
 		width: 100vw;
 		max-width: 100%;
 		z-index: 1;
-		background: white;
+		background: rgba(255,255,255,1);
+	}
+
+	.main-navigation-scroll {
+		background: rgba(255,255,255,1);
 	}
 
 	.logo-link {
@@ -238,6 +242,26 @@
 		border-color: $color__orange;
 	}
 
+	.transparent-background {
+		transition: 1s;
+		background: rgba(255,255,255,0.9);
+	}
+
+}
+
+.mobile-nav-wrapper-home {
+	height: 0;
+	.main-navigation {
+		background: none;
+		border: none;
+		justify-content: flex-end;
+	}
+	.logo-link {
+		display: none;
+	}
+	i.fa-bars {
+		color: white;
+	}
 }
 
 .desktop-nav-wrapper {
