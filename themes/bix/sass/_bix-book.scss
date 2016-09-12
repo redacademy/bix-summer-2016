@@ -53,6 +53,7 @@
   display: none;
 }
 
+//Carousel styling
 .main-carousel{
   .carousel-cell{
     width: 100%; /* full width */
@@ -272,8 +273,67 @@
       text-transform: uppercase;
     }
   }
-
-
+  //Carousel styling
+  .book-section2{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border: solid 1px $color__gray;
+  }
+  .main-carousel{
+    .carousel-cell{
+      width: 100%; /* full width */
+      height: auto; /* height of carousel */
+      margin-right: 10px;
+    }
+    .bix-carousel-img-1{
+      background: 
+        linear-gradient(
+        rgba(255, 255, 255, 0), 
+        rgba(255, 255, 255, 0)
+      ), 
+      url(../../images/bix-book-1.png) no-repeat 20% top;
+    }
+    .bix-carousel-img-2{
+      background: 
+        linear-gradient(
+        rgba(255, 255, 255, 0), 
+        rgba(255, 255, 255, 0)
+      ), 
+      url(../../images/bix-book-2.png) no-repeat 20% top;
+    }
+    .bix-carousel-img-3{
+      background: 
+        linear-gradient(
+        rgba(255, 255, 255, 0), 
+        rgba(255, 255, 255, 0)
+      ), 
+      url(../../images/bix-book-3.png) no-repeat 20% top;
+    }
+    .bix-carousel-img{
+      background-size: cover;
+      height: 500px;
+    } 
+    .bix-carousel-info{
+      position: relative;
+      height: 270px;
+      padding-bottom:50px;
+      top: 0px;
+      background-color:#fff;
+    }
+    //Flickity Style
+    .flickity-page-dots{
+      bottom:10px;
+    }  
+    .flickity-page-dots .dot{
+      background: $color__blue;
+      width: 25px;
+      height: 25px;
+    }
+    .flickity-prev-next-button {
+      display: none;
+    }
+  }
 }
 
 
