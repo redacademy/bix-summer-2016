@@ -12,7 +12,7 @@
   }
 }
 .modal > label {
-  background: $color_orange;
+  background: red;
   border: 1px solid #f0c600;
   border-radius: .2em;
   color: #000000;
@@ -27,7 +27,7 @@
   transform: scale(0.97);
 }
 .modal__overlay {
-  background: $color_orange;
+  background: red;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -79,24 +79,11 @@
   color: #FFD300;
   text-align: justify;
 }
-.modal input:focus ~ label {
-  transform: scale(0.97);
-}
 
-input {
-  position: absolute;
-  top: -1000px;
-}
 
 .modal__overlay {
   opacity: 0;
   transform: scale(0.5);
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: -100;
-}
-
-input:checked ~ .modal__overlay {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 800;
 }
