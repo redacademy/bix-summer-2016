@@ -1745,6 +1745,7 @@ strong {
         font-size: 1.1rem;
         line-height: 28px; } }
 
+/* ----------------- Top Section - Banner -------------*/
 .bix-book-banner {
   display: -ms-flexbox;
   display: flex;
@@ -1776,6 +1777,7 @@ strong {
   -ms-flex-pack: center;
       justify-content: center; }
 
+/* ----------------- Section 1 - Content -------------*/
 .book-section1 {
   background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-banner.png) no-repeat 20% top;
   background-size: cover;
@@ -1800,6 +1802,7 @@ strong {
 .ribbon, .ribbon-heading {
   display: none; }
 
+/* ----------------- Section 2 - Carousel -------------*/
 .main-carousel {
   /* arrow color */
   /* hide disabled button */ }
@@ -1870,6 +1873,7 @@ strong {
   .main-carousel .flickity-prev-next-button:disabled {
     display: none; }
 
+/* -------------- Section 3 - Purchase Book -------------*/
 .book-purchase {
   display: -ms-flexbox;
   display: flex;
@@ -1885,6 +1889,8 @@ strong {
     padding: 5px 20px;
     display: block;
     max-width: 100%; }
+    .book-purchase .book-purchase-info div p {
+      text-align: left; }
     .book-purchase .book-purchase-info p {
       font-weight: 300;
       display: block;
@@ -1930,6 +1936,9 @@ strong {
       display: block;
       text-align: center;
       width: 230px; }
+    .book-purchase .book-purchase-info .book-or {
+      font-weight: bold;
+      margin-bottom: 0; }
 
 @media (min-width: 600px) {
   .bix-book-banner {
@@ -1967,7 +1976,7 @@ strong {
     background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-2.png) no-repeat 20% top; }
   .main-carousel .bix-carousel-img-3 {
     background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-3.png) no-repeat 20% top; }
-  .book-purchase {
+  .book-purchase, .book-section2 {
     max-width: 80vw; } }
 
 @media (min-width: 900px) {
@@ -1991,6 +2000,8 @@ strong {
       font-weight: 500;
       font-size: 1.5rem;
       text-transform: uppercase; }
+    .book-section1 .book-section1-inside {
+      padding: 0 50px; }
   .book-section2 {
     width: 80%;
     height: auto;
@@ -2036,6 +2047,13 @@ strong {
     padding-bottom: 50px;
     top: 0px;
     background-color: #fff; }
+    .main-carousel .bix-carousel-info p {
+      font-size: 1.3rem; }
+    .main-carousel .bix-carousel-info li {
+      font-size: 1.3rem;
+      line-height: 25px; }
+    .main-carousel .bix-carousel-info li:before {
+      top: 1em; }
   .main-carousel .flickity-page-dots {
     bottom: 10px; }
   .main-carousel .flickity-page-dots .dot {
@@ -2046,12 +2064,31 @@ strong {
     display: none; }
   .book-section3 {
     max-width: 100vw; }
+    .book-section3 .the-bix-book-title {
+      font-size: 2rem;
+      width: 500px; }
+      .book-section3 .the-bix-book-title span {
+        font-weight: 300; }
   .book-purchase {
     border: solid 1px #444444;
     width: 80%;
     margin: 50px auto;
     padding-top: 50px;
-    position: relative; } }
+    position: relative; }
+    .book-purchase .book-purchase-info {
+      padding: 0 50px; }
+      .book-purchase .book-purchase-info .book-buy {
+        text-align: left; } }
+
+@media (min-width: 1024px) {
+  .book-section1 {
+    width: 100%; }
+  .book-section2 {
+    width: 100%; }
+  .book-section3 {
+    max-width: 80vw; }
+  .book-purchase {
+    width: 100%; } }
 
 .footer-content-area {
   background-color: #444444;
