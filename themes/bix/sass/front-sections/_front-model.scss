@@ -52,7 +52,6 @@
 @media (min-height: 37.5em) {
   .modal__wrap {
     left: 50%;
-    position: absolute;
     top: 50%;
     transform: translate(-50%, -80%);
   }
@@ -65,7 +64,6 @@
   display: inline-block;
   height: 1.5em;
   line-height: 1.5;
-  position: absolute;
   right: .5em;
   top: .5em;
   width: 1.5em;
