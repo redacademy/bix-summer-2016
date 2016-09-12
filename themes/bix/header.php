@@ -28,14 +28,13 @@
 				</div><!-- .site-branding -->
 
 
-			<div class="mobile-nav-wrapper <?php 
-
-							if (is_front_page()) {
-								echo "mobile-nav-wrapper-home";
-							}
-							?>
-
-							">
+			<div class="mobile-nav-wrapper 
+				<?php 
+					if (is_front_page()) {
+						echo "mobile-nav-wrapper-home";
+					}
+				?>
+			">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
 					<a href="<?php echo home_url()?>" class="logo-link">
@@ -54,7 +53,13 @@
 				</nav><!-- #site-navigation -->
 			</div>
 
-			<div class="desktop-nav-wrapper">
+			<div id="desktopNavigation" class="desktop-nav-wrapper 
+				<?php 
+					if (is_front_page()) {
+						echo "desktop-nav-wrapper-home";
+					}
+				?>
+			">
 				<div class="desktop-nav-container">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->

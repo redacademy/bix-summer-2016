@@ -13,6 +13,16 @@ $(document).ready(function(){
 		    	$(".desktop-nav-wrapper .desktop-nav-container").removeClass("transparent-background");
 		    };
 
+		    // desktop homepage
+		    if($(".home").length > 0) {
+			    if (window.scrollY > window.innerHeight) {
+			    	$(".desktop-nav-container").addClass("desktop-nav-fixed");
+			    }
+			    else {
+			    	$(".desktop-nav-container").removeClass("desktop-nav-fixed");
+			    };
+			}
+
 		    // mobile
 		    if (window.scrollY > 47) {
 		    	$(".mobile-nav-wrapper .main-navigation").addClass("transparent-background");
@@ -32,6 +42,7 @@ $(document).ready(function(){
 			    	$(".mobile-nav-wrapper .main-navigation").removeClass("transparent-background");
 			    };
 			}
+
 		},false;
    
 	   // mobile nav bar menu button toggle

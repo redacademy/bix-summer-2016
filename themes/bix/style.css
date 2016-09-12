@@ -628,8 +628,7 @@ textarea {
     width: 100%;
     background: white;
     border-bottom: solid 1px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    transition: 1s; }
+    z-index: 1; }
   .desktop-nav-wrapper .main-navigation {
     max-width: 1000px;
     -ms-flex-pack: center;
@@ -706,8 +705,17 @@ textarea {
     color: #F9AC31;
     border-color: #F9AC31; }
   .desktop-nav-wrapper .transparent-background {
-    transition: 1s;
     background: rgba(255, 255, 255, 0.95); }
+
+.desktop-nav-wrapper-home {
+  position: relative;
+  height: 0; }
+  .desktop-nav-wrapper-home .desktop-nav-container {
+    position: absolute;
+    top: 100vh; }
+  .desktop-nav-wrapper-home .desktop-nav-fixed {
+    position: fixed;
+    top: 0; }
 
 @media all and (min-width: 600px) {
   .mobile-nav-wrapper {
