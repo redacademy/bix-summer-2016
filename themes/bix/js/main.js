@@ -12,6 +12,22 @@ $(document).ready(function(){
 		    else {
 		    	$(".desktop-nav-wrapper .desktop-nav-container").removeClass("transparent-background");
 		    };
+	// nav bar fading
+	window.onscroll = function() {
+	    if (window.scrollY > 76) {
+	    	$(".desktop-nav-wrapper .desktop-nav-container").addClass("transparent-background");
+	    }
+	    else {
+	    	$(".desktop-nav-wrapper .desktop-nav-container").removeClass("transparent-background");
+	    };
+	},false;
+
+  	$('.menu-button').on('click', function(){
+	    $('.mobile-nav-wrapper #primary-menu').slideToggle(750);
+	    $('.mobile-nav-wrapper .menu-main-menu-container').fadeToggle(750);
+	    $('.fa-bars').slideToggle(750);
+	    $('.fa-chevron-up').slideToggle(750);
+	});
 
 		    // desktop homepage
 		    if($(".home").length > 0) {
@@ -44,7 +60,7 @@ $(document).ready(function(){
 			}
 
 		},false;
-   
+
 	   // mobile nav bar menu button toggle
 		  	$('.menu-button').on('click', function(){
 			    $('.mobile-nav-wrapper #primary-menu').slideToggle(750);
