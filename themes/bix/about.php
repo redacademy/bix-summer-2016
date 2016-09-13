@@ -11,12 +11,17 @@ Template Name: About Template Page
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main about-page-container" role="main">
+		<main id="main" class="site-main" role="main">
 
-				<div class="about-page-banner">
-					<img src="<?php echo get_template_directory_uri() . "/images/about-page-banner.png"?>" alt="">
-				</div>
+		<section class="about-banner">
+			<div class="about-header">
+				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
+				<h2 class="about-title">About Bix</h2>
+				<p>About the Author</p>
+			</div>
+		</section>
 
+		<div class="container">	
 				<div class="author-section">
 					<div class="author-section-title">
 						<img src="<?php echo get_template_directory_uri() . "/images/about-bix-bickson.png"?>" alt="">
@@ -101,7 +106,7 @@ get_header(); ?>
 				</div>
 			
 			
-
+	</div>
 
 
 		</main><!-- #main -->

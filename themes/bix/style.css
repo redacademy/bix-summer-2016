@@ -927,25 +927,30 @@ object {
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
+.about-banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .about-banner .site-logo, .about-banner .about-title, .about-banner p {
+    display: none; }
+  .about-banner .about-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+
 h3 {
   margin: 0;
   padding: 1rem 0; }
-
-.about-page-container {
-  max-width: 1000px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.about-page-banner {
-  display: none;
-  width: 100vw; }
-  .about-page-banner img {
-    max-width: 100%;
-    width: 100vw; }
 
 strong {
   font-weight: bold; }
@@ -1107,6 +1112,30 @@ strong {
     color: #70b3cb; }
 
 @media all and (min-width: 600px) {
+  .about-banner {
+    background: url(../../images/about-page-banner.png) no-repeat center left;
+    background-size: cover;
+    height: 70vh;
+    overflow: hidden;
+    position: relative; }
+    .about-banner .site-logo {
+      display: unset;
+      max-width: 250px; }
+    .about-banner .about-title {
+      display: unset;
+      color: #fff;
+      border-bottom: solid 2px #fff;
+      border-top: solid 2px #fff;
+      font-size: 1.5rem;
+      padding: 10px 0;
+      width: 250px;
+      text-transform: capitalize;
+      font-weight: 500;
+      text-align: center; }
+    .about-banner p {
+      display: unset;
+      color: #fff;
+      font-weight: 300; }
   .about-page-banner {
     display: block; }
   .author-section, .company-section {
@@ -1801,7 +1830,15 @@ strong {
     font-weight: 300; }
 
 .ribbon, .ribbon-heading {
-  display: none; }
+  display: none;
+  padding: 100px 0; }
+  .ribbon .book-section1-inside, .ribbon-heading .book-section1-inside {
+    padding: 5px 20px;
+    background-color: rgba(230, 230, 230, 0.7);
+    display: block;
+    max-width: 100%; }
+    .ribbon .book-section1-inside p, .ribbon-heading .book-section1-inside p {
+      font-weight: 300; }
 
 /* ----------------- Section 2 - Carousel -------------*/
 .main-carousel {
@@ -1882,7 +1919,8 @@ strong {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-
+  -ms-flex-align: center;
+      align-items: center;
   padding: 25px 0;
   margin-top: 0; }
   .book-purchase .book-purchase-info {
@@ -1891,11 +1929,6 @@ strong {
     max-width: 100%; }
     .book-purchase .book-purchase-info div p {
       text-align: left; }
-    max-width: 100%;
-    /*====================================
-		  Our Modal Window styles
-		=====================================*/ }
-   fix download modal for bixbook page
     .book-purchase .book-purchase-info p {
       font-weight: 300;
       display: block;
@@ -1923,6 +1956,8 @@ strong {
       -ms-flex-direction: column;
           flex-direction: column;
       -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
           align-items: center; }
       .book-purchase .book-purchase-info .donate-now .book-buy-light {
         margin-bottom: 0;
@@ -1939,10 +1974,102 @@ strong {
       display: block;
       text-align: center;
       width: 230px; }
-
     .book-purchase .book-purchase-info .book-or {
       font-weight: bold;
       margin-bottom: 0; }
+
+/*====================================
+		  Our Modal Window styles
+		=====================================*/
+.modal {
+  display: block;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  padding: 1em; }
+
+@media (min-width: 43.75em) {
+  .modal {
+    padding: 1.5em; } }
+
+.modal > label {
+  background: #FFD300;
+  border: 1px solid #f0c600;
+  border-radius: .2em;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.75em 1.5em;
+  text-shadow: 1px 1px 1px #fff;
+  transition: all 0.55s; }
+
+.modal > label:hover {
+  transform: scale(0.97); }
+
+.modal__overlay {
+  background: #000000;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-shadow: none;
+  top: 0;
+  z-index: 600; }
+
+.modal__wrap {
+  padding: 1em 0;
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 90%; }
+
+@media (min-width: 50em) {
+  .modal__wrap {
+    padding: 1.75em; } }
+
+@media (min-height: 37.5em) {
+  .modal__wrap {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -80%); } }
+
+.modal__wrap label {
+  background: #FFD300;
+  border-radius: 50%;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.5em;
+  line-height: 1.5;
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  width: 1.5em; }
+
+.modal__wrap h2 {
+  color: #FFD300;
+  margin-bottom: 1em;
+  text-transform: uppercase; }
+
+.modal__wrap p {
+  color: #FFD300;
+  text-align: justify; }
+
+.modal input:focus ~ label {
+  transform: scale(0.97); }
+
+.modal input {
+  position: absolute;
+  top: -1000px; }
+
+.modal__overlay {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -100; }
 
 @media (min-width: 600px) {
   .bix-book-banner {
@@ -2067,6 +2194,10 @@ strong {
     height: 25px; }
   .main-carousel .flickity-prev-next-button {
     display: none; }
+  .modal input:checked ~ .modal__overlay {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 800; }
   .book-section3 {
     max-width: 100vw; }
     .book-section3 .the-bix-book-title {
@@ -2189,91 +2320,6 @@ strong {
   .stories-main .stories-title a {
     text-decoration: none;
     color: #fff;
-<<<<<<< a64b62e7a6afb2d125cc44ebb56803048d59d0e2
-    font-weight: 500; }
-=======
-    .book-purchase .book-purchase-info .modal {
-      display: block;
-      background: #fff;
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-      display: inline-block;
-      padding: 1em; }
-    @media (min-width: 43.75em) {
-      .book-purchase .book-purchase-info .modal {
-        padding: 1.5em; } }
-    .book-purchase .book-purchase-info .modal > label {
-      background: #FFD300;
-      border: 1px solid #f0c600;
-      border-radius: .2em;
-      color: #000000;
-      cursor: pointer;
-      display: inline-block;
-      font-weight: bold;
-      padding: 0.75em 1.5em;
-      text-shadow: 1px 1px 1px #fff;
-      transition: all 0.55s; }
-    .book-purchase .book-purchase-info .modal > label:hover {
-      transform: scale(0.97); }
-    .book-purchase .book-purchase-info .modal__overlay {
-      background: #000000;
-      bottom: 0;
-      left: 0;
-      position: fixed;
-      right: 0;
-      text-align: center;
-      text-shadow: none;
-      top: 0;
-      z-index: 600; }
-    .book-purchase .book-purchase-info .modal__wrap {
-      padding: 1em 0;
-      position: relative;
-      margin: 0 auto;
-      max-width: 500px;
-      width: 90%; }
-    @media (min-width: 50em) {
-      .book-purchase .book-purchase-info .modal__wrap {
-        padding: 1.75em; } }
-    @media (min-height: 37.5em) {
-      .book-purchase .book-purchase-info .modal__wrap {
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -80%); } }
-    .book-purchase .book-purchase-info .modal__wrap label {
-      background: #FFD300;
-      border-radius: 50%;
-      color: #000000;
-      cursor: pointer;
-      display: inline-block;
-      height: 1.5em;
-      line-height: 1.5;
-      position: absolute;
-      right: .5em;
-      top: .5em;
-      width: 1.5em; }
-    .book-purchase .book-purchase-info .modal__wrap h2 {
-      color: #FFD300;
-      margin-bottom: 1em;
-      text-transform: uppercase; }
-    .book-purchase .book-purchase-info .modal__wrap p {
-      color: #FFD300;
-      text-align: justify; }
-    .book-purchase .book-purchase-info .modal input:focus ~ label {
-      transform: scale(0.97); }
-    .book-purchase .book-purchase-info .modal input {
-      position: absolute;
-      top: -1000px; }
-    .book-purchase .book-purchase-info .modal__overlay {
-      opacity: 0;
-      transform: scale(0.5);
-      transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      z-index: -100; }
-    .book-purchase .book-purchase-info .modal input:checked ~ .modal__overlay {
-      opacity: 1;
-      transform: scale(1);
-      z-index: 800; }
->>>>>>> fix download modal for bixbook page
-=======
     font-weight: 500;
     text-transform: uppercase; }
 
@@ -2330,7 +2376,6 @@ strong {
 @media (min-width: 1024px) {
   .stories-main {
     max-width: 70%; } }
->>>>>>> stories page responsive styling
 
 .footer-content-area {
   background-color: #444444;
@@ -2421,11 +2466,6 @@ strong {
   Our Modal Window styles
 =====================================*/
 .modal {
-<<<<<<< HEAD
-=======
-  background: #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
->>>>>>> fix download modal for bixbook page
   display: inline-block;
   padding: 1em; }
 
@@ -2434,11 +2474,7 @@ strong {
     padding: 1.5em; } }
 
 .modal > label {
-<<<<<<< HEAD
   background: red;
-=======
-  background: #FFD300;
->>>>>>> fix download modal for bixbook page
   border: 1px solid #f0c600;
   border-radius: .2em;
   color: #000000;
@@ -2453,11 +2489,7 @@ strong {
   transform: scale(0.97); }
 
 .modal__overlay {
-<<<<<<< HEAD
   background: red;
-=======
-  background: #000000;
->>>>>>> fix download modal for bixbook page
   bottom: 0;
   left: 0;
   position: fixed;
@@ -2481,10 +2513,6 @@ strong {
 @media (min-height: 37.5em) {
   .modal__wrap {
     left: 50%;
-<<<<<<< HEAD
-=======
-    position: absolute;
->>>>>>> fix download modal for bixbook page
     top: 50%;
     transform: translate(-50%, -80%); } }
 
@@ -2496,10 +2524,6 @@ strong {
   display: inline-block;
   height: 1.5em;
   line-height: 1.5;
-<<<<<<< HEAD
-=======
-  position: absolute;
->>>>>>> fix download modal for bixbook page
   right: .5em;
   top: .5em;
   width: 1.5em; }
@@ -2513,26 +2537,8 @@ strong {
   color: #FFD300;
   text-align: justify; }
 
-<<<<<<< HEAD
-=======
-.modal input:focus ~ label {
-  transform: scale(0.97); }
-
-.modal input {
-  position: absolute;
-  top: -1000px; }
-
->>>>>>> fix download modal for bixbook page
 .modal__overlay {
   opacity: 0;
   transform: scale(0.5);
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: -100; }
-<<<<<<< HEAD
-=======
-
-.modal input:checked ~ .modal__overlay {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 800; }
->>>>>>> fix download modal for bixbook page

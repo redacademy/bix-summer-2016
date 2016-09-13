@@ -27,22 +27,22 @@ get_header(); ?>
 			<h2 class="ribbon-heading">The Bix Book</h2>
 
 				<div class="book-section1-inside">
-<<<<<<< HEAD
+
 				<?php echo CFS()->get( 'bix_book_description' ); ?>
-=======
+
 					<p>
 						This is a book of stories that I have experienced through my 30 years of consulting with corporations, institutions, non-profit organizations and individuals.
 					</p>
 					<p>
 						Stories that I hope allow you access, an opening, a possibility that allow your courage, your persistence, your compassion, your intelligence and your resilience to soar to its greatest heights knowing you may have to plumb your deepest depths to find it. You can do this. These are not my stories. These are our stories said through my life to share with you.
 					</p>
->>>>>>> fix download modal for bixbook page
+
 				</div>
 			</section>
 			<div class="book-title-wrapper book-title-wrapper-2">
 				<h2 class="the-bix-book-title">Whats in the bix book</h2>
 			</div>
-<<<<<<< HEAD
+
 
 			<section class="book-section2">
 				<img class="ribbon" src="<?php echo(get_template_directory_uri());?>/images/yellow-ribbon.svg" alt="yellow ribbon"/>
@@ -73,7 +73,7 @@ get_header(); ?>
 
 
 			<section class="book-section3 book-purchase">
-=======
+
 
 
 
