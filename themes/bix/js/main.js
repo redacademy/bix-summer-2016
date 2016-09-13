@@ -72,8 +72,5 @@ $(document).ready(function(){
 		  contain: true
 		});
 
-	// br replace tag on single story page
-	$( "br" ).replaceWith( "</p><p>" );
-
 });
 }(jQuery));

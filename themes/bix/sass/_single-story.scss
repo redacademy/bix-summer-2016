@@ -93,3 +93,17 @@
 	}
 
 }
+
+// breakpoints
+
+@media all and (min-width: 600px) {
+
+	.single-story-container {
+		.entry-header {
+			img {
+				min-width: 100%;
+			}
+		}
+	}
+
+}

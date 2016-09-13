@@ -1876,6 +1876,10 @@ strong {
         width: 50vw;
         background: #F9AC31; }
 
+@media all and (min-width: 600px) {
+  .single-story-container .entry-header img {
+    min-width: 100%; } }
+
 /* ----------------- Top Section - Banner -------------*/
 .bix-book-banner {
   display: -ms-flexbox;
