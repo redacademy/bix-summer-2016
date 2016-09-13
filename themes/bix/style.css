@@ -1767,10 +1767,9 @@ strong {
     top: 70vh;
     font-weight: 400;
     background: rgba(255, 255, 255, 0.8); }
-    .single-story-container .entry-header h1 .highlight {
-      color: #F9AC31; }
   .single-story-container .entry-header .img-container {
-    overflow: hidden; }
+    overflow: hidden;
+    height: 100%; }
     .single-story-container .entry-header .img-container img {
       width: auto;
       max-width: none;
@@ -1795,6 +1794,8 @@ strong {
     font-weight: 400;
     color: #F9AC31;
     padding: 0 10vw; }
+    .single-story-container .story-content h2::last-word {
+      font-weight: bold; }
   .single-story-container .story-content p {
     margin: 5vw 10vw;
     font-weight: 300; }

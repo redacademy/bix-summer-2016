@@ -65,13 +65,15 @@ $(document).ready(function(){
 				}
 			});
 
-//Flickity Carousel
-	$('.main-carousel').flickity({
-	  // options
-	  cellAlign: 'left',
-	  contain: true
-	});
+	//Flickity Carousel
+		$('.main-carousel').flickity({
+		  // options
+		  cellAlign: 'left',
+		  contain: true
+		});
 
+	// br replace tag on single story page
+	$( "br" ).replaceWith( "</p><p>" );
 
 });
 }(jQuery));
