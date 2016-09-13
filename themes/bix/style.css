@@ -1814,7 +1814,8 @@ strong {
       -ms-flex-align: center;
           align-items: center;
       -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap; }
+          flex-flow: column nowrap;
+      text-align: center; }
       .single-story-container .story-content .practice-block h2.practice-title {
         border: solid 2px #F9AC31;
         border-width: 2px 0;
@@ -1825,6 +1826,10 @@ strong {
         font-weight: 400;
         color: #F9AC31;
         padding: 0 10vw; }
+      .single-story-container .story-content .practice-block hr {
+        border: solid #F9AC31 1px;
+        width: 50vw;
+        background: #F9AC31; }
 
 /* ----------------- Top Section - Banner -------------*/
 .bix-book-banner {

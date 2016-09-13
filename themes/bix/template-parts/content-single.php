@@ -32,6 +32,7 @@
 		<div class="practice-block">
 			<h2 class="practice-title">Practice</h2>
 			<?php echo CFS()->get( 'story_section_practice_block' ); ?>
+			<hr>
 		</div>
 
 		<div class="story-section-bottom">
