@@ -12,10 +12,15 @@
   }
 }
 .modal > label {
+<<<<<<< HEAD:themes/bix/sass/front-sections/_front-model.scss
   background: red;
   border: 1px solid #f0c600;
   border-radius: .2em;
   color: #000000;
+=======
+  border-radius: .2em;
+  color: #70b3cb;
+>>>>>>> modal paragraph styling:themes/bix/sass/_modal-download.scss
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
@@ -57,7 +62,7 @@
   }
 }
 .modal__wrap label {
-  background: #FFD300;
+  background: #FFF;
   border-radius: 50%;
   color: #000000;
   cursor: pointer;
@@ -85,3 +90,48 @@
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: -100;
 }
+<<<<<<< HEAD:themes/bix/sass/front-sections/_front-model.scss
+=======
+
+.modal input:checked ~ .modal__overlay {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 800;
+}
+
+.modal__trigger {
+    position: absolute;
+    top: -1000px;
+}
+
+.email-unlock {
+    box-shadow: none;
+    text-shadow: none;
+    margin-top: 5px;
+    width: 80%;
+    height: 11vh;
+}
+
+button {
+  box-shadow: none;
+  text-shadow: none;
+  padding: 10px;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  border: solid #fff 2px;
+  border-radius: 30px;
+  background-color: #70b3cb;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.model__wrap label {
+    background-color: #ffffff;
+    color: #70b3cb;
+}
+
+.blue-books {
+  color:#70b3cb;
+}
+>>>>>>> modal paragraph styling:themes/bix/sass/_modal-download.scss

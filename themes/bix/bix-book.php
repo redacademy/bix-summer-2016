@@ -70,48 +70,7 @@ get_header(); ?>
 	  			</div>
 				</div>
 			</section>
-
-
-			<section class="book-section3 book-purchase">
-
-
-
-
-<!--flickity Carousel-->
-			<div class="main-carousel">
-  			<div class="carousel-cell bix-carousel-1">
-
-	  				<div class="bix-carousel-img bix-carousel-img-1"></div>
-	  				<div class="bix-carousel-info bix-carousel-info-1">
-							<ul>
-								<li>38 quality stories</li>
-								<li>Interactive workbook section for every chapter</li>
-								<li>Backed by 30 years of real world experience </li>
-								<li>Transformational content</li>
-								<li>Empower yourself to change</li>
-							</ul>
-						</div>
-
-  			</div>
-  			<div class="carousel-cell bix-carousel-2">
-  				<div class="bix-carousel-img bix-carousel-img-2"></div>
-  				<div class="bix-carousel-info bix-carousel-info-2">
-						<p>
-						30 years of extensive experience in the field has allowed me to produce the messages delivered in easy-to-read stories, each supplemented with workbook practices to enhance your learning
-					</p>
-					</div>
-  			</div>
-  			<div class="carousel-cell bix-carousel-3">
-  				<div class="bix-carousel-img bix-carousel-img-3"></div>
-  				<div class="bix-carousel-info bix-carousel-info-3">
-						<p>
-						Create impactful change with the powerful messages available in this book. Get the edge you need to empower your aspirations and make changing circumstances work for the ever changing organism that you are.
-					</p>
-					</div>
-  			</div>
-			</div>
-
-			<section class="book-purchase">
+    <section class="book-purchase">
 				<div class="book-title-wrapper">
 					<h2 class="the-bix-book-title"><span>Paying for</span> the Bix Book</h2>
 				</div>
@@ -145,28 +104,10 @@ get_header(); ?>
 					</p>
 
 					<div class="donate-now">
-						<a class="btn btn-donate" href="#">Donate Now</a>
-						<p class="book-or">or</p>
-						<p class="book-buy-light">Download <span>The Bix Book</span> first
-						</p>
 				  	<a class="btn btn-donate" href="#">Donate Now</a>
-<!--Start of Modal -->
-<div class="modal">
-    <input id="modal__trigger" type="checkbox" />
-    <label for="modal__trigger">Download <span> The Bix Book </span> first </label>
-    <div class="modal__overlay" role="dialog" aria-labelledby="modal__title" aria-describedby="modal_desc">
-        <div class="modal__wrap">
-            <label for="modal__trigger">&#10006;</label>
-            <h2 id="modal__title">This is your modal content</h2>
-            <p id="modal__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra. Suspendisse in volutpat lacus. In enim est, dapibus eget ipsum sed, suscipit ultrices diam.</p>
-        </div>
-    </div>
-</div>
-<!--End of Modal -->
-
-
-						<a class="btn btn-donate" href="#">Donate Later</a>
 					</div>
+            <?php get_template_part( 'template-parts/content', 'modal' ); ?>
+			  	</div>
 				</div>
 			</section>
 			</div>
