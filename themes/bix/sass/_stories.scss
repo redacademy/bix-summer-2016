@@ -33,6 +33,8 @@
 	}
 	.stories-subtitle{
 		font-weight: 300;
+		display: block;
+		width: 100%;
 	}
 }
 
@@ -42,14 +44,12 @@
 }
 .stories-main{
 	position: relative;
-	overflow: hidden;
 	margin-bottom: 0;
 	.featured-img{
 		background-size: cover;
 		background-position: center center;
 		height: 650px;
 		position: relative;
-		overflow: hidden;
 	}	
 	.stories-ribbon{
 		position: absolute;
@@ -99,19 +99,98 @@
 		text-decoration: none;
 		color: #fff;
 		font-weight: 500;
+		text-transform: uppercase;
 		}
 	}	
 }
 
+@media #{$tablet}{
+	.stories-article{
+		margin-bottom:50px;
+		max-width: 100%;
+	}
 
-//hover overlay for images
-// .stories-main:hover{
-// .entry-content{
-//   opacity: 1;
-//   .btn{
-//   opacity: 1;
-//     }
-//   }
-// }
+	.stories-main{
+		.entry-content{
+			.btn-stories{
+	     width: 250px;
+	    }	
+		}	
+	}
+}
+
+@media #{$tablet-medium}{
+	.stories-banner{
+		.stories-title{
+		  font-size: 1.5rem;
+		}
+	}
+/* ----------------- Stories Section -------------*/
+	.stories-main{
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media #{$tablet-large}{
+	.stories-banner{
+    background: url(../../images/teaser-stories-banner.png) no-repeat center left;
+    background-size: cover;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+    .site-logo{
+      display: unset;
+      max-width: 250px;
+    } 
+    .stories-title{
+      color:#fff;
+      border-bottom: solid 2px #fff;
+      border-top: solid 2px #fff;
+      font-size: 1.5rem;
+      padding:10px 0;
+      width: 250px;
+      text-transform: capitalize;
+      font-weight: 500;
+	   	&:after{
+	   		content:" Stories"
+	   	}
+    }
+    .stories-subtitle{
+    	color: #fff;
+    }
+  }
+
+	.stories-main{
+		.entry-content{
+			opacity: 0;
+			.btn-stories{
+	     opacity: 0;
+	    }	
+		}	
+	}
+	//hover overlay for images
+	.stories-main:hover{
+	.entry-content{
+	  opacity: 1;
+	  .btn{
+	  opacity: 1;
+	    }
+	  }
+	}
+	.entry-content{
+		.stories-title{
+			font-size: 2rem;
+		}
+	}
+}
+
+@media #{$desktop}{
+	.stories-main{
+		max-width: 70%;
+	}
+}
+
   
 

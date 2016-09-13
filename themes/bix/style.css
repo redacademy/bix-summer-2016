@@ -1882,23 +1882,20 @@ strong {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+
   padding: 25px 0;
   margin-top: 0; }
   .book-purchase .book-purchase-info {
     padding: 5px 20px;
     display: block;
-<<<<<<< HEAD
     max-width: 100%; }
     .book-purchase .book-purchase-info div p {
       text-align: left; }
-=======
     max-width: 100%;
     /*====================================
 		  Our Modal Window styles
 		=====================================*/ }
->>>>>>> fix download modal for bixbook page
+   fix download modal for bixbook page
     .book-purchase .book-purchase-info p {
       font-weight: 300;
       display: block;
@@ -1926,8 +1923,6 @@ strong {
       -ms-flex-direction: column;
           flex-direction: column;
       -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
           align-items: center; }
       .book-purchase .book-purchase-info .donate-now .book-buy-light {
         margin-bottom: 0;
@@ -1944,7 +1939,7 @@ strong {
       display: block;
       text-align: center;
       width: 230px; }
-<<<<<<< HEAD
+
     .book-purchase .book-purchase-info .book-or {
       font-weight: bold;
       margin-bottom: 0; }
@@ -2139,7 +2134,9 @@ strong {
     margin-bottom: 0;
     margin-top: 20px; }
   .stories-banner .stories-subtitle {
-    font-weight: 300; }
+    font-weight: 300;
+    display: block;
+    width: 100%; }
 
 /* ----------------- Stories Section -------------*/
 .stories-article {
@@ -2147,14 +2144,12 @@ strong {
 
 .stories-main {
   position: relative;
-  overflow: hidden;
   margin-bottom: 0; }
   .stories-main .featured-img {
     background-size: cover;
     background-position: center center;
     height: 650px;
-    position: relative;
-    overflow: hidden; }
+    position: relative; }
   .stories-main .stories-ribbon {
     position: absolute;
     top: 50px;
@@ -2194,6 +2189,7 @@ strong {
   .stories-main .stories-title a {
     text-decoration: none;
     color: #fff;
+<<<<<<< a64b62e7a6afb2d125cc44ebb56803048d59d0e2
     font-weight: 500; }
 =======
     .book-purchase .book-purchase-info .modal {
@@ -2277,6 +2273,64 @@ strong {
       transform: scale(1);
       z-index: 800; }
 >>>>>>> fix download modal for bixbook page
+=======
+    font-weight: 500;
+    text-transform: uppercase; }
+
+@media (min-width: 600px) {
+  .stories-article {
+    margin-bottom: 50px;
+    max-width: 100%; }
+  .stories-main .entry-content .btn-stories {
+    width: 250px; } }
+
+@media (min-width: 700px) {
+  .stories-banner .stories-title {
+    font-size: 1.5rem; }
+  /* ----------------- Stories Section -------------*/
+  .stories-main {
+    max-width: 80%;
+    margin: 0 auto; } }
+
+@media (min-width: 900px) {
+  .stories-banner {
+    background: url(../../images/teaser-stories-banner.png) no-repeat center left;
+    background-size: cover;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px; }
+    .stories-banner .site-logo {
+      display: unset;
+      max-width: 250px; }
+    .stories-banner .stories-title {
+      color: #fff;
+      border-bottom: solid 2px #fff;
+      border-top: solid 2px #fff;
+      font-size: 1.5rem;
+      padding: 10px 0;
+      width: 250px;
+      text-transform: capitalize;
+      font-weight: 500; }
+      .stories-banner .stories-title:after {
+        content: " Stories"; }
+    .stories-banner .stories-subtitle {
+      color: #fff; }
+  .stories-main .entry-content {
+    opacity: 0; }
+    .stories-main .entry-content .btn-stories {
+      opacity: 0; }
+  .stories-main:hover .entry-content {
+    opacity: 1; }
+    .stories-main:hover .entry-content .btn {
+      opacity: 1; }
+  .entry-content .stories-title {
+    font-size: 2rem; } }
+
+@media (min-width: 1024px) {
+  .stories-main {
+    max-width: 70%; } }
+>>>>>>> stories page responsive styling
 
 .footer-content-area {
   background-color: #444444;
