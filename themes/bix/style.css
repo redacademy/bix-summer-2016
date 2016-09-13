@@ -554,11 +554,10 @@ textarea {
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: center;
-        justify-content: center;
-    /*	i {
-			position: absolute;
-			top: 0;
-		} */ }
+        justify-content: center; }
+    .mobile-nav-wrapper .menu-button-wrapper i {
+      position: absolute;
+      top: 0; }
   .mobile-nav-wrapper i.fa-bars {
     color: #70b3cb; }
   .mobile-nav-wrapper i.fa-chevron-up {
@@ -1749,9 +1748,13 @@ strong {
 /*--------------------------------------------------------------
 # Single Story
 --------------------------------------------------------------*/
-.img-container {
+.single-story-container .entry-header {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); }
+
+.single-story-container .img-container {
   overflow: hidden; }
-  .img-container img {
+  .single-story-container .img-container img {
     width: auto;
     max-width: none;
     height: 100%; }

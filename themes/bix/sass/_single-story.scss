@@ -2,11 +2,20 @@
 # Single Story
 --------------------------------------------------------------*/
 
-.img-container {
-	overflow: hidden;
-	img {
-		width: auto;
-		max-width: none;
-		height: 100%;
+.single-story-container{
+
+	.entry-header {
+		height: 100vh;
+		background: rgba(0,0,0,0.5);
 	}
+
+	.img-container {
+		overflow: hidden;
+		img {
+			width: auto;
+			max-width: none;
+			height: 100%;
+		}
+	}
+
 }
