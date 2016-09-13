@@ -554,10 +554,11 @@ textarea {
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: center;
-        justify-content: center; }
-    .mobile-nav-wrapper .menu-button-wrapper i {
-      position: absolute;
-      top: 0; }
+        justify-content: center;
+    /*	i {
+			position: absolute;
+			top: 0;
+		} */ }
   .mobile-nav-wrapper i.fa-bars {
     color: #70b3cb; }
   .mobile-nav-wrapper i.fa-chevron-up {
@@ -2100,9 +2101,21 @@ strong {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  max-width: 100%; }
   .stories-banner .site-logo {
     display: none; }
+  .stories-banner .stories-header {
+    width: 80%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center; }
   .stories-banner .stories-title {
     width: 100%;
     color: #F9AC31;
@@ -2114,7 +2127,11 @@ strong {
     width: 230px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 20px; }
+  .stories-banner .stories-subtitle {
+    font-weight: 300; }
 
 /* ----------------- Stories Section -------------*/
 .stories-article {
@@ -2125,9 +2142,20 @@ strong {
   overflow: hidden;
   margin-bottom: 0; }
   .stories-main .featured-img {
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
-    height: 650px; }
+    height: 650px;
+    position: relative;
+    overflow: hidden; }
+  .stories-main .stories-ribbon {
+    position: absolute;
+    top: 50px;
+    left: -45px; }
+  .stories-main .story-number {
+    position: absolute;
+    top: 46px;
+    left: 50px;
+    text-transform: uppercase; }
   .stories-main .entry-content {
     position: absolute;
     padding: 0 40px;
@@ -2257,7 +2285,7 @@ strong {
     padding: 1.5em; } }
 
 .modal > label {
-  background: #FFD300;
+  background: red;
   border: 1px solid #f0c600;
   border-radius: .2em;
   color: #000000;
@@ -2272,7 +2300,7 @@ strong {
   transform: scale(0.97); }
 
 .modal__overlay {
-  background: #000000;
+  background: red;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -2296,7 +2324,6 @@ strong {
 @media (min-height: 37.5em) {
   .modal__wrap {
     left: 50%;
-    position: absolute;
     top: 50%;
     transform: translate(-50%, -80%); } }
 
@@ -2308,7 +2335,6 @@ strong {
   display: inline-block;
   height: 1.5em;
   line-height: 1.5;
-  position: absolute;
   right: .5em;
   top: .5em;
   width: 1.5em; }
@@ -2322,20 +2348,8 @@ strong {
   color: #FFD300;
   text-align: justify; }
 
-.modal input:focus ~ label {
-  transform: scale(0.97); }
-
-input {
-  position: absolute;
-  top: -1000px; }
-
 .modal__overlay {
   opacity: 0;
   transform: scale(0.5);
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: -100; }
-
-input:checked ~ .modal__overlay {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 800; }
