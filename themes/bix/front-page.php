@@ -30,6 +30,10 @@ get_header(); ?>
 		</section>
 
 	<div class="container">
+<<<<<<< HEAD
+=======
+
+>>>>>>> fix download modal for bixbook page
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

@@ -6,7 +6,7 @@
 	align-items: center;
 	.site-logo{
 		display: none;
-	}	
+	}
 }
 .the-bix-book-title{
   width: 100%;
@@ -28,18 +28,18 @@
 
 /* ----------------- Section 1 - Content -------------*/
 .book-section1{
-	background: 
+	background:
   linear-gradient(
-      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0.45)
-    ), 
+    ),
     url(../../images/bix-book-banner.png) no-repeat 20% top;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;	
+    padding: 100px 0;
   }
 .book-section1-inside{
   padding: 5px 20px;
@@ -47,12 +47,24 @@
   display: block;
   max-width: 100%;
   p{
-    font-weight: 300;  
+    font-weight: 300;
   }
 }
 //desktop styling hidden for mobile
 .ribbon, .ribbon-heading{
   display: none;
+  padding: 100px 0;
+
+	.book-section1-inside{
+		padding: 5px 20px;
+		background-color:rgba(230,230,230,.7);
+    display: block;
+    max-width: 100%;
+  	p{
+  		font-weight: 300;
+  	}
+	}
+
 }
 
 /* ----------------- Section 2 - Carousel -------------*/
@@ -64,33 +76,33 @@
     margin-right: 10px;
   }
   .bix-carousel-img-1{
-    background: 
+    background:
       linear-gradient(
-      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0.45)
-    ), 
+    ),
     url(../../images/bix-book-1.png) no-repeat 20% top;
   }
   .bix-carousel-img-2{
-    background: 
+    background:
       linear-gradient(
-      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0.45)
-    ), 
+    ),
     url(../../images/bix-book-2.png) no-repeat 20% top;
   }
   .bix-carousel-img-3{
-    background: 
+    background:
       linear-gradient(
-      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0.45)
-    ), 
+    ),
     url(../../images/bix-book-3.png) no-repeat 20% top;
   }
   .bix-carousel-img{
     background-size: cover;
     height: 500px;
-  } 
+  }
   .bix-carousel-info{
     position: absolute;
     height: 250px;
@@ -110,18 +122,18 @@
       font-weight: 300;
       list-style-type: none;
     }
-    li:before {   
-            content: "";  
-            border-color: transparent $color__gray;  
-            border-style: solid;  
-            border-width: 0.35em 0 0.35em 0.45em;  
-            display: block;  
-            height: 0;  
-            width: 0;  
-            left: -1em;  
-            top: 1.1em;  
-            position: relative;  
-        } 
+    li:before {
+            content: "";
+            border-color: transparent $color__gray;
+            border-style: solid;
+            border-width: 0.35em 0 0.35em 0.45em;
+            display: block;
+            height: 0;
+            width: 0;
+            left: -1em;
+            top: 1.1em;
+            position: relative;
+        }
     p{
       font-weight: 300;
     }
@@ -129,7 +141,7 @@
   //Flickity Style
   .flickity-page-dots{
     bottom:10px;
-  }  
+  }
   .flickity-page-dots .dot{
     background: $color__blue;
     width: 20px;
@@ -177,8 +189,8 @@
     p{
       font-weight: 300;
       display: block;
-      max-width: 100%; 
-      text-align: center; 
+      max-width: 100%;
+      text-align: center;
     }
     .book-buy{
       font-weight: 700;
@@ -219,15 +231,115 @@
       text-align: center;
       width: 230px;
     }
+<<<<<<< HEAD
     .book-or{
       font-weight: bold;
       margin-bottom: 0;
     }
   }
 }
+=======
+		/*====================================
+		  Our Modal Window styles
+		=====================================*/
+		.modal {
+			display: block;
+		  background: #fff;
+		  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+		  display: inline-block;
+		  padding: 1em;
+		}
+		@media (min-width: 43.75em) {
+		  .modal {
+		    padding: 1.5em;
+		  }
+		}
+		.modal > label {
+		  background: #FFD300;
+		  border: 1px solid #f0c600;
+		  border-radius: .2em;
+		  color: #000000;
+		  cursor: pointer;
+		  display: inline-block;
+		  font-weight: bold;
+		  padding: 0.75em 1.5em;
+		  text-shadow: 1px 1px 1px #fff;
+		  transition: all 0.55s;
+		}
+		.modal > label:hover {
+		  transform: scale(0.97);
+		}
+		.modal__overlay {
+		  background: #000000;
+		  bottom: 0;
+		  left: 0;
+		  position: fixed;
+		  right: 0;
+		  text-align: center;
+		  text-shadow: none;
+		  top: 0;
+		  z-index: 600;
+		}
+		.modal__wrap {
+		  padding: 1em 0;
+		  position: relative;
+		  margin: 0 auto;
+		  max-width: 500px;
+		  width: 90%;
+		}
+		@media (min-width: 50em) {
+		  .modal__wrap {
+		    padding: 1.75em;
+		  }
+		}
+		@media (min-height: 37.5em) {
+		  .modal__wrap {
+		    left: 50%;
+		    position: absolute;
+		    top: 50%;
+		    transform: translate(-50%, -80%);
+		  }
+		}
+		.modal__wrap label {
+		  background: #FFD300;
+		  border-radius: 50%;
+		  color: #000000;
+		  cursor: pointer;
+		  display: inline-block;
+		  height: 1.5em;
+		  line-height: 1.5;
+		  position: absolute;
+		  right: .5em;
+		  top: .5em;
+		  width: 1.5em;
+		}
+		.modal__wrap h2 {
+		  color: #FFD300;
+		  margin-bottom: 1em;
+		  text-transform: uppercase;
+		}
+		.modal__wrap p {
+		  color: #FFD300;
+		  text-align: justify;
+		}
+		.modal input:focus ~ label {
+		  transform: scale(0.97);
+		}
 
 
+		.modal input {
+		  position: absolute;
+		  top: -1000px;
+		}
 
+		.modal__overlay {
+		  opacity: 0;
+		  transform: scale(0.5);
+		  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		  z-index: -100;
+		}
+
+<<<<<<< HEAD
 @media #{$tablet}{
   .bix-book-banner{
     background: url(../../images/bix-book-banner.png) no-repeat center left;
@@ -238,7 +350,7 @@
     .site-logo{
       display: unset;
       max-width: 250px;
-    } 
+    }
     .the-bix-book-title{
       color:#fff;
       border-bottom: solid 2px #fff;
@@ -253,8 +365,8 @@
 
   .book-section1{
     background: none;
-    padding: 0px 0; 
-    max-width: 80vw; 
+    padding: 0px 0;
+    max-width: 80vw;
     margin: 0 auto;
   }
   .book-section1-inside{
@@ -269,37 +381,37 @@
   }
   .main-carousel{
     .bix-carousel-img-1{
-      background: 
+      background:
         linear-gradient(
-        rgba(255, 255, 255, 0.1), 
+        rgba(255, 255, 255, 0.1),
         rgba(255, 255, 255, 0.1)
-      ), 
+      ),
       url(../../images/bix-book-1.png) no-repeat 20% top;
     }
     .bix-carousel-img-2{
-      background: 
+      background:
         linear-gradient(
-        rgba(255, 255, 255, 0.1), 
+        rgba(255, 255, 255, 0.1),
         rgba(255, 255, 255, 0.1)
-      ), 
+      ),
       url(../../images/bix-book-2.png) no-repeat 20% top;
     }
     .bix-carousel-img-3{
-      background: 
+      background:
         linear-gradient(
-        rgba(255, 255, 255, 0.1), 
+        rgba(255, 255, 255, 0.1),
         rgba(255, 255, 255, 0.1)
-      ), 
+      ),
       url(../../images/bix-book-3.png) no-repeat 20% top;
     }
   }
   .book-purchase,.book-section2{
-    max-width: 80vw; 
+    max-width: 80vw;
   }
 }
 
 @media #{$tablet-large}{
-  
+
   .book-section1{
     border: solid 1px $color__gray;
     width: 80%;
@@ -363,34 +475,34 @@
       margin-right: 10px;
     }
     .bix-carousel-img-1{
-      background: 
+      background:
         linear-gradient(
-        rgba(255, 255, 255, 0), 
+        rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0)
-  
-      ), 
+
+      ),
       url(../../images/bix-book-1.png) no-repeat 20% top;
     }
     .bix-carousel-img-2{
-      background: 
+      background:
         linear-gradient(
-        rgba(255, 255, 255, 0), 
+        rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0)
-      ), 
+      ),
       url(../../images/bix-book-2.png) no-repeat 20% top;
     }
     .bix-carousel-img-3{
-      background: 
+      background:
         linear-gradient(
-        rgba(255, 255, 255, 0), 
+        rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0)
-      ), 
+      ),
       url(../../images/bix-book-3.png) no-repeat 20% top;
     }
     .bix-carousel-img{
       background-size: cover;
       height: 500px;
-    } 
+    }
     .bix-carousel-info{
       position: relative;
       height: 270px;
@@ -412,7 +524,7 @@
     //Flickity Style
     .flickity-page-dots{
       bottom:10px;
-    }  
+    }
     .flickity-page-dots .dot{
       background: $color__blue;
       width: 25px;
@@ -422,9 +534,15 @@
       display: none;
     }
   }
+		.modal input:checked ~ .modal__overlay {
+		  opacity: 1;
+		  transform: scale(1);
+		  z-index: 800;
+		}
+
 
   .book-section3{
-    max-width: 100vw; 
+    max-width: 100vw;
     .the-bix-book-title{
       font-size: 2rem;
       width: 500px;
@@ -433,7 +551,7 @@
       }
     }
   }
-  
+
   .book-purchase{
     border: solid 1px $color__gray;
     width: 80%;
@@ -446,7 +564,7 @@
         text-align: left;
       }
     }
-  } 
+  }
 }
 
 @media #{$desktop}{
@@ -457,12 +575,14 @@
   .book-section2{
     width: 100%;
   }
-  
+
   .book-section3{
-    max-width: 80vw; 
+    max-width: 80vw;
   }
   .book-purchase{
-    width: 100%;    
+    width: 100%;
   }
 }
 
+  }
+}
