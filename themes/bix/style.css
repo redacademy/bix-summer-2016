@@ -1746,6 +1746,16 @@ strong {
         font-size: 1.1rem;
         line-height: 28px; } }
 
+/*--------------------------------------------------------------
+# Single Story
+--------------------------------------------------------------*/
+.img-container {
+  overflow: hidden; }
+  .img-container img {
+    width: auto;
+    max-width: none;
+    height: 100%; }
+
 /* ----------------- Top Section - Banner -------------*/
 .bix-book-banner {
   display: -ms-flexbox;
@@ -2272,65 +2282,6 @@ strong {
       opacity: 1;
       transform: scale(1);
       z-index: 800; }
->>>>>>> fix download modal for bixbook page
-=======
-    font-weight: 500;
-    text-transform: uppercase; }
-
-@media (min-width: 600px) {
-  .stories-article {
-    margin-bottom: 50px;
-    max-width: 100%; }
-  .stories-main .entry-content .btn-stories {
-    width: 250px; } }
-
-@media (min-width: 700px) {
-  .stories-banner .stories-title {
-    font-size: 1.5rem; }
-  /* ----------------- Stories Section -------------*/
-  .stories-main {
-    max-width: 80%;
-    margin: 0 auto; } }
-
-@media (min-width: 900px) {
-  .stories-banner {
-    background: url(../../images/teaser-stories-banner.png) no-repeat center left;
-    background-size: cover;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 50px; }
-    .stories-banner .site-logo {
-      display: unset;
-      max-width: 250px; }
-    .stories-banner .stories-title {
-      color: #fff;
-      border-bottom: solid 2px #fff;
-      border-top: solid 2px #fff;
-      font-size: 1.5rem;
-      padding: 10px 0;
-      width: 250px;
-      text-transform: capitalize;
-      font-weight: 500; }
-      .stories-banner .stories-title:after {
-        content: " Stories"; }
-    .stories-banner .stories-subtitle {
-      color: #fff; }
-  .stories-main .entry-content {
-    opacity: 0; }
-    .stories-main .entry-content .btn-stories {
-      opacity: 0; }
-  .stories-main:hover .entry-content {
-    opacity: 1; }
-    .stories-main:hover .entry-content .btn {
-      opacity: 1; }
-  .entry-content .stories-title {
-    font-size: 2rem; } }
-
-@media (min-width: 1024px) {
-  .stories-main {
-    max-width: 70%; } }
->>>>>>> stories page responsive styling
 
 .footer-content-area {
   background-color: #444444;
@@ -2421,11 +2372,8 @@ strong {
   Our Modal Window styles
 =====================================*/
 .modal {
-<<<<<<< HEAD
-=======
   background: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
->>>>>>> fix download modal for bixbook page
   display: inline-block;
   padding: 1em; }
 
@@ -2434,11 +2382,7 @@ strong {
     padding: 1.5em; } }
 
 .modal > label {
-<<<<<<< HEAD
   background: red;
-=======
-  background: #FFD300;
->>>>>>> fix download modal for bixbook page
   border: 1px solid #f0c600;
   border-radius: .2em;
   color: #000000;
@@ -2453,11 +2397,7 @@ strong {
   transform: scale(0.97); }
 
 .modal__overlay {
-<<<<<<< HEAD
   background: red;
-=======
-  background: #000000;
->>>>>>> fix download modal for bixbook page
   bottom: 0;
   left: 0;
   position: fixed;
@@ -2481,10 +2421,7 @@ strong {
 @media (min-height: 37.5em) {
   .modal__wrap {
     left: 50%;
-<<<<<<< HEAD
-=======
     position: absolute;
->>>>>>> fix download modal for bixbook page
     top: 50%;
     transform: translate(-50%, -80%); } }
 
@@ -2496,10 +2433,7 @@ strong {
   display: inline-block;
   height: 1.5em;
   line-height: 1.5;
-<<<<<<< HEAD
-=======
   position: absolute;
->>>>>>> fix download modal for bixbook page
   right: .5em;
   top: .5em;
   width: 1.5em; }
@@ -2512,27 +2446,19 @@ strong {
 .modal__wrap p {
   color: #FFD300;
   text-align: justify; }
-
-<<<<<<< HEAD
-=======
 .modal input:focus ~ label {
   transform: scale(0.97); }
 
 .modal input {
   position: absolute;
   top: -1000px; }
-
->>>>>>> fix download modal for bixbook page
 .modal__overlay {
   opacity: 0;
   transform: scale(0.5);
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: -100; }
-<<<<<<< HEAD
-=======
 
 .modal input:checked ~ .modal__overlay {
   opacity: 1;
   transform: scale(1);
   z-index: 800; }
->>>>>>> fix download modal for bixbook page

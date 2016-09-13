@@ -2,23 +2,27 @@
 /**
  * Template part for displaying single posts.
  *
- * @package RED_Starter_Theme
+ * @package Bix_Theme
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-
+		<div class="img-container">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<?php the_post_thumbnail( 'full' ); ?>
+			<?php endif; ?>
+		</div>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
+
+	<?php echo CFS()->get( 'story_section_top' ); ?>
+
+	<?php echo CFS()->get( 'story_section_practice_block' ); ?>
+
+	<?php echo CFS()->get( 'story_section_bottom' ); ?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -31,6 +35,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
+		<?php bix_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
