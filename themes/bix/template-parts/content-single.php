@@ -23,13 +23,21 @@
 
 	<div class="story-content">
 
-		<h2><?php echo CFS()->get( 'story_number' ); ?></h2>
+		<h2 class="story-number"><?php echo CFS()->get( 'story_number' ); ?></h2>
+		
+		<div class="story-section-top">
+			<?php echo CFS()->get( 'story_section_top' ); ?>
+		</div>
+		
+		<div class="practice-block">
+			<h2 class="practice-title">Practice</h2>
+			<?php echo CFS()->get( 'story_section_practice_block' ); ?>
+		</div>
 
-		<?php echo CFS()->get( 'story_section_top' ); ?>
-
-		<?php echo CFS()->get( 'story_section_practice_block' ); ?>
-
-		<?php echo CFS()->get( 'story_section_bottom' ); ?>
+		<div class="story-section-bottom">
+			<?php echo CFS()->get( 'story_section_bottom' ); ?>
+		</div>
+		
 
 	</div>
 
