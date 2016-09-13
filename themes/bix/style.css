@@ -2091,6 +2091,75 @@ strong {
   .book-purchase {
     width: 100%; } }
 
+/* ----------------- Top Section - Banner -------------*/
+.stories-banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .stories-banner .site-logo {
+    display: none; }
+  .stories-banner .stories-title {
+    width: 100%;
+    color: #F9AC31;
+    border-bottom: solid 2px #F9AC31;
+    border-top: solid 2px #F9AC31;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 3px 0;
+    width: 230px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500; }
+
+/* ----------------- Stories Section -------------*/
+.stories-article {
+  margin-bottom: 0; }
+
+.stories-main {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0; }
+  .stories-main .featured-img {
+    background-size: contain;
+    background-position: center center;
+    height: 650px; }
+  .stories-main .entry-content {
+    position: absolute;
+    padding: 0 40px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(112, 179, 203, 0.8);
+    opacity: 1;
+    transition: opacity .3s ease;
+    color: #fff;
+    font-weight: 300; }
+    .stories-main .entry-content .btn-stories {
+      text-decoration: none;
+      background-color: transparent;
+      border-radius: 30px;
+      color: white;
+      border: solid white 2px;
+      padding: 10px 20px;
+      font-weight: 500;
+      font-size: 1.1rem;
+      background-color: #70b3cb;
+      opacity: 1;
+      transition: opacity .3s ease;
+      width: 80%;
+      display: inline-block; }
+    .stories-main .entry-content p:nth-child(3) {
+      text-align: center; }
+  .stories-main .stories-title a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500; }
+
 .footer-content-area {
   background-color: #444444;
   max-width: 100%;

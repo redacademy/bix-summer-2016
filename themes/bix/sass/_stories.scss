@@ -1,0 +1,90 @@
+/* ----------------- Top Section - Banner -------------*/
+.stories-banner{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.site-logo{
+		display: none;
+	}	
+
+	.stories-title{
+	  width: 100%;
+	  color:$color__orange;
+	  border-bottom: solid 2px $color__orange;
+	  border-top: solid 2px $color__orange;
+	  font-size: 1rem;
+	  letter-spacing: 1px;
+	  padding:3px 0;
+	  width: 230px;
+	  text-align: center;
+	  text-transform: uppercase;
+	  font-weight: 500;
+	}
+}
+
+/* ----------------- Stories Section -------------*/
+.stories-article{
+	margin-bottom:0;
+}
+.stories-main{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0;
+	.featured-img{
+		background-size: contain;
+		background-position: center center;
+		height: 650px;
+	}	
+	.entry-content{
+		position: absolute;
+		padding: 0 40px;
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		background-color: rgba(112,179,203,.8);
+		opacity: 1;
+		transition: opacity .3s ease;
+		color: #fff;
+		font-weight: 300;
+		.btn-stories{
+     text-decoration: none;
+     background-color: transparent;
+     border-radius: 30px;
+     color: rgba(255,255,255,1);
+     border: solid rgba(255,255,255,1) 2px;
+     padding: 10px 20px;
+     font-weight: 500;
+     font-size: 1.1rem;
+     background-color: $color__blue;
+     opacity: 1;
+     transition: opacity .3s ease;
+     width: 80%;
+     display: inline-block;
+    }	
+    p:nth-child(3){
+    	text-align: center;
+    }
+	}	
+
+.stories-title{
+	a{
+		text-decoration: none;
+		color: #fff;
+		font-weight: 500;
+		}
+	}
+}
+
+
+//hover overlay for images
+// .stories-main:hover{
+// .entry-content{
+//   opacity: 1;
+//   .btn{
+//   opacity: 1;
+//     }
+//   }
+// }
+  
+
