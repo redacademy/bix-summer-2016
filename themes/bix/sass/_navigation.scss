@@ -182,10 +182,10 @@
 		align-items: center;
 		justify-content: center;
 
-		i {
+	/*	i {
 			position: absolute;
 			top: 0;
-		}
+		} */
 	}
 
 	i.fa-bars {
@@ -229,7 +229,7 @@
 					text-transform: uppercase;
 				}
 			}
-			
+
 		}
 	}
 
@@ -287,7 +287,7 @@
 		height: auto;
 		display: flex;
 		align-items: center;
-		
+
 		width: 100vw;
 	}
 
@@ -358,10 +358,10 @@
 					transition: 1s;
 					border-color: $color__orange;
 					a{transition: 1s; color: $color__orange;}
-					
+
 				}
 			}
-			
+
 		}
 	}
 
@@ -374,7 +374,7 @@
 		background: rgba(255,255,255,0.95);
 	}
 }
-	
+
 
 .desktop-nav-wrapper-home {
 	position: relative;
