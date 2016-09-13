@@ -1843,7 +1843,7 @@ strong {
       list-style-type: none; }
     .main-carousel .bix-carousel-info li:before {
       content: "";
-      border-color: transparent #F9AC31;
+      border-color: transparent #444444;
       border-style: solid;
       border-width: 0.35em 0 0.35em 0.45em;
       display: block;
@@ -2051,7 +2051,8 @@ strong {
       font-size: 1.3rem; }
     .main-carousel .bix-carousel-info li {
       font-size: 1.3rem;
-      line-height: 25px; }
+      line-height: 25px;
+      text-align: left; }
     .main-carousel .bix-carousel-info li:before {
       top: 1em; }
   .main-carousel .flickity-page-dots {
