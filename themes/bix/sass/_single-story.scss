@@ -11,8 +11,6 @@
 		font-family: $font__header;
 		text-transform: uppercase;
 
-
-
 		h2 {
 			font-size: 21px;
 			position: absolute;
@@ -28,6 +26,9 @@
 			top: 70vh;
 			font-weight: 400;
 			background: rgba(255,255,255,0.8);
+			.highlight {
+				color: $color__orange;
+			}
 		}
 
 		.img-container {
@@ -41,6 +42,26 @@
 		}
 	}
 
-	
+	.story-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column nowrap;
+		h2 {
+			border: solid 2px $color__orange;
+			border-width: 2px 0;
+			text-align: center;
+			font-family: $font__header;
+			text-transform: uppercase;
+			font-size: 21px;
+			font-weight: 400;
+			color: $color__orange;
+			padding: 0 10vw;
+		}
+		p {
+			margin: 5vw 10vw;
+			font-weight: 300;
+		}
+	}
 
 }

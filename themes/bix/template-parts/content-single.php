@@ -21,21 +21,17 @@
 
 	</header><!-- .entry-header -->
 
-	<?php echo CFS()->get( 'story_section_top' ); ?>
+	<div class="story-content">
 
-	<?php echo CFS()->get( 'story_section_practice_block' ); ?>
+		<h2><?php echo CFS()->get( 'story_number' ); ?></h2>
 
-	<?php echo CFS()->get( 'story_section_bottom' ); ?>
+		<?php echo CFS()->get( 'story_section_top' ); ?>
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+		<?php echo CFS()->get( 'story_section_practice_block' ); ?>
+
+		<?php echo CFS()->get( 'story_section_bottom' ); ?>
+
+	</div>
 
 	<footer class="entry-footer">
 		<?php bix_entry_footer(); ?>

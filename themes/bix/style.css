@@ -1767,12 +1767,37 @@ strong {
     top: 70vh;
     font-weight: 400;
     background: rgba(255, 255, 255, 0.8); }
+    .single-story-container .entry-header h1 .highlight {
+      color: #F9AC31; }
   .single-story-container .entry-header .img-container {
     overflow: hidden; }
     .single-story-container .entry-header .img-container img {
       width: auto;
       max-width: none;
       height: 100%; }
+
+.single-story-container .story-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+  .single-story-container .story-content h2 {
+    border: solid 2px #F9AC31;
+    border-width: 2px 0;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 400;
+    color: #F9AC31;
+    padding: 0 10vw; }
+  .single-story-container .story-content p {
+    margin: 5vw 10vw;
+    font-weight: 300; }
 
 /* ----------------- Top Section - Banner -------------*/
 .bix-book-banner {
