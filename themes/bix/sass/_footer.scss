@@ -3,6 +3,10 @@
   max-width: 100%;
   text-align: center;
   overflow: hidden;
+  //position: relative;
+}
+.footer-wrapper{
+	position: relative;
 }
 
 .footer-top {
@@ -15,6 +19,9 @@
 	font-weight: 300;
 	color: #ffffff;
 	text-transform: uppercase;
+	&:nth-child(3){
+		line-height: 0px;
+	}
 }
 
 .footer-top h1 {
@@ -28,6 +35,7 @@
 width: 80%;
 border: #F9AC31 solid 2px;
 margin-bottom: 10px;
+padding-left: 10px;
 }
 
 .form-position textarea {
@@ -35,13 +43,14 @@ margin-bottom: 10px;
 	width: 80%;
 	height: 40vh;
 	border: #F9AC31 solid 2px;
+	padding-left: 10px;
 }
 
 .footer_button {
  @include btn;
  font-size: 12px;
- width: 30%;
- height: 4vh;
+ width: 100px;
+ padding: 5px;
  text-align: center;
  box-shadow: none;
  text-shadow: none;
@@ -58,11 +67,14 @@ margin-bottom: 10px;
 .icons {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	margin-top: 3%;
-	margin-bottom: 1%;
+	justify-content: flex-start;
+	margin: 10px 0px 20px 10%;
+  
+	.fa-stack{
+		font-size: 1.8rem;
+	}
 
-  }
+ }
 
 .icon-background {
     color: white;
@@ -72,20 +84,41 @@ margin-bottom: 10px;
 	color: $color__orange;
 }
 
-@media all and (min-width: 600px) {
+@media #{$tablet-medium} {
    .footer-form {
 		 display: flex;
 		 flex-direction: row;
 		 justify-content: space-between;
 		 padding: 5%;
-
 	 }
 
   .form-position textarea {
 		height: 40vh;
 	}
 	 .icons {
-		  justify-content: flex-start;
-		 	margin-left: 15%;
+	 	position: absolute;
+	 	bottom: 75px;
+	 	left: 30px; 
+	 }
+}
+@media #{$tablet-large}{
+	.icons {
+	 	left: 35px; 
+	 }
+	.footer_button{
+		font-size: 1rem;
+		padding: 10px;
+		width: 185px;
+	 }
+	
+}
+@media #{$desktop}{
+
+	.footer-wrapper{
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	.icons {
+	 	left: 40px; 
 	 }
 }

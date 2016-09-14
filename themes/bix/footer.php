@@ -5,8 +5,9 @@
  * @package inhabitent_Theme
  */
 ?>
-			</div><!-- #content -->
+	</div><!-- #content -->
 		<div class="footer-content-area">
+		<div class="footer-wrapper">
 			<footer class="footer-form">
        <div class="footer-top">
         <h1>Let's Talk</h1>
@@ -22,7 +23,7 @@
 				</div>
         </form>
 		 </footer>
-		 <div class ="icons">
+		 <div class ="icons icon-footer">
 		 		<span class="fa-stack fa-1x">
 			 		<i class="fa fa-circle fa-stack-2x icon-background"></i>
 					<i class="fa fa-facebook fa-stack-1x"></i>
@@ -35,6 +36,7 @@
 					<i class="fa fa-circle fa-stack-2x icon-background"></i>
 					<i class="fa fa-twitter fa-stack-1x"></i>
 			</span>
+	 </div>
 	 </div>
  </div>
 		<?php wp_footer(); ?>
