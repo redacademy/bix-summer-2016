@@ -2458,6 +2458,8 @@ strong {
   Our Modal Window styles
 =====================================*/
 .modal {
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   display: inline-block;
   padding: 1em; }
 
@@ -2466,12 +2468,10 @@ strong {
     padding: 1.5em; } }
 
 .modal > label {
-  background: red;
+  background: #F9AC31;
   border: 1px solid #f0c600;
   border-radius: .2em;
-  color: #000000;
-  border-radius: .2em;
-  color: #70b3cb;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
@@ -2483,7 +2483,7 @@ strong {
   transform: scale(0.97); }
 
 .modal__overlay {
-  background: red;
+  background: #F9AC31;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -2507,29 +2507,41 @@ strong {
 @media (min-height: 37.5em) {
   .modal__wrap {
     left: 50%;
+    position: absolute;
     top: 50%;
     transform: translate(-50%, -80%); } }
 
 .modal__wrap label {
-  background: #FFF;
+  background: #FFD300;
   border-radius: 50%;
   color: #000000;
   cursor: pointer;
   display: inline-block;
   height: 1.5em;
   line-height: 1.5;
+  position: absolute;
   right: .5em;
   top: .5em;
   width: 1.5em; }
 
 .modal__wrap h2 {
-  color: #FFD300;
-  margin-bottom: 1em;
+  line-height: 50px;
+  color: white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   text-transform: uppercase; }
 
 .modal__wrap p {
-  color: #FFD300;
+  display: inline;
+  color: #FFF;
   text-align: justify; }
+
+.modal input:focus ~ label {
+  transform: scale(0.97); }
+
+.model input {
+  position: absolute;
+  top: -1000px; }
 
 .modal__overlay {
   opacity: 0;
@@ -2547,15 +2559,11 @@ strong {
   top: -1000px; }
 
 .email-unlock {
-  box-shadow: none;
-  text-shadow: none;
   margin-top: 5px;
   width: 80%;
   height: 11vh; }
 
 button {
-  box-shadow: none;
-  text-shadow: none;
   padding: 10px;
   margin-top: 10px;
   color: #fff;
