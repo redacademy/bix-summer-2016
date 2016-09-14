@@ -42,13 +42,15 @@
   top: 0;
   z-index: 600;
 }
+
 .modal__wrap {
   padding: 1em 0;
   position: relative;
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 500px;
   width: 90%;
 }
+
 @media (min-width: 50em) {
   .modal__wrap {
     padding: 1.75em;
@@ -83,10 +85,9 @@
   border-bottom: 2px solid white;
   text-transform: uppercase;
 }
-.modal__wrap p {
+.modal__wrap-h5 {
   text-transform: capitalize;
-  display: inline;
-  color: #FFF;
+  color: #FFFFFF;
   text-align: center;
 }
 .modal input:focus ~ label {
