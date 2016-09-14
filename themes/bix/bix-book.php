@@ -30,7 +30,7 @@ get_header(); ?>
 
 				<?php echo CFS()->get( 'bix_book_description' ); ?>
 
-	
+
 
 				</div>
 			</section>
@@ -65,7 +65,7 @@ get_header(); ?>
 	  			</div>
 				</div>
 			</section>
-			
+
 			<section id="buy-book-anchor" class="book-section3 book-purchase">
 				<div class="book-title-wrapper">
 					<h2 class="the-bix-book-title"><span>Paying for</span> the Bix Book</h2>
@@ -82,8 +82,8 @@ get_header(); ?>
 
 					<div class="donate-now">
 				     <a class="btn btn-donate" href="#">Donate Now</a>
-				
-            <?php get_template_part( 'template-parts/content', 'modal' ); ?>
+
+            <?php get_template_part( 'template-parts/content', 'social-media-modal' ); ?>
 			  	</div>
 				</div>
 		</section>
