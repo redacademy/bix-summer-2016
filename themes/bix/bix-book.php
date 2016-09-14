@@ -65,10 +65,8 @@ get_header(); ?>
 	  			</div>
 				</div>
 			</section>
-
-	
-			<section class="book-section3 book-purchase">
-
+			
+			<section id="buy-book-anchor" class="book-section3 book-purchase">
 				<div class="book-title-wrapper">
 					<h2 class="the-bix-book-title"><span>Paying for</span> the Bix Book</h2>
 				</div>

@@ -1916,7 +1916,7 @@ strong {
 
 .ribbon, .ribbon-heading {
   display: none;
-  padding: 100px 0; }
+  padding: 0; }
   .ribbon .book-section1-inside, .ribbon-heading .book-section1-inside {
     padding: 5px 20px;
     background-color: rgba(230, 230, 230, 0.7);
@@ -2461,7 +2461,9 @@ strong {
   background: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   display: inline-block;
-  padding: 1em; }
+  padding: 1em;
+  box-shadow: none;
+  text-shadow: none; }
 
 @media (min-width: 43.75em) {
   .modal {
@@ -2476,7 +2478,6 @@ strong {
   display: inline-block;
   font-weight: bold;
   padding: 0.75em 1.5em;
-  text-shadow: 1px 1px 1px #fff;
   transition: all 0.55s; }
 
 .modal > label:hover {
@@ -2540,6 +2541,7 @@ strong {
   transform: scale(0.97); }
 
 .model input {
+  display: none;
   position: absolute;
   top: -1000px; }
 
@@ -2555,8 +2557,7 @@ strong {
   z-index: 800; }
 
 .modal__trigger {
-  position: absolute;
-  top: -1000px; }
+  display: none; }
 
 .email-unlock {
   margin-top: 5px;

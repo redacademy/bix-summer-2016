@@ -22,8 +22,8 @@ get_header(); ?>
 				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
 					<h2 class="bix-book-title">The Bix Book</h2>
 					<h3 class="bix-book-subheading">Transformational Stories</h3>
-					<label for="modal__trigger" class="btn btn-download">Launch Modal</label>
-					<?php get_template_part( 'template-front/front', 'download-modal' ); ?>
+
+					<a class="btn btn-download" href="<?php echo esc_url( get_permalink(9) ); ?>/#buy-book-anchor">Download Book</a>
 					<a class="btn btn-down" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i> </a>
 		</div>
 			</div>
