@@ -7,6 +7,8 @@
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   display: inline-block;
   padding: 1em;
+  box-shadow: none;
+  text-shadow: none;
 }
 @media (min-width: 43.75em) {
   .modal {
@@ -98,6 +100,7 @@
 }
 
 .model input {
+  display: none;
   position: absolute;
   top: -1000px;
 }
