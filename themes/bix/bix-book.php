@@ -30,12 +30,7 @@ get_header(); ?>
 
 				<?php echo CFS()->get( 'bix_book_description' ); ?>
 
-					<p>
-						This is a book of stories that I have experienced through my 30 years of consulting with corporations, institutions, non-profit organizations and individuals.
-					</p>
-					<p>
-						Stories that I hope allow you access, an opening, a possibility that allow your courage, your persistence, your compassion, your intelligence and your resilience to soar to its greatest heights knowing you may have to plumb your deepest depths to find it. You can do this. These are not my stories. These are our stories said through my life to share with you.
-					</p>
+	
 
 				</div>
 			</section>
@@ -71,8 +66,9 @@ get_header(); ?>
 				</div>
 			</section>
 
-	<section class="book-section3 book-purchase">
-    <section class="book-purchase">
+	
+			<section class="book-section3 book-purchase">
+
 				<div class="book-title-wrapper">
 					<h2 class="the-bix-book-title"><span>Paying for</span> the Bix Book</h2>
 				</div>
@@ -82,37 +78,18 @@ get_header(); ?>
 					</div>
 					<p class="book-buy">
 						<?php echo CFS()->get( 'call_to_action' ); ?>
-					<p>
-						The Bix Book runs on a “Pay-What-Feels-Right” business model.
-					</p>
-					<p>
-						You might ask: Why?
-					</p>
-					<p>
-						It personalizes the experience of this book to the value you received from it.
-					</p>
-					<p>
-						Sometimes people buy a book and it ends up not meaning much to them, but on the other hand, a different book might end up being so deeply meaningful that it impacts the reader in a transformative way.
-
-						The idea is: I cannot know what the book is worth to you as an individual, so I’m not sure having a fixed price will make sense.
-
-						Creating a fixed price is unfair because it’s too transaction-focused. It doesn’t honour the exchange that happens between the relationship of you and I as reader and author.
-
-						This “Pay-What-Feels-Right” model invites us to be more conscious with buying and to reflect on the value we bring to one another, even at a distance through a book.
-					</p>
-					<p class="book-buy">So, the decision is in your hands to give back what The Bix Book is worth to you:
 					</p>
 					<p class="book-buy-light">Customize your contribution amount in  <i class="fa fa-cc-paypal"></i>
 					</p>
 
 					<div class="donate-now">
 				     <a class="btn btn-donate" href="#">Donate Now</a>
-					</div>
+				
             <?php get_template_part( 'template-parts/content', 'modal' ); ?>
 			  	</div>
 				</div>
-			</section>
-			</div>
+		</section>
+		</div>
 		</div>
 
 		</main><!-- #main -->
