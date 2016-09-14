@@ -28,12 +28,18 @@ get_header(); ?>
 					</div>
 				</div>
 				
-				<div>
+				<div class="teaser-content">
 					<h2>Stories</h2>
 					<p>
-					If you enjoy the first three stories in The Bix Book, why not download it now and receive all of the book’s engaging content?</p>
+					If you enjoy the first three stories in <span>The Bix Book</span>, why not download it now and receive all of the book’s engaging content?</p>
 					<p>
-					The Bix Book is offered on a “Pay-What-Feels-Right” model, so you can decide how much the book is worth after you have read it.
+					<span>The Bix Book</span> is offered on a “Pay-What-Feels-Right” model, so you can decide how much the book is worth after you have read it.
+					</p>
+					<a href="#" class="btn btn-download">Download Book</a>
+					<p>With your download, you will receive the full 38 stories and an accompanying interactive workbook that follows each story.
+					</p>
+					<p>
+					Check out all the stories available in The Bix Book:
 					</p>
 
 				</div>
