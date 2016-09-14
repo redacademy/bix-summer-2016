@@ -1012,7 +1012,9 @@ strong {
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    display: block;
+    width: 100%; }
     .author-section-content-wrapper div p span {
       margin-bottom: 1rem; }
 
