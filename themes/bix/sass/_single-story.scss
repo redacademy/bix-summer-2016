@@ -100,6 +100,9 @@
 
 	.single-story-container {
 		.entry-header {
+			h2 {
+				font-size: 2.1rem;
+			}
 			h1.entry-title {
 				font-size: 2.2rem;
 				font-weight: bold;
@@ -112,13 +115,22 @@
 			display: none;
 		}
 		.story-content {
-			padding: 3rem 4rem;
-			border: 1px solid rgba(0,0,0,0.3);
-			border-top: 0;
+			.top-section-border {
+				padding: 3rem 4rem;
+				border: 1px solid rgba(0,0,0,0.3);
+				border-top: 0;
+				margin-bottom: 4rem;
+			}
+			.mid-section-border {
+				padding: 3rem 4rem;
+				border: 1px solid rgba(0,0,0,0.3);
+				margin-bottom: 4rem;
+			}
 			p {
 				margin: 0 2rem 1rem 2rem;
 			}
 			.practice-block {
+				padding: 0 2rem;
 				font-size: 2.2rem;
 				h2.practice-title {
 					font-size: 2.2rem;

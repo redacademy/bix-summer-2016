@@ -24,22 +24,25 @@
 	<div class="story-content">
 
 		<h2 class="story-number"><?php echo CFS()->get( 'story_number' ); ?></h2>
-		
-		<div class="story-section-top">
-			<?php echo CFS()->get( 'story_section_top' ); ?>
+			
+		<div class="top-section-border">
+			<div class="story-section-top">
+				<?php echo CFS()->get( 'story_section_top' ); ?>
+			</div>
 		</div>
 		
-		<div class="practice-block">
-			<h2 class="practice-title">Practice</h2>
-			<?php echo CFS()->get( 'story_section_practice_block' ); ?>
-			<hr>
+		<div class="mid-section-border">
+			<div class="practice-block">
+				<h2 class="practice-title">Practice</h2>
+				<?php echo CFS()->get( 'story_section_practice_block' ); ?>
+				<hr>
+			</div>
+			<div class="story-section-bottom">
+				<?php echo CFS()->get( 'story_section_bottom' ); ?>
+			</div>
 		</div>
 
-		<div class="story-section-bottom">
-			<?php echo CFS()->get( 'story_section_bottom' ); ?>
-		</div>
 		
-
 	</div>
 
 	<footer class="entry-footer">
