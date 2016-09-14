@@ -1222,6 +1222,10 @@ strong {
     padding: 8px 46px;
     margin-bottom: 25px;
     font-weight: 300; }
+    .banner-info-wrapper .btn-download:hover {
+      color: #70b3cb;
+      border: solid #70b3cb 2px;
+      background-color: #fff; }
   .banner-info-wrapper .btn-down {
     border: solid #fff 2px;
     border-radius: 50%;
@@ -1478,6 +1482,10 @@ strong {
     font-weight: 500;
     font-size: 1.1rem;
     padding: 8px 46px; }
+    .sample-story-front .btn-download:hover {
+      color: #70b3cb;
+      border: solid #70b3cb 2px;
+      background-color: #fff; }
 
 @media (min-width: 600px) {
   .sample-story-front {
@@ -1569,6 +1577,10 @@ strong {
       font-size: 1.1rem;
       padding: 10px 80px;
       margin-top: 20px; }
+      .home-book .book-summary .btn-discover:hover {
+        color: #70b3cb;
+        border: solid #70b3cb 2px;
+        background-color: #fff; }
 
 @media (min-width: 600px) {
   .home-book {
@@ -1710,6 +1722,10 @@ strong {
       font-weight: 500;
       font-size: 1.1rem;
       padding: 10px 80px; }
+      .home-author .home-author-info .btn-explore:hover {
+        color: #70b3cb;
+        border: solid #70b3cb 2px;
+        background-color: #fff; }
 
 @media (min-width: 600px) {
   .home-author {
@@ -2059,6 +2075,10 @@ strong {
       display: block;
       text-align: center;
       width: 230px; }
+      .book-purchase .book-purchase-info .btn-donate:hover {
+        color: #70b3cb;
+        border: solid #70b3cb 2px;
+        background-color: #fff; }
     .book-purchase .book-purchase-info .book-or {
       font-weight: bold;
       margin-bottom: 0; }
@@ -2416,6 +2436,10 @@ strong {
   text-align: center;
   box-shadow: none;
   text-shadow: none; }
+  .footer_button:hover {
+    color: #70b3cb;
+    border: solid #70b3cb 2px;
+    background-color: #fff; }
 
 .footer_button:hover {
   box-shadow: none;

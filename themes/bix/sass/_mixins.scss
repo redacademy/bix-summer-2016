@@ -33,4 +33,9 @@
   background-color: $color__blue;
   font-weight: 500;
   font-size: 1.1rem;
+  &:hover{
+    color: $color__blue;
+    border: solid $color__blue 2px;
+    background-color: #fff;
+  }
 }
