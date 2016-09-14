@@ -57,10 +57,10 @@
 			font-size: 21px;
 			font-weight: 400;
 			color: $color__orange;
-			padding: 0 10vw;
+			padding: 0 40px;
 		}
 		p{
-			margin: 5vw 10vw;
+			margin: 0 30px 20px 30px;
 			font-weight: 300;
 		}
 		.practice-block {
@@ -100,10 +100,36 @@
 
 	.single-story-container {
 		.entry-header {
+			h1.entry-title {
+				font-size: 2.2rem;
+				font-weight: bold;
+			}
 			img {
 				min-width: 100%;
 			}
 		}
+		.story-number {
+			display: none;
+		}
+		.story-content {
+			padding: 3rem 4rem;
+			border: 1px solid rgba(0,0,0,0.3);
+			border-top: 0;
+			p {
+				margin: 0 2rem 1rem 2rem;
+			}
+			.practice-block {
+				font-size: 2.2rem;
+				h2.practice-title {
+					font-size: 2.2rem;
+					padding: 0 5vw
+				}
+				hr {
+					width: 15vw;
+				}
+			}
+		}
 	}
+
 
 }

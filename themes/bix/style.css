@@ -1845,9 +1845,9 @@ strong {
       font-size: 21px;
       font-weight: 400;
       color: #F9AC31;
-      padding: 0 10vw; }
+      padding: 0 40px; }
     .single-story-container .story-content p {
-      margin: 5vw 10vw;
+      margin: 0 30px 20px 30px;
       font-weight: 300; }
     .single-story-container .story-content .practice-block {
       font-size: 1.5rem;
@@ -1877,8 +1877,26 @@ strong {
         background: #F9AC31; }
 
 @media all and (min-width: 600px) {
+  .single-story-container .entry-header h1.entry-title {
+    font-size: 2.2rem;
+    font-weight: bold; }
   .single-story-container .entry-header img {
-    min-width: 100%; } }
+    min-width: 100%; }
+  .single-story-container .story-number {
+    display: none; }
+  .single-story-container .story-content {
+    padding: 3rem 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 0; }
+    .single-story-container .story-content p {
+      margin: 0 2rem 1rem 2rem; }
+    .single-story-container .story-content .practice-block {
+      font-size: 2.2rem; }
+      .single-story-container .story-content .practice-block h2.practice-title {
+        font-size: 2.2rem;
+        padding: 0 5vw; }
+      .single-story-container .story-content .practice-block hr {
+        width: 15vw; } }
 
 /* ----------------- Top Section - Banner -------------*/
 .bix-book-banner {
