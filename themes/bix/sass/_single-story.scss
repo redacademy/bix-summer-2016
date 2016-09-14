@@ -114,11 +114,12 @@
 	height: 100vh;
 	top: 0;
 	.bottom-toolbar-wrapper {
+		transition: 1s;
 		position: absolute;
 		width: 100%;
 		height: 60px;
 		background: white;
-		bottom: 80px;
+		bottom: -60px;
 		border: 2px solid $color__blue;
 		border-left: 0;
 		border-right: 0;
@@ -127,14 +128,17 @@
 		justify-content: center;
 		align-items: center;
 		.bottom-toolbar {
-			background: gray;
+			border-style: solid;
+			border-width: 0 2px;
+			border-color: $color__orange;
 			height: 100%;
 			width: 100%;
 			max-width: 1024px;
 		}
 	}
 	.bottom-toolbar-wrapper-slide-up {
-		bottom: 100px;
+		transition: 1s;
+		bottom: 50px;
 	}
 }
 

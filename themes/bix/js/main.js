@@ -4,6 +4,7 @@ $(document).ready(function(){
 	console.log('hello');
 
 	// on scroll behaviours
+		var lastScrollTop = 0;
 		window.onscroll = function() {
 			// desktop
 		    if (window.scrollY > 60) {
@@ -42,6 +43,17 @@ $(document).ready(function(){
 			    	$(".mobile-nav-wrapper .main-navigation").removeClass("transparent-background");
 			    };
 			}
+
+			// single story tool bar
+			var st = $(this).scrollTop();
+			if (st > lastScrollTop){
+				$(".bottom-toolbar-wrapper").removeClass("bottom-toolbar-wrapper-slide-up");
+			} else {
+				if (st > 500) {
+					$(".bottom-toolbar-wrapper").addClass("bottom-toolbar-wrapper-slide-up");
+				}
+			}
+			lastScrollTop = st;
 
 		},false;
 
