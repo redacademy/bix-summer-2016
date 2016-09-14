@@ -2580,7 +2580,7 @@ strong {
       font-weight: 300; }
       .teaser-section1 .teaser-content p span {
         font-weight: 500; }
-    .teaser-section1 .teaser-content .btn-download {
+    .teaser-section1 .teaser-content .btn-download, .teaser-section1 .teaser-content .btn-expand {
       color: #fff;
       text-decoration: none;
       border: solid #fff 2px;
@@ -2594,10 +2594,30 @@ strong {
       margin: 0 auto;
       display: block;
       text-align: center; }
-      .teaser-section1 .teaser-content .btn-download:hover {
+      .teaser-section1 .teaser-content .btn-download:hover, .teaser-section1 .teaser-content .btn-expand:hover {
         color: #70b3cb;
         border: solid #70b3cb 2px;
         background-color: #fff; }
+    .teaser-section1 .teaser-content .btn-expand {
+      width: 100px;
+      padding: 2px 10px;
+      font-size: 1rem;
+      text-transform: capitalize; }
+    .teaser-section1 .teaser-content .table-contents-container {
+      border: 1px solid #70b3cb;
+      position: relative; }
+      .teaser-section1 .teaser-content .table-contents-container div {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(112, 179, 203, 0.9);
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 @media (min-width: 600px) {
   .teaser-banner {

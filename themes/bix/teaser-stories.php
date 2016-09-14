@@ -41,7 +41,12 @@ get_header(); ?>
 					<p>
 					Check out all the stories available in The Bix Book:
 					</p>
-
+					<div class="table-contents-container">
+						<img src="<?php echo(get_template_directory_uri());?>/images/table-of-contents.png" alt="bix book table of contents"/>
+						<div>
+							<a href="<?php echo(get_template_directory_uri());?>/images/table-of-contents.png" target="_blank" class="btn btn-expand">Expand</a>
+						</div>
+					</div>
 				</div>
 				
 			</section>
