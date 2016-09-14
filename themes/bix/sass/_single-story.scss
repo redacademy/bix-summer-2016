@@ -134,6 +134,14 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			.tools {
+				font-size: 2rem;
+				padding: 0 20px;
+				color: $color__blue;
+				i {
+					padding: 0 10px;
+				}
+			}
 			.next-story {
 				border-left: solid 1px $color__blue;
 				padding: 0 20px;

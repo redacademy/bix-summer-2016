@@ -1916,6 +1916,12 @@ strong {
           justify-content: space-between;
       -ms-flex-align: center;
           align-items: center; }
+      .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar .tools {
+        font-size: 2rem;
+        padding: 0 20px;
+        color: #70b3cb; }
+        .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar .tools i {
+          padding: 0 10px; }
       .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar .next-story {
         border-left: solid 1px #70b3cb;
         padding: 0 20px;
