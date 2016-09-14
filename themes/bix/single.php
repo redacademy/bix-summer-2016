@@ -29,7 +29,13 @@ get_header(); ?>
 		<div class="bottom-toolbar-container">
 			<div class="bottom-toolbar-wrapper">
 				<div class="bottom-toolbar">
-					
+					<div class="tools">
+						
+					</div>
+					<div class="next-story">
+						<p>Read the Next Story</p>
+						<?php next_post_link('%link'); ?>
+					</div>
 				</div>
 			</div>
 		</div>

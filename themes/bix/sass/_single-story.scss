@@ -117,10 +117,10 @@
 		transition: 1s;
 		position: absolute;
 		width: 100%;
-		height: 60px;
+		height: 70px;
 		background: white;
-		bottom: -60px;
-		border: 2px solid $color__blue;
+		bottom: -70px;
+		border: 1px solid $color__blue;
 		border-left: 0;
 		border-right: 0;
 		z-index: 3;
@@ -128,12 +128,29 @@
 		justify-content: center;
 		align-items: center;
 		.bottom-toolbar {
-			border-style: solid;
-			border-width: 0 2px;
-			border-color: $color__orange;
 			height: 100%;
 			width: 100%;
 			max-width: 1024px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.next-story {
+				border-left: solid 1px $color__blue;
+				padding: 0 20px;
+				font-family: $font__header;
+				p{
+					margin: 0;
+					padding: 0;
+				}
+				a {
+					text-decoration: none;
+					text-transform: uppercase;
+					color: $color__blue;
+					&:hover {
+						color: $color__orange;
+					}
+				}
+			}
 		}
 	}
 	.bottom-toolbar-wrapper-slide-up {
