@@ -2611,6 +2611,7 @@ strong {
   Our Modal Window styles
 =====================================*/
 .modal {
+  text-transform: capitalize;
   background: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   display: inline-block;
@@ -2679,6 +2680,7 @@ strong {
   width: 1.5em; }
 
 .modal__wrap h2 {
+  text-transform: capitalize;
   line-height: 50px;
   color: white;
   border-top: 2px solid white;
@@ -2686,6 +2688,7 @@ strong {
   text-transform: uppercase; }
 
 .modal__wrap p {
+  text-transform: capitalize;
   display: inline;
   color: #FFF;
   text-align: justify; }
@@ -2730,6 +2733,13 @@ strong {
   box-shadow: none;
   text-shadow: none;
   width: 50%; }
+
+.modal-button:hover {
+  text-shadow: none;
+  box-shadow: none;
+  background-color: #ffffff;
+  border: solid #70b3cb 2px;
+  color: #70b3cb; }
 
 .blue-books {
   color: #70b3cb; }
