@@ -2560,9 +2560,9 @@ strong {
     transform: translate(-50%, -80%); } }
 
 .modal__wrap label {
-  background: #FFD300;
+  background: #F9AC31;
   border-radius: 50%;
-  color: #000000;
+  color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
   height: 1.5em;
@@ -2582,7 +2582,7 @@ strong {
 .modal__wrap p {
   display: inline;
   color: #FFF;
-  text-align: center; }
+  text-align: justify; }
 
 .modal input:focus ~ label {
   transform: scale(0.97); }
@@ -2611,7 +2611,7 @@ strong {
   width: 80%;
   height: 11vh; }
 
-button {
+.modal-button {
   padding: 10px;
   margin-top: 10px;
   color: #fff;
@@ -2620,11 +2620,10 @@ button {
   border-radius: 30px;
   background-color: #70b3cb;
   font-weight: 500;
-  font-size: 1.1rem; }
-
-.model__wrap label {
-  background-color: #ffffff;
-  color: #70b3cb; }
+  font-size: 1.1rem;
+  box-shadow: none;
+  text-shadow: none;
+  width: 50%; }
 
 .blue-books {
   color: #70b3cb; }
@@ -2645,7 +2644,8 @@ button {
 
 .icon-size {
   display: inline-block;
-  color: #FFFFFF;
+  background-color: #ffffff;
+  color: #F9AC31;
   font-size: 50px;
   line-height: 100px;
   border: 7px solid #FFFFFF;

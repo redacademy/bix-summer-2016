@@ -12,6 +12,7 @@
 	           <li><a class="icon-size" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
 	           <li><a class="icon-size" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
        </ul>
+       <button class="modal-button" href="#"> Done </button>
    </div>
  </div>
 </div>

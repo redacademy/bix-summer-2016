@@ -62,9 +62,9 @@
   }
 }
 .modal__wrap label {
-  background: #FFD300;
+  background: #F9AC31;
   border-radius: 50%;
-  color: #000000;
+  color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
   height: 1.5em;
@@ -84,7 +84,7 @@
 .modal__wrap p {
   display: inline;
   color: #FFF;
-  text-align: center;
+  text-align: justify;
 }
 .modal input:focus ~ label {
   transform: scale(0.97);
@@ -113,7 +113,8 @@
     // position: absolute;
     // top: -1000px;
     display: none;
-  }
+}
+
 
 .email-unlock {
     margin-top: 5px;
@@ -121,7 +122,7 @@
     height: 11vh;
 }
 
-button {
+.modal-button {
   padding: 10px;
   margin-top: 10px;
   color: #fff;
@@ -131,12 +132,11 @@ button {
   background-color: #70b3cb;
   font-weight: 500;
   font-size: 1.1rem;
+  box-shadow: none;
+  text-shadow: none;
+  width: 50%;
 }
 
-.model__wrap label {
-    background-color: #ffffff;
-    color: #70b3cb;
-}
 
 .blue-books {
   color:#70b3cb;

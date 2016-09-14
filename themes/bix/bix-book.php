@@ -83,7 +83,7 @@ get_header(); ?>
 					<div class="donate-now">
 				     <a class="btn btn-donate" href="#">Donate Now</a>
 
-            <?php get_template_part( 'template-parts/content', 'modal' ); ?>
+            <?php get_template_part( 'template-parts/content', 'social-media-modal' ); ?>
 			  	</div>
 				</div>
 		</section>
