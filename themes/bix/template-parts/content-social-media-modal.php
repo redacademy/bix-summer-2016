@@ -6,11 +6,11 @@
         <div class="modal__wrap">
             <label class="close-out" for="modal__trigger">&#10006;</label>
             <h1> Share This </h1>
-            <p> Share this on your favourite social media page</p>
+            <p class="p-margin"> Share this on your favourite social media page</p>
         <ul class="icons-list">
-	           <li><a class="icon-size" href="#"><i class="fa fa-facebook"></i></a></li>
-	           <li><a class="icon-size" href="#"><i class="fa fa-twitter"></i></a></li>
-	           <li><a class="icon-size" href="#"><i class="fa fa-linkedin"></i></a></li>
+	           <li><a class="icon-size" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+	           <li><a class="icon-size" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+	           <li><a class="icon-size" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
        </ul>
    </div>
  </div>

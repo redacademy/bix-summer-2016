@@ -84,7 +84,7 @@
 .modal__wrap p {
   display: inline;
   color: #FFF;
-  text-align: justify;
+  text-align: center;
 }
 .modal input:focus ~ label {
   transform: scale(0.97);
@@ -117,7 +117,7 @@
 
 .email-unlock {
     margin-top: 5px;
-    width: 80%; 
+    width: 80%;
     height: 11vh;
 }
 
@@ -141,5 +141,3 @@ button {
 .blue-books {
   color:#70b3cb;
 }
-
-

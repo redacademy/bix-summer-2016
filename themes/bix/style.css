@@ -2535,7 +2535,7 @@ strong {
 .modal__wrap p {
   display: inline;
   color: #FFF;
-  text-align: justify; }
+  text-align: center; }
 
 .modal input:focus ~ label {
   transform: scale(0.97); }
@@ -2593,19 +2593,43 @@ button {
   display: inline;
   margin-right: 20px; }
 
+.p-margin {
+  margin-left: 20px; }
+
 .icon-size {
   display: inline-block;
+  color: #FFFFFF;
   font-size: 50px;
   line-height: 100px;
-  border: 10px solid #7f8c8d;
+  border: 7px solid #FFFFFF;
   border-radius: 50%;
-  color: #7f8c8d;
   width: 100px;
   height: 100px;
+  /*font-size: 32px;
+  line-height: 67px;
+  border: 5px solid #FFFFFF;
+  border-radius: 60%;
+  width: 60px;
+  height: 69px; */
   text-align: center;
   vertical-align: bottom; }
 
 .icon-size:hover {
-  color: #95a5a6;
-  border-color: #95a5a6;
-  color: #95a5a6; }
+  box-shadow: none;
+  text-shadow: none; }
+
+/*@media (min-width: 600px) {
+
+.icon-size {
+
+  font-size: 50px;
+  line-height: 100px;
+  border: 7px solid #FFFFFF;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+}*/
