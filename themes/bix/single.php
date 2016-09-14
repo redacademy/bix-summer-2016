@@ -34,10 +34,11 @@ get_header(); ?>
 						<i class="fa fa-comments" aria-hidden="true"></i>
 						<i class="fa fa-share-square-o" aria-hidden="true"></i>
 					</div>
+
 					<div class="next-story">
-						<?php if (next_post_link()) { ?>
+						<?php if (get_adjacent_post(false, '', true)) { // check if theres previous post?> 
 							<p>Read the Next Story</p>
-							<?php next_post_link('%link'); ?>
+							<?php previous_post_link('%link'); ?>
 						<?php } else { ?>
 							<p>Want more stories?</p>
 							<a href="#">What is offered in the bix book</a>
