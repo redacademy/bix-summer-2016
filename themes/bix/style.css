@@ -1793,20 +1793,27 @@ strong {
 /*--------------------------------------------------------------
 # Single Story
 --------------------------------------------------------------*/
+.single-story-site .stories-banner {
+  display: none; }
+
 .single-story-container {
   min-width: 320px; }
   .single-story-container .entry-header {
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
     position: relative;
     font-family: "Titillium Web", sans-serif;
     text-transform: uppercase; }
     .single-story-container .entry-header h2 {
       font-size: 21px;
       position: absolute;
-      top: 2vh;
-      left: 5vw;
+      top: 23px;
+      left: 30px;
       font-weight: 400; }
+    .single-story-container .entry-header .stories-ribbon {
+      position: absolute;
+      top: 30px;
+      left: -45px;
+      z-index: -2; }
     .single-story-container .entry-header h1.entry-title {
       width: 100%;
       text-align: center;
@@ -1824,9 +1831,10 @@ strong {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
-      .single-story-container .entry-header .img-container img {
+      .single-story-container .entry-header .img-container img.wp-post-image {
         min-height: 100%;
-        max-width: none; }
+        max-width: none;
+        z-index: -3; }
   .single-story-container .story-content {
     display: -ms-flexbox;
     display: flex;
@@ -1876,14 +1884,53 @@ strong {
         width: 50vw;
         background: #F9AC31; }
 
+.bottom-toolbar-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0; }
+  .bottom-toolbar-container .bottom-toolbar-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: white;
+    bottom: 80px;
+    border: 2px solid #70b3cb;
+    border-left: 0;
+    border-right: 0;
+    z-index: 3;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar {
+      background: gray;
+      height: 100%;
+      width: 100%;
+      max-width: 1024px; }
+  .bottom-toolbar-container .bottom-toolbar-wrapper-slide-up {
+    bottom: 100px; }
+
 @media all and (min-width: 600px) {
-  .single-story-container .entry-header h2 {
-    font-size: 2.1rem; }
-  .single-story-container .entry-header h1.entry-title {
-    font-size: 2.2rem;
-    font-weight: bold; }
-  .single-story-container .entry-header img {
-    min-width: 100%; }
+  .single-story-site .stories-banner {
+    display: -ms-flexbox;
+    display: flex; }
+  .single-story-container .entry-header {
+    height: 80vh; }
+    .single-story-container .entry-header .stories-ribbon {
+      position: absolute;
+      top: 50px;
+      left: -45px; }
+    .single-story-container .entry-header h2 {
+      font-size: 2.1rem; }
+    .single-story-container .entry-header h1.entry-title {
+      top: 60vh;
+      font-size: 2.2rem;
+      font-weight: bold; }
+    .single-story-container .entry-header img.wp-post-image {
+      min-width: 100%; }
   .single-story-container .story-number {
     display: none; }
   .single-story-container .story-content .top-section-border {

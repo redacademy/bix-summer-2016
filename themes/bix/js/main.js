@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	console.log('hello');
 
-	// nav bar
+	// on scroll behaviours
 		window.onscroll = function() {
 			// desktop
 		    if (window.scrollY > 60) {

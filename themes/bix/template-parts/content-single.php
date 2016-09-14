@@ -17,6 +17,8 @@
 
 		<h2><?php echo CFS()->get( 'story_number' ); ?></h2>
 
+		<img class="stories-ribbon" src="<?php echo(get_template_directory_uri());?>/images/yellow-ribbon.svg" alt="yellow ribbon"/>
+
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 	</header><!-- .entry-header -->
