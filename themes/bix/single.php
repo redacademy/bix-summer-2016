@@ -15,9 +15,9 @@ get_header(); ?>
 				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
 				<h2 class="stories-title">Teaser</h2>
 				<p class="stories-subtitle">Get a taste of the content in The Bix Book with these sample stories</p>
-			</div>		
+			</div>
 		</section>
-	
+
 		<div class="single-story-container container">
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -25,17 +25,17 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 		</div>
-		
+
 			<div class="bottom-toolbar-wrapper">
 				<div class="bottom-toolbar">
 					<div class="tools">
-						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+					<?php get_template_part( 'template-parts/content', 'social-media-modal' ); ?>
 						<i class="fa fa-comments" aria-hidden="true"></i>
 						<i class="fa fa-share-square-o" aria-hidden="true"></i>
 					</div>
 
 					<div class="next-story">
-						<?php if (get_adjacent_post(false, '', true)) { // check if theres previous post?> 
+						<?php if (get_adjacent_post(false, '', true)) { // check if theres previous post?>
 							<p>Read the Next Story</p>
 							<?php previous_post_link('%link'); ?>
 						<?php } else { ?>

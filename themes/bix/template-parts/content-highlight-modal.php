@@ -2,8 +2,7 @@
 <!--Start of Modal -->
 <div class="modal">
     <input class="modal__trigger" id="modal__trigger" type="checkbox"></input>
-    <p>Download <span class="blue-books"> The Bix Book </span> first </p>
-    <label for="modal__trigger" class="btn btn-donate">Donate Later</label>
+    <label for="modal__trigger" class="fa fa-pencil-square-o" aria-hidden="true"></label>
     <div class="modal__overlay" role="dialog" aria-labelledby="modal__title" aria-describedby="modal_desc">
         <div class="modal__wrap">
             <label class="close" for="modal__trigger">&#10006;</label>
