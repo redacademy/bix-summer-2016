@@ -573,7 +573,7 @@ textarea {
     width: 100vw;
     height: 100vh;
     overflow: hidden; }
-    .mobile-nav-wrapper .menu-main-menu-container ul {
+    .mobile-nav-wrapper .menu-main-menu-container ul.menu {
       display: none;
       margin: 0;
       padding: 10px 25px;
@@ -585,20 +585,34 @@ textarea {
       list-style: none;
       text-align: right;
       background: white; }
-      .mobile-nav-wrapper .menu-main-menu-container ul li {
+      .mobile-nav-wrapper .menu-main-menu-container ul.menu li {
         margin: 15px 0; }
-        .mobile-nav-wrapper .menu-main-menu-container ul li a {
+        .mobile-nav-wrapper .menu-main-menu-container ul.menu li a {
           font-family: "Titillium Web", sans-serif;
           font-size: 18px;
           text-decoration: none;
           color: #70b3cb;
           text-transform: uppercase; }
+        .mobile-nav-wrapper .menu-main-menu-container ul.menu li.current-menu-item a {
+          color: #F9AC31;
+          border-color: #F9AC31; }
+      .mobile-nav-wrapper .menu-main-menu-container ul.menu ul.sub-menu {
+        display: none;
+        list-style: none;
+        text-align: right; }
+        .mobile-nav-wrapper .menu-main-menu-container ul.menu ul.sub-menu li {
+          margin: 5px 0; }
+          .mobile-nav-wrapper .menu-main-menu-container ul.menu ul.sub-menu li a {
+            color: #70b3cb;
+            border-color: white;
+            text-transform: none;
+            font-size: 15px; }
+          .mobile-nav-wrapper .menu-main-menu-container ul.menu ul.sub-menu li.current-menu-item a {
+            color: #F9AC31;
+            border-color: #F9AC31; }
   .mobile-nav-wrapper .menu-item a {
     padding-right: 8px;
     border-right: 8px solid white; }
-  .mobile-nav-wrapper ul li.current-menu-item a {
-    color: #F9AC31;
-    border-color: #F9AC31; }
   .mobile-nav-wrapper .transparent-background {
     transition: 1s;
     background: rgba(255, 255, 255, 0.9); }
@@ -702,11 +716,14 @@ textarea {
           .desktop-nav-wrapper .menu-main-menu-container ul li:hover a {
             transition: 1s;
             color: #F9AC31; }
-  .desktop-nav-wrapper ul li.current-menu-item a {
-    color: #F9AC31;
+  .desktop-nav-wrapper ul li.current-menu-item, .desktop-nav-wrapper ul li.current-menu-parent {
     border-color: #F9AC31; }
+    .desktop-nav-wrapper ul li.current-menu-item a, .desktop-nav-wrapper ul li.current-menu-parent a {
+      color: #F9AC31; }
   .desktop-nav-wrapper .transparent-background {
     background: rgba(255, 255, 255, 0.95); }
+  .desktop-nav-wrapper ul.sub-menu {
+    display: none; }
 
 .desktop-nav-wrapper-home {
   position: relative;

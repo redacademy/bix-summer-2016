@@ -84,5 +84,10 @@ $(document).ready(function(){
 		  contain: true
 		});
 
+	// sub menu display only on single post page
+	if ($('.single-post').length > 0 ) {
+		$('.mobile-nav-wrapper ul.sub-menu').show();
+	}
+
 });
 }(jQuery));
