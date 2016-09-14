@@ -1904,6 +1904,7 @@ strong {
         background: #F9AC31; }
 
 .bottom-toolbar-wrapper {
+  display: none;
   transition: 1s;
   position: fixed;
   width: 100%;
@@ -1914,11 +1915,10 @@ strong {
   border-left: 0;
   border-right: 0;
   z-index: 3;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
+      -ms-grid-row-align: center;
       align-items: center; }
   .bottom-toolbar-wrapper .bottom-toolbar {
     height: 100%;
@@ -2030,7 +2030,10 @@ strong {
       font-size: 2.2rem;
       padding: 0 5vw; }
     .single-story-container .story-content .practice-block hr {
-      width: 15vw; } }
+      width: 15vw; }
+  .bottom-toolbar-wrapper {
+    display: -ms-flexbox;
+    display: flex; } }
 
 /* ----------------- Top Section - Banner -------------*/
 .bix-book-banner {

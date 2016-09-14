@@ -109,6 +109,7 @@
 }
 
 .bottom-toolbar-wrapper {
+	display: none;
 	transition: 1s;
 	position: fixed;
 	width: 100%;
@@ -119,7 +120,6 @@
 	border-left: 0;
 	border-right: 0;
 	z-index: 3;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	.bottom-toolbar {
@@ -261,6 +261,9 @@
 				}
 			}
 		}
+	}
+	.bottom-toolbar-wrapper {
+		display: flex;
 	}
 
 
