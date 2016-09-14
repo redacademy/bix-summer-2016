@@ -26,7 +26,6 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 		</div>
 		
-		<div class="bottom-toolbar-container">
 			<div class="bottom-toolbar-wrapper">
 				<div class="bottom-toolbar">
 					<div class="tools">
@@ -45,7 +44,7 @@ get_header(); ?>
 						<?php }; ?>
 					</div>
 				</div>
-			</div>
+
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

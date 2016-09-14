@@ -43,7 +43,10 @@
 				<?php echo CFS()->get( 'story_section_bottom' ); ?>
 			</div>
 		</div>
-
+		
+		<div class="comment-section-border">	
+				<?php comments_template(); ?> 
+		</div>
 		
 	</div>
 

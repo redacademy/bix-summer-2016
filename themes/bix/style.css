@@ -1903,61 +1903,59 @@ strong {
         width: 50vw;
         background: #F9AC31; }
 
-.bottom-toolbar-container {
-  display: none;
+.bottom-toolbar-wrapper {
+  transition: 1s;
   position: fixed;
   width: 100%;
-  height: 100vh;
-  top: 0; }
-  .bottom-toolbar-container .bottom-toolbar-wrapper {
-    transition: 1s;
-    position: absolute;
+  height: 70px;
+  background: white;
+  bottom: -70px;
+  border: 1px solid #70b3cb;
+  border-left: 0;
+  border-right: 0;
+  z-index: 3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .bottom-toolbar-wrapper .bottom-toolbar {
+    height: 100%;
     width: 100%;
-    height: 70px;
-    background: white;
-    bottom: -70px;
-    border: 1px solid #70b3cb;
-    border-left: 0;
-    border-right: 0;
-    z-index: 3;
+    max-width: 1024px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     -ms-flex-align: center;
         align-items: center; }
-    .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar {
-      height: 100%;
-      width: 100%;
-      max-width: 1024px;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      -ms-flex-align: center;
-          align-items: center; }
-      .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar .tools {
-        font-size: 2rem;
-        padding: 0 20px;
+    .bottom-toolbar-wrapper .bottom-toolbar .tools {
+      font-size: 2rem;
+      padding: 0 20px;
+      color: #70b3cb; }
+      .bottom-toolbar-wrapper .bottom-toolbar .tools i {
+        padding: 0 10px; }
+    .bottom-toolbar-wrapper .bottom-toolbar .next-story {
+      border-left: solid 1px #70b3cb;
+      padding: 0 20px;
+      font-family: "Titillium Web", sans-serif; }
+      .bottom-toolbar-wrapper .bottom-toolbar .next-story p {
+        margin: 0;
+        padding: 0; }
+      .bottom-toolbar-wrapper .bottom-toolbar .next-story a {
+        text-decoration: none;
+        text-transform: uppercase;
         color: #70b3cb; }
-        .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar .tools i {
-          padding: 0 10px; }
-      .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar .next-story {
-        border-left: solid 1px #70b3cb;
-        padding: 0 20px;
-        font-family: "Titillium Web", sans-serif; }
-        .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar .next-story p {
-          margin: 0;
-          padding: 0; }
-        .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar .next-story a {
-          text-decoration: none;
-          text-transform: uppercase;
-          color: #70b3cb; }
-          .bottom-toolbar-container .bottom-toolbar-wrapper .bottom-toolbar .next-story a:hover {
-            color: #F9AC31; }
-  .bottom-toolbar-container .bottom-toolbar-wrapper-slide-up {
-    transition: 1s;
-    bottom: 50px; }
+        .bottom-toolbar-wrapper .bottom-toolbar .next-story a:hover {
+          color: #F9AC31; }
+
+.bottom-toolbar-wrapper-slide-up {
+  transition: 1s;
+  bottom: 50px; }
+
+#disqus_thread {
+  width: 100%; }
 
 @media all and (min-width: 600px) {
   .single-story-site .stories-banner {
@@ -1988,6 +1986,11 @@ strong {
     padding: 3rem 4rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
     margin-bottom: 4rem; }
+  .single-story-container .story-content .comment-section-border {
+    width: 100%;
+    padding: 3rem 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 4rem; }
   .single-story-container .story-content p {
     margin: 0 2rem 1rem 2rem; }
   .single-story-container .story-content .practice-block {
@@ -1997,9 +2000,7 @@ strong {
       font-size: 2.2rem;
       padding: 0 5vw; }
     .single-story-container .story-content .practice-block hr {
-      width: 15vw; }
-  .bottom-toolbar-container {
-    display: block; } }
+      width: 15vw; } }
 
 /* ----------------- Top Section - Banner -------------*/
 .bix-book-banner {
