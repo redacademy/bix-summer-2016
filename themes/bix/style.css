@@ -1954,8 +1954,35 @@ strong {
   transition: 1s;
   bottom: 50px; }
 
-#disqus_thread {
+.comment-section-border {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  -ms-flex-flow: column;
+      flex-flow: column;
   width: 100%; }
+  .comment-section-border .comment-title-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: center; }
+  .comment-section-border .comment-title {
+    border: solid 2px #F9AC31;
+    border-width: 2px 0;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 400;
+    color: #F9AC31;
+    padding: 0 10vw;
+    margin-top: 0; }
+  .comment-section-border #disqus_thread {
+    width: 100%;
+    padding: 1rem 2rem; }
 
 @media all and (min-width: 600px) {
   .single-story-site .stories-banner {
@@ -1991,6 +2018,9 @@ strong {
     padding: 3rem 4rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
     margin-bottom: 4rem; }
+    .single-story-container .story-content .comment-section-border .comment-title {
+      font-size: 2.2rem;
+      padding: 0 5vw; }
   .single-story-container .story-content p {
     margin: 0 2rem 1rem 2rem; }
   .single-story-container .story-content .practice-block {

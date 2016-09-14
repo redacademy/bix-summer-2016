@@ -161,10 +161,35 @@
 	bottom: 50px;
 }
 
-
-#disqus_thread {
+.comment-section-border {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-flow: column;
 	width: 100%;
+	.comment-title-wrapper {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	.comment-title {
+		border: solid 2px $color__orange;
+		border-width: 2px 0;
+		text-align: center;
+		font-family: $font__header;
+		text-transform: uppercase;
+		font-size: 21px;
+		font-weight: 400;
+		color: $color__orange;
+		padding: 0 10vw;
+		margin-top: 0;
+	}
+	#disqus_thread {
+		width: 100%;
+		padding: 1rem 2rem;
+	}
 }
+
 
 // breakpoints
 
@@ -216,6 +241,10 @@
 				padding: 3rem 4rem;
 				border: 1px solid rgba(0,0,0,0.3);
 				margin-bottom: 4rem;
+				.comment-title {
+					font-size: 2.2rem;
+					padding: 0 5vw
+				}
 			}
 			p {
 				margin: 0 2rem 1rem 2rem;

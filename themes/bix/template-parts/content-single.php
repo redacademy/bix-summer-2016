@@ -44,8 +44,12 @@
 			</div>
 		</div>
 		
-		<div class="comment-section-border">	
-				<?php comments_template(); ?> 
+		<div class="comment-section-border">
+		<div class="comment-title-wrapper">	
+			<h2 class="comment-title">Response</h2>
+		</div>
+			
+			<?php comments_template(); ?> 
 		</div>
 		
 	</div>
