@@ -22,7 +22,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header" >
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
@@ -35,8 +35,7 @@
 					}
 				?>
 			">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
+				<nav id="site-navigation" class="main-navigation" >
 					<a href="<?php echo home_url()?>" class="logo-link">
 						<img src="<?php echo get_template_directory_uri() . "/images/bix-logo-blue.png"?>" alt="">
 					</a>
@@ -62,7 +61,7 @@
 			">
 				<div class="desktop-nav-container">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
+					
 						<a href="<?php echo home_url()?>" class="logo-link <?php 
 
 							if (is_front_page()) {
