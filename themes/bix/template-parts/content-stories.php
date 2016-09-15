@@ -23,7 +23,10 @@
 
 			<div class="entry-content">
 				<?php the_title( sprintf( '<h2 class="stories-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-				<?php echo CFS()->get( 'story_excerpt' ); ?>
+				<?php echo CFS()->get( 'story_excerpt');?>
+				<a href="<?php the_permalink(); ?> " class="btn btn-stories">Explore</a>
+
+
 			</div><!-- .entry-content -->
 		</header><!-- .entry-header -->	
 	</article><!-- #post-## -->
