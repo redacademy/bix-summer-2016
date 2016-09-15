@@ -29,7 +29,7 @@
 			
 		<div class="top-section-border">
 			<div class="story-section-top">
-				<?php echo CFS()->get( 'story_section_top' ); ?>
+				<?php echo CFS()->get( 'story_top_section' ); ?>
 			</div>
 		</div>
 		
@@ -40,7 +40,8 @@
 				<hr>
 			</div>
 			<div class="story-section-bottom">
-				<?php echo CFS()->get( 'story_section_bottom' ); ?>
+				<?php echo CFS()->get( 'story_section_bottom' ); ?> 
+				
 			</div>
 		</div>
 		
