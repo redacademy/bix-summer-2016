@@ -12,8 +12,18 @@
           <h5 class="highlight-modal__wrap-h5">Use the highlight tool to share your thoughts </h5>
           <div class="highlight-example">
             <p> Example: </p>
-         </div>
-            <button class="highlight-modal-button" href="#"> Unlock Download </button>
+            <img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image.png" alt="bix logo"/>
+            <img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image-2.png" alt="bix logo"/>
+            </div>
+            <h1> Share This </h1>
+            <h5 class="highlight-modal__wrap-h5"> Share this on your favourite social media page</h5>
+            <ul class="icons-list">
+                 <li><a class="icon-size" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                 <li><a class="icon-size" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                 <li><a class="icon-size" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+           </ul>
+
+            <button class="highlight-modal-button" href="#"> Back To Story </button>
         </div>
     </div>
 </div>
