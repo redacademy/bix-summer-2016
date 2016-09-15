@@ -85,7 +85,7 @@ $(document).ready(function(){
 		});
 
 	// sub menu display only on single post page
-	if ($('.single-post').length > 0 ) {
+	if ($('.single-post').length > 0 || $('.page-template-teaser-stories').length > 0) {
 		$('.mobile-nav-wrapper ul.sub-menu').show();
 	}
 
