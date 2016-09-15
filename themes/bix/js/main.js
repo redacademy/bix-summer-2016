@@ -7,41 +7,47 @@ $(document).ready(function(){
 		// var lastScrollTop = 0;
 
 		window.onscroll = function() {
+			// variables
+			var $navContainer = $(".desktop-nav-wrapper .desktop-nav-container"),
+				$mainNavigation = $(".mobile-nav-wrapper .main-navigation"),
+				$navWrapper = $(".mobile-nav-wrapper"),
+				$toolbarWrapper = $(".bottom-toolbar-wrapper");
+
 			// desktop
 		    if (window.scrollY > 60) {
-		    	$(".desktop-nav-wrapper .desktop-nav-container").addClass("transparent-background");
+		    	$navContainer.addClass("transparent-background");
 		    }
 		    else {
-		    	$(".desktop-nav-wrapper .desktop-nav-container").removeClass("transparent-background");
+		    	$navContainer.removeClass("transparent-background");
 		    };
 
 		    // desktop homepage
 		    if($(".home").length > 0) {
 			    if (window.scrollY > window.innerHeight) {
-			    	$(".desktop-nav-container").addClass("desktop-nav-fixed");
+			    	$navContainer.addClass("desktop-nav-fixed");
 			    }
 			    else {
-			    	$(".desktop-nav-container").removeClass("desktop-nav-fixed");
+			    	$navContainer.removeClass("desktop-nav-fixed");
 			    };
 			}
 
 		    // mobile
 		    if (window.scrollY > 47) {
-		    	$(".mobile-nav-wrapper .main-navigation").addClass("transparent-background");
+		    	$mainNavigation.addClass("transparent-background");
 		    }
 		    else {
-		    	$(".mobile-nav-wrapper .main-navigation").removeClass("transparent-background");
+		    	$mainNavigation.removeClass("transparent-background");
 		    };
 
 		    // mobile homepage
 		    if($(".home").length > 0) {
 			    if (window.scrollY > window.innerHeight) {
-			    	$(".mobile-nav-wrapper").removeClass("mobile-nav-wrapper-home");
-			    	$(".mobile-nav-wrapper .main-navigation").addClass("transparent-background");
+			    	$navWrapper.removeClass("mobile-nav-wrapper-home");
+			    	$mainNavigation.addClass("transparent-background");
 			    }
 			    else {
-			    	$(".mobile-nav-wrapper").addClass("mobile-nav-wrapper-home");
-			    	$(".mobile-nav-wrapper .main-navigation").removeClass("transparent-background");
+			    	$navWrapper.addClass("mobile-nav-wrapper-home");
+			    	$mainNavigation.removeClass("transparent-background");
 			    };
 			}
 
@@ -57,11 +63,11 @@ $(document).ready(function(){
 			// lastScrollTop = st;
 
 			// single story tool bar show on stop scroll
-				$(".bottom-toolbar-wrapper").removeClass("bottom-toolbar-wrapper-slide-up");
+				$toolbarWrapper.removeClass("bottom-toolbar-wrapper-slide-up");
                 clearTimeout( $.data( this, "scrollCheck" ) );
                 $.data( this, "scrollCheck", setTimeout(function() {
                     if (window.scrollY > 500) {
-						$(".bottom-toolbar-wrapper").addClass("bottom-toolbar-wrapper-slide-up");
+						$toolbarWrapper.addClass("bottom-toolbar-wrapper-slide-up");
 					}
                 }, 750) );
 

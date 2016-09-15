@@ -40,7 +40,7 @@ get_header(); ?>
 							<?php previous_post_link('%link'); ?>
 						<?php } else { ?>
 							<p>Want more stories?</p>
-							<a href="<?php echo esc_url( get_permalink(67) ); ?>">What is offered in the bix book</a>
+							<a href="<?php esc_url( the_permalink(67) ); ?>">What is offered in the bix book</a>
 						<?php }; ?>
 					</div>
 				</div>
