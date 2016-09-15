@@ -116,7 +116,7 @@
 
 .bottom-toolbar-wrapper {
 	display: none;
-	transition: 1s;
+	transition: 0.3s;
 	position: fixed;
 	width: 100%;
 	height: 70px;
@@ -163,7 +163,7 @@
 	}
 }
 .bottom-toolbar-wrapper-slide-up {
-	transition: 1s;
+	transition: 0.5s;
 	bottom: 50px;
 }
 
