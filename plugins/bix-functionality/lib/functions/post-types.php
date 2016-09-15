@@ -39,7 +39,7 @@ function bix_register_stories_cpt() {
 	$args = array(
 		'label'                 => 'Story',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions','comments' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -54,6 +54,7 @@ function bix_register_stories_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
+
 	register_post_type( 'story', $args );
 
 }

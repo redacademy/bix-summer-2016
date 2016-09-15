@@ -50,8 +50,7 @@
 			<h2 class="comment-title">Response</h2>
 		</div>
 			
-			<?php comments_template(); ?> 
-			
+			<?php comments_template(); ?> 	
 		</div>
 		
 	</div>
