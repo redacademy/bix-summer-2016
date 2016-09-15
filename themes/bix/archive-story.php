@@ -15,6 +15,7 @@ get_header(); ?>
 				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
 				<h2 class="stories-title">Teaser</h2>
 				<p class="stories-subtitle">Get a taste of the content in The Bix Book with these sample stories</p>
+				
 			</div>		
 		</section>
 
