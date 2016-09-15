@@ -29,9 +29,9 @@ get_header(); ?>
 			<div class="bottom-toolbar-wrapper">
 				<div class="bottom-toolbar">
 					<div class="tools">
-					  <?php get_template_part( 'template-parts/content', 'highlight-modal' ); ?>
+					 	<?php //get_template_part( 'template-parts/content', 'highlight-modal' ); ?>
 						<i class="fa fa-comments" aria-hidden="true"></i>
-						<?php get_template_part( 'template-parts/content', 'social-media-modal' ); ?>
+						<?php //get_template_part( 'template-parts/content', 'social-media-modal' ); ?>
 					</div>
 
 					<div class="next-story">
