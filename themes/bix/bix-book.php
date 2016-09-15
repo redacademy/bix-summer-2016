@@ -81,7 +81,7 @@ get_header(); ?>
 					</p>
 
 					<div class="donate-now">
-				     <a class="btn btn-donate" href="#">Donate Now</a>
+				     <a class="btn btn-donate" href="http://www.paypal.com">Donate Now</a>
 
             <?php get_template_part( 'template-parts/content', 'modal' ); ?>
 			  	</div>

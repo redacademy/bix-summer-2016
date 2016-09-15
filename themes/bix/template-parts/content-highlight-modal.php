@@ -15,7 +15,7 @@
             <img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image.png" alt="bix logo"/>
             <img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image-2.png" alt="bix logo"/>
             </div>
-            <h1> Share This </h1>
+            <h2> Share This </h1>
             <h5 class="highlight-modal__wrap-h5"> Share this on your favourite social media page</h5>
             <ul class="icons-list">
                  <li><a class="icon-size" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
