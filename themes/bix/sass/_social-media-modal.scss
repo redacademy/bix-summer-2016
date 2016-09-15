@@ -1,5 +1,4 @@
 
-
 .social-media-modal__wrap h1 {
   line-height: 50px;
   color: white;
@@ -68,17 +67,16 @@
 .social-media-modal__overlay {
   background: #F9AC31;
   bottom: 0;
-  left: 0;
+  top:0;
   position: fixed;
-  right: 0;
   text-align: center;
   text-shadow: none;
-  top: 0;
   z-index: 600;
+  width: 60%;
 }
 
 .social-media-modal__wrap {
-  padding: 1em 0;
+  padding: .5em;
   position: relative;
   margin: 20px auto;
   max-width: 500px;
@@ -87,7 +85,7 @@
 
 @media (min-width: 50em) {
   .social-media-modal__wrap {
-    padding: 1.75em;
+    padding: .75em;
   }
 }
 @media (min-height: 37.5em) {
@@ -174,4 +172,4 @@
   background-color: #ffffff;
   border: solid #70b3cb 2px;
   color: #70b3cb;
-}
+} 
