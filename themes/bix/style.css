@@ -923,7 +923,8 @@ object {
       align-items: center; }
 
 .site-main {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 @media (min-width: 600px) {
   .container {
@@ -975,7 +976,9 @@ strong {
   color: #F9AC31; }
 
 .author-section {
-  min-width: 320px; }
+  min-width: 320px;
+  display: block;
+  width: 100%; }
 
 .author-section-title {
   background: rgba(0, 0, 0, 0.35); }
@@ -1003,17 +1006,10 @@ strong {
   .author-section-intro p {
     font-family: "Titillium Web", sans-serif;
     margin: 1rem 2rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    text-align: center; }
-    .author-section-intro p span:first-child {
-      font-style: italic; }
+    text-align: center;
+    width: 100%; }
+  .author-section-intro p:nth-child(2n) {
+    font-style: italic; }
 
 .author-section-content-wrapper div {
   margin: 0 2rem 1rem 2rem; }
@@ -1036,7 +1032,10 @@ strong {
       margin-bottom: 1rem; }
 
 .company-section {
-  min-width: 320px; }
+  min-width: 320px;
+  display: block;
+  width: 100%;
+  height: 100%; }
 
 .company-section-title {
   position: relative;
@@ -1122,6 +1121,7 @@ strong {
     text-transform: uppercase;
     font-weight: 300; }
   .company-section-website .website-img-link {
+    height: 100%;
     max-width: 400px;
     border: solid 1px #70b3cb; }
   .company-section-website .website-text-link {
@@ -1816,7 +1816,9 @@ strong {
   display: none; }
 
 .single-story-container {
-  min-width: 320px; }
+  min-width: 320px;
+  display: block;
+  width: 100%; }
   .single-story-container .entry-header {
     height: 100vh;
     position: relative;
@@ -1898,6 +1900,9 @@ strong {
         font-weight: 400;
         color: #F9AC31;
         padding: 0 10vw; }
+      .single-story-container .story-content .practice-block p {
+        display: block;
+        width: 100%; }
       .single-story-container .story-content .practice-block hr {
         border: solid #F9AC31 1px;
         width: 50vw;
@@ -2005,15 +2010,20 @@ strong {
   .single-story-container .story-number {
     display: none; }
   .single-story-container .story-content .top-section-border {
+    display: block;
+    width: 100%;
     padding: 3rem 4rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-top: 0;
     margin-bottom: 4rem; }
   .single-story-container .story-content .mid-section-border {
+    display: block;
+    width: 100%;
     padding: 3rem 4rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
     margin-bottom: 4rem; }
   .single-story-container .story-content .comment-section-border {
+    display: block;
     width: 100%;
     padding: 3rem 4rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
