@@ -24,13 +24,13 @@ get_header(); ?>
 					<h3 class="bix-book-subheading">Transformational Stories</h3>
 
 					<a class="btn btn-download" href="<?php echo esc_url( get_permalink(9) ); ?>/#buy-book-anchor">Download Book</a>
-					<a class="btn btn-down" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+					<a class="btn btn-down" href="#scroll"><i class="fa fa-angle-down" aria-hidden="true"></i> </a>
 		</div>
 			</div>
 		</section>
 
-	<div class="container">
-		
+	<div class="container" >
+	<div id="scroll"></div>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
