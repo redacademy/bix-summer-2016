@@ -11,17 +11,136 @@
 
 }
 
-.highlight-button {
+/*====================================
+  Our highlight-modal Window styles
+=====================================*/
+.highlight-modal {
+  text-transform: capitalize;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  padding: 1em;
+  box-shadow: none;
+  text-shadow: none;
+}
+@media (min-width: 43.75em) {
+  .highlight-modal {
+    padding: 1.5em;
+  }
+}
+.highlight-modal > label {
+  font-size: 2rem;
+  padding: 0 20px;
+  color: $color__blue;
+}
+
+.highlight-modal__overlay {
+  background: #F9AC31;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-shadow: none;
+  top: 0;
+  z-index: 600;
+}
+
+.highlight-modal__wrap {
+  padding: 1em 0;
+  position: relative;
+  margin-top: 20%
+  //max-width: 500px;
+  //width: 90%;
+}
+
+@media (min-width: 50em) {
+  .highlight-modal__wrap {
+    padding: 1.75em;
+  }
+}
+@media (min-height: 37.5em) {
+  .highlight-modal__wrap {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -80%);
+  }
+}
+.highlight-modal__wrap label {
+  background: #F9AC31;
+  border-radius: 50%;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.5em;
+  line-height: 1.5;
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  width: 1.5em;
+}
+.highlight-modal__wrap h2 {
+  text-transform: capitalize;
+  line-height: 50px;
+  color: white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  text-transform: uppercase;
+}
+.highlight-modal__wrap-h5 {
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-align: center;
+}
+.highlight-modal input:focus ~ label {
+  transform: scale(0.97);
+}
+
+.model input {
+  display: none;
+  position: absolute;
+  top: -1000px;
+}
+
+.highlight-modal__overlay {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -100;
+}
+
+.highlight-modal input:checked ~ .highlight-modal__overlay {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 800;
+}
+
+.highlight-modal__trigger {
+    // position: absolute;
+    // top: -1000px;
+    display: none;
+}
+
+
+.highlight-modal-button {
+  padding: 10px;
+  margin-top: 10px;
   color: #fff;
   text-decoration: none;
   border: solid #fff 2px;
   border-radius: 30px;
-  background-color: $color__blue;
+  background-color: #70b3cb;
   font-weight: 500;
   font-size: 1.1rem;
-  &:hover{
-    color: $color__blue;
-    border: solid $color__blue 2px;
-    background-color: #fff;
+  box-shadow: none;
+  text-shadow: none;
+  width: 50%;
 }
+
+.highlight-modal-button:hover{
+  text-shadow: none;
+  box-shadow: none;
+  background-color: #ffffff;
+  border: solid #70b3cb 2px;
+  color: #70b3cb;
 }
