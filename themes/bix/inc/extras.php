@@ -20,3 +20,35 @@ function bix_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'bix_body_classes' );
+
+
+/**
+ * functions that changes "Posts" to "Stories"
+ */
+function change_post_menu_label() {
+    global $menu, $submenu;
+
+    $menu[5][0] = 'Stories';
+    $submenu['edit.php'][5][0] = 'Stories';
+    $submenu['edit.php'][10][0] = 'New Stories';
+    $submenu['edit.php'][16][0] = 'Stories Tags';
+    echo '';
+}
+add_action( 'admin_menu', 'change_post_menu_label' );
+
+function change_post_object_label() {
+    global $wp_post_types;
+
+    $labels = &$wp_post_types['post']->labels;
+    $labels->name = 'Stories';
+    $labels->singular_name = 'Stories';
+    $labels->add_new = 'New Stories';
+    $labels->add_new_item = 'New Stories';
+    $labels->edit_item = 'Edit Stories';
+    $labels->new_item = 'New Stories';
+    $labels->view_item = 'View Stories';
+    $labels->search_items = 'Search Stories';
+    $labels->not_found = 'Not found';
+    $labels->not_found_in_trash = 'Not found in trash';
+}
+add_action( 'init', 'change_post_object_label' );
