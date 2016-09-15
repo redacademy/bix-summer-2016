@@ -102,8 +102,6 @@ function bix_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'bix_scripts' );
 
-
-
 /**
  * Custom template tags for this theme.
  */
