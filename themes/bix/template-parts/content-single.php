@@ -21,9 +21,6 @@
 			<?php endif; ?>
 		</h2>
 
-		<?php //if (  ) : ?>
-		<?php //endif; ?>
-
 		<img class="stories-ribbon" src="<?php echo(get_template_directory_uri());?>/images/yellow-ribbon.svg" alt="yellow ribbon"/>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -31,7 +28,10 @@
 	</header><!-- .entry-header -->
 
 	<div class="story-content">
-		<h2 class="story-number"><?php echo CFS()->get( 'story_number' ); ?></h2>
+
+		<?php if ( CFS()->get( 'story_number' ) ) : ?>
+			<h2 class="story-number"><?php echo CFS()->get( 'story_number' ); ?></h2>
+		<?php endif; ?>
 			
 		<?php if ( CFS()->get( 'story_top_section' ) ) : ?>
 			<div class="top-section-border">
@@ -41,18 +41,19 @@
 			</div>
 		<?php endif; ?>
 		
-		
-		<div class="mid-section-border">
-			<div class="practice-block">
-				<h2 class="practice-title">Practice</h2>
-				<?php echo CFS()->get( 'story_section_practice_block' ); ?>
-				<hr>
+		<?php if ( CFS()->get( 'story_section_practice_block' ) || CFS()->get( 'story_section_bottom' ) ) : ?>
+			<div class="mid-section-border">
+				<div class="practice-block">
+					<h2 class="practice-title">Practice</h2>
+					<?php echo CFS()->get( 'story_section_practice_block' ); ?>
+					<hr>
+				</div>
+				<div class="story-section-bottom">
+					<?php echo CFS()->get( 'story_section_bottom' ); ?> 
+					
+				</div>
 			</div>
-			<div class="story-section-bottom">
-				<?php echo CFS()->get( 'story_section_bottom' ); ?> 
-				
-			</div>
-		</div>
+		<?php endif; ?>
 		
 		<div class="comment-section-border">
 		<div class="comment-title-wrapper">	
