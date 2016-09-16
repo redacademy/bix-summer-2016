@@ -55,17 +55,23 @@
 		position: absolute;
 		top: 50px;
 		left: -45px;
-
+	}
+	a{
+		text-decoration: none;
+		color: $color__gray;
 	}
 	.story-number{
 		position: absolute;
 		top: 46px;
 		left: 50px;
 		text-transform: uppercase;
+		span{
+			font-weight: 300;
+		}
 	}
 	.entry-content{
 		position: absolute;
-		padding: 0 40px;
+		padding: 10px 40px;
 		bottom: 0;
 		width: 100%;
 		height: auto;
@@ -74,23 +80,22 @@
 		transition: opacity .3s ease;
 		color: #fff;
 		font-weight: 300;
+
 		.btn-stories{
+			@include btn;
      text-decoration: none;
      background-color: transparent;
-     border-radius: 30px;
-     color: rgba(255,255,255,1);
-     border: solid rgba(255,255,255,1) 2px;
      padding: 10px 20px;
-     font-weight: 500;
      font-size: 1.1rem;
-     background-color: $color__blue;
      opacity: 1;
      transition: opacity .3s ease;
-     width: 80%;
-     display: inline-block;
+     width: 200px;
+     display: block;
+     text-align: center;
+     margin: 0 auto;
     }	
-    p:nth-child(3){
-    	text-align: center;
+    p{
+    	font-weight: 300;
     }
 	}	
 
@@ -144,11 +149,11 @@
       display: unset;
       max-width: 250px;
     } 
-    .stories-title{
+    .stories-title {
       color:#fff;
       border-bottom: solid 2px #fff;
       border-top: solid 2px #fff;
-      font-size: 1.5rem;
+      font-size: 2rem;
       padding:10px 0;
       width: 250px;
       text-transform: capitalize;
@@ -169,6 +174,13 @@
 	     opacity: 0;
 	    }	
 		}	
+		a{
+			font-size: 1.5rem;
+		}
+		.story-number{	
+			top: 42px;
+			left: 28px;	
+		}
 	}
 	//hover overlay for images
 	.stories-main:hover{

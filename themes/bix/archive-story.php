@@ -17,9 +17,13 @@ get_header(); ?>
 				<p class="stories-subtitle">Get a taste of the content in The Bix Book with these sample stories</p>	
 			</div>		
 		</section>
-
+			<?php 
+			global $query_string;
+			query_posts( $query_string . '&order=ASC' );
+			?>
+	
 			<?php if ( have_posts() ) : ?>
-
+				
 				<?php if ( is_home() && ! is_front_page() ) : ?>
 					<header>
 						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
