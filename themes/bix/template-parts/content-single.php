@@ -21,6 +21,9 @@
 			<?php endif; ?>
 		</h2>
 
+		<?php //if (  ) : ?>
+		<?php //endif; ?>
+
 		<img class="stories-ribbon" src="<?php echo(get_template_directory_uri());?>/images/yellow-ribbon.svg" alt="yellow ribbon"/>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -30,11 +33,14 @@
 	<div class="story-content">
 		<h2 class="story-number"><?php echo CFS()->get( 'story_number' ); ?></h2>
 			
-		<div class="top-section-border">
-			<div class="story-section-top">
-				<?php echo CFS()->get( 'story_top_section' ); ?>
+		<?php if ( CFS()->get( 'story_top_section' ) ) : ?>
+			<div class="top-section-border">
+				<div class="story-section-top">
+					<?php echo CFS()->get( 'story_top_section' ); ?>
+				</div>
 			</div>
-		</div>
+		<?php endif; ?>
+		
 		
 		<div class="mid-section-border">
 			<div class="practice-block">
