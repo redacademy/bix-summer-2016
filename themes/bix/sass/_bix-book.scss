@@ -33,7 +33,7 @@
       rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0.45)
     ),
-    url(../../images/bix-book-banner.png) no-repeat 20% top;
+    url(../../images/bix-book-banner-sm.jpg) no-repeat 20% top;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@
       rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0.45)
     ),
-    url(../../images/bix-book-1.png) no-repeat 20% top;
+    url(../../images/bix-book-1-sm.jpg) no-repeat 20% top;
   }
   .bix-carousel-img-2{
     background:
@@ -89,7 +89,7 @@
       rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0.45)
     ),
-    url(../../images/bix-book-2.png) no-repeat 20% top;
+    url(../../images/bix-book-2-sm.jpg) no-repeat 20% top;
   }
   .bix-carousel-img-3{
     background:
@@ -97,7 +97,7 @@
       rgba(255, 255, 255, 0.45),
       rgba(255, 255, 255, 0.45)
     ),
-    url(../../images/bix-book-3.png) no-repeat 20% top;
+    url(../../images/bix-book-3-sm.jpg) no-repeat 20% top;
   }
   .bix-carousel-img{
     background-size: cover;
@@ -121,6 +121,7 @@
     li{
       font-weight: 300;
       list-style-type: none;
+      text-align: left;
     }
     li:before {
             content: "";
@@ -241,7 +242,7 @@
 
 @media #{$tablet}{
   .bix-book-banner{
-    background: url(../../images/bix-book-banner.png) no-repeat center left;
+    background: url(../../images/bix-book-banner-lg.jpg) no-repeat center left;
     background-size: cover;
     height: 70vh;
     overflow: hidden;
@@ -285,7 +286,7 @@
         rgba(255, 255, 255, 0.1),
         rgba(255, 255, 255, 0.1)
       ),
-      url(../../images/bix-book-1.png) no-repeat 20% top;
+      url(../../images/bix-book-1-lg.jpg) no-repeat 20% top;
     }
     .bix-carousel-img-2{
       background:
@@ -293,7 +294,7 @@
         rgba(255, 255, 255, 0.1),
         rgba(255, 255, 255, 0.1)
       ),
-      url(../../images/bix-book-2.png) no-repeat 20% top;
+      url(../../images/bix-book-2-lg.jpg) no-repeat 20% top;
     }
     .bix-carousel-img-3{
       background:
@@ -301,7 +302,7 @@
         rgba(255, 255, 255, 0.1),
         rgba(255, 255, 255, 0.1)
       ),
-      url(../../images/bix-book-3.png) no-repeat 20% top;
+      url(../../images/bix-book-3-lg.jpg) no-repeat 20% top;
     }
   }
   .book-purchase,.book-section2{
@@ -380,7 +381,7 @@
         rgba(255, 255, 255, 0)
 
       ),
-      url(../../images/bix-book-1.png) no-repeat 20% top;
+      url(../../images/bix-book-1-lg.jpg) no-repeat 20% top;
     }
     .bix-carousel-img-2{
       background:
@@ -388,7 +389,7 @@
         rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0)
       ),
-      url(../../images/bix-book-2.png) no-repeat 20% top;
+      url(../../images/bix-book-2-lg.jpg) no-repeat 20% top;
     }
     .bix-carousel-img-3{
       background:
@@ -396,11 +397,11 @@
         rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0)
       ),
-      url(../../images/bix-book-3.png) no-repeat 20% top;
+      url(../../images/bix-book-3-lg.jpg) no-repeat 20% top;
     }
     .bix-carousel-img{
       background-size: cover;
-      height: 500px;
+      height: 550px;
     }
     .bix-carousel-info{
       position: relative;

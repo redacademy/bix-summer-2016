@@ -2091,7 +2091,7 @@ strong {
 
 /* ----------------- Section 1 - Content -------------*/
 .book-section1 {
-  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-banner.png) no-repeat 20% top;
+  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-banner-sm.jpg) no-repeat 20% top;
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
@@ -2133,11 +2133,11 @@ strong {
     /* height of carousel */
     margin-right: 10px; }
   .main-carousel .bix-carousel-img-1 {
-    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-1.png) no-repeat 20% top; }
+    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-1-sm.jpg) no-repeat 20% top; }
   .main-carousel .bix-carousel-img-2 {
-    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-2.png) no-repeat 20% top; }
+    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-2-sm.jpg) no-repeat 20% top; }
   .main-carousel .bix-carousel-img-3 {
-    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-3.png) no-repeat 20% top; }
+    background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-3-sm.jpg) no-repeat 20% top; }
   .main-carousel .bix-carousel-img {
     background-size: cover;
     height: 500px; }
@@ -2160,7 +2160,8 @@ strong {
       padding: 0; }
     .main-carousel .bix-carousel-info li {
       font-weight: 300;
-      list-style-type: none; }
+      list-style-type: none;
+      text-align: left; }
     .main-carousel .bix-carousel-info li:before {
       content: "";
       border-color: transparent #444444;
@@ -2266,7 +2267,7 @@ strong {
 
 @media (min-width: 600px) {
   .bix-book-banner {
-    background: url(../../images/bix-book-banner.png) no-repeat center left;
+    background: url(../../images/bix-book-banner-lg.jpg) no-repeat center left;
     background-size: cover;
     height: 70vh;
     overflow: hidden;
@@ -2295,11 +2296,11 @@ strong {
   .bix-carousel-info p {
     max-width: 500px; }
   .main-carousel .bix-carousel-img-1 {
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-1.png) no-repeat 20% top; }
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-1-lg.jpg) no-repeat 20% top; }
   .main-carousel .bix-carousel-img-2 {
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-2.png) no-repeat 20% top; }
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-2-lg.jpg) no-repeat 20% top; }
   .main-carousel .bix-carousel-img-3 {
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-3.png) no-repeat 20% top; }
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../../images/bix-book-3-lg.jpg) no-repeat 20% top; }
   .book-purchase, .book-section2 {
     max-width: 80vw; } }
 
@@ -2357,14 +2358,14 @@ strong {
     /* height of carousel */
     margin-right: 10px; }
   .main-carousel .bix-carousel-img-1 {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../../images/bix-book-1.png) no-repeat 20% top; }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../../images/bix-book-1-lg.jpg) no-repeat 20% top; }
   .main-carousel .bix-carousel-img-2 {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../../images/bix-book-2.png) no-repeat 20% top; }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../../images/bix-book-2-lg.jpg) no-repeat 20% top; }
   .main-carousel .bix-carousel-img-3 {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../../images/bix-book-3.png) no-repeat 20% top; }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../../images/bix-book-3-lg.jpg) no-repeat 20% top; }
   .main-carousel .bix-carousel-img {
     background-size: cover;
-    height: 500px; }
+    height: 550px; }
   .main-carousel .bix-carousel-info {
     position: relative;
     height: 270px;
