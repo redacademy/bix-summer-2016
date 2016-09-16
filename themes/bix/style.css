@@ -1828,8 +1828,10 @@ strong {
       font-size: 21px;
       position: absolute;
       top: 23px;
-      left: 30px;
-      font-weight: 400; }
+      left: 10px;
+      font-weight: bold; }
+      .single-story-container .entry-header h2 span {
+        font-weight: 300; }
     .single-story-container .entry-header .stories-ribbon {
       position: absolute;
       top: 30px;

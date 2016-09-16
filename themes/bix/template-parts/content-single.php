@@ -17,7 +17,7 @@
 
 		<h2>
 			<?php if ( CFS()->get( 'story_number' ) ) : ?>
-				<?php echo CFS()->get( 'story_number' ); ?>
+				<span>Story</span> <?php echo CFS()->get( 'story_number' ); ?>
 			<?php endif; ?>
 		</h2>
 
@@ -28,7 +28,6 @@
 	</header><!-- .entry-header -->
 
 	<div class="story-content">
-
 		<h2 class="story-number"><?php echo CFS()->get( 'story_number' ); ?></h2>
 			
 		<div class="top-section-border">

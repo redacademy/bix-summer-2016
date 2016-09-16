@@ -22,8 +22,11 @@
 			font-size: 21px;
 			position: absolute;
 			top: 23px;
-			left: 30px;
-			font-weight: 400;
+			left: 10px;
+			font-weight:bold;
+			span{
+				font-weight: 300;
+			}
 		}
 
 		.stories-ribbon {
