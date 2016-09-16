@@ -126,9 +126,9 @@
     height: 11vh;
 }
 
-.modal-button {
-  padding: 10px;
-  margin-top: 10px;
+#modal-button {
+  margin-top: 50%;
+  margin-right: 15%;
   color: #fff;
   text-decoration: none;
   border: solid #fff 2px;
@@ -141,7 +141,7 @@
   width: 50%;
 }
 
-.modal-button:hover{
+#modal-button:hover{
   text-shadow: none;
   box-shadow: none;
   background-color: #ffffff;

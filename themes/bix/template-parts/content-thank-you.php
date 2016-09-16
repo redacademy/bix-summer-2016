@@ -1,7 +1,7 @@
 <!--Start of thank-you-modal -->
 <div class="thank-you-modal">
     <input class="thank-you-modal__trigger" id="thank-you-modal__trigger" type="checkbox" />
-    <label for="thank-you-modal__trigger" class="modal-button" aria-hidden="true"></label>
+    <label for="thank-you-modal__trigger" id="modal-button" aria-hidden="true">Download</label>
     <div class="thank-you-modal__overlay" role="dialog" aria-labelledby="thank-you-modal__title" aria-describedby="thank-you-modal_desc">
         <div class="thank-you-modal__wrap">
          			<div>
@@ -9,7 +9,7 @@
          			<img src="<?php echo(get_template_directory_uri());?>/images/thank-you-image.png" alt="thank you"/>
 							<h2> Listening is having the person speaking experience being heard <br>- "Bix Bickson"</h2>
 							<h5> come back and join the conversation </h5>
-              <button class="thank-you-modal-button" href="#"> Done </button>
+              <label for="thank-you-modal__trigger" href="#"> Done </button>
          		</div>
          	</div>
          </div>
