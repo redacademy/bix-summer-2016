@@ -36,19 +36,24 @@ get_header(); ?>
 							</p>
 						</div>
 						<div class="author-section-content-wrapper">
-							<div>
-								<h3><?php echo CFS()->get( 'header_1' ); ?></h3>
-								<?php echo CFS()->get( 'content_1' ); ?>
-
-							</div>
-							<div>
-								<h3><?php echo CFS()->get( 'header_2' ); ?></h3>
-								<?php echo CFS()->get( 'content_2' ); ?>
-							</div>
-							<div>
-								<h3><?php echo CFS()->get( 'header_3' ); ?></h3>
-								<?php echo CFS()->get( 'content_3' ); ?>
-							</div>
+							<?php if ( CFS()->get( 'header_1' ) && CFS()->get( 'content_1' ) ) : ?>
+								<div>
+									<h3><?php echo CFS()->get( 'header_1' ); ?></h3>
+									<?php echo CFS()->get( 'content_1' ); ?>
+								</div>
+							<?php endif; ?>
+							<?php if ( CFS()->get( 'header_2' ) && CFS()->get( 'content_2' ) ) : ?>
+								<div>
+									<h3><?php echo CFS()->get( 'header_2' ); ?></h3>
+									<?php echo CFS()->get( 'content_2' ); ?>
+								</div>
+							<?php endif; ?>
+							<?php if ( CFS()->get( 'header_3' ) && CFS()->get( 'content_3' ) ) : ?>
+								<div>
+									<h3><?php echo CFS()->get( 'header_3' ); ?></h3>
+									<?php echo CFS()->get( 'content_3' ); ?>
+								</div>
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>
@@ -60,14 +65,18 @@ get_header(); ?>
 					</div>
 					<div class="border-wrapper">
 						<div class="company-section-content-wrapper">
-							<div>
-								<h3><?php echo CFS()->get( 'header_4' ); ?></h3>
-								<?php echo CFS()->get( 'content_4' ); ?>
-							</div>
-							<div>
-								<h3><?php echo CFS()->get( 'header_5' ); ?></h3>
-								<?php echo CFS()->get( 'content_5' ); ?>
-							</div>
+							<?php if ( CFS()->get( 'header_4' ) && CFS()->get( 'content_4' ) ) : ?>
+								<div>
+									<h3><?php echo CFS()->get( 'header_4' ); ?></h3>
+									<?php echo CFS()->get( 'content_4' ); ?>
+								</div>
+							<?php endif; ?>
+							<?php if ( CFS()->get( 'header_5' ) && CFS()->get( 'content_5' ) ) : ?>
+								<div>
+									<h3><?php echo CFS()->get( 'header_5' ); ?></h3>
+									<?php echo CFS()->get( 'content_5' ); ?>
+								</div>
+							<?php endif; ?>
 						</div>
 						<div class="company-section-clients">
 							<h3>Clients inculde executives and their teams at:</h3>

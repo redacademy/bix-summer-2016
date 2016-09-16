@@ -41,7 +41,7 @@
 			</div>
 		<?php endif; ?>
 		
-		<?php if ( CFS()->get( 'story_section_practice_block' ) || CFS()->get( 'story_section_bottom' ) ) : ?>
+		<?php if ( CFS()->get( 'story_section_practice_block' ) && CFS()->get( 'story_section_bottom' ) ) : ?>
 			<div class="mid-section-border">
 				<div class="practice-block">
 					<h2 class="practice-title">Practice</h2>
