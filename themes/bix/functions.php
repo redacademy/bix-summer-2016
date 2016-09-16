@@ -88,7 +88,7 @@ function bix_scripts() {
 
 	wp_enqueue_script( 'bix-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
-	wp_enqueue_script( 'inhabitent-font-awesome', 'https://use.fontawesome.com/757d890296.js', array(), '4.6.3', true);
+	wp_enqueue_script( 'bix-font-awesome', 'https://use.fontawesome.com/757d890296.js', array(), '4.6.3', true);
 
 	wp_enqueue_script( 'jquery' );
 
@@ -101,6 +101,24 @@ function bix_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'bix_scripts' );
+
+/**
+ * Additional Styles - Google Fonts
+ * 
+ */
+
+function bix_styles() {
+    if ( !is_admin() ) {
+
+        // register styles
+        wp_register_style('googlefont-roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,500,700|Titillium+Web:400,600,700', array(), false, 'all');
+
+        // enqueue styles
+        wp_enqueue_style('googlefont-roboto');
+    }
+}
+
+add_action('wp_enqueue_scripts', 'bix_styles');
 
 /**
  * Custom template tags for this theme.
