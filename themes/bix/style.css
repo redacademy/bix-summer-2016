@@ -3328,7 +3328,24 @@ strong {
 # 404 page
 --------------------------------------------------------------*/
 .error-404 {
-  width: 100%;
+  width: 80%;
   padding: 3rem 4rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 4rem auto; }
+  .error-404 span {
+    color: #F9AC31; }
+
+.btn-return {
+  color: #fff;
+  text-decoration: none;
+  border: solid #fff 2px;
+  border-radius: 30px;
+  background-color: #70b3cb;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  text-transform: uppercase; }
+  .btn-return:hover {
+    color: #70b3cb;
+    border: solid #70b3cb 2px;
+    background-color: #fff; }

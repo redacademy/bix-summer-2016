@@ -14,8 +14,10 @@ get_header(); ?>
 
 			<section class="error-404 not-found container">
 
-				<h1>Ooops, this page does not exist.</h1>
-
+				<h1>Ooops, this page does not exist on <span>The Bix Book</span> Website</h1>
+			
+				<a href="<?php echo get_home_url(); ?>" class="btn-return">Return to Home Page</a>
+				
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
