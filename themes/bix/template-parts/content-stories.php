@@ -27,12 +27,13 @@
 
 			<div class="entry-content">
 
-				<?php if ( the_title() ) : ?>
+			
 					<?php the_title( sprintf( '<h2 class="stories-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-				<?php endif; ?>
+
+
 
 				<?php if ( CFS()->get( 'story_excerpt' ) ) : ?>
-					<?php echo CFS()->get( 'story_excerpt');?>
+					<?php echo CFS()->get( 'story_excerpt');?> 
 				<?php endif; ?>
 				
 				<a href="<?php the_permalink(); ?> " class="btn btn-stories">Read More</a>

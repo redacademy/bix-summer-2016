@@ -1823,99 +1823,96 @@ strong {
   min-width: 320px;
   display: block;
   width: 100%; }
-
-.entry-header {
-  height: 100vh;
-  position: relative;
-  font-family: "Titillium Web", sans-serif;
-  text-transform: uppercase; }
-  .entry-header h2 {
-    font-size: 21px;
-    position: absolute;
-    top: 23px;
-    left: 10px;
-    font-weight: bold; }
-    .entry-header h2 span {
-      font-weight: 300; }
-  .entry-header .stories-ribbon {
-    position: absolute;
-    top: 30px;
-    left: -45px;
-    z-index: -2; }
-  .entry-header h1.entry-title {
-    width: 100%;
-    text-align: center;
-    font-size: 21px;
-    position: absolute;
-    top: 70vh;
-    font-weight: 400;
-    background: rgba(255, 255, 255, 0.8); }
-  .entry-header .img-container {
-    overflow: hidden;
-    height: 100%;
+  .single-story-container .entry-header {
+    height: 100vh;
+    position: relative;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase; }
+    .single-story-container .entry-header h2 {
+      font-size: 21px;
+      position: absolute;
+      top: 23px;
+      left: 10px;
+      font-weight: bold; }
+      .single-story-container .entry-header h2 span {
+        font-weight: 300; }
+    .single-story-container .entry-header .stories-ribbon {
+      position: absolute;
+      top: 30px;
+      left: -45px;
+      z-index: -2; }
+    .single-story-container .entry-header h1.entry-title {
+      width: 100%;
+      text-align: center;
+      font-size: 21px;
+      position: absolute;
+      top: 70vh;
+      font-weight: 400;
+      background: rgba(255, 255, 255, 0.8); }
+    .single-story-container .entry-header .img-container {
+      overflow: hidden;
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .single-story-container .entry-header .img-container img.wp-post-image {
+        min-height: 100%;
+        max-width: none;
+        z-index: -3; }
+  .single-story-container .story-content {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
-    .entry-header .img-container img.wp-post-image {
-      min-height: 100%;
-      max-width: none;
-      z-index: -3; }
-
-.story-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap; }
-  .story-content h2.story-number {
-    border: solid 2px #F9AC31;
-    border-width: 2px 0;
-    text-align: center;
-    font-family: "Titillium Web", sans-serif;
+        align-items: center;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+    .single-story-container .story-content h2.story-number {
+      border: solid 2px #F9AC31;
+      border-width: 2px 0;
+      text-align: center;
+      font-family: "Titillium Web", sans-serif;
+      text-transform: uppercase;
+      font-size: 21px;
+      font-weight: 400;
+      color: #F9AC31;
+      padding: 0 40px; }
+    .single-story-container .story-content p {
+      margin: 0 30px 20px 30px;
+      font-weight: 300; }
+  .single-story-container .practice-block {
+    font-size: 1.5rem;
     text-transform: uppercase;
-    font-size: 21px;
-    font-weight: 400;
-    color: #F9AC31;
-    padding: 0 40px; }
-  .story-content p {
-    margin: 0 30px 20px 30px;
-    font-weight: 300; }
-
-.practice-block {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  text-align: center; }
-  .practice-block h2.practice-title {
-    border: solid 2px #F9AC31;
-    border-width: 2px 0;
-    text-align: center;
-    font-family: "Titillium Web", sans-serif;
-    text-transform: uppercase;
-    font-size: 21px;
-    font-weight: 400;
-    color: #F9AC31;
-    padding: 0 10vw; }
-  .practice-block p {
-    display: block;
-    width: 100%; }
-  .practice-block hr {
-    border: solid #F9AC31 1px;
-    width: 50vw;
-    background: #F9AC31; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    text-align: center; }
+    .single-story-container .practice-block h2.practice-title {
+      border: solid 2px #F9AC31;
+      border-width: 2px 0;
+      text-align: center;
+      font-family: "Titillium Web", sans-serif;
+      text-transform: uppercase;
+      font-size: 21px;
+      font-weight: 400;
+      color: #F9AC31;
+      padding: 0 10vw; }
+    .single-story-container .practice-block p {
+      display: block;
+      width: 100%; }
+    .single-story-container .practice-block hr {
+      border: solid #F9AC31 1px;
+      width: 50vw;
+      background: #F9AC31; }
 
 .bottom-toolbar-wrapper {
   display: none;
@@ -2492,7 +2489,7 @@ strong {
       font-weight: 300; }
   .stories-main .entry-content {
     position: absolute;
-    padding: 10px 40px;
+    padding: 20px 40px;
     bottom: 0px;
     width: 100%;
     height: auto;
@@ -2525,11 +2522,13 @@ strong {
         background-color: #fff; }
     .stories-main .entry-content p {
       font-weight: 300; }
-  .stories-main .stories-title a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    text-transform: uppercase; }
+  .stories-main .stories-title {
+    font-size: 1.5rem; }
+    .stories-main .stories-title a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase; }
 
 @media (min-width: 600px) {
   .stories-article {
@@ -2771,7 +2770,8 @@ strong {
   background-color: #444444;
   max-width: 100%;
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 0px; }
 
 .footer-wrapper {
   position: relative; }

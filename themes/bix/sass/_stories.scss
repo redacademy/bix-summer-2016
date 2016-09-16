@@ -35,6 +35,7 @@
 		font-weight: 300;
 		display: block;
 		width: 100%;
+		
 	}
 }
 
@@ -72,7 +73,7 @@
 	}
 	.entry-content{
 		position: absolute;
-		padding: 10px 40px;
+		padding: 20px 40px;
 		bottom: 0px;
 		width: 100%;
 		height: auto;
@@ -81,6 +82,7 @@
 		transition: opacity .3s ease;
 		color: #fff;
 		font-weight: 300;
+
 
 		.btn-stories{
 			@include btn;
@@ -101,6 +103,7 @@
 	}	
 
 .stories-title{
+	font-size: 1.5rem;
 	a{
 		text-decoration: none;
 		color: #fff;
