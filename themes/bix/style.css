@@ -2574,7 +2574,7 @@ strong {
 
 @media (min-width: 1024px) {
   .stories-main {
-    max-width: 70%; } }
+    max-width: 1024px; } }
 
 .teaser-banner {
   display: -ms-flexbox;
