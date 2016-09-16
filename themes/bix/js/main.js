@@ -73,25 +73,35 @@ $(document).ready(function(){
 
 		},false;
 
-	   // mobile nav bar menu button toggle
-		  	$('.menu-button').on('click', function(){
-			    $('.mobile-nav-wrapper #primary-menu').slideToggle(750);
-			    $('.mobile-nav-wrapper .menu-main-menu-container').fadeToggle(750);
-			    $('.fa-bars').slideToggle(750);
-			    $('.fa-chevron-up').slideToggle(750);
-			});
+	// mobile nav bar menu button toggle
+		var $menuContainer = $('.mobile-nav-wrapper .menu-main-menu-container'),
+			$mobileMenu = $('.mobile-nav-wrapper #mobile-primary-menu');
 
-			$('.mobile-nav-wrapper .menu-main-menu-container').on('click', function(){
-				if($('.mobile-nav-wrapper #primary-menu, .menu-item').is(event.target)) {
-					// do none
-				}
-				else {
-					$('.mobile-nav-wrapper #primary-menu').slideToggle(750);
-			    	$('.mobile-nav-wrapper .menu-main-menu-container').fadeToggle(750);
-			    	$('.fa-bars').slideToggle(750);
-			    	$('.fa-chevron-up').slideToggle(750);
-				}
-			});
+	  	$('.menu-button').on('click', function(){
+		    $mobileMenu.slideToggle(750);
+		    $menuContainer.fadeToggle(750);
+		    $('.fa-bars').slideToggle(750);
+		    $('.fa-chevron-up').slideToggle(750);
+		});
+
+		$menuContainer.on('click', function(){
+			if($('.mobile-nav-wrapper #mobile-primary-menu, .menu-item').is(event.target)) {
+				// do none
+			}
+			else {
+				$mobileMenu.slideToggle(750);
+		    	$menuContainer.fadeToggle(750);
+		    	$('.fa-bars').slideToggle(750);
+		    	$('.fa-chevron-up').slideToggle(750);
+			}
+		});
+
+	// sub menu display only on single post page
+		if ($('.single-story').length > 0 || $('.page-template-teaser-stories').length > 0) {
+			$('.mobile-nav-wrapper ul.sub-menu').show();
+		}
+
+	});
 
 	//Flickity Carousel
 		$('.main-carousel').flickity({
@@ -100,12 +110,7 @@ $(document).ready(function(){
 		  contain: true
 		});
 
-	// sub menu display only on single post page
-	if ($('.single-story').length > 0 || $('.page-template-teaser-stories').length > 0) {
-		$('.mobile-nav-wrapper ul.sub-menu').show();
-	}
-
-	});
+	
 
 //Smooth Scroll
  

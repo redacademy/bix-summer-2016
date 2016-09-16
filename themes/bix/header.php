@@ -48,7 +48,7 @@
 						</div>
 					</div>
 
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-primary-menu' ) ); ?>
 
 				</nav><!-- #site-navigation -->
 			</div>
@@ -82,7 +82,7 @@
 							" alt="">
 						</a>
 
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'desktop-primary-menu' ) ); ?>
 
 					</nav><!-- #site-navigation -->
 				</div>
