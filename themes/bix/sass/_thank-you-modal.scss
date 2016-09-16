@@ -1,11 +1,10 @@
 
 .thank-you-title {
-    right: 2.3%;
-    width: 95.5%;
+    width: 100%;
     text-align: center;
     font-size: 21px;
     position: absolute;
-    top: 30.5vh;
+    top: 43%;
     font-weight: 400;
     background: rgba(255,255,255,0.8);
   }
@@ -56,11 +55,7 @@
   box-shadow: none;
   text-shadow: none;
 }
-@media (min-width: 43.75em) {
-  .thank-you-modal {
-    padding: 1.5em;
-  }
-}
+
 .thank-you-modal > label {
   font-size: 2rem;
   padding: 0 20px;
@@ -68,11 +63,12 @@
 }
 
 .thank-you-modal__overlay {
-  display: inline-block;
+  display: block;
   background: #F9AC31;
-  left: 0%;
+  left: 0;
   bottom: 0;
   top:0;
+  right:0;
   position: fixed;
   text-align: center;
   text-shadow: none;
@@ -81,25 +77,12 @@
 }
 
 .thank-you-modal__wrap {
-  padding: 1em 0;
   position: relative;
-  margin: 20px auto;
+  margin: auto;
   max-width: 500px;
   width: 90%;
 }
 
-@media (min-width: 50em) {
-  .thank-you-modal__wrap {
-    padding: .75em;
-  }
-}
-@media (min-height: 37.5em) {
-  .thank-you-modal__wrap {
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -80%);
-  }
-}
 .thank-you-modal__wrap label {
   background: #F9AC31;
   border-radius: 50%;

@@ -2891,10 +2891,6 @@ strong {
   box-shadow: none;
   text-shadow: none; }
 
-@media (min-width: 43.75em) {
-  .modal {
-    padding: 1.5em; } }
-
 .modal > label {
   background: #F9AC31;
   border: 1px solid #f0c600;
@@ -2921,22 +2917,10 @@ strong {
   z-index: 600; }
 
 .modal__wrap {
-  padding: 1em 0;
   position: relative;
   margin: 20px auto;
   max-width: 500px;
   width: 90%; }
-
-@media (min-width: 50em) {
-  .modal__wrap {
-    padding: 1.75em; } }
-
-@media (min-height: 37.5em) {
-  .modal__wrap {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -80%); } }
 
 .modal__wrap label {
   background: #F9AC31;
@@ -2987,13 +2971,12 @@ strong {
   display: none; }
 
 .email-unlock {
-  margin-top: 5px;
-  width: 80%;
+  width: 100%;
   height: 11vh; }
 
 #modal-button {
   margin-top: 50%;
-  margin-right: 15%;
+  margin-right: 23%;
   color: #fff;
   text-decoration: none;
   border: solid #fff 2px;
@@ -3042,12 +3025,11 @@ strong {
     background-color: #fff; }
 
 .thank-you-title {
-  right: 2.3%;
-  width: 95.5%;
+  width: 100%;
   text-align: center;
   font-size: 21px;
   position: absolute;
-  top: 30.5vh;
+  top: 43%;
   font-weight: 400;
   background: rgba(255, 255, 255, 0.8); }
 
@@ -3089,21 +3071,18 @@ strong {
   box-shadow: none;
   text-shadow: none; }
 
-@media (min-width: 43.75em) {
-  .thank-you-modal {
-    padding: 1.5em; } }
-
 .thank-you-modal > label {
   font-size: 2rem;
   padding: 0 20px;
   color: #70b3cb; }
 
 .thank-you-modal__overlay {
-  display: inline-block;
+  display: block;
   background: #F9AC31;
-  left: 0%;
+  left: 0;
   bottom: 0;
   top: 0;
+  right: 0;
   position: fixed;
   text-align: center;
   text-shadow: none;
@@ -3111,21 +3090,10 @@ strong {
   width: 100%; }
 
 .thank-you-modal__wrap {
-  padding: 1em 0;
   position: relative;
-  margin: 20px auto;
+  margin: auto;
   max-width: 500px;
   width: 90%; }
-
-@media (min-width: 50em) {
-  .thank-you-modal__wrap {
-    padding: .75em; } }
-
-@media (min-height: 37.5em) {
-  .thank-you-modal__wrap {
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -80%); } }
 
 .thank-you-modal__wrap label {
   background: #F9AC31;
