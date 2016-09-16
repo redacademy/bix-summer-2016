@@ -1181,7 +1181,7 @@ strong {
     border-top: 0; } }
 
 .home-banner {
-  background: url(../../images/bix_book_homepage.png) no-repeat center top;
+  background: url(../../images/bix_book_homepage.jpg) no-repeat center top;
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
@@ -1263,6 +1263,10 @@ strong {
     .banner-info-wrapper .btn-down .fa {
       font-size: 30px; }
 
+@media (min-width: 700px) {
+  .home-banner {
+    background: url(../../images/bix_book_homepage_lg.jpg) no-repeat center top; } }
+
 @media (min-width: 1024px) {
   .banner-info-wrapper .site-logo {
     max-width: 310px; }
@@ -1279,13 +1283,13 @@ strong {
 .quote-wrapper-front, .quote-wrapper-front-2 {
   height: auto; }
   .quote-wrapper-front .quote-img, .quote-wrapper-front-2 .quote-img {
-    background: url(../../images/bix-homepage-ocean.png) no-repeat center top;
+    background: url(../../images/bix-homepage-ocean-sm.jpg) no-repeat center top;
     background-size: cover;
     height: 250px;
     overflow: hidden;
     position: relative; }
   .quote-wrapper-front .quote-img-2, .quote-wrapper-front-2 .quote-img-2 {
-    background: url(../../images/bix-homepage-business.png) no-repeat center top;
+    background: url(../../images/bix-homepage-business-sm.jpg) no-repeat center top;
     background-size: cover;
     height: 250px;
     overflow: hidden;

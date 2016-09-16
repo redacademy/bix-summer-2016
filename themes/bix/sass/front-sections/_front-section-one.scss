@@ -1,6 +1,6 @@
 //Section 1 Front Page
 .home-banner{
-	background: url(../../images/bix_book_homepage.png) no-repeat center top;
+	background: url(../../images/bix_book_homepage.jpg) no-repeat center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -58,6 +58,12 @@
     .fa{
       font-size: 30px;
     }
+  }
+}
+
+@media #{$tablet-medium}{
+  .home-banner{
+    background: url(../../images/bix_book_homepage_lg.jpg) no-repeat center top;
   }
 }
 
