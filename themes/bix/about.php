@@ -29,7 +29,7 @@ get_header(); ?>
 					</div>
 					<div class="border-wrapper">
 						<div class="author-section-intro">
-							<img src="<?php echo get_template_directory_uri() . "/images/bix-bixson.png"?>" alt="">
+							<img src="<?php echo get_template_directory_uri() . "/images/bix-bixson-sm.jpg"?>" alt="">
 							<p>
 								“ This book happened because my co-author, Anika Martins, said to me, “Have you written your book yet?” and I said to her “No, I need someone to say my book to.” She said, “Let’s go.” We began our conversations in coffee shops, Thai restaurants, Skype and by phone. With her generosity, she listened and formed conversations into these stories. I can’t thank her enough. “</p>
 								<p>-- Bix Bickson

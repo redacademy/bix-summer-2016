@@ -1039,7 +1039,7 @@ strong {
 
 .company-section-title {
   position: relative;
-  background: url(../../images/about-bickson2.png);
+  background: url(../../images/about-bickson2.jpg);
   background-size: cover; }
   .company-section-title img {
     visibility: hidden; }
@@ -1131,7 +1131,7 @@ strong {
 
 @media all and (min-width: 600px) {
   .about-banner {
-    background: url(../../images/about-page-banner.png) no-repeat center left;
+    background: url(../../images/about-page-banner-lg.jpg) no-repeat center left;
     background-size: cover;
     height: 70vh;
     overflow: hidden;
@@ -1166,7 +1166,7 @@ strong {
         order: 1; }
   .author-section-title {
     position: relative;
-    background: url(../../images/about-bix-bickson.png);
+    background: url(../../images/about-bix-bickson.jpg);
     background-size: cover; }
     .author-section-title img {
       display: block; }
