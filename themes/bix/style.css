@@ -3208,20 +3208,14 @@ strong {
   Our highlight-modal Window styles
 =====================================*/
 .highlight-modal {
-  text-transform: capitalize;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   display: inline-block;
-  padding: 1em;
+  padding: 0 10px;
   box-shadow: none;
   text-shadow: none; }
 
-@media (min-width: 43.75em) {
-  .highlight-modal {
-    padding: 1.5em; } }
-
 .highlight-modal > label {
   font-size: 2rem;
-  padding: 0 20px;
   color: #70b3cb; }
 
 .highlight-modal img {
@@ -3229,26 +3223,24 @@ strong {
   width: 280px; }
 
 .highlight-modal__overlay {
-  -ms-flex-item-align: center;
-      align-self: center;
-  background: #F9AC31;
-  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
+  top: 0;
+  left: 0;
   text-align: center;
   text-shadow: none;
-  top: 0;
   z-index: 600;
-  width: 90%;
-  overflow: scroll; }
+  width: 100vw;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .highlight-modal__wrap {
+  background: #F9AC31;
   display: block;
-  padding: 1em 0;
-  position: relative;
-  margin-top: 20%;
-  overflow: scroll;
-  width: 100%;
-  height: 100%; }
+  position: absolute; }
 
 .icons-list li {
   display: inline;
@@ -3277,18 +3269,6 @@ strong {
   box-shadow: none;
   text-shadow: none; }
 
-@media (min-width: 50em) {
-  .highlight-modal__wrap {
-    padding: 1.75em; } }
-
-@media (min-height: 37.5em) {
-  .highlight-modal__wrap {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -80%);
-    width: 100%; } }
-
 .highlight-modal__wrap label {
   background: #F9AC31;
   border-radius: 50%;
@@ -3302,7 +3282,7 @@ strong {
   top: .5em;
   width: 1.5em; }
 
-.highlight-modal__wrap h2 {
+.highlight-modal__wrap h4 {
   text-transform: capitalize;
   line-height: 50px;
   color: white;
@@ -3310,10 +3290,12 @@ strong {
   border-bottom: 2px solid white;
   text-transform: uppercase; }
 
-.highlight-modal__wrap-h5 {
+.highlight-modal__wrap-p {
+  font-size: 1rem;
   text-transform: capitalize;
   color: #FFFFFF;
-  text-align: center; }
+  text-align: center;
+  margin: 0; }
 
 .highlight-modal input:focus ~ label {
   transform: scale(0.97); }
@@ -3325,7 +3307,6 @@ strong {
 
 .highlight-modal__overlay {
   opacity: 0;
-  transform: scale(0.5);
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: -100; }
 
