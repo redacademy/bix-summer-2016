@@ -36,9 +36,9 @@ get_header(); ?>
 					</div>
 
 					<div class="next-story">
-						<?php if (get_adjacent_post(false, '', true)) { // check if theres previous post?>
+						<?php if ( get_next_post() ) { // check if theres previous post?>
 							<p>Read the Next Story</p>
-							<?php previous_post_link('%link'); ?>
+							<?php next_post_link('%link'); ?>
 						<?php } else { ?>
 							<p>Want more stories?</p>
 							<a href="<?php esc_url( the_permalink(67) ); ?>">What is offered in the bix book</a>
