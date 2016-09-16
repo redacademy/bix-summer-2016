@@ -2474,7 +2474,8 @@ strong {
     background-size: cover;
     background-position: center center;
     height: 650px;
-    position: relative; }
+    position: relative;
+    z-index: 0; }
   .stories-main .stories-ribbon {
     position: absolute;
     top: 50px;
@@ -2492,7 +2493,7 @@ strong {
   .stories-main .entry-content {
     position: absolute;
     padding: 10px 40px;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     height: auto;
     background-color: rgba(112, 179, 203, 0.8);
