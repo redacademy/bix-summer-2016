@@ -11,110 +11,109 @@
 	min-width: 320px;
 	display: block;
 	width: 100%;
-}
 
-.entry-header {
-	height: 100vh;
-	position: relative;
-	font-family: $font__header;
-	text-transform: uppercase;
+	.entry-header {
+		height: 100vh;
+		position: relative;
+		font-family: $font__header;
+		text-transform: uppercase;
 
-	h2 {
-		font-size: 21px;
-		position: absolute;
-		top: 23px;
-		left: 10px;
-		font-weight:bold;
-		span{
-			font-weight: 300;
+		h2 {
+			font-size: 21px;
+			position: absolute;
+			top: 23px;
+			left: 10px;
+			font-weight:bold;
+			span{
+				font-weight: 300;
+			}
+		}
+
+		.stories-ribbon {
+			position: absolute;
+			top: 30px;
+			left: -45px;
+			z-index: -2;
+		}
+
+		h1.entry-title {
+			width: 100%;
+			text-align: center;
+			font-size: 21px;
+			position: absolute;
+			top: 70vh;
+			font-weight: 400;
+			background: rgba(255,255,255,0.8);
+		}
+
+		.img-container {
+			overflow: hidden;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img.wp-post-image {
+				min-height: 100%;
+				max-width: none;
+				z-index: -3;
+			}
 		}
 	}
 
-	.stories-ribbon {
-		position: absolute;
-		top: 30px;
-		left: -45px;
-		z-index: -2;
-	}
-
-	h1.entry-title {
-		width: 100%;
-		text-align: center;
-		font-size: 21px;
-		position: absolute;
-		top: 70vh;
-		font-weight: 400;
-		background: rgba(255,255,255,0.8);
-	}
-
-	.img-container {
-		overflow: hidden;
-		height: 100%;
+	.story-content {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-flow: column nowrap;
+		h2.story-number {
+			border: solid 2px $color__orange;
+			border-width: 2px 0;
+			text-align: center;
+			font-family: $font__header;
+			text-transform: uppercase;
+			font-size: 21px;
+			font-weight: 400;
+			color: $color__orange;
+			padding: 0 40px;
+		}
+		p{
+			margin: 0 30px 20px 30px;
+			font-weight: 300;
+		}
+	}
+	.practice-block {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column nowrap;
+		text-align: center;
 
-		img.wp-post-image {
-			min-height: 100%;
-			max-width: none;
-			z-index: -3;
+		h2.practice-title{
+			border: solid 2px $color__orange;
+			border-width: 2px 0;
+			text-align: center;
+			font-family: $font__header;
+			text-transform: uppercase;
+			font-size: 21px;
+			font-weight: 400;
+			color: $color__orange;
+			padding: 0 10vw;
+		}
+		p {
+			display: block;
+			width: 100%;
+		}
+
+		hr {
+			border: solid $color__orange 1px;
+			width: 50vw;
+			background: $color__orange;
 		}
 	}
 }
-
-.story-content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column nowrap;
-	h2.story-number {
-		border: solid 2px $color__orange;
-		border-width: 2px 0;
-		text-align: center;
-		font-family: $font__header;
-		text-transform: uppercase;
-		font-size: 21px;
-		font-weight: 400;
-		color: $color__orange;
-		padding: 0 40px;
-	}
-	p{
-		margin: 0 30px 20px 30px;
-		font-weight: 300;
-	}
-}
-.practice-block {
-	font-size: 1.5rem;
-	text-transform: uppercase;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column nowrap;
-	text-align: center;
-
-	h2.practice-title{
-		border: solid 2px $color__orange;
-		border-width: 2px 0;
-		text-align: center;
-		font-family: $font__header;
-		text-transform: uppercase;
-		font-size: 21px;
-		font-weight: 400;
-		color: $color__orange;
-		padding: 0 10vw;
-	}
-	p {
-		display: block;
-		width: 100%;
-	}
-
-	hr {
-		border: solid $color__orange 1px;
-		width: 50vw;
-		background: $color__orange;
-	}
-}
-
 
 
 // bottom toolbar
