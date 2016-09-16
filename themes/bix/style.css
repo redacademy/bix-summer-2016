@@ -2540,7 +2540,7 @@ strong {
 
 @media (min-width: 900px) {
   .stories-banner {
-    background: url(../../images/teaser-stories-banner.png) no-repeat center left;
+    background: url(../../images/teaser-stories-banner.jpg) no-repeat center left;
     background-size: cover;
     height: 70vh;
     overflow: hidden;
@@ -2578,7 +2578,7 @@ strong {
   .entry-content .stories-title {
     font-size: 2rem; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1260px) {
   .stories-main {
     max-width: 1024px; } }
 

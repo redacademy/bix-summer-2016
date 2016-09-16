@@ -139,7 +139,7 @@
 
 @media #{$tablet-large}{
 	.stories-banner{
-    background: url(../../images/teaser-stories-banner.png) no-repeat center left;
+    background: url(../../images/teaser-stories-banner.jpg) no-repeat center left;
     background-size: cover;
     height: 70vh;
     overflow: hidden;
@@ -198,11 +198,10 @@
 	}
 }
 
-@media #{$desktop}{
+@media #{$desktop-large}{
 	.stories-main{
 		max-width: 1024px;
 	}
-}
-
+}  
   
 
