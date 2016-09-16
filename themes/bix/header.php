@@ -26,13 +26,7 @@
 				</div><!-- .site-branding -->
 
 
-			<div class="mobile-nav-wrapper 
-				<?php 
-					if (is_front_page()) {
-						echo "mobile-nav-wrapper-home";
-					}
-				?>
-			">
+			<div class="mobile-nav-wrapper <?php echo is_front_page() ? "mobile-nav-wrapper-home" : ""; ?>">
 				<nav id="site-navigation" class="main-navigation" >
 					<a href="<?php echo home_url()?>" class="logo-link">
 						<img src="<?php echo get_template_directory_uri() . "/images/bix-logo-blue.png"?>" alt="">
@@ -50,33 +44,14 @@
 				</nav><!-- #site-navigation -->
 			</div>
 
-			<div id="desktopNavigation" class="desktop-nav-wrapper 
-				<?php 
-					if (is_front_page()) {
-						echo "desktop-nav-wrapper-home";
-					}
-				?>
-			">
+			<div id="desktopNavigation" class="desktop-nav-wrapper <?php echo is_front_page() ? "desktop-nav-wrapper-home" : ""; ?>">
 				<div class="desktop-nav-container">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 					
-						<a href="<?php echo home_url()?>" class="logo-link <?php 
-
-							if (is_front_page()) {
-								echo "current-page";
-							}
-							?>
-
-						">
-							<img src="
-								<?php 
-									if (is_front_page()) {
-										echo get_template_directory_uri() . "/images/bix-logo-orange.png";
-									} else {
-										echo get_template_directory_uri() . "/images/bix-logo-blue.png";
-									}
-								?>
-							" alt="">
+						<a href="<?php echo home_url()?>" class="logo-link <?php echo is_front_page() ? "current-page" : ""; ?>">
+							<img src="<?php echo is_front_page() ? 
+							get_template_directory_uri() . "/images/bix-logo-orange.png" : 
+							get_template_directory_uri() . "/images/bix-logo-blue.png"; ?>" alt="">
 						</a>
 
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'desktop-primary-menu' ) ); ?>
