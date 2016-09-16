@@ -1,7 +1,7 @@
 <!--Start of thank-you-modal -->
 <div class="thank-you-modal">
     <input class="thank-you-modal__trigger" id="thank-you-modal__trigger" type="checkbox" />
-    <label for="thank-you-modal__trigger" class="fa fa-share-square-o" aria-hidden="true"></label>
+    <label for="thank-you-modal__trigger" class="modal-button" aria-hidden="true"></label>
     <div class="thank-you-modal__overlay" role="dialog" aria-labelledby="thank-you-modal__title" aria-describedby="thank-you-modal_desc">
         <div class="thank-you-modal__wrap">
          			<div>
@@ -15,5 +15,3 @@
          </div>
 
    </div>
-
-<!--End of thank-you-modal -->

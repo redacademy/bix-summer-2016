@@ -8,8 +8,8 @@
             <label class="close" for="modal__trigger">&#10006;</label>
             <h2 id="modal__title">Want To Download The Bix Book?</h2>
             <h5 class="modal__wrap-h5"> Submit Email to Start Downloading the BIX BOOK </h5>
-        <input class="email-unlock" id="modal__desc" type="text" name="email" placeholder="Your Email"/>
-            <button class="modal-button" href="#"> Unlock Download </button>
+            <input class="email-unlock" id="modal__desc" type="text" name="email" placeholder="Your Email"/>
+            <?php get_template_part( 'template-parts/content', 'thank-you' ); ?>
         </div>
     </div>
 </div>
