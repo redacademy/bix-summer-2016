@@ -23,7 +23,7 @@
                  <li><a class="icon-size" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
            </ul>
 
-            <button class="highlight-modal-button" href="#"> Back To Story </button>
+            <button class="highlight-modal-button" href="<?php echo(get_template_directory_uri());?>thank-you-page.php" alt="bix logo"> Back To Story </button>
         </div>
     </div>
 </div>

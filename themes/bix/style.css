@@ -3003,12 +3003,15 @@ strong {
 .blue-books {
   color: #70b3cb; }
 
-.social-media-modal__wrap h1 {
-  line-height: 50px;
-  color: white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  text-transform: uppercase; }
+.thank-you-title {
+  right: 2.3%;
+  width: 95.5%;
+  text-align: center;
+  font-size: 21px;
+  position: absolute;
+  top: 30.5vh;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.8); }
 
 .icons-list li {
   display: inline;
@@ -3040,7 +3043,7 @@ strong {
   box-shadow: none;
   text-shadow: none; }
 
-.social-media-modal {
+.thank-you-modal {
   text-transform: capitalize;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   display: inline-block;
@@ -3049,16 +3052,18 @@ strong {
   text-shadow: none; }
 
 @media (min-width: 43.75em) {
-  .social-media-modal {
+  .thank-you-modal {
     padding: 1.5em; } }
 
-.social-media-modal > label {
+.thank-you-modal > label {
   font-size: 2rem;
   padding: 0 20px;
   color: #70b3cb; }
 
-.social-media-modal__overlay {
+.thank-you-modal__overlay {
+  display: inline-block;
   background: #F9AC31;
+  left: 20%;
   bottom: 0;
   top: 0;
   position: fixed;
@@ -3067,7 +3072,8 @@ strong {
   z-index: 600;
   width: 60%; }
 
-.social-media-modal__wrap {
+.thank-you-modal__wrap {
+  top: 50%;
   padding: .5em;
   position: relative;
   margin: 20px auto;
@@ -3075,17 +3081,16 @@ strong {
   width: 90%; }
 
 @media (min-width: 50em) {
-  .social-media-modal__wrap {
+  .thank-you-modal__wrap {
     padding: .75em; } }
 
 @media (min-height: 37.5em) {
-  .social-media-modal__wrap {
+  .thank-you-modal__wrap {
     left: 50%;
     position: absolute;
-    top: 50%;
     transform: translate(-50%, -80%); } }
 
-.social-media-modal__wrap label {
+.thank-you-modal__wrap label {
   background: #F9AC31;
   border-radius: 50%;
   color: #FFFFFF;
@@ -3098,7 +3103,7 @@ strong {
   top: .5em;
   width: 1.5em; }
 
-.social-media-modal__wrap h2 {
+.thank-you-modal__wrap h2 {
   text-transform: capitalize;
   line-height: 50px;
   color: white;
@@ -3106,34 +3111,34 @@ strong {
   border-bottom: 2px solid white;
   text-transform: uppercase; }
 
-.social-media-modal__wrap-h5 {
+.thank-you-modal__wrap-h5 {
   text-transform: capitalize;
   color: #FFFFFF;
   text-align: center; }
 
-.social-media-modal input:focus ~ label {
+.thank-you-modal input:focus ~ label {
   transform: scale(0.97); }
 
-.social-media-modal input {
+.thank-you-modal input {
   display: none;
   position: absolute;
   top: -1000px; }
 
-.social-media-modal__overlay {
+.thank-you-modal__overlay {
   opacity: 0;
   transform: scale(0.5);
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: -100; }
 
-.social-media-modal input:checked ~ .social-media-modal__overlay {
+.thank-you-modal input:checked ~ .thank-you-modal__overlay {
   opacity: 1;
   transform: scale(1);
   z-index: 800; }
 
-.social-media-modal__trigger {
+.thank-you-modal__trigger {
   display: none; }
 
-.social-media-modal-button {
+.thank-you-modal-button {
   padding: 10px;
   margin-top: 10px;
   color: #fff;
@@ -3147,7 +3152,7 @@ strong {
   text-shadow: none;
   width: 50%; }
 
-.social-media-modal-button:hover {
+.thank-you-modal-button:hover {
   text-shadow: none;
   box-shadow: none;
   background-color: #ffffff;
