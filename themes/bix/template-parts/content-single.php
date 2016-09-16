@@ -15,7 +15,11 @@
 			<?php endif; ?>
 		</div>
 
-		<h2><?php echo CFS()->get( 'story_number' ); ?></h2>
+		<h2>
+			<?php if ( CFS()->get( 'story_number' ) ) : ?>
+				<?php echo CFS()->get( 'story_number' ); ?>
+			<?php endif; ?>
+		</h2>
 
 		<img class="stories-ribbon" src="<?php echo(get_template_directory_uri());?>/images/yellow-ribbon.svg" alt="yellow ribbon"/>
 
