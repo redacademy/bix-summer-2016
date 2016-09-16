@@ -15,6 +15,7 @@
 	</div>
 </section>
 
+
 <section class="quote-wrapper-front-2"><!--Section 3-->
 	<div class="quote-img-2">
 		<div class="overlay">
