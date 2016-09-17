@@ -12,14 +12,14 @@ get_header(); ?>
 
 		<div class="single-story-modal-overlay">
 			<div class="single-story-modal-container">
-				<div class="highlight-modal">
-					
-				</div>
 				<div class="comment-modal">
-					
+					<!-- comment modal code here -->
+				</div>
+				<div class="highlight-modal">
+					<!-- highlight modal code here -->
 				</div>
 				<div class="download-modal">
-					
+					<!-- download book modal code here -->
 				</div>
 			</div>
 		</div>

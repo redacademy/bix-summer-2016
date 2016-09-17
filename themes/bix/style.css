@@ -3066,21 +3066,18 @@ strong {
   -ms-flex-align: center;
       align-items: center;
   position: relative; }
-  .single-story-modal-container .highlight-modal {
+  .single-story-modal-container .highlight-modal, .single-story-modal-container .comment-modal, .single-story-modal-container .download-modal {
     display: none;
     position: absolute;
-    background: #F9AC31;
     width: 80%;
-    height: 80%; }
-  .single-story-modal-container .comment-modal {
-    display: none;
-    position: absolute;
-    background: #70b3cb;
-    width: 80%;
-    height: 80%; }
-  .single-story-modal-container .download-modal {
-    display: none;
-    position: absolute;
-    background: #444444;
-    width: 80%;
-    height: 80%; }
+    height: 80%;
+    padding: 1rem; }
+
+.highlight-modal {
+  background: #F9AC31; }
+
+.comment-modal {
+  background: #70b3cb; }
+
+.download-modal {
+  background: #444444; }

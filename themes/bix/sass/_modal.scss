@@ -17,30 +17,26 @@
     align-items: center;
     position: relative;
 
-    .highlight-modal {
+    .highlight-modal, .comment-modal, .download-modal {
         display: none;
         position: absolute;
-        background: $color__orange;
         width: 80%;
         height: 80%;
+        padding: 1rem;
     }
+}
 
-    .comment-modal {
-        display: none;
-        position: absolute;
-        background: $color__blue;
-        width: 80%;
-        height: 80%;
-    }
+.highlight-modal {
+    background: $color__orange;
+    // code here
+}
 
-    .download-modal {
-        display: none;
-        position: absolute;
-        background: $color__gray;
-        width: 80%;
-        height: 80%;
-    }
+.comment-modal {
+    background: $color__blue;
+    // code here
+}
 
-
-
+.download-modal {
+    background: $color__gray;
+    // code here
 }
