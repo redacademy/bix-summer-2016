@@ -142,8 +142,10 @@
 	}
 	.tools {
 		font-size: 2rem;
-		padding: 0 20px;
 		color: $color__blue;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		i {
 			padding: 0 10px;
 		}

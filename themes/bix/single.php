@@ -10,6 +10,20 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main single-story-site" role="main">
 
+		<div class="single-story-modal-overlay">
+			<div class="single-story-modal-container">
+				<div class="highlight-modal">
+					
+				</div>
+				<div class="comment-modal">
+					
+				</div>
+				<div class="download-modal">
+					
+				</div>
+			</div>
+		</div>
+
 		<section class="stories-banner">
 			<div class="stories-header">
 				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
@@ -31,7 +45,9 @@ get_header(); ?>
 					<div class="tools">
 					 	<?php //get_template_part( 'template-parts/content', 'highlight-modal' ); ?>
 						<i class="fa fa-comments" aria-hidden="true"></i>
-						<?php get_template_part( 'template-parts/content', 'highlight-modal' ); ?>
+						<div class="highlight-modal-button">
+						    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+						</div>
 						<?php //get_template_part( 'template-parts/content', 'social-media-modal' ); ?>
 					</div>
 
