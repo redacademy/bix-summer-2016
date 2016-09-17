@@ -43,12 +43,15 @@ get_header(); ?>
 			<div class="bottom-toolbar-wrapper">
 				<div class="bottom-toolbar">
 					<div class="tools">
-					 	<?php //get_template_part( 'template-parts/content', 'highlight-modal' ); ?>
-						<i class="fa fa-comments" aria-hidden="true"></i>
+					 	<div class="comment-modal-button">
+					 		<i class="fa fa-comments" aria-hidden="true"></i>
+					 	</div>
 						<div class="highlight-modal-button">
 						    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 						</div>
-						<?php //get_template_part( 'template-parts/content', 'social-media-modal' ); ?>
+						<div class ="download-modal-button">
+							<i class="fa fa-book" aria-hidden="true"></i>
+						</div>
 					</div>
 
 					<div class="next-story">

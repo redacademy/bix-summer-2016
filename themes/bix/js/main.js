@@ -130,15 +130,30 @@ $(document).ready(function(){
 	    });
 
 	// Highlight Modal Button
+	$('.comment-modal-button').on('click', function(){
+	    $('.single-story-modal-overlay').fadeIn('slow');
+	    $('.desktop-nav-container').fadeOut('slow');
+	    $('.comment-modal').fadeIn('slow');
+	});
 	$('.highlight-modal-button').on('click', function(){
 	    $('.single-story-modal-overlay').fadeIn('slow');
 	    $('.desktop-nav-container').fadeOut('slow');
 	    $('.highlight-modal').fadeIn('slow');
 	});
+	$('.download-modal-button').on('click', function(){
+	    $('.single-story-modal-overlay').fadeIn('slow');
+	    $('.desktop-nav-container').fadeOut('slow');
+	    $('.download-modal').fadeIn('slow');
+	});
 	$('.single-story-modal-container').on('click', function(){
-		$('.single-story-modal-overlay').fadeOut('slow');
-		$('.desktop-nav-container').fadeIn('slow');
-		$('.highlight-modal').fadeOut('slow');
+		if($('.comment-modal, .highlight-modal, .download-modal').is(event.target)) {
+			
+		}
+		else {
+			$('.single-story-modal-overlay').fadeOut('slow');
+			$('.desktop-nav-container').fadeIn('slow');
+			$('.comment-modal, .highlight-modal, .download-modal').fadeOut('slow');
+		}
 	});
 
 

@@ -3075,12 +3075,12 @@ strong {
   .single-story-modal-container .comment-modal {
     display: none;
     position: absolute;
-    background: #F9AC31;
+    background: #70b3cb;
     width: 80%;
     height: 80%; }
   .single-story-modal-container .download-modal {
     display: none;
     position: absolute;
-    background: #F9AC31;
+    background: #444444;
     width: 80%;
     height: 80%; }
