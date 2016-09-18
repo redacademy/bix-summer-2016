@@ -67,6 +67,7 @@ h3 {
 			margin: 1rem 2rem;
 			text-align: center;
 			width: 100%;
+			padding: 0 10px;
 		}
 		p:nth-child(2n) {
 			font-style: italic;
@@ -237,6 +238,7 @@ h3 {
     	display: unset;
     	color: #fff;
     	font-weight: 300;
+    	margin-top: 0;
     }
   }
 
@@ -247,7 +249,7 @@ h3 {
 		}
 
 		.author-section, .company-section {
-			margin: 7rem 0;
+			margin: 50px 0;
 		}
 		.author-section-intro {
 		

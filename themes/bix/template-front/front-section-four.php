@@ -4,7 +4,7 @@
 		<div class="home-book-text">
 			<h2 class="book-title">The Bix Book</h2>
 			<h4 class="book-subheading">Transformational Stories</h4>
-			<h3>Bix Bixon</h3>
+			<h3>Bix Bickson</h3>
 			<p>
 				<span>with</span> 
 				Annika Martins

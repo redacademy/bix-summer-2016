@@ -1006,7 +1006,8 @@ strong {
     font-family: "Titillium Web", sans-serif;
     margin: 1rem 2rem;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    padding: 0 10px; }
   .author-section-intro p:nth-child(2n) {
     font-style: italic; }
 
@@ -1152,11 +1153,12 @@ strong {
     .about-banner p {
       display: unset;
       color: #fff;
-      font-weight: 300; }
+      font-weight: 300;
+      margin-top: 0; }
   .about-page-banner {
     display: block; }
   .author-section, .company-section {
-    margin: 7rem 0; }
+    margin: 50px 0; }
   .author-section-intro img {
     -ms-flex-order: 2;
         order: 2; }
@@ -1588,7 +1590,8 @@ strong {
       line-height: 25px;
       margin-bottom: 0px;
       display: block;
-      max-width: 100%; }
+      max-width: 100%;
+      font-weight: 300; }
     .home-book .book-summary .btn-discover {
       color: #fff;
       text-decoration: none;
@@ -1733,6 +1736,7 @@ strong {
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       line-height: 25px;
+      font-weight: 300;
       display: block;
       max-width: 100%; }
     .home-author .home-author-info .btn-explore {
@@ -2564,7 +2568,6 @@ strong {
       color: #fff;
       border-bottom: solid 2px #fff;
       border-top: solid 2px #fff;
-      font-size: 2rem;
       padding: 10px 0;
       width: 250px;
       text-transform: capitalize;

@@ -26,7 +26,7 @@
 			<span class="quotes">"</span> 
 				It is the creation of 
 				<span class="quotes-text-orange">Knowledge</span> 
-				that will afford and Organization continued success 
+				that will afford and Organization continued success. 
 				<span class="quotes">"</span>
 		</p>	
 	</div>
