@@ -2853,11 +2853,11 @@ strong {
   padding-left: 10px; }
 
 .form-position textarea {
-  margin-left: 1px;
   width: 80%;
   height: 40vh;
   border: #F9AC31 solid 2px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  margin-bottom: 20px; }
 
 .footer_button {
   color: #fff;
@@ -2867,9 +2867,9 @@ strong {
   background-color: #70b3cb;
   font-weight: 500;
   font-size: 1.1rem;
-  font-size: 12px;
-  width: 100px;
-  padding: 5px;
+  font-size: 1rem;
+  width: 180px;
+  padding: 10px;
   text-align: center;
   box-shadow: none;
   text-shadow: none; }
@@ -2893,9 +2893,12 @@ strong {
   margin: 10px 0px 20px 10%; }
   .icons .fa-stack {
     font-size: 1.8rem; }
+    .icons .fa-stack:hover {
+      color: #70b3cb;
+      cursor: pointer; }
 
 .icon-background {
-  color: white; }
+  color: #fff; }
 
 .footer-orange {
   color: #F9AC31; }
@@ -2913,16 +2916,12 @@ strong {
     height: 40vh; }
   .icons {
     position: absolute;
-    bottom: 75px;
+    bottom: 100px;
     left: 30px; } }
 
 @media (min-width: 900px) {
   .icons {
-    left: 35px; }
-  .footer_button {
-    font-size: 1rem;
-    padding: 10px;
-    width: 185px; } }
+    left: 35px; } }
 
 @media (min-width: 1024px) {
   .footer-wrapper {
