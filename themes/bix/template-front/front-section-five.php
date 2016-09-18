@@ -6,7 +6,7 @@
 		<div>
 			<h3 class="home-subheading">About the Author</h3>
 			<?php echo CFS()->get( 'bix_bixson_author_summary' ); ?>
-			<a class="btn-explore" href="#">Explore</a>
+			<a class="btn-explore" href="<?php echo get_permalink( get_page_by_path( 'about' ) )?>">Explore</a>
 		</div>
 	</div>
 </section>

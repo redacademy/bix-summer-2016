@@ -23,7 +23,7 @@ get_header(); ?>
 					<h2 class="bix-book-title">The Bix Book</h2>
 					<h3 class="bix-book-subheading">Transformational Stories</h3>
 
-					<a class="btn btn-download" href="<?php echo esc_url( get_permalink(9) ); ?>/#buy-book-anchor">Download Book</a>
+					<a class="btn btn-download" href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>/#buy-book-anchor">Download Book</a>
 					<a class="btn btn-down" href="#scroll"><i class="fa fa-angle-down" aria-hidden="true"></i> </a>
 		</div>
 			</div>

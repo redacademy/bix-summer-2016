@@ -15,7 +15,7 @@
 		<div>
 			<h3 class="bix-book-title">The Bix Book</h3>
 				<?php echo CFS()->get( 'bix_book_summary' ); ?>
-			<a class="btn-discover" href="#">Discover</a>
+			<a class="btn-discover" href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>">Discover</a>
 		</div>
 	</div>
 </section>
