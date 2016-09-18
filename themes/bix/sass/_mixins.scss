@@ -33,6 +33,7 @@
   background-color: $color__blue;
   font-weight: 500;
   font-size: 1.1rem;
+  transition: all ease 0.4s;
   &:hover{
     color: $color__blue;
     border: solid $color__blue 2px;
