@@ -2073,7 +2073,10 @@ strong {
   -ms-flex-align: center;
       align-items: center; }
   .bix-book-banner .site-logo {
-    display: none; }
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    overflow: hidden; }
 
 .the-bix-book-title {
   width: 100%;
@@ -2117,7 +2120,13 @@ strong {
     font-weight: 300; }
 
 .ribbon, .ribbon-heading {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  height: 0;
+  width: 0;
+  overflow: hidden;
   padding: 0; }
   .ribbon .book-section1-inside, .ribbon-heading .book-section1-inside {
     padding: 5px 20px;
@@ -2278,7 +2287,10 @@ strong {
     overflow: hidden;
     position: relative; }
     .bix-book-banner .site-logo {
-      display: unset;
+      visibility: visible;
+      height: auto;
+      width: 250px;
+      overflow: auto;
       max-width: 250px; }
     .bix-book-banner .the-bix-book-title {
       color: #fff;
@@ -2318,12 +2330,17 @@ strong {
     margin-top: 50px;
     position: relative; }
     .book-section1 .ribbon {
-      display: unset;
+      visibility: visible;
+      height: 71px;
+      width: 315px;
+      overflow: auto;
       position: absolute;
       top: 35px;
       left: -45px; }
     .book-section1 .ribbon-heading {
-      display: unset;
+      height: 71px;
+      width: 315px;
+      visibility: visible;
       position: absolute;
       top: 23px;
       left: 23px;
@@ -2340,13 +2357,19 @@ strong {
     position: relative;
     margin-top: 50px; }
     .book-section2 .ribbon {
-      display: unset;
+      visibility: visible;
+      height: 71px;
+      width: 315px;
+      overflow: auto;
       position: absolute;
       top: 35px;
       left: -45px;
       z-index: 1; }
     .book-section2 .ribbon-heading {
-      display: unset;
+      visibility: visible;
+      height: 71px;
+      width: 315px;
+      overflow: auto;
       position: absolute;
       top: 23px;
       left: 23px;

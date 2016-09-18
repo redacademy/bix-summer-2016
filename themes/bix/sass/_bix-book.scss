@@ -5,7 +5,10 @@
 	justify-content: center;
 	align-items: center;
 	.site-logo{
-		display: none;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    overflow: hidden;
 	}
 }
 .the-bix-book-title{
@@ -52,7 +55,13 @@
 }
 //desktop styling hidden for mobile
 .ribbon, .ribbon-heading{
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  top:-9999px;
+  height: 0;
+  width: 0;
+  overflow: hidden;
   padding: 0;
 
 	.book-section1-inside{
@@ -248,7 +257,10 @@
     overflow: hidden;
     position: relative;
     .site-logo{
-      display: unset;
+      visibility: visible;
+      height: auto;
+      width: 250px;
+      overflow: auto;
       max-width: 250px;
     }
     .the-bix-book-title{
@@ -320,13 +332,18 @@
     margin-top: 50px;
     position: relative;
     .ribbon{
-      display: unset;
+      visibility: visible;
+      height: 71px;
+      width: 315px;
+      overflow: auto;
       position: absolute;
       top: 35px;
       left: -45px;
     }
     .ribbon-heading{
-      display: unset;
+      height: 71px;
+      width: 315px;
+      visibility: visible;
       position: absolute;
       top: 23px;
       left: 23px;
@@ -347,14 +364,20 @@
     position: relative;
     margin-top: 50px;
     .ribbon{
-      display: unset;
+      visibility: visible;
+      height: 71px;
+      width: 315px;
+      overflow: auto;
       position: absolute;
       top: 35px;
       left: -45px;
       z-index: 1;
     }
     .ribbon-heading{
-      display: unset;
+      visibility: visible;
+      height: 71px;
+      width: 315px;
+      overflow: auto;
       position: absolute;
       top: 23px;
       left: 23px;
