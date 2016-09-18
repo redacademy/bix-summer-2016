@@ -6,8 +6,12 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height:0;
 	.site-logo,.about-title,p{
-		display: none;
+		visibility: hidden;
+    height: 0;
+    width: 0;
+    overflow: hidden;
 	}
 	.about-header{
 		display: flex;
@@ -23,7 +27,6 @@ h3 {
 }
 
 // author section
-
 	strong {
 		font-weight: bold;
 	}
@@ -219,11 +222,18 @@ h3 {
 	    overflow: hidden;
 	    position: relative;
     .site-logo{
-      display: unset;
+      visibility: visible;
+    	height: auto;
+    	width: 250px;
+    	overflow: hidden;
       max-width: 250px;
     }
     .about-title{
-    	display: unset;
+    	visibility: visible;
+    	height: auto;
+    	width: 250px;
+    	overflow: hidden;
+      max-width: 250px;
       color:#fff;
       border-bottom: solid 2px #fff;
       border-top: solid 2px #fff;
@@ -235,15 +245,17 @@ h3 {
       text-align: center;
     }
     p{
-    	display: unset;
+    	visibility: visible;
+    	height: auto;
+    	width: 250px;
+    	overflow: hidden;
+      max-width: 250px;
     	color: #fff;
     	font-weight: 300;
     	margin-top: 0;
+    	text-align: center;
     }
   }
-
-
-
 		.about-page-banner{
 			display: block;
 		}

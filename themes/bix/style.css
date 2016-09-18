@@ -951,9 +951,13 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  height: 0; }
   .about-banner .site-logo, .about-banner .about-title, .about-banner p {
-    display: none; }
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    overflow: hidden; }
   .about-banner .about-header {
     display: -ms-flexbox;
     display: flex;
@@ -1137,10 +1141,17 @@ strong {
     overflow: hidden;
     position: relative; }
     .about-banner .site-logo {
-      display: unset;
+      visibility: visible;
+      height: auto;
+      width: 250px;
+      overflow: hidden;
       max-width: 250px; }
     .about-banner .about-title {
-      display: unset;
+      visibility: visible;
+      height: auto;
+      width: 250px;
+      overflow: hidden;
+      max-width: 250px;
       color: #fff;
       border-bottom: solid 2px #fff;
       border-top: solid 2px #fff;
@@ -1151,10 +1162,15 @@ strong {
       font-weight: 500;
       text-align: center; }
     .about-banner p {
-      display: unset;
+      visibility: visible;
+      height: auto;
+      width: 250px;
+      overflow: hidden;
+      max-width: 250px;
       color: #fff;
       font-weight: 300;
-      margin-top: 0; }
+      margin-top: 0;
+      text-align: center; }
   .about-page-banner {
     display: block; }
   .author-section, .company-section {
