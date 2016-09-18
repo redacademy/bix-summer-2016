@@ -6,7 +6,10 @@
 	align-items: center;
 	max-width: 100%;
 	.site-logo{
-		display: none;
+		visibility: hidden;
+    height: 0;
+    width: 0;
+    overflow: hidden;
 	}	
 	.stories-header{
 		width: 80%;
@@ -150,7 +153,10 @@
     position: relative;
     margin-bottom: 50px;
     .site-logo{
-      display: unset;
+      visibility: visible;
+    	height: auto;
+    	width: 250px;
+    	overflow: auto;
       max-width: 250px;
     } 
     .stories-title {

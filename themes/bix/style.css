@@ -2460,7 +2460,10 @@ strong {
       align-items: center;
   max-width: 100%; }
   .stories-banner .site-logo {
-    display: none; }
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    overflow: hidden; }
   .stories-banner .stories-header {
     width: 80%;
     display: -ms-flexbox;
@@ -2585,7 +2588,10 @@ strong {
     position: relative;
     margin-bottom: 50px; }
     .stories-banner .site-logo {
-      display: unset;
+      visibility: visible;
+      height: auto;
+      width: 250px;
+      overflow: auto;
       max-width: 250px; }
     .stories-banner .stories-title {
       color: #fff;
