@@ -2,7 +2,13 @@
 <section class="quote-wrapper-front"><!--Section 2-->
 	<div class="quote-img">
 		<div class="overlay">
-			<a class="btn" href="#">Read a Sample Story</a>
+		<?php
+			global $post;
+				$args = array('post_type' => 'story', 'posts_per_page' => 1,'order' =>'ASC');
+				$myposts = get_posts( $args );
+					foreach( $myposts as $post ) :	setup_postdata($post); ?>
+					<a class="btn" href="<?php the_permalink() ?>">Read a Sample Story</a>
+		<?php endforeach;wp_reset_postdata(); ?>
 		</div>
 	</div>
 	<div class="quote-wrapper-text">
@@ -18,7 +24,16 @@
 <section class="quote-wrapper-front-2"><!--Section 3-->
 	<div class="quote-img-2">
 		<div class="overlay">
-			<a class="btn" href="#">Read a Sample Story</a>
+			<?php
+				global $post;
+					$args = array('post_type' => 'story', 'posts_per_page' => 1,'order' =>'ASC','offset' => 1);
+					$myposts = get_posts( $args );
+				
+						foreach( $myposts as $post ) :	setup_postdata($post); ?>
+		
+				<a class="btn" href="<?php the_permalink() ?>">Read a Sample Story</a>
+
+			<?php endforeach;wp_reset_postdata(); ?>
 		</div>
 	</div>
 	<div class="quote-wrapper-text">
