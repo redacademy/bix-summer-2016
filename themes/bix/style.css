@@ -2264,13 +2264,10 @@ strong {
       letter-spacing: 1.5px; }
       .book-purchase .book-purchase-info .book-buy-light span {
         color: #70b3cb; }
-    .book-purchase .book-purchase-info .fa-cc-paypal {
-      color: #253b80;
-      font-size: 2.5rem;
-      top: 20px;
-      vertical-align: text-middle;
+    .book-purchase .book-purchase-info .paypal {
       position: relative;
-      top: 10px; }
+      top: 5px;
+      max-width: 11%; }
     .book-purchase .book-purchase-info .donate-now {
       display: -ms-flexbox;
       display: flex;

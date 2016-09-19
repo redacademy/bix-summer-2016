@@ -214,13 +214,10 @@
         color:$color__blue;
       }
     }
-    .fa-cc-paypal{
-      color: #253b80;
-      font-size: 2.5rem;
-      top: 20px;
-      vertical-align: text-middle;
+    .paypal{ 
       position:relative;
-      top:10px;
+      top:5px;
+      max-width: 11%;
     }
 
     .donate-now{

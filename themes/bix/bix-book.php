@@ -86,7 +86,7 @@ get_header(); ?>
 							<?php echo CFS()->get( 'call_to_action' ); ?>
 						</p>
 					<?php endif; ?>
-					<p class="book-buy-light">Customize your contribution amount in  <i class="fa fa-cc-paypal"></i>
+					<p class="book-buy-light">Customize your contribution amount in  <img class="paypal" src="<?php echo(get_template_directory_uri());?>/images/paypal.png" alt="bix paypal"/>
 					</p>
 
 					<div class="donate-now">
