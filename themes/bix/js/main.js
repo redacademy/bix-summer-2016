@@ -145,9 +145,10 @@ $(document).ready(function(){
 	    $('.desktop-nav-container').fadeOut('slow');
 	    $('.download-modal').fadeIn('slow');
 	});
-	$('.single-story-modal-container').on('click', function(){
-		if($('.comment-modal, .highlight-modal, .download-modal').is(event.target)) {
 
+	$('.single-story-modal-container, .comment-section-link').on('click', function(){
+		if(!$('.single-story-modal-container, .comment-section-link').is(event.target)) {
+			// do nothing
 		}
 		else {
 			$('.single-story-modal-overlay').fadeOut('slow');

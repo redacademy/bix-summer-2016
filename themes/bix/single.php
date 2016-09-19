@@ -14,6 +14,12 @@ get_header(); ?>
 			<div class="single-story-modal-container">
 				<div class="comment-modal">
 
+					<div class="comment-modal-wrapper">
+						<h2>Leave us a comment</h2>
+						<div class="img-wrapper"><img src="" alt=""></div>
+						<a class="comment-section-link" href="#commentsSection">Comment here!</a>
+					</div>
+
 				</div>
 				<div class="highlight-modal">
 					<div class="highlight-modal-wrapper">

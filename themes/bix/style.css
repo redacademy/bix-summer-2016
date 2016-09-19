@@ -3294,6 +3294,42 @@ strong {
 
 .comment-modal {
   background: #70b3cb; }
+  .comment-modal .comment-modal-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    width: 100%;
+    height: 100%; }
+  .comment-modal h2 {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    border: 3px solid white;
+    border-width: 3px 0; }
+  .comment-modal .img-wrapper {
+    width: 75%;
+    height: 50%;
+    background: white; }
+  .comment-modal .comment-section-link {
+    color: #fff;
+    text-decoration: none;
+    border: solid #fff 2px;
+    border-radius: 30px;
+    background-color: #70b3cb;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all ease 0.4s;
+    padding: 0.5rem 3rem;
+    margin: 1rem; }
+    .comment-modal .comment-section-link:hover {
+      color: #70b3cb;
+      border: solid #70b3cb 2px;
+      background-color: #fff; }
 
 .download-modal {
   background: #444444; }

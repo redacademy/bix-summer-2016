@@ -55,7 +55,7 @@
 			</div>
 		<?php endif; ?>
 		
-		<div class="comment-section-border">
+		<div id="commentsSection" class="comment-section-border">
 		<div class="comment-title-wrapper">	
 			<h2 class="comment-title">Response</h2>
 		</div>
