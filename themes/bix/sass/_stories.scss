@@ -202,7 +202,9 @@
 	}
 	.entry-content{
 		.stories-title{
-			font-size: 2rem;
+			a{
+				font-size: 2rem;
+			}
 		}
 	}
 }

@@ -2640,7 +2640,7 @@ strong {
     opacity: 1; }
     .stories-main:hover .entry-content .btn {
       opacity: 1; }
-  .entry-content .stories-title {
+  .entry-content .stories-title a {
     font-size: 2rem; } }
 
 @media (min-width: 1260px) {

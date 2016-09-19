@@ -35,7 +35,7 @@ get_header(); ?>
 					<p>
 					<span>The Bix Book</span> is offered on a “Pay-What-Feels-Right” model, so you can decide how much the book is worth after you have read it.
 					</p>
-					<a href="#" class="btn btn-download">Download Book</a>
+					<a href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>/#buy-book-anchor" class="btn btn-download">Download Book</a>
 					<p>With your download, you will receive the full 38 stories and an accompanying interactive workbook that follows each story.
 					</p>
 					<p>
