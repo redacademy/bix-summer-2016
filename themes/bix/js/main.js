@@ -146,8 +146,8 @@ $(document).ready(function(){
 	    $('.download-modal').fadeIn('slow');
 	});
 
-	$('.single-story-modal-container, .comment-section-link').on('click', function(){
-		if(!$('.single-story-modal-container, .comment-section-link').is(event.target)) {
+	$('.single-story-modal-container, .comment-section-link, .download-page-link, .highlight-modal-button').on('click', function(){
+		if(!$('.single-story-modal-container, .comment-section-link, .download-page-link, .highlight-modal-button').is(event.target)) {
 			// do nothing
 		}
 		else {

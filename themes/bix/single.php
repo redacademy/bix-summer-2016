@@ -31,7 +31,7 @@ get_header(); ?>
 			    			<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image.png" alt="bix logo"/>
 			    			<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image-2.png" alt="bix logo"/>
 			  			</div>
-					<a class="highlight-modal-button" href="#">Start Highlighting</a>
+					<span class="highlight-modal-button">Start Highlighting</span>
 					</div>
 
         		</div>
@@ -42,7 +42,7 @@ get_header(); ?>
 					<div class="download-modal-wrapper">
 						<h2>The Bix Book</h2>
 						<div class="img-wrapper"><img src="" alt=""></div>
-						<a class="download-page-link" href="#">Download the Book</a>
+						<a class="download-page-link" href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>/#buy-book-anchor">Download the Book</a>
 					</div>
 
 				</div>
