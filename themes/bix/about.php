@@ -83,8 +83,8 @@ get_header(); ?>
 						</div>
 						<div class="company-section-website">
 							<h3>Visit our site and learn more.</h3>
-							<a href="" class="website-img-link"><img src="<?php echo get_template_directory_uri() . "/images/bickson2-logo-black.png"?>" alt=""></a>
-							<a href="" class="website-text-link">www.bickson2.com</a>
+							<a href="http://bickson2.com/" class="website-img-link"><img src="<?php echo get_template_directory_uri() . "/images/bickson2-logo-black.png"?>" alt=""></a>
+							<a href="http://bickson2.com/" class="website-text-link">www.bickson2.com</a>
 						</div>
 					</div>
 				</div>
