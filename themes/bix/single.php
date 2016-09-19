@@ -16,6 +16,7 @@ get_header(); ?>
 
 				</div>
 				<div class="highlight-modal">
+					<div class="highlight-modal-wrapper">
 			    	<h2 class="highlight-modal-title">Highlight And Share</h2>
 			    	<p class="highlight-modal-paragraph">Use the highlight tool to share your thoughts </p>
 			  	<div class="highlight-modal-image">
@@ -23,6 +24,7 @@ get_header(); ?>
 			    	<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image-2.png" alt="bix logo"/>
 			  	</div>
 					<a class="highlight-modal-button" href="#"> Start Highlighting </a>
+				</div>
         </div>
 
 
