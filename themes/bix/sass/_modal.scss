@@ -27,8 +27,38 @@
 }
 
 .highlight-modal {
+    text-align: center;
     background: $color__orange;
 
+    .highlight-modal-image {
+
+      img {
+      width: 48%;
+      display: inline-block;
+      }
+}
+
+    .highlight-modal-button{
+      @include btn;
+      padding: 0.5rem 3rem;
+      margin: 1rem;
+    }
+
+    .highlight-modal-title {
+      font-size: 2rem;
+      font-family: $font__header;
+      color: #ffffff;
+      border-top: 2px white solid;
+      border-bottom: 2px white solid;
+      text-transform: capitalize;
+    }
+
+    .highlight-modal-paragraph {
+      color: #ffffff;
+      font-family: $font__main;
+      font-size: .75rem;
+      text-transform: capitalize;
+    }
 }
 
 .comment-modal {

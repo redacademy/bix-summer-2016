@@ -16,16 +16,14 @@ get_header(); ?>
 
 				</div>
 				<div class="highlight-modal">
-			    <h2 class="highlight-modal-title">Is there an interesting quote from the story that speaks to you? </h2>
-			    <p class="highlight-modal-paragraph">Use the highlight tool to share your thoughts </p>
-			    <div>
-			        <p> Example: </p>
-			        <img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image.png" alt="bix logo"/>
-			        <img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image-2.png" alt="bix logo"/>
-			    </div>
-			        <p class=""> Share This </p>
-			        <p class=""> Share this on your favourite social media page</p>
-				</div>
+			    	<h2 class="highlight-modal-title">Highlight And Share</h2>
+			    	<p class="highlight-modal-paragraph">Use the highlight tool to share your thoughts </p>
+			  	<div class="highlight-modal-image">
+			    	<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image.png" alt="bix logo"/>
+			    	<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image-2.png" alt="bix logo"/>
+			  	</div>
+					<a class="highlight-modal-button" href="#"> Start Highlighting </a>
+        </div>
 
 
 				<div class="download-modal">
