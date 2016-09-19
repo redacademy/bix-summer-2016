@@ -1973,7 +1973,13 @@ strong {
   -ms-flex-align: center;
       align-items: center; }
   .tools i {
-    padding: 0 10px; }
+    padding: 0 10px;
+    margin-right: 30px;
+    transition: transform .3s ease-in-out; }
+    .tools i:hover {
+      cursor: pointer;
+      color: #F9AC31;
+      transform: rotateY(180deg); }
 
 .next-story {
   border-left: solid 1px #70b3cb;
@@ -1987,7 +1993,8 @@ strong {
     text-transform: uppercase;
     color: #70b3cb; }
     .next-story a:hover {
-      color: #F9AC31; }
+      color: #F9AC31;
+      cursor: pointer; }
 
 .bottom-toolbar-wrapper-slide-up {
   transition: 0.5s;

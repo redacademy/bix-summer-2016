@@ -148,6 +148,14 @@
 		align-items: center;
 		i {
 			padding: 0 10px;
+			margin-right: 30px;
+			transition:transform .3s ease-in-out;
+		&:hover{
+			cursor: pointer;
+			color:$color__orange;
+			transform: rotateY(180deg);
+		}
+
 		}
 	}
 	.next-story {
@@ -164,6 +172,7 @@
 			color: $color__blue;
 			&:hover {
 				color: $color__orange;
+				cursor: pointer;
 			}
 		}
 	}
