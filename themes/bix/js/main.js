@@ -110,10 +110,10 @@ $(document).ready(function(){
 		  contain: true
 		});
 
-	
+
 
 	//Smooth Scroll
-	 
+
 	    $(function() {
 	      $('a[href*="#"]:not([href="#"])').click(function() {
 	        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -147,7 +147,7 @@ $(document).ready(function(){
 	});
 	$('.single-story-modal-container').on('click', function(){
 		if($('.comment-modal, .highlight-modal, .download-modal').is(event.target)) {
-			
+
 		}
 		else {
 			$('.single-story-modal-overlay').fadeOut('slow');
@@ -158,17 +158,3 @@ $(document).ready(function(){
 
 
 }(jQuery));
-
-
-
-
-
-
-
-
-
-
-
-
-
-

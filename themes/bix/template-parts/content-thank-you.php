@@ -9,7 +9,7 @@
          			<img src="<?php echo(get_template_directory_uri());?>/images/thank-you-image.png" alt="thank you"/>
 							<h2> Listening is having the person speaking experience being heard <br>- "Bix Bickson"</h2>
 							<h5> come back and join the conversation </h5>
-              <label for="thank-you-modal__trigger" id="thank-you-modal-button"> Done </button>
+              <button for="thank-you-modal__trigger" id="thank-you-modal-button"> Done </button>
          		</div>
          	</div>
          </div>
