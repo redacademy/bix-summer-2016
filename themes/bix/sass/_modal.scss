@@ -30,43 +30,43 @@
     text-align: center;
     background: $color__orange;
 
-.highlight-modal-wrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  flex-flow: column nowrap;
+    .highlight-modal-wrapper {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      flex-flow: column nowrap;
 
+        .img-wrapper {
+            width: 75%;
+            height: 50%;
+            background: white;
+        }
+        h2 {
+            text-transform: uppercase;
+            color: white;
+            font-family: $font__header;
+            font-size: 2rem;
+            font-weight: 400;
+            border: 3px solid white;
+            border-width: 3px 0;
+            margin-bottom: 0;
+        }
 
-    .highlight-modal-image {
-      
-      img {
+        p {
+          color: #ffffff;
+          font-family: $font__main;
+          font-size: .75rem;
+          text-transform: capitalize;
+          margin: 1rem;
+        }
 
-      }
-     }
-
-    .highlight-modal-button{
-      @include btn;
-      padding: 0.5rem 3rem;
-      margin: 1rem;
+        .highlight-modal-button{
+          @include btn;
+          padding: 0.5rem 3rem;
+          margin: 1rem;
+        }
     }
-
-    .highlight-modal-title {
-      font-size: 2rem;
-      font-family: $font__header;
-      color: #ffffff;
-      border-top: 2px white solid;
-      border-bottom: 2px white solid;
-      text-transform: capitalize;
-    }
-
-    .highlight-modal-paragraph {
-      color: #ffffff;
-      font-family: $font__main;
-      font-size: .75rem;
-      text-transform: capitalize;
-    }
-}
 
 }
 
@@ -103,4 +103,31 @@
 
 .download-modal {
     background: $color__gray;
+
+    .download-modal-wrapper {
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        width: 100%;
+        height: 100%;
+    }
+    h2 {
+        text-transform: uppercase;
+        color: white;
+        font-family: $font__header;
+        font-size: 2rem;
+        font-weight: 400;
+        border: 3px solid white;
+        border-width: 3px 0;
+    }
+    .img-wrapper {
+        width: 75%;
+        height: 50%;
+        background: white;
+    }
+    .download-page-link {
+        @include btn;
+        padding: 0.5rem 3rem;
+        margin: 1rem;
+    }
 }

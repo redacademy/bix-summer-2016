@@ -3264,6 +3264,25 @@ strong {
     height: 100%;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
+    .highlight-modal .highlight-modal-wrapper .img-wrapper {
+      width: 75%;
+      height: 50%;
+      background: white; }
+    .highlight-modal .highlight-modal-wrapper h2 {
+      text-transform: uppercase;
+      color: white;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      border: 3px solid white;
+      border-width: 3px 0;
+      margin-bottom: 0; }
+    .highlight-modal .highlight-modal-wrapper p {
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      font-size: .75rem;
+      text-transform: capitalize;
+      margin: 1rem; }
     .highlight-modal .highlight-modal-wrapper .highlight-modal-button {
       color: #fff;
       text-decoration: none;
@@ -3279,18 +3298,6 @@ strong {
         color: #70b3cb;
         border: solid #70b3cb 2px;
         background-color: #fff; }
-    .highlight-modal .highlight-modal-wrapper .highlight-modal-title {
-      font-size: 2rem;
-      font-family: "Titillium Web", sans-serif;
-      color: #ffffff;
-      border-top: 2px white solid;
-      border-bottom: 2px white solid;
-      text-transform: capitalize; }
-    .highlight-modal .highlight-modal-wrapper .highlight-modal-paragraph {
-      color: #ffffff;
-      font-family: "Roboto", sans-serif;
-      font-size: .75rem;
-      text-transform: capitalize; }
 
 .comment-modal {
   background: #70b3cb; }
@@ -3333,3 +3340,39 @@ strong {
 
 .download-modal {
   background: #444444; }
+  .download-modal .download-modal-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    width: 100%;
+    height: 100%; }
+  .download-modal h2 {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    border: 3px solid white;
+    border-width: 3px 0; }
+  .download-modal .img-wrapper {
+    width: 75%;
+    height: 50%;
+    background: white; }
+  .download-modal .download-page-link {
+    color: #fff;
+    text-decoration: none;
+    border: solid #fff 2px;
+    border-radius: 30px;
+    background-color: #70b3cb;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all ease 0.4s;
+    padding: 0.5rem 3rem;
+    margin: 1rem; }
+    .download-modal .download-page-link:hover {
+      color: #70b3cb;
+      border: solid #70b3cb 2px;
+      background-color: #fff; }

@@ -17,26 +17,35 @@ get_header(); ?>
 					<div class="comment-modal-wrapper">
 						<h2>Leave us a comment</h2>
 						<div class="img-wrapper"><img src="" alt=""></div>
-						<a class="comment-section-link" href="#commentsSection">Comment here!</a>
+						<a class="comment-section-link" href="#commentsSection">Click to Comment</a>
 					</div>
 
 				</div>
+
 				<div class="highlight-modal">
+
 					<div class="highlight-modal-wrapper">
-			    	<h2 class="highlight-modal-title">Highlight And Share</h2>
-			    	<p class="highlight-modal-paragraph">Use the highlight tool to share your thoughts </p>
-			  	<div class="highlight-modal-image">
-			    	<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image.png" alt="bix logo"/>
-			    	<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image-2.png" alt="bix logo"/>
-			  	</div>
-					<a class="highlight-modal-button" href="#"> Start Highlighting </a>
-				</div>
-        </div>
+			    		<h2>Highlight And Share</h2>
+			    		<p>Use the highlight tool to share your thoughts </p>
+			  			<div class="img-wrapper">
+			    			<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image.png" alt="bix logo"/>
+			    			<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image-2.png" alt="bix logo"/>
+			  			</div>
+					<a class="highlight-modal-button" href="#">Start Highlighting</a>
+					</div>
+
+        		</div>
 
 
 				<div class="download-modal">
+					
+					<div class="download-modal-wrapper">
+						<h2>The Bix Book</h2>
+						<div class="img-wrapper"><img src="" alt=""></div>
+						<a class="download-page-link" href="#">Download the Book</a>
+					</div>
 
-			</div>
+				</div>
 		</div>
 	</div>
 
