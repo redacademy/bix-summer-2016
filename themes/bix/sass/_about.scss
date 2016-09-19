@@ -36,7 +36,6 @@ h3 {
 	}
 
 	.author-section {
-		min-width: 320px;
 		display: block;
 		width: 100%;
 	}
@@ -62,9 +61,7 @@ h3 {
 		display: flex;
 		flex-flow: column nowrap;
 		align-items: center;
-		img {
-			max-width: 400px;
-		}
+		
 		p {
 			font-family: $font__header;
 			margin: 1rem 2rem;
@@ -103,7 +100,6 @@ h3 {
 // company section
 
 	.company-section {
-		min-width: 320px;
 		display: block;
 		width: 100%;
 		height: 100%;
@@ -267,6 +263,7 @@ h3 {
 		
 			img {
 				order: 2;
+				max-width: 400px;
 			}
 			p {
 				order: 1;

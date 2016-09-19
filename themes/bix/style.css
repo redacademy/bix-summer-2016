@@ -979,7 +979,6 @@ strong {
   color: #F9AC31; }
 
 .author-section {
-  min-width: 320px;
   display: block;
   width: 100%; }
 
@@ -1004,8 +1003,6 @@ strong {
       flex-flow: column nowrap;
   -ms-flex-align: center;
       align-items: center; }
-  .author-section-intro img {
-    max-width: 400px; }
   .author-section-intro p {
     font-family: "Titillium Web", sans-serif;
     margin: 1rem 2rem;
@@ -1036,7 +1033,6 @@ strong {
       margin-bottom: 1rem; }
 
 .company-section {
-  min-width: 320px;
   display: block;
   width: 100%;
   height: 100%; }
@@ -1177,7 +1173,8 @@ strong {
     margin: 50px 0; }
   .author-section-intro img {
     -ms-flex-order: 2;
-        order: 2; }
+        order: 2;
+    max-width: 400px; }
   .author-section-intro p {
     -ms-flex-order: 1;
         order: 1; }
