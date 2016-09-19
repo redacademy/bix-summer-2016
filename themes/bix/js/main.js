@@ -157,5 +157,22 @@ $(document).ready(function(){
 		}
 	});
 
+//Email Alert Message
+    $(function() {
+      $('#updates').on('submit', 'form', function(event) {
+        event.preventDefault();
+        var $emailInput = $('#email-input')
+
+        if ( $emailInput.val().length > 5 ) {
+          alert($emailInput.val() + " -> The Bix Book thanks you for your message :)");
+          $emailInput.val('');
+        } else {
+          alert('Please submit a valid email address.');
+          event.preventDefault();
+        }
+      });
+    });
+
+
 
 }(jQuery));
