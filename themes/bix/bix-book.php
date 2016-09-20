@@ -17,14 +17,35 @@ get_header(); ?>
 			<div class="bix-book-modal-container">
 
 			<div class="unlock-download-modal">
-				
+			<i class="fa fa-close" aria-hidden="true"></i>
+
+				<div class="unlock-download-modal-wrapper">
+		            <h2>Thank your for your interest in <strong>The Bix Book</strong></h2>
+		            <p>Please leave your email to unlock the download link:</p>
+		            <form action="">
+		            	<input class="unlock-email" id="unlockEmail" type="text" name="email" placeholder="Enter your email address"/>
+						<button type="submit">Unlock Download</button>
+		            </form>
+		            
+		        </div>
+
 			</div>
 
 			<div class="start-download-modal">
+			<i class="fa fa-close" aria-hidden="true"></i>
+
+				<div class="start-download-modal-wrapper">
+					
+				</div>
 				
 			</div>
 
 			<div class="thankyou-modal">
+			<i class="fa fa-close" aria-hidden="true"></i>
+
+				<div class="thankyou-modal-wrapper">
+					
+				</div>
 				
 			</div>
 
@@ -110,7 +131,9 @@ get_header(); ?>
 					<div class="donate-now">
 				     <a class="btn btn-donate" href="http://www.paypal.com">Donate Now</a>
 
-            <?php get_template_part( 'template-parts/content', 'modal' ); ?>
+				     <p class="download-later-button">Download Button</p>
+
+            <?php // get_template_part( 'template-parts/content', 'modal' ); ?>
 			  	</div>
 				</div>
 		</section>

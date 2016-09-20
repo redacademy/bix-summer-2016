@@ -148,6 +148,23 @@ $(document).ready(function(){
 
 	// BixBook Page Modals
 
+	$('.download-later-button').on('click', function(){
+	    $('.bix-book-modal-overlay').fadeIn('slow');
+	    $('.desktop-nav-container').fadeOut('slow');
+	    $('.unlock-download-modal').fadeIn('slow');
+	});
+
+	$('.bix-book-modal-container, i.fa-close').on('click', function(){
+		if(!$('.bix-book-modal-container, i.fa-close').is(event.target)) {
+			// do nothing
+		}
+		else {
+			$('.bix-book-modal-overlay').fadeOut('slow');
+			$('.desktop-nav-container').fadeIn('slow');
+			$('.unlock-download-modal, .start-download-modal, .thankyou-modal').fadeOut('slow');
+		}
+	});
+
 //Email Alert Message
     $(function() {
       $('#updates').on('submit', 'form', function(event) {
