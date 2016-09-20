@@ -7,6 +7,7 @@
 	padding: 3rem 4rem;
 	border: 1px solid rgba(0,0,0,0.3);
 	margin: 4rem auto;
+	min-width: 320px;
 	span{
 		color: $color__orange;
 	}
@@ -15,6 +16,6 @@
 .btn-return{
 	@include btn;
 	font-size: .9rem;
-	padding: 10px 10px;
+	padding: 10px 12px;
 	text-transform: uppercase;
 }

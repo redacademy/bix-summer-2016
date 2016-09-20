@@ -3004,7 +3004,8 @@ strong {
   width: 100%;
   padding: 3rem 4rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  margin: 4rem auto; }
+  margin: 4rem auto;
+  min-width: 320px; }
   .error-404 span {
     color: #F9AC31; }
 
@@ -3018,7 +3019,7 @@ strong {
   font-size: 1.1rem;
   transition: all ease 0.4s;
   font-size: .9rem;
-  padding: 10px 10px;
+  padding: 10px 12px;
   text-transform: uppercase; }
   .btn-return:hover {
     color: #70b3cb;
