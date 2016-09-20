@@ -8,9 +8,10 @@ $(document).ready(function(){
             var $navContainer = $(".desktop-nav-wrapper .desktop-nav-container"),
                 $mainNavigation = $(".mobile-nav-wrapper .main-navigation"),
                 $navWrapper = $(".mobile-nav-wrapper"),
-                $toolbarWrapper = $(".bottom-toolbar-wrapper");
+                $toolbarWrapper = $(".bottom-toolbar-wrapper"),
+                that = this;
             // desktop
-            if (window.scrollY > 60) {
+            if (window.pageYOffset > 60) {
                 $navContainer.addClass("transparent-background");
             }
             else {
@@ -18,7 +19,7 @@ $(document).ready(function(){
             };
             // desktop homepage
             if($(".home").length > 0) {
-                if (window.scrollY > window.innerHeight) {
+                if (window.pageYOffset > window.innerHeight) {
                     $navContainer.addClass("desktop-nav-fixed");
                 }
                 else {
@@ -26,7 +27,7 @@ $(document).ready(function(){
                 };
             }
             // mobile
-            if (window.scrollY > 47) {
+            if (window.pageYOffset > 47) {
                 $mainNavigation.addClass("transparent-background");
             }
             else {
@@ -34,7 +35,7 @@ $(document).ready(function(){
             };
             // mobile homepage
             if($(".home").length > 0) {
-                if (window.scrollY > window.innerHeight) {
+                if (window.pageYOffset > window.innerHeight) {
                     $navWrapper.removeClass("mobile-nav-wrapper-home");
                     $mainNavigation.addClass("transparent-background");
                 }
@@ -45,9 +46,9 @@ $(document).ready(function(){
             }
             // single story tool bar show on stop scroll
                 $toolbarWrapper.removeClass("bottom-toolbar-wrapper-slide-up");
-                clearTimeout( $.data( this, "scrollCheck" ) );
-                $.data( this, "scrollCheck", setTimeout(function() {
-                    if (window.scrollY > 500) {
+                clearTimeout( $.data( that, "scrollCheck" ) );
+                $.data( that, "scrollCheck", setTimeout(function() {
+                    if (window.pageYOffset > 500) {
                         $toolbarWrapper.addClass("bottom-toolbar-wrapper-slide-up");
                     }
                 }, 750) );
