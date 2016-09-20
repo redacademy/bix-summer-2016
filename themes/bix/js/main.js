@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	// on scroll behaviours
 
-        // show on scroll up
+        // show on scroll up  
 		// var lastScrollTop = 0;
 
 		window.onscroll = function() {
@@ -50,17 +50,6 @@ $(document).ready(function(){
 			    	$mainNavigation.removeClass("transparent-background");
 			    };
 			}
-
-			// single story tool bar show on scroll up
-			// var st = $(this).scrollTop();
-			// if (st > lastScrollTop){
-			// 	$(".bottom-toolbar-wrapper").removeClass("bottom-toolbar-wrapper-slide-up");
-			// } else {
-				// if (st > 500) {
-				// 	$(".bottom-toolbar-wrapper").addClass("bottom-toolbar-wrapper-slide-up");
-				// }
-			// }
-			// lastScrollTop = st;
 
 			// single story tool bar show on stop scroll
 				$toolbarWrapper.removeClass("bottom-toolbar-wrapper-slide-up");

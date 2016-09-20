@@ -936,6 +936,29 @@ object {
         align-items: center;
     margin: 0 auto; } }
 
+#selectionSharerPopover-inner {
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #70b3cb;
+  box-shadow: #70b3cb;
+  background: #70b3cb; }
+
+#selectionSharerPopover .selectionSharerPopover-arrow {
+  background-color: #70b3cb;
+  border: 2px solid #70b3cb; }
+
+#selectionSharerPopover:after {
+  background: #70b3cb;
+  box-shadow: 0 0 2px #70b3cb; }
+
+::-moz-selection {
+  background: #F9AC31;
+  color: #fff; }
+
+::selection {
+  background: #F9AC31;
+  color: #fff; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
