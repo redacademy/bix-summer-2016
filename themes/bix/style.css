@@ -3364,7 +3364,8 @@ strong {
       background-color: #fff; }
 
 .thankyou-modal {
-  background: #ffffff; }
+  background: url(../../images/thank-you-image.png);
+  background-position: right; }
   .thankyou-modal .thankyou-modal-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -3375,17 +3376,20 @@ strong {
     width: 100%;
     height: 100%;
     -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap; }
-    .thankyou-modal .thankyou-modal-wrapper img {
-      max-width: 50%; }
-    .thankyou-modal .thankyou-modal-wrapper .thank-you-modal-title {
+        flex-flow: column nowrap;
+    background: rgba(0, 0, 0, 0.5); }
+    .thankyou-modal .thankyou-modal-wrapper h2 {
+      text-align: center;
+      color: white;
       font-family: "Titillium Web", sans-serif;
-      font-size: 2rem;
-      color: #ffffff; }
-    .thankyou-modal .thankyou-modal-wrapper .thank-you-font {
-      font-family: "Roboto", sans-serif;
-      font-size: 1rem;
-      color: #404040; }
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin: 2rem; }
+    .thankyou-modal .thankyou-modal-wrapper p {
+      font-family: "Titillium Web", sans-serif;
+      color: white;
+      font-size: 1.2rem;
+      margin: 0; }
     .thankyou-modal .thankyou-modal-wrapper .thank-you-button {
       color: #fff;
       text-decoration: none;
@@ -3396,7 +3400,7 @@ strong {
       font-size: 1.1rem;
       transition: all ease 0.4s;
       padding: 0.5rem 3rem;
-      margin: 1rem;
+      margin: 2rem;
       cursor: pointer; }
       .thankyou-modal .thankyou-modal-wrapper .thank-you-button:hover {
         color: #70b3cb;

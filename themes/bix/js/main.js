@@ -128,7 +128,7 @@ $(document).ready(function(){
     $('.btn-download').on('click', function(){
         $('.bix-book-modal-overlay').fadeIn('slow');
         $('.desktop-nav-container').fadeOut('slow');
-        $('.unlock-download-modal').fadeIn('slow');
+        $('.thankyou-modal').fadeIn('slow');
     });
     $('.bix-book-modal-container, i.fa-close').on('click', function(){
         if(!$('.bix-book-modal-container, i.fa-close').is(event.target)) {
