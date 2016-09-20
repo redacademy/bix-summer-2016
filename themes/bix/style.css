@@ -921,7 +921,8 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  min-width: 300px; }
 
 .site-main {
   width: 100%; }
@@ -2305,7 +2306,7 @@ strong {
     .book-purchase .book-purchase-info .paypal {
       position: relative;
       top: 5px;
-      max-width: 11%; }
+      width: 60px; }
     .book-purchase .book-purchase-info .donate-now {
       display: -ms-flexbox;
       display: flex;
