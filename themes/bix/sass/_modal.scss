@@ -203,8 +203,8 @@
         left: 0;
         right: 0;
         margin: auto;
-        width: 95%;
-        height: 90%;
+        width: 80%;
+        height: 80%;
         padding: 0.5rem;
         &-wrapper {
           position: relative;
@@ -221,7 +221,6 @@
           }
         }
     }
-
     .download-later-button {
         cursor: pointer;
         @include btn;
@@ -316,7 +315,7 @@
     .thankyou-modal {
         background: url(../../images/thank-you-image.png);
         background-position: right;
-          .thankyou-modal-wrapper {
+        .thankyou-modal-wrapper {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -324,37 +323,38 @@
             height: 100%;
             flex-flow: column nowrap;
             background: rgba(0,0,0,0.5);
-
-              h2 {
-                text-align: center;
-                color: white;
-                font-family: $font__header;
-                font-size: 2.5rem;
-                font-weight: 400;
-                margin: 2rem;
-              }
-
-             p {
-                text-align: center;
-                font-family: $font__header;
-                color: white;
-                font-size: 1.2rem;
-                margin: 0;
-             }
-
-             .thank-you-button {
-               @include btn;
-               padding: 0.5rem 3rem;
-               margin: 2rem;
-               cursor: pointer;
-               text-align: center;
-             }
+            padding: 1rem;
         }
+        h2 {
+          text-align: center;
+          color: white;
+          font-family: $font__header;
+          font-size: 2.5rem;
+          font-weight: 400;
+          margin: 2rem;
+        }
+
+       p {
+          text-align: center;
+          font-family: $font__header;
+          color: white;
+          font-size: 1.2rem;
+          margin: 0;
+       }
+
+       .thank-you-button {
+         @include btn;
+         padding: 0.5rem 3rem;
+         margin: 2rem;
+         cursor: pointer;
+         text-align: center;
+       }
     }
 //breakpoints
 
-     @media #{$tablet-large-desktop}{
-        //Highlight Modal
+  @media #{$tablet-large-desktop}{
+
+    //Highlight Modal
     .highlight-modal {
 
         .highlight-modal-wrapper {
@@ -381,8 +381,7 @@
             }
         }
       }
-
-      //Download Modal
+    //Download Modal
     .download-modal {
        h2 {
            font-size: 1.5rem;
@@ -400,7 +399,7 @@
           font-size: 1rem;
        }
       }
-      //Comments Modal
+    //Comments Modal
     .comment-modal {
 
         h2 {
@@ -421,18 +420,20 @@
             margin-top: 20px;
         }
       }
+        
+  }
 
+  @media #{$tablet-desktop}{
+    .unlock-download-modal, .start-download-modal, .thankyou-modal {
+        width: 95%;
+        height: 90%;
+        padding: 1rem;
+        h2 {
+          font-size: 1.5rem;
+        }
     }
 
-
-    @media #{$tablet-desktop}{
-      .unlock-download-modal, .start-download-modal, .thankyou-modal {
-          width: 80%;
-          height: 80%;
-          padding: 1rem;
-      }
-
-         //Highlight Modal
+    //Highlight Modal
     .highlight-modal {
 
         .highlight-modal-wrapper {
@@ -458,7 +459,7 @@
             }
         }
       }
-       //Download Modal
+    //Download Modal
     .download-modal {
        h2 {
            font-size: 1rem;
@@ -476,8 +477,7 @@
           font-size: .75rem;
        }
       }
-
-        //Comments Modal
+    //Comments Modal
     .comment-modal {
 
         h2 {
@@ -487,4 +487,5 @@
             font-size: .75rem;
         }
       }
-    }
+
+  }
