@@ -106,7 +106,7 @@ $(document).ready(function(){
     $('.comment-modal-button').on('click', function(){
         $singleStoryModalOverlay.fadeIn('slow');
         $desktopNavContainer.fadeOut('slow');
-        $('.comment-modal').fadeIn('slow');
+        $('.comment-modal').fadeIn('slow');    
     });
     $('.highlight-modal-button').on('click', function(){
         $singleStoryModalOverlay.fadeIn('slow');

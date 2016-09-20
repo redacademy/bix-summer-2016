@@ -87,10 +87,8 @@ get_header(); ?>
 							<a href="http://bickson2.com/" class="website-text-link">www.bickson2.com</a>
 						</div>
 					</div>
-				</div>
-			
-			
-	</div>
+				</div>	
+		</div>
 
 
 		</main><!-- #main -->
