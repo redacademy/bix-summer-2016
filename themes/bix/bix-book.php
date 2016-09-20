@@ -35,7 +35,10 @@ get_header(); ?>
 			<i class="fa fa-close" aria-hidden="true"></i>
 
 				<div class="start-download-modal-wrapper">
-
+					<h2>Click the button bellow to start downloading <strong>The Bix Book</strong>:</h2>
+					<p>Download <span class="blue-highlight">The Bix Book</span> to your device</p>
+					<i class="fa fa-download" aria-hidden="true"></i>
+					<button>Start Download</button>
 				</div>
 
 			</div>
