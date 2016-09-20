@@ -3,4 +3,32 @@
 background-color: $color__orange;
 text-align: center;
 display: none;
+
+
+.dd-modal-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-flow: column nowrap;
+
+
+    .dd-modal-title {
+      font-family: $font__header;
+      font-size: 2rem;
+    }
+
+    .dd-modal-h5 {
+      font-family: $font__main;
+      font-size: 1rem;
+    }
+
+    .email-unlock {
+
+    }
+
+    .close {
+      
+    }
+ }
 }
