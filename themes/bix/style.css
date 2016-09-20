@@ -3258,12 +3258,13 @@ strong {
   -ms-flex-align: center;
       align-items: center;
   position: relative; }
-  .single-story-modal-container .highlight-modal, .single-story-modal-container .comment-modal, .single-story-modal-container .download-modal {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    padding: 1rem; }
+
+.highlight-modal, .comment-modal, .download-modal {
+  display: none;
+  position: absolute;
+  width: 95%;
+  height: 80%;
+  padding: 1rem; }
 
 .highlight-modal {
   text-align: center;
@@ -3306,7 +3307,8 @@ strong {
       font-size: 1.1rem;
       transition: all ease 0.4s;
       padding: 0.5rem 3rem;
-      margin: 1rem; }
+      margin: 1rem;
+      cursor: pointer; }
       .highlight-modal .highlight-modal-wrapper .highlight-modal-button:hover {
         color: #70b3cb;
         border: solid #70b3cb 2px;
@@ -3392,8 +3394,4 @@ strong {
 
 @media all and (min-width: 600px) {
   .highlight-modal, .comment-modal, .download-modal {
-    display: none;
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    padding: 1rem; } }
+    width: 80%; } }
