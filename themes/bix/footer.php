@@ -18,7 +18,7 @@
 									 <div class ="form-position" id="updates">
 						 				<form action="#" method="post">
 						          <input type="text" id="email-input" name="email" placeholder="Your Email"/>
-						 					<textarea name="message" placeholder="Drop A Line..."> </textarea>
+						 					<textarea name="message" placeholder="Drop A Line..."></textarea>
 											<br>
 						 					<button class="footer_button">Send</button>
 						        </form>

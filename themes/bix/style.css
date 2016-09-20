@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /*!
 Theme Name: Bix
 Theme URI: http://underscores.me/
@@ -584,7 +582,7 @@ textarea {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50vw;
+    width: 75vw;
     list-style: none;
     text-align: right;
     background: white; }
@@ -923,7 +921,8 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  min-width: 300px; }
 
 .site-main {
   width: 100%; }
@@ -2307,7 +2306,7 @@ strong {
     .book-purchase .book-purchase-info .paypal {
       position: relative;
       top: 5px;
-      max-width: 11%; }
+      width: 60px; }
     .book-purchase .book-purchase-info .donate-now {
       display: -ms-flexbox;
       display: flex;
@@ -3235,19 +3234,18 @@ strong {
 .bix-book-modal-container {
   height: 100%;
   width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
   position: relative; }
 
 .unlock-download-modal, .start-download-modal, .thankyou-modal {
   display: none;
   position: absolute;
-  width: 95%;
-  height: 90%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: 80%;
   padding: 0.5rem; }
   .unlock-download-modal-wrapper, .start-download-modal-wrapper, .thankyou-modal-wrapper {
     position: relative; }
@@ -3398,37 +3396,38 @@ strong {
     height: 100%;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
-    background: rgba(0, 0, 0, 0.5); }
-    .thankyou-modal .thankyou-modal-wrapper h2 {
-      text-align: center;
-      color: white;
-      font-family: "Titillium Web", sans-serif;
-      font-size: 2.5rem;
-      font-weight: 400;
-      margin: 2rem; }
-    .thankyou-modal .thankyou-modal-wrapper p {
-      text-align: center;
-      font-family: "Titillium Web", sans-serif;
-      color: white;
-      font-size: 1.2rem;
-      margin: 0; }
-    .thankyou-modal .thankyou-modal-wrapper .thank-you-button {
-      color: #fff;
-      text-decoration: none;
-      border: solid #fff 2px;
-      border-radius: 30px;
-      background-color: #70b3cb;
-      font-weight: 500;
-      font-size: 1.1rem;
-      transition: all ease 0.4s;
-      padding: 0.5rem 3rem;
-      margin: 2rem;
-      cursor: pointer;
-      text-align: center; }
-      .thankyou-modal .thankyou-modal-wrapper .thank-you-button:hover {
-        color: #70b3cb;
-        border: solid #70b3cb 2px;
-        background-color: #fff; }
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem; }
+  .thankyou-modal h2 {
+    text-align: center;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 2rem; }
+  .thankyou-modal p {
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0; }
+  .thankyou-modal .thank-you-button {
+    color: #fff;
+    text-decoration: none;
+    border: solid #fff 2px;
+    border-radius: 30px;
+    background-color: #70b3cb;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all ease 0.4s;
+    padding: 0.5rem 3rem;
+    margin: 2rem;
+    cursor: pointer;
+    text-align: center; }
+    .thankyou-modal .thank-you-button:hover {
+      color: #70b3cb;
+      border: solid #70b3cb 2px;
+      background-color: #fff; }
 
 @media (max-width: 900px) {
   .highlight-modal .highlight-modal-wrapper .img-wrapper img {
@@ -3473,9 +3472,11 @@ strong {
 
 @media (max-width: 600px) {
   .unlock-download-modal, .start-download-modal, .thankyou-modal {
-    width: 80%;
-    height: 80%;
+    width: 95%;
+    height: 90%;
     padding: 1rem; }
+    .unlock-download-modal h2, .start-download-modal h2, .thankyou-modal h2 {
+      font-size: 1.5rem; }
   .highlight-modal .highlight-modal-wrapper .img-wrapper p {
     max-width: 300px; }
   .highlight-modal .highlight-modal-wrapper h2 {
@@ -3503,4 +3504,3 @@ strong {
     font-size: 1rem; }
   .comment-modal .comment-section-link {
     font-size: .75rem; } }
->>>>>>> change download modal to position absolute
