@@ -11,7 +11,7 @@ Template Name: Bix-Book Template Page
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
 
 		<div class="bix-book-modal-overlay">
 			<div class="bix-book-modal-container">
@@ -22,7 +22,7 @@ get_header(); ?>
 				<div class="unlock-download-modal-wrapper">
 		            <h2>Thank your for your interest in <strong>The Bix Book</strong></h2>
 		            <p>Please leave your email to unlock the download link:</p>
-		            <form action="">
+		            <form action="post">
 		            	<input class="unlock-email" id="unlockEmail" type="text" name="email" placeholder="Enter your email address"/>
 						<button type="submit">Unlock Download</button>
 		            </form>

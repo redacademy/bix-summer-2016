@@ -10,7 +10,18 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property=”fb:app_id” content=”172273116512743”/>
+				<!-- for Google -->
+		<meta name="description" content="The Bix Book by Bix Bixson" />
+		<meta name="keywords" content="Bix, The Bix Book, Bix Bixson, " />
+
+		<meta name="author" content="Bix Bixson" />
+		<meta name="copyright" content="Bix Bixson" />
+	
+			<!-- for Facebook -->          
+		<meta property="og:title" content="The Bix Book" />
+		<meta property="og:type" content="article" />
+		<meta property="og:description" content="The Bix Book by Bix Bixson" />
+
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
@@ -34,8 +45,8 @@
 
 					<div class="menu-button">
 						<div class="menu-button-wrapper">
-							<i class="fa fa-bars" aria-hidden="true" class="menu-show"></i>
-							<i class="fa fa-chevron-up" aria-hidden="true" class="menu-hide"></i>
+							<i class="fa fa-bars menu-show" aria-hidden="true"></i>
+							<i class="fa fa-chevron-up menu-hide" aria-hidden="true"></i>
 						</div>
 					</div>
 
@@ -46,7 +57,7 @@
 
 			<div id="desktopNavigation" class="desktop-nav-wrapper <?php echo is_front_page() ? "desktop-nav-wrapper-home" : ""; ?>">
 				<div class="desktop-nav-container">
-					<nav id="site-navigation" class="main-navigation" role="navigation">
+					<nav id="site-navigation-2" class="main-navigation">
 					
 						<a href="<?php echo home_url()?>" class="logo-link <?php echo is_front_page() ? "current-page" : ""; ?>">
 							<img src="<?php echo is_front_page() ? 
@@ -59,7 +70,7 @@
 					</nav><!-- #site-navigation -->
 				</div>
 			</div>
-
+			
 			</header><!-- #masthead -->
-
+		
 			<div id="content" class="site-content">

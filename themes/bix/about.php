@@ -11,7 +11,7 @@ Template Name: About Template Page
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main" >
 
 		<section class="about-banner">
 			<div class="about-header">
@@ -24,7 +24,7 @@ get_header(); ?>
 		<div class="container">	
 				<div class="author-section">
 					<div class="author-section-title">
-						<img src="<?php echo get_template_directory_uri() . "/images/about-bix-bickson.png"?>" alt="">
+						<img src="<?php echo get_template_directory_uri() . "/images/about-bix-bickson.jpg"?>" alt="">
 						<h2>About <span class="orange-highlight">Bix</span> Bickson</h2>
 					</div>
 					<div class="border-wrapper">

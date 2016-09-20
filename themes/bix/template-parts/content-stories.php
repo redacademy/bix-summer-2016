@@ -7,7 +7,7 @@
 
 ?>
 
-	<article id="post-<?php the_ID(); ?>" class="stories-article" <?php post_class(); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class('stories-article'); ?>>
 		
 		<header class="entry-header stories-main">
 			
