@@ -13,6 +13,24 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div class="bix-book-modal-overlay">
+			<div class="bix-book-modal-container">
+
+			<div class="unlock-download-modal">
+				
+			</div>
+
+			<div class="start-download-modal">
+				
+			</div>
+
+			<div class="thankyou-modal">
+				
+			</div>
+
+			</div>
+		</div>
+
 		<section class="bix-book-banner">
 			<div class="bix-book-header">
 				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>

@@ -1,83 +1,105 @@
-.single-story-modal-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.5);
-    z-index: 5;
-}
+//Single Story
 
-.single-story-modal-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.highlight-modal, .comment-modal, .download-modal {
-    display: none;
-    position: absolute;
-    width: 95%;
-    height: 80%;
-    padding: 1rem;
-}
-
-.highlight-modal {
-    text-align: center;
-    background: $color__orange;
-    position: relative;
-    .side-modal-1{
-      position: absolute;
-      width: 5%;
-      height: 100%;
-      left:0;
-      top:0;
-      background-color: $color__gray;
+    .single-story-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        z-index: 5;
     }
-    .side-modal-2{
-      position: absolute;
-      width: 5%;
-      height: 100%;
-      right:0;
-      top:0;
-      background-color: $color__gray;
+
+    .single-story-modal-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
-    .highlight-modal-wrapper {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      flex-flow: column nowrap;
 
-        .img-wrapper {
-            width: 100%;
-            height: 50%;
-            background: $color__orange;
-            margin-top: 20px;
+    .highlight-modal, .comment-modal, .download-modal {
+        display: none;
+        position: absolute;
+        width: 95%;
+        height: 80%;
+        padding: 1rem;
+    }
 
+    .highlight-modal {
+        text-align: center;
+        background: $color__orange;
 
-          img{
-            max-width: 500px;
-            height: auto;
-          }
-          p{
-            font-size: .75rem;
-            text-align: left;
-            max-width: 500px;
-            line-height: 20px;
-            margin: 0 auto;
-          }
-          .share-icons{
-            text-align: center;
-          .fa{
-            font-size: 1.2rem;
-            padding: 10px;
+        .highlight-modal-wrapper {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          flex-flow: column nowrap;
+
+            .img-wrapper {
+                width: 75%;
+                height: 50%;
+                background: white;
+                img{
+                   max-width: 500px;
+                   height: auto;
+                 }
+                 p{
+                   font-size: .75rem;
+                   text-align: left;
+                   max-width: 500px;
+                   line-height: 20px;
+                   margin: 0 auto;
+                 }
+                 .share-icons{
+                   text-align: center;
+                   .fa{
+                     font-size: 1.2rem;
+                     padding: 10px;
+                    }
+                 }
             }
-          }
+            h2 {
+                text-transform: uppercase;
+                color: white;
+                font-family: $font__header;
+                font-size: 2rem;
+                font-weight: 400;
+                border: 3px solid white;
+                border-width: 3px 0;
+                margin-bottom: 0;
+            }
+
+            p {
+              color: #ffffff;
+              font-family: $font__main;
+              font-size: .75rem;
+              text-transform: capitalize;
+              margin: 1rem;
+            }
+
+            .highlight-modal-button{
+              @include btn;
+              padding: 0.5rem 3rem;
+              margin: 1rem;
+              cursor: pointer;
+            }
+        }
+
+    }
+
+    .comment-modal {
+        background: $color__blue;
+
+        .comment-modal-wrapper {
+            display: flex;
+            align-items: center;
+            flex-flow: column nowrap;
+            width: 100%;
+            height: 100%;
         }
         h2 {
             text-transform: uppercase;
@@ -87,122 +109,175 @@
             font-weight: 400;
             border: 3px solid white;
             border-width: 3px 0;
-            margin-bottom: 10px;
         }
-
-        p {
-          color: #ffffff;
-          font-family: $font__main;
-          font-weight: 300;
-          line-height: 10px;
-          margin-bottom: 0;
-          font-size: 1.2rem;
-          letter-spacing: 1.5px;
+        .img-wrapper {
+            width: 75%;
+            height: 50%;
+            background: white;
+            img{
+               max-width: 500px;
+               display: block;
+               margin: 0 auto;
+             }
         }
-
-
-        .highlight-modal-button{
-          @include btn;
-          padding: 0.5rem 3rem;
-          margin: 1rem;
-          cursor: pointer;
+        .comment-section-link {
+            @include btn;
+            padding: 0.5rem 3rem;
+            margin: 1rem;
         }
     }
 
-}
+    .download-modal {
+       background: $color__blue;
+       position: relative;
+       
+       .download-modal-wrapper {
+           display: flex;
+           align-items: center;
+           flex-flow: column nowrap;
+           width: 100%;
+           height: 100%;
+       }
+       h2 {
+           text-transform: uppercase;
+           color: white;
+           font-family: $font__header;
+           font-size: 2rem;
+           font-weight: 400;
+           border: 3px solid white;
+           border-width: 3px 0;
+       }
+       p{
+           font-weight: 300;
+           color: #fff;
+       }
+       .img-wrapper {
+           width: 75%;
+           height: 50%;
+           background: $color__blue;
+           padding: 0px;
+         img{
+           width: 100px;
+           height: auto;
+           margin: 0 auto;
+           display: block;
+         }
+       }
+       .download-page-link {
+           @include btn;
+           padding: 0.5rem 3rem;
+           margin: 1rem;
+       }
+    }
 
-.comment-modal {
-    background: $color__blue;
-    
-    .comment-modal-wrapper {
-        display: flex;
-        align-items: center;
-        flex-flow: column nowrap;
+//Bix Book
+
+    .bix-book-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left:0;
         width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        z-index: 5;
+    }
+
+    .bix-book-modal-container {
         height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
-    h2 {
-        text-transform: uppercase;
-        color: white;
-        font-family: $font__header;
-        font-size: 2rem;
-        font-weight: 400;
-        border: 3px solid white;
-        border-width: 3px 0;
+
+    .unlock-download-modal, .start-download-modal, .thankyou-modal{
+        display: none;
+        position: absolute;
+        width: 95%;
+        height: 80%;
+        padding: 1rem;
+        position: relative;
+        i.fa-close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 1rem;
+            font-size: 1.5rem;
+            &:hover {
+                cursor: pointer;
+                color: white;
+                transform: scale(1.3);
+            }
+        }
     }
-    .img-wrapper {
-        width: 75%;
-        height: 50%;
+
+    .download-later-button {
+        cursor: pointer;
+        @include btn;
+        padding: 0.5rem 3rem;
+    }
+
+    .unlock-download-modal{
+        background: $color__orange;
+
+        .unlock-download-modal-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column nowrap;
+            width: 100%;
+            height: 100%;
+        }
+        h2 {
+            //text-transform: uppercase;
+            text-align: center;
+            color: white;
+            font-family: $font__header;
+            font-size: 2.5rem;
+            font-weight: 400;
+            border: 3px solid white;
+            border-width: 3px 0;
+            margin-bottom: 0;
+        }
+        p {
+            font-family: $font__header;
+            color: white;
+            font-size: 1.2rem;
+        }
+        form {
+            display: flex;
+            align-items: center;
+            flex-flow: column nowrap;
+            width: 80%;
+            max-width: 500px;
+            input {
+                width: 100%;
+                border-radius: 0;
+                height: 50px;
+            }
+            button {
+                @include btn;
+                box-shadow: none;
+                text-shadow: none;
+                padding: 0.5rem 3rem;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .start-download-modal {
         background: white;
     }
-    .comment-section-link {
-        @include btn;
-        padding: 0.5rem 3rem;
-        margin: 1rem;
-    }
-}
 
-.download-modal {
-    background: $color__orange;
-    position: relative;
-    .side-modal-1{
-      position: absolute;
-      width: 5%;
-      height: 100%;
-      left:0;
-      top:0;
-      background-color: $color__gray;
+    .thankyou-modal {
+        background: $color__gray;
     }
-    .side-modal-2{
-      position: absolute;
-      width: 5%;
-      height: 100%;
-      right:0;
-      top:0;
-      background-color: $color__gray;
-    }
-    .download-modal-wrapper {
-        display: flex;
-        align-items: center;
-        flex-flow: column nowrap;
-        width: 100%;
-        height: 100%;
-    }
-    h2 {
-        text-transform: uppercase;
-        color: white;
-        font-family: $font__header;
-        font-size: 2rem;
-        font-weight: 400;
-        border: 3px solid white;
-        border-width: 3px 0;
-    }
-    p{
-        font-weight: 300;
-        color: #fff;
-    }
-    .img-wrapper {
-        width: 75%;
-        height: 50%;
-        background: $color__orange;
-        padding: 0px;
-      img{
-        width: 100px;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-      }
-    }
-    .download-page-link {
-        @include btn;
-        padding: 0.5rem 3rem;
-        margin: 1rem;
-    }
-}
+//breakpoints
 
-
-@media all and (min-width: 600px) {
-    .highlight-modal, .comment-modal, .download-modal {
-        width: 80%;
+    @media all and (min-width: 600px) {
+        .unlock-download-modal, .start-download-modal, .thankyou-modal {
+            width: 80%;
+        }
     }
-}

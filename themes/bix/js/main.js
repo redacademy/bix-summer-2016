@@ -118,7 +118,7 @@ $(document).ready(function(){
 	      });
 	    });
 
-	// Highlight Modal Button
+	// Single Story Modal Buttons
 	$('.comment-modal-button').on('click', function(){
 	    $('.single-story-modal-overlay').fadeIn('slow');
 	    $('.desktop-nav-container').fadeOut('slow');
@@ -145,6 +145,8 @@ $(document).ready(function(){
 			$('.comment-modal, .highlight-modal, .download-modal').fadeOut('slow');
 		}
 	});
+
+	// BixBook Page Modals
 
 //Email Alert Message
     $(function() {

@@ -3472,6 +3472,34 @@ strong {
       border: solid #70b3cb 2px;
       background-color: #fff; }
 
+.bix-book-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5; }
+
+.bix-book-modal-container {
+  height: 100%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative; }
+
+.unlock-download-modal, .start-download-modal, .thankyou-modal {
+  display: none;
+  position: absolute;
+  width: 95%;
+  height: 80%;
+  padding: 1rem; }
+
 @media all and (min-width: 600px) {
-  .highlight-modal, .comment-modal, .download-modal {
+  .unlock-download-modal, .start-download-modal, .thankyou-modal {
     width: 80%; } }
