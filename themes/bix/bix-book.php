@@ -44,8 +44,13 @@ get_header(); ?>
 			<i class="fa fa-close" aria-hidden="true"></i>
 
 				<div class="thankyou-modal-wrapper">
+					<h2 class="thank-you-title"> Thanks for <span class="footer-orange">Downloading<span></h1>
+					<img src="<?php echo(get_template_directory_uri());?>/images/thank-you-image.png" alt="thank you"/>
+					<p class="thank-you-font"> Listening is having the person speaking experience being heard <br>- "Bix Bickson"</p>
+					<p class="thank-you-font"> come back and join the conversation </p>
+					<a class="thank-you-button"> Done </a>
 
-				</div>
+	   	</div>
 
 			</div>
 
@@ -132,7 +137,7 @@ get_header(); ?>
 				     <a class="btn btn-donate" href="http://www.paypal.com">Donate Now</a>
              <?php // get_template_part( 'template-parts/content', 'modal' ); ?>
 						 <p class="book-buy-light"> Download the Bix Book Now </p>
-						 <a class="btn btn-download" href="#"> Donate Later </a>
+						 <p class="btn btn-download"> Donate Later </p>
 			  	</div>
 				</div>
 		</section>
