@@ -7,7 +7,7 @@
         width: 100%;
         height: 100vh;
         background: rgba(0,0,0,0.5);
-        z-index: 5;    
+        z-index: 5;
     }
     .single-story-modal-container {
         height: 100%;
@@ -28,6 +28,7 @@
     .highlight-modal {
         text-align: center;
         background: $color__blue;
+        position: relative;
         .highlight-modal-wrapper {
           display: flex;
           align-items: center;
@@ -88,6 +89,7 @@
     //Comments Modal
     .comment-modal {
         background: $color__blue;
+        position: relative;
         .comment-modal-wrapper {
             display: flex;
             align-items: center;

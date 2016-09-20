@@ -3056,7 +3056,8 @@ strong {
 
 .highlight-modal {
   text-align: center;
-  background: #70b3cb; }
+  background: #70b3cb;
+  position: relative; }
   .highlight-modal .highlight-modal-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -3119,7 +3120,8 @@ strong {
         background-color: #fff; }
 
 .comment-modal {
-  background: #70b3cb; }
+  background: #70b3cb;
+  position: relative; }
   .comment-modal .comment-modal-wrapper {
     display: -ms-flexbox;
     display: flex;
