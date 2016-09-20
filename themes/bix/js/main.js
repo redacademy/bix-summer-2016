@@ -1,6 +1,6 @@
 (function($){
 $(document).ready(function(){
-    // on scroll behaviours
+    // On scroll behaviours
         // show on scroll up
         // var lastScrollTop = 0;
         window.onscroll = function() {
@@ -54,7 +54,8 @@ $(document).ready(function(){
                     }
                 }, 750) );
         },false;
-    // mobile nav bar menu button toggle
+
+    // Mobile nav bar menu button toggle
         var $menuContainer = $('.mobile-nav-wrapper .menu-main-menu-container'),
             $mobileMenu = $('.mobile-nav-wrapper #mobile-primary-menu');
         $('.menu-button').on('click', function(){
@@ -74,18 +75,20 @@ $(document).ready(function(){
                 $('.fa-chevron-up').slideToggle(750);
             }
         });
-    // sub menu display only on single post page
-        if ($('.single-story').length > 0 || $('.page-template-teaser-stories').length > 0) {
-            $('.mobile-nav-wrapper ul.sub-menu').show();
-        }
-    });
-    //Flickity Carousel
+    	// sub menu display only on single post page
+	        if ($('.single-story').length > 0 || $('.page-template-teaser-stories').length > 0) {
+		            $('.mobile-nav-wrapper ul.sub-menu').show();
+		        }
+		    });
+
+    // Flickity Carousel
         $('.main-carousel').flickity({
           // options
           cellAlign: 'left',
           contain: true
         });
-    //Smooth Scroll
+
+    // Smooth Scroll
         $(function() {
           $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -102,56 +105,56 @@ $(document).ready(function(){
         });
 
     // Single Story Modal Buttons
-    var $desktopNavContainer = $('.desktop-nav-container'),
-    	$singleStoryModalOverlay = $('.single-story-modal-overlay');
+	    var $desktopNavContainer = $('.desktop-nav-container'),
+	    	$singleStoryModalOverlay = $('.single-story-modal-overlay');
 
-    $('.comment-modal-button').on('click', function(){
-        $singleStoryModalOverlay.fadeIn('slow');
-        $desktopNavContainer.fadeOut('slow');
-        $('.comment-modal').fadeIn('slow');
-    });
-    $('.highlight-modal-button').on('click', function(){
-        $singleStoryModalOverlay.fadeIn('slow');
-        $desktopNavContainer.fadeOut('slow');
-        $('.highlight-modal').fadeIn('slow');
-    });
-    $('.download-modal-button').on('click', function(){
-        $singleStoryModalOverlay.fadeIn('slow');
-        $desktopNavContainer.fadeOut('slow');
-        $('.download-modal').fadeIn('slow');
-    });
+	    $('.comment-modal-button').on('click', function(){
+	        $singleStoryModalOverlay.fadeIn('slow');
+	        $desktopNavContainer.fadeOut('slow');
+	        $('.comment-modal').fadeIn('slow');
+	    });
+	    $('.highlight-modal-button').on('click', function(){
+	        $singleStoryModalOverlay.fadeIn('slow');
+	        $desktopNavContainer.fadeOut('slow');
+	        $('.highlight-modal').fadeIn('slow');
+	    });
+	    $('.download-modal-button').on('click', function(){
+	        $singleStoryModalOverlay.fadeIn('slow');
+	        $desktopNavContainer.fadeOut('slow');
+	        $('.download-modal').fadeIn('slow');
+	    });
 
-    var $closeOnClick = $('.single-story-modal-container, .comment-section-link, .download-page-link, .highlight-modal-button');
+	    var $closeOnClick = $('.single-story-modal-container, .comment-section-link, .download-page-link, .highlight-modal-button');
 
-    $closeOnClick.on('click', function(){
-        if(!$closeOnClick.is(event.target)) {
-            // do nothing
-        }
-        else {
-            $singleStoryModalOverlay.fadeOut('slow');
-            $desktopNavContainer.fadeIn('slow');
-            $('.comment-modal, .highlight-modal, .download-modal').fadeOut('slow');
-        }
-    });
+	    $closeOnClick.on('click', function(){
+	        if(!$closeOnClick.is(event.target)) {
+	            // do nothing
+	        }
+	        else {
+	            $singleStoryModalOverlay.fadeOut('slow');
+	            $desktopNavContainer.fadeIn('slow');
+	            $('.comment-modal, .highlight-modal, .download-modal').fadeOut('slow');
+	        }
+	    });
 
     // BixBook Page Modals
-    var $bixbookModalOverlay = $('.bix-book-modal-overlay');
+	    var $bixbookModalOverlay = $('.bix-book-modal-overlay');
 
-    $('.btn-download').on('click', function(){
-        $bixbookModalOverlay.fadeIn('slow');
-        $desktopNavContainer.fadeOut('slow');
-        $('.unlock-download-modal').fadeIn('slow');
-    });
-    $('.bix-book-modal-container, i.fa-close').on('click', function(){
-        if(!$('.bix-book-modal-container, i.fa-close').is(event.target)) {
-            // do nothing
-        }
-        else {
-            $bixbookModalOverlay.fadeOut('slow');
-            $desktopNavContainer.fadeIn('slow');
-            $('.unlock-download-modal, .start-download-modal, .thankyou-modal').fadeOut('slow');
-        }
-    });
+	    $('.donate-later-button').on('click', function(){
+	        $bixbookModalOverlay.fadeIn('slow');
+	        $desktopNavContainer.fadeOut('slow');
+	        $('.unlock-download-modal').fadeIn('slow');
+	    });
+	    $('.bix-book-modal-container, i.fa-close').on('click', function(){
+	        if(!$('.bix-book-modal-container, i.fa-close').is(event.target)) {
+	            // do nothing
+	        }
+	        else {
+	            $bixbookModalOverlay.fadeOut('slow');
+	            $desktopNavContainer.fadeIn('slow');
+	            $('.unlock-download-modal, .start-download-modal, .thankyou-modal').fadeOut('slow');
+	        }
+	    });
 
 // Bix Book Download
 	$('#unlockEmailForm').submit(function(event){

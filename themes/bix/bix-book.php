@@ -142,7 +142,7 @@ get_header(); ?>
 				     <a class="btn btn-donate" href="http://www.paypal.com">Donate Now</a>
              <?php // get_template_part( 'template-parts/content', 'modal' ); ?>
 						 <p class="book-buy-light"> Download the Bix Book Now </p>
-						 <p class="btn btn-download"> Donate Later </p>
+						 <p class="btn donate-later-button"> Donate Later </p>
 			  	</div>
 				</div>
 		</section>
