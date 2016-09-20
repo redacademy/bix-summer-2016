@@ -2999,7 +2999,7 @@ strong {
 # 404 page
 --------------------------------------------------------------*/
 .error-404 {
-  width: 96%;
+  width: 100%;
   padding: 3rem 4rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 4rem auto; }
@@ -3015,7 +3015,8 @@ strong {
   font-weight: 500;
   font-size: 1.1rem;
   transition: all ease 0.4s;
-  padding: 10px 20px;
+  font-size: .9rem;
+  padding: 10px 10px;
   text-transform: uppercase; }
   .btn-return:hover {
     color: #70b3cb;
