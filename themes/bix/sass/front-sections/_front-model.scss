@@ -28,7 +28,15 @@ display: none;
     }
 
     .close {
-      
+
+    }
+
+    .dd-button {
+      @include btn;
+      padding: 0.5rem 3rem;
+      margin: 1rem;
+      cursor: pointer;
     }
  }
+
 }
