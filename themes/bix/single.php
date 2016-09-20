@@ -25,7 +25,7 @@ get_header(); ?>
 				</div>
 
 				<div class="highlight-modal">
-					<div class="side-modal-1"></div>
+					
 					<div class="highlight-modal-wrapper">
 
 			    		<h2>Highlight And Share</h2>
@@ -40,22 +40,22 @@ get_header(); ?>
 			  			</div>
 						<span class="highlight-modal-button">Start Highlighting</span>
 						</div>
-					<div class="side-modal-2"></div>
+					
         </div>
 
 
 				<div class="download-modal">
-					<div class="side-modal-1"></div>
+					
 					<div class="download-modal-wrapper">
 						<h2>The Bix Book</h2>
 						<div class="img-wrapper">
 							<p>With your download, you will receive the full 38 stories and an accompanying interactive workbook that follows each story.</p>
 							<p>If you enjoy the first three stories in The Bix Book, why not download it now and receive all of the book’s engaging content?</p>
-							<img src="<?php echo(get_template_directory_uri());?>/images/bix-logo-blue.png" alt="bix logo"/>
+							<img src="<?php echo(get_template_directory_uri());?>/images/bix-logo-orange.png" alt="bix logo"/>
 						</div>
 						<a class="download-page-link" href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>/#buy-book-anchor">Download the Book</a>
 					</div>
-					<div class="side-modal-2"></div>
+					
 				</div>
 				
 		</div>
