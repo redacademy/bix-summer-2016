@@ -20,31 +20,34 @@
     .highlight-modal, .comment-modal, .download-modal {
         display: none;
         position: absolute;
-        width: 95%;
-        height: 80%;
+        width: 60%;
+        height: 60%;
         padding: 1rem;
     }
+    //Highlight Modal
     .highlight-modal {
         text-align: center;
-        background: $color__orange;
+        background: $color__blue;
         .highlight-modal-wrapper {
           display: flex;
           align-items: center;
           width: 100%;
           height: 100%;
           flex-flow: column nowrap;
+          
             .img-wrapper {
                 width: 75%;
                 height: 50%;
-                background: white;
+                background: $color__blue;
+                margin-top: 20px;
                 img{
-                   max-width: 500px;
+                   max-width: 350px;
                    height: auto;
                  }
                  p{
                    font-size: .75rem;
                    text-align: left;
-                   max-width: 500px;
+                   max-width: 350px;
                    line-height: 20px;
                    margin: 0 auto;
                  }
@@ -69,9 +72,10 @@
             p {
               color: #ffffff;
               font-family: $font__main;
-              font-size: .75rem;
-              text-transform: capitalize;
-              margin: 1rem;
+              font-size: 1rem;
+              margin-bottom:0;
+              font-weight: 300;
+              line-height: 10px;
             }
             .highlight-modal-button{
               @include btn;
@@ -81,6 +85,7 @@
             }
         }
     }
+    //Comments Modal
     .comment-modal {
         background: $color__blue;
         .comment-modal-wrapper {
@@ -102,12 +107,12 @@
         .img-wrapper {
             width: 75%;
             height: 50%;
-            background: white;
-            img{
-               max-width: 500px;
-               display: block;
-               margin: 0 auto;
-             }
+            background: $color__blue;
+            text-align: center;
+            .fa-commenting-o{
+              font-size: 8rem;
+              color: #fff;
+            }
         }
         .comment-section-link {
             @include btn;
@@ -115,6 +120,7 @@
             margin: 1rem;
         }
     }
+    //Download Modal
     .download-modal {
        background: $color__blue;
        position: relative;
@@ -134,6 +140,7 @@
            font-weight: 400;
            border: 3px solid white;
            border-width: 3px 0;
+           margin-bottom: 2px;
        }
        p{
            font-weight: 300;
@@ -141,14 +148,24 @@
        }
        .img-wrapper {
            width: 75%;
-           height: 50%;
+           height: auto;
            background: $color__blue;
            padding: 0px;
+        .download-img{
+          max-width: 400px;
+          margin: 0 auto;
+          text-align: center;
+          margin-bottom: 10px;
+        }
          img{
-           width: 100px;
+           width: 60px;
            height: auto;
-           margin: 0 auto;
-           display: block;
+           display: inline-block;
+           margin-right: 10px;
+         }
+         .fa-download{
+          font-size: 3.5rem;
+          color:#fff;
          }
        }
        .download-page-link {
@@ -325,10 +342,139 @@
         }
     }
 //breakpoints
-    @media all and (min-width: 600px) {
-        .unlock-download-modal, .start-download-modal, .thankyou-modal {
-            width: 80%;
-            height: 80%;
-            padding: 1rem;
+
+     @media #{$tablet-large-desktop}{
+        //Highlight Modal
+    .highlight-modal {
+      
+        .highlight-modal-wrapper {
+        
+            .img-wrapper {
+              img{
+                 display: none;
+               }
+               p{
+                 max-width: 350px;
+               }
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p{
+              line-height: 25px;
+            }
+            .highlight-modal-button{
+              padding: 0.5rem 1rem;
+              margin: 0;
+              margin-top: -20px;
+              cursor: pointer;
+            }
         }
+      }
+
+      //Download Modal
+    .download-modal {
+       h2 {
+           font-size: 1.5rem;
+       }
+       .fa-download{
+          font-size: 1.5rem;
+         }
+
+       p{
+           font-size: .75rem;
+       }
+       .download-page-link {
+          padding: 0.5rem 1rem;
+          margin: 0rem;
+          font-size: 1rem;
+       }
+      }
+      //Comments Modal
+    .comment-modal {
+
+        h2 {
+            font-size: 1.5rem;
+        }
+        .img-wrapper {
+              height: 50%;
+              display: flex;
+              justify-content: center;
+              align-items:center;
+            .fa-commenting-o{
+              font-size: 5rem;
+            }
+        }
+        .comment-section-link {
+            padding: 0.5rem 1rem;
+            margin: 0rem;
+            margin-top: 20px;
+        }
+      }
+        
+    }
+  
+
+    @media #{$tablet-desktop}{
+      .unlock-download-modal, .start-download-modal, .thankyou-modal {
+          width: 80%;
+          height: 80%;
+          padding: 1rem;
+      }
+
+         //Highlight Modal
+    .highlight-modal {
+      
+        .highlight-modal-wrapper {
+        
+            .img-wrapper {
+               p{
+                 max-width: 300px;
+               }
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            p{
+              line-height: 15px;
+              font-size: .75rem;
+            }
+            .highlight-modal-button{
+              padding: 0.2rem .5rem;
+              margin: 0;
+              margin-top: -20px;
+              cursor: pointer;
+              font-size: .75rem;
+            }
+        }
+      }
+       //Download Modal
+    .download-modal {
+       h2 {
+           font-size: 1rem;
+       }
+       .fa-download{
+          font-size: 1rem;
+         }
+
+       p{
+           font-size: .75rem;
+       }
+       .download-page-link {
+          padding: 0.5rem 1rem;
+          margin: 0rem;
+          font-size: .75rem;
+       }
+      }
+
+        //Comments Modal
+    .comment-modal {
+
+        h2 {
+            font-size: 1rem;
+        }
+        .comment-section-link {
+            font-size: .75rem;
+        }
+      }
     }

@@ -31,13 +31,17 @@ $font__header: 'Titillium Web', sans-serif;
 $font-size__main: 18px;
 $font-size__header: 36px;
 
-//media queries
+//media queries mobile first
 $tablet: "(min-width: 600px)";
 $tablet-medium: "(min-width: 700px)";
 $tablet-large: "(min-width: 900px)";
 $desktop: "(min-width: 1024px)";
 $desktop-large: "(min-width: 1260px)";
 
+//media queries desktop first
+$tablet-desktop: "(max-width: 600px)";
+$tablet-medium-desktop: "(max-width: 700px)";
+$tablet-large-desktop: "(max-width: 900px)";
 //Boiler Plate Styles
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;

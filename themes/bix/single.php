@@ -17,7 +17,7 @@ get_header(); ?>
 					<div class="comment-modal-wrapper">
 						<h2>Leave us a comment</h2>
 						<div class="img-wrapper">
-							<img src="<?php echo(get_template_directory_uri());?>/images/discus.jpg" alt="bix logo"/>
+							<i class="fa fa-commenting-o" aria-hidden="true"></i>
 						</div>
 						<a class="comment-section-link" href="#commentsSection">Click to Comment</a>
 					</div>
@@ -32,11 +32,11 @@ get_header(); ?>
 			    		<p>Is there an interesting quote from the story that speaks to you?</p>
 			    		<p>Use the highlight tool to share your thoughts </p>
 			  			<div class="img-wrapper">
+			  			
 			  			<img src="<?php echo(get_template_directory_uri());?>/images/highlight.jpg" alt="bix logo"/>
 			  					<p>1. Use the curser to highlight a quote you like...</p>
 			  					<p>2. Share your thoughts on the quote either in the comments section or share it directly to your social media 
 									</p>
-									<p class="share-icons"><i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-linkedin" aria-hidden="true"></i> <i class="fa fa-envelope" aria-hidden="true"></i></p>
 			  			</div>
 						<span class="highlight-modal-button">Start Highlighting</span>
 						</div>
@@ -47,11 +47,11 @@ get_header(); ?>
 				<div class="download-modal">
 					
 					<div class="download-modal-wrapper">
-						<h2>The Bix Book</h2>
+						<h2>Download <i class="fa fa-download" aria-hidden="true"></i> The Bix Book</h2>
 						<div class="img-wrapper">
 							<p>With your download, you will receive the full 38 stories and an accompanying interactive workbook that follows each story.</p>
 							<p>If you enjoy the first three stories in The Bix Book, why not download it now and receive all of the book’s engaging content?</p>
-							<img src="<?php echo(get_template_directory_uri());?>/images/bix-logo-orange.png" alt="bix logo"/>
+							
 						</div>
 						<a class="download-page-link" href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>/#buy-book-anchor">Download the Book</a>
 					</div>

@@ -3046,13 +3046,13 @@ strong {
 .highlight-modal, .comment-modal, .download-modal {
   display: none;
   position: absolute;
-  width: 95%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
   padding: 1rem; }
 
 .highlight-modal {
   text-align: center;
-  background: #F9AC31; }
+  background: #70b3cb; }
   .highlight-modal .highlight-modal-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -3065,14 +3065,15 @@ strong {
     .highlight-modal .highlight-modal-wrapper .img-wrapper {
       width: 75%;
       height: 50%;
-      background: white; }
+      background: #70b3cb;
+      margin-top: 20px; }
       .highlight-modal .highlight-modal-wrapper .img-wrapper img {
-        max-width: 500px;
+        max-width: 350px;
         height: auto; }
       .highlight-modal .highlight-modal-wrapper .img-wrapper p {
         font-size: .75rem;
         text-align: left;
-        max-width: 500px;
+        max-width: 350px;
         line-height: 20px;
         margin: 0 auto; }
       .highlight-modal .highlight-modal-wrapper .img-wrapper .share-icons {
@@ -3092,9 +3093,10 @@ strong {
     .highlight-modal .highlight-modal-wrapper p {
       color: #ffffff;
       font-family: "Roboto", sans-serif;
-      font-size: .75rem;
-      text-transform: capitalize;
-      margin: 1rem; }
+      font-size: 1rem;
+      margin-bottom: 0;
+      font-weight: 300;
+      line-height: 10px; }
     .highlight-modal .highlight-modal-wrapper .highlight-modal-button {
       color: #fff;
       text-decoration: none;
@@ -3134,11 +3136,11 @@ strong {
   .comment-modal .img-wrapper {
     width: 75%;
     height: 50%;
-    background: white; }
-    .comment-modal .img-wrapper img {
-      max-width: 500px;
-      display: block;
-      margin: 0 auto; }
+    background: #70b3cb;
+    text-align: center; }
+    .comment-modal .img-wrapper .fa-commenting-o {
+      font-size: 8rem;
+      color: #fff; }
   .comment-modal .comment-section-link {
     color: #fff;
     text-decoration: none;
@@ -3174,20 +3176,29 @@ strong {
     font-size: 2rem;
     font-weight: 400;
     border: 3px solid white;
-    border-width: 3px 0; }
+    border-width: 3px 0;
+    margin-bottom: 2px; }
   .download-modal p {
     font-weight: 300;
     color: #fff; }
   .download-modal .img-wrapper {
     width: 75%;
-    height: 50%;
+    height: auto;
     background: #70b3cb;
     padding: 0px; }
-    .download-modal .img-wrapper img {
-      width: 100px;
-      height: auto;
+    .download-modal .img-wrapper .download-img {
+      max-width: 400px;
       margin: 0 auto;
-      display: block; }
+      text-align: center;
+      margin-bottom: 10px; }
+    .download-modal .img-wrapper img {
+      width: 60px;
+      height: auto;
+      display: inline-block;
+      margin-right: 10px; }
+    .download-modal .img-wrapper .fa-download {
+      font-size: 3.5rem;
+      color: #fff; }
   .download-modal .download-page-link {
     color: #fff;
     text-decoration: none;
@@ -3410,8 +3421,80 @@ strong {
         border: solid #70b3cb 2px;
         background-color: #fff; }
 
-@media all and (min-width: 600px) {
+@media (max-width: 900px) {
+  .highlight-modal .highlight-modal-wrapper .img-wrapper img {
+    display: none; }
+  .highlight-modal .highlight-modal-wrapper .img-wrapper p {
+    max-width: 350px; }
+  .highlight-modal .highlight-modal-wrapper h2 {
+    font-size: 1.5rem; }
+  .highlight-modal .highlight-modal-wrapper p {
+    line-height: 25px; }
+  .highlight-modal .highlight-modal-wrapper .highlight-modal-button {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    margin-top: -20px;
+    cursor: pointer; }
+  .download-modal h2 {
+    font-size: 1.5rem; }
+  .download-modal .fa-download {
+    font-size: 1.5rem; }
+  .download-modal p {
+    font-size: .75rem; }
+  .download-modal .download-page-link {
+    padding: 0.5rem 1rem;
+    margin: 0rem;
+    font-size: 1rem; }
+  .comment-modal h2 {
+    font-size: 1.5rem; }
+  .comment-modal .img-wrapper {
+    height: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .comment-modal .img-wrapper .fa-commenting-o {
+      font-size: 5rem; }
+  .comment-modal .comment-section-link {
+    padding: 0.5rem 1rem;
+    margin: 0rem;
+    margin-top: 20px; } }
+
+@media (max-width: 600px) {
   .unlock-download-modal, .start-download-modal, .thankyou-modal {
+<<<<<<< d4d8fbc48353400f361bd7ffd9e6f6558ab4b580
     width: 80%;
     height: 80%;
     padding: 1rem; } }
+=======
+    width: 80%; }
+  .highlight-modal .highlight-modal-wrapper .img-wrapper p {
+    max-width: 300px; }
+  .highlight-modal .highlight-modal-wrapper h2 {
+    font-size: 1rem; }
+  .highlight-modal .highlight-modal-wrapper p {
+    line-height: 15px;
+    font-size: .75rem; }
+  .highlight-modal .highlight-modal-wrapper .highlight-modal-button {
+    padding: 0.2rem .5rem;
+    margin: 0;
+    margin-top: -20px;
+    cursor: pointer;
+    font-size: .75rem; }
+  .download-modal h2 {
+    font-size: 1rem; }
+  .download-modal .fa-download {
+    font-size: 1rem; }
+  .download-modal p {
+    font-size: .75rem; }
+  .download-modal .download-page-link {
+    padding: 0.5rem 1rem;
+    margin: 0rem;
+    font-size: .75rem; }
+  .comment-modal h2 {
+    font-size: 1rem; }
+  .comment-modal .comment-section-link {
+    font-size: .75rem; } }
+>>>>>>> modal responsive tool bar
