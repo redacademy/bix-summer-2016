@@ -2334,6 +2334,23 @@ strong {
         color: #70b3cb;
         border: solid #70b3cb 2px;
         background-color: #fff; }
+    .book-purchase .book-purchase-info .btn-download {
+      color: #fff;
+      text-decoration: none;
+      border: solid #fff 2px;
+      border-radius: 30px;
+      background-color: #70b3cb;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: all ease 0.4s;
+      padding: 10px 30px;
+      display: block;
+      text-align: center;
+      width: 230px; }
+      .book-purchase .book-purchase-info .btn-download:hover {
+        color: #70b3cb;
+        border: solid #70b3cb 2px;
+        background-color: #fff; }
     .book-purchase .book-purchase-info .book-or {
       font-weight: bold;
       margin-bottom: 0; }
@@ -2976,124 +2993,41 @@ strong {
   .icons {
     left: 40px; } }
 
-/*====================================
-  Our Modal Window styles
-=====================================*/
-.modal {
-  text-transform: capitalize;
-  background: #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-  display: inline-block;
-  padding: 1em;
-  box-shadow: none;
-  text-shadow: none; }
-
-.modal > label {
-  background: #F9AC31;
-  border: 1px solid #f0c600;
-  border-radius: .2em;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: bold;
-  padding: 0.75em 1.5em;
-  transition: all 0.55s; }
-
-.modal > label:hover {
-  transform: scale(0.97); }
-
-.modal__overlay {
-  background: #F9AC31;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
+.dd-modal {
+  background-color: #F9AC31;
   text-align: center;
-  text-shadow: none;
-  top: 0;
-  z-index: 600; }
-
-.modal__wrap {
-  position: relative;
-  margin: 20px auto;
-  max-width: 500px;
-  width: 90%; }
-
-.modal__wrap label {
-  background: #F9AC31;
-  border-radius: 50%;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  height: 1.5em;
-  line-height: 1.5;
-  position: absolute;
-  right: .5em;
-  top: .5em;
-  width: 1.5em; }
-
-.modal__wrap h2 {
-  text-transform: capitalize;
-  line-height: 50px;
-  color: white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  text-transform: uppercase; }
-
-.modal__wrap-h5 {
-  text-transform: capitalize;
-  color: #FFFFFF;
-  text-align: center; }
-
-.modal input:focus ~ label {
-  transform: scale(0.97); }
-
-.model input {
-  display: none;
-  position: absolute;
-  top: -1000px; }
-
-.modal__overlay {
-  opacity: 0;
-  transform: scale(0.5);
-  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  z-index: -100; }
-
-.modal input:checked ~ .modal__overlay {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 800; }
-
-.modal__trigger {
   display: none; }
-
-.email-unlock {
-  width: 100%;
-  height: 11vh; }
-
-#modal-button {
-  margin-top: 50%;
-  margin-right: 23%;
-  color: #fff;
-  text-decoration: none;
-  border: solid #fff 2px;
-  border-radius: 30px;
-  background-color: #70b3cb;
-  font-weight: 500;
-  font-size: 1.1rem;
-  box-shadow: none;
-  text-shadow: none;
-  width: 50%; }
-
-#modal-button:hover {
-  text-shadow: none;
-  box-shadow: none;
-  background-color: #ffffff;
-  border: solid #70b3cb 2px;
-  color: #70b3cb; }
-
-.blue-books {
-  color: #70b3cb; }
+  .dd-modal .dd-modal-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 100%;
+    height: 100%;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+    .dd-modal .dd-modal-wrap .dd-modal-title {
+      font-family: "Titillium Web", sans-serif;
+      font-size: 2rem; }
+    .dd-modal .dd-modal-wrap .dd-modal-h5 {
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem; }
+    .dd-modal .dd-modal-wrap .dd-button {
+      color: #fff;
+      text-decoration: none;
+      border: solid #fff 2px;
+      border-radius: 30px;
+      background-color: #70b3cb;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: all ease 0.4s;
+      padding: 0.5rem 3rem;
+      margin: 1rem;
+      cursor: pointer; }
+      .dd-modal .dd-modal-wrap .dd-button:hover {
+        color: #70b3cb;
+        border: solid #70b3cb 2px;
+        background-color: #fff; }
 
 /*--------------------------------------------------------------
 # 404 page
@@ -3122,145 +3056,43 @@ strong {
     border: solid #70b3cb 2px;
     background-color: #fff; }
 
-.thank-you-title {
-  width: 100%;
-  text-align: center;
-  font-size: 21px;
-  position: absolute;
-  top: 43%;
-  font-weight: 400;
-  background: rgba(255, 255, 255, 0.8); }
-
-.icons-list li {
-  display: inline;
-  margin-right: 20px; }
-
-.p-margin {
-  margin-left: 20px; }
-
-.icon-size {
-  display: inline-block;
-  background-color: #ffffff;
-  color: #F9AC31;
-  font-size: 50px;
-  line-height: 100px;
-  border: 7px solid #FFFFFF;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  /*font-size: 32px;
-  line-height: 67px;
-  border: 5px solid #FFFFFF;
-  border-radius: 60%;
-  width: 60px;
-  height: 69px; */
-  text-align: center;
-  vertical-align: bottom; }
-
-.icon-size:hover {
-  box-shadow: none;
-  text-shadow: none; }
-
 .thank-you-modal {
-  text-transform: capitalize;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-  display: inline-block;
-  padding: 1em;
-  box-shadow: none;
-  text-shadow: none; }
-
-.thank-you-modal > label {
-  font-size: 2rem;
-  padding: 0 20px;
-  color: #70b3cb; }
-
-.thank-you-modal__overlay {
-  display: block;
-  background: #F9AC31;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  position: fixed;
+  background-color: #F9AC31;
   text-align: center;
-  text-shadow: none;
-  z-index: 600;
-  width: 100%; }
-
-.thank-you-modal__wrap {
-  position: relative;
-  margin: auto;
-  max-width: 500px;
-  width: 90%; }
-
-.thank-you-modal__wrap label {
-  background: #F9AC31;
-  border-radius: 50%;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  height: 1.5em;
-  line-height: 1.5;
-  position: absolute;
-  right: .5em;
-  top: .5em;
-  width: 1.5em; }
-
-.thank-you-modal__wrap h2 {
-  text-transform: capitalize;
-  line-height: 50px;
-  color: white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  text-transform: uppercase; }
-
-.thank-you-modal__wrap-h5 {
-  text-transform: capitalize;
-  color: #FFFFFF;
-  text-align: center; }
-
-.thank-you-modal input:focus ~ label {
-  transform: scale(0.97); }
-
-.thank-you-modal input {
-  display: none;
-  position: absolute;
-  top: -1000px; }
-
-.thank-you-modal__overlay {
-  opacity: 0;
-  transform: scale(1);
-  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  z-index: -100; }
-
-.thank-you-modal input:checked ~ .thank-you-modal__overlay {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 800; }
-
-.thank-you-modal__trigger {
   display: none; }
-
-.thank-you-modal-button {
-  padding: 10px;
-  margin-top: 10px;
-  color: #fff;
-  text-decoration: none;
-  border: solid #fff 2px;
-  border-radius: 30px;
-  background-color: #70b3cb;
-  font-weight: 500;
-  font-size: 1.1rem;
-  box-shadow: none;
-  text-shadow: none;
-  width: 50%; }
-
-.thank-you-modal-button:hover {
-  text-shadow: none;
-  box-shadow: none;
-  background-color: #ffffff;
-  border: solid #70b3cb 2px;
-  color: #70b3cb; }
+  .thank-you-modal .thank-you-modal-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 100%;
+    height: 100%;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+    .thank-you-modal .thank-you-modal-wrapper .thank-you-modal-title {
+      font-family: "Titillium Web", sans-serif;
+      font-size: 2rem;
+      color: #ffffff; }
+    .thank-you-modal .thank-you-modal-wrapper .thank-you-font {
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      color: #ffffff; }
+    .thank-you-modal .thank-you-modal-wrapper .thank-you-button {
+      color: #fff;
+      text-decoration: none;
+      border: solid #fff 2px;
+      border-radius: 30px;
+      background-color: #70b3cb;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: all ease 0.4s;
+      padding: 0.5rem 3rem;
+      margin: 1rem;
+      cursor: pointer; }
+      .thank-you-modal .thank-you-modal-wrapper .thank-you-button:hover {
+        color: #70b3cb;
+        border: solid #70b3cb 2px;
+        background-color: #fff; }
 
 .single-story-modal-overlay {
   display: none;

@@ -26,7 +26,7 @@ get_header(); ?>
 		            	<input class="unlock-email" id="unlockEmail" type="text" name="email" placeholder="Enter your email address"/>
 						<button type="submit">Unlock Download</button>
 		            </form>
-		            
+
 		        </div>
 
 			</div>
@@ -35,18 +35,18 @@ get_header(); ?>
 			<i class="fa fa-close" aria-hidden="true"></i>
 
 				<div class="start-download-modal-wrapper">
-					
+
 				</div>
-				
+
 			</div>
 
 			<div class="thankyou-modal">
 			<i class="fa fa-close" aria-hidden="true"></i>
 
 				<div class="thankyou-modal-wrapper">
-					
+
 				</div>
-				
+
 			</div>
 
 			</div>
@@ -64,7 +64,7 @@ get_header(); ?>
 			<section class="book-section1">
 			<img class="ribbon" src="<?php echo(get_template_directory_uri());?>/images/yellow-ribbon.svg" alt="yellow ribbon"/>
 			<h2 class="ribbon-heading">The Bix Book</h2>
-				
+
 				<?php if ( CFS()->get( 'bix_book_description' ) ) : ?>
 					<div class="book-section1-inside">
 						<?php echo CFS()->get( 'bix_book_description' ); ?>
@@ -130,10 +130,9 @@ get_header(); ?>
 
 					<div class="donate-now">
 				     <a class="btn btn-donate" href="http://www.paypal.com">Donate Now</a>
-
-				     <p class="download-later-button">Download Button</p>
-
-            <?php // get_template_part( 'template-parts/content', 'modal' ); ?>
+             <?php // get_template_part( 'template-parts/content', 'modal' ); ?>
+						 <p class="book-buy-light"> Download the Bix Book Now </p>
+						 <a class="btn btn-download" href="#"> Donate Later </a>
 			  	</div>
 				</div>
 		</section>

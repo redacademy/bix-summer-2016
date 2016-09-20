@@ -26,7 +26,7 @@
 }
 .book-title-wrapper{
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 /* ----------------- Section 1 - Content -------------*/
@@ -213,7 +213,7 @@
         color:$color__blue;
       }
     }
-    .paypal{ 
+    .paypal{
       position:relative;
       top:5px;
       max-width: 11%;
@@ -237,6 +237,14 @@
       text-align: center;
       width: 230px;
     }
+
+		.btn-download{
+			@include btn;
+			padding: 10px 30px;
+			display: block;
+			text-align: center;
+			width: 230px;
+		}
 
     .book-or{
       font-weight: bold;
@@ -345,7 +353,7 @@
       left: 23px;
       font-weight: 500;
       font-size: 1.5rem;
-      text-transform: uppercase;  
+      text-transform: uppercase;
     }
     .book-section1-inside{
       padding:0 50px;
@@ -480,7 +488,7 @@
     .book-purchase-info{
       padding:0 50px;
       .book-buy{
-        text-align: left;   
+        text-align: left;
       }
     }
   }
