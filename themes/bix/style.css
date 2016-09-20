@@ -1935,7 +1935,8 @@ strong {
       background: #F9AC31; }
 
 .bottom-toolbar-wrapper {
-  display: none;
+  display: -ms-flexbox;
+  display: flex;
   transition: 0.3s;
   position: fixed;
   width: 100%;
@@ -1949,7 +1950,6 @@ strong {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      -ms-grid-row-align: center;
       align-items: center; }
 
 .bottom-toolbar {
@@ -1958,8 +1958,8 @@ strong {
   max-width: 1024px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-align: center;
       align-items: center; }
 
@@ -1974,7 +1974,7 @@ strong {
       align-items: center; }
   .tools i {
     padding: 0 10px;
-    margin-right: 30px;
+    margin-right: 15px;
     transition: transform .3s ease-in-out; }
     .tools i:hover {
       cursor: pointer;
@@ -1982,6 +1982,7 @@ strong {
       transform: rotateY(180deg); }
 
 .next-story {
+  display: none;
   border-left: solid 1px #70b3cb;
   padding: 0 20px;
   font-family: "Titillium Web", sans-serif; }
@@ -1998,7 +1999,7 @@ strong {
 
 .bottom-toolbar-wrapper-slide-up {
   transition: 0.5s;
-  bottom: 50px; }
+  bottom: 0px; }
 
 .comment-section-border {
   display: -ms-flexbox;
@@ -2029,6 +2030,13 @@ strong {
   .comment-section-border #disqus_thread {
     width: 100%;
     padding: 1rem 2rem; }
+
+@media all and (min-width: 550px) {
+  .next-story {
+    display: block; }
+  .bottom-toolbar {
+    -ms-flex-pack: justify;
+        justify-content: space-between; } }
 
 @media all and (min-width: 600px) {
   .single-story-site .stories-banner {
@@ -2084,7 +2092,12 @@ strong {
       width: 15vw; }
   .bottom-toolbar-wrapper {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+    .bottom-toolbar-wrapper .tools i {
+      margin-right: 30px; }
+  .bottom-toolbar-wrapper-slide-up {
+    transition: 0.5s;
+    bottom: 50px; } }
 
 /* ----------------- Top Section - Banner -------------*/
 .bix-book-banner {
@@ -3230,7 +3243,7 @@ strong {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 5; }
@@ -3248,7 +3261,7 @@ strong {
   .single-story-modal-container .highlight-modal, .single-story-modal-container .comment-modal, .single-story-modal-container .download-modal {
     display: none;
     position: absolute;
-    width: 80%;
+    width: 100%;
     height: 80%;
     padding: 1rem; }
 
@@ -3376,3 +3389,11 @@ strong {
       color: #70b3cb;
       border: solid #70b3cb 2px;
       background-color: #fff; }
+
+@media all and (min-width: 600px) {
+  .highlight-modal, .comment-modal, .download-modal {
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    padding: 1rem; } }
