@@ -60,7 +60,7 @@ get_header(); ?>
 
 				<div class="company-section">
 					<div class="company-section-title">
-						<img src="<?php echo get_template_directory_uri() . "/images/about-bickson2.png"?>" alt="">
+						<img src="<?php echo get_template_directory_uri() . "/images/about-bickson2.jpg"?>" alt="">
 						<h2>About <span class="orange-highlight">Bickson<sup>2</sup></span></h2>
 					</div>
 					<div class="border-wrapper">

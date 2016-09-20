@@ -19,7 +19,7 @@
   margin: 50px 0;
 
 	.more-stories{
-		background: url(../../images/about-bickson2.png) no-repeat center left;
+		background: url(../../images/about-bickson2.jpg) no-repeat center left;
     background-size: cover;
     min-height: 500px;
     overflow: hidden;
@@ -97,13 +97,9 @@
 }
 
 
-
-
-
-
 @media #{$tablet}{
   .teaser-banner{
-    background: url(../../images/teaser-stories-banner.png) no-repeat center left;
+    background: url(../../images/teaser-stories-banner.jpg) no-repeat center left;
     background-size: cover;
     height: 70vh;
     overflow: hidden;

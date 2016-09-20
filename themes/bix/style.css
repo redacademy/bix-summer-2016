@@ -1204,7 +1204,8 @@ strong {
   .author-section-title {
     position: relative;
     background: url(../../images/about-bix-bickson.jpg);
-    background-size: cover; }
+    background-size: cover;
+    height: 550px; }
     .author-section-title img {
       display: block; }
     .author-section-title h2 {
@@ -2709,7 +2710,7 @@ strong {
   max-width: 100%;
   margin: 50px 0; }
   .teaser-section1 .more-stories {
-    background: url(../../images/about-bickson2.png) no-repeat center left;
+    background: url(../../images/about-bickson2.jpg) no-repeat center left;
     background-size: cover;
     min-height: 500px;
     overflow: hidden;
@@ -2792,7 +2793,7 @@ strong {
 
 @media (min-width: 600px) {
   .teaser-banner {
-    background: url(../../images/teaser-stories-banner.png) no-repeat center left;
+    background: url(../../images/teaser-stories-banner.jpg) no-repeat center left;
     background-size: cover;
     height: 70vh;
     overflow: hidden;
@@ -3291,7 +3292,22 @@ strong {
 
 .highlight-modal {
   text-align: center;
-  background: #F9AC31; }
+  background: #F9AC31;
+  position: relative; }
+  .highlight-modal .side-modal-1 {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #444444; }
+  .highlight-modal .side-modal-2 {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: #444444; }
   .highlight-modal .highlight-modal-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -3302,9 +3318,24 @@ strong {
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
     .highlight-modal .highlight-modal-wrapper .img-wrapper {
-      width: 75%;
+      width: 100%;
       height: 50%;
-      background: white; }
+      background: #F9AC31;
+      margin-top: 20px; }
+      .highlight-modal .highlight-modal-wrapper .img-wrapper img {
+        max-width: 500px;
+        height: auto; }
+      .highlight-modal .highlight-modal-wrapper .img-wrapper p {
+        font-size: .75rem;
+        text-align: left;
+        max-width: 500px;
+        line-height: 20px;
+        margin: 0 auto; }
+      .highlight-modal .highlight-modal-wrapper .img-wrapper .share-icons {
+        text-align: center; }
+        .highlight-modal .highlight-modal-wrapper .img-wrapper .share-icons .fa {
+          font-size: 1.2rem;
+          padding: 10px; }
     .highlight-modal .highlight-modal-wrapper h2 {
       text-transform: uppercase;
       color: white;
@@ -3313,13 +3344,15 @@ strong {
       font-weight: 400;
       border: 3px solid white;
       border-width: 3px 0;
-      margin-bottom: 0; }
+      margin-bottom: 10px; }
     .highlight-modal .highlight-modal-wrapper p {
       color: #ffffff;
       font-family: "Roboto", sans-serif;
-      font-size: .75rem;
-      text-transform: capitalize;
-      margin: 1rem; }
+      font-weight: 300;
+      line-height: 10px;
+      margin-bottom: 0;
+      font-size: 1.2rem;
+      letter-spacing: 1.5px; }
     .highlight-modal .highlight-modal-wrapper .highlight-modal-button {
       color: #fff;
       text-decoration: none;
@@ -3377,7 +3410,22 @@ strong {
       background-color: #fff; }
 
 .download-modal {
-  background: #444444; }
+  background: #F9AC31;
+  position: relative; }
+  .download-modal .side-modal-1 {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #444444; }
+  .download-modal .side-modal-2 {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: #444444; }
   .download-modal .download-modal-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -3395,10 +3443,19 @@ strong {
     font-weight: 400;
     border: 3px solid white;
     border-width: 3px 0; }
+  .download-modal p {
+    font-weight: 300;
+    color: #fff; }
   .download-modal .img-wrapper {
     width: 75%;
     height: 50%;
-    background: white; }
+    background: #F9AC31;
+    padding: 0px; }
+    .download-modal .img-wrapper img {
+      width: 100px;
+      height: auto;
+      margin: 0 auto;
+      display: block; }
   .download-modal .download-page-link {
     color: #fff;
     text-decoration: none;

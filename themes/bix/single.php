@@ -16,36 +16,48 @@ get_header(); ?>
 
 					<div class="comment-modal-wrapper">
 						<h2>Leave us a comment</h2>
-						<div class="img-wrapper"><img src="" alt=""></div>
+						<div class="img-wrapper">
+							<img src="<?php echo(get_template_directory_uri());?>/images/discus.jpg" alt="bix logo"/>
+						</div>
 						<a class="comment-section-link" href="#commentsSection">Click to Comment</a>
 					</div>
 
 				</div>
 
 				<div class="highlight-modal">
-
+					<div class="side-modal-1"></div>
 					<div class="highlight-modal-wrapper">
+
 			    		<h2>Highlight And Share</h2>
+			    		<p>Is there an interesting quote from the story that speaks to you?</p>
 			    		<p>Use the highlight tool to share your thoughts </p>
 			  			<div class="img-wrapper">
-			    			<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image.png" alt="bix logo"/>
-			    			<img src="<?php echo(get_template_directory_uri());?>/images/pop-up-example-image-2.png" alt="bix logo"/>
+			  			<img src="<?php echo(get_template_directory_uri());?>/images/highlight.jpg" alt="bix logo"/>
+			  					<p>1. Use the curser to highlight a quote you like...</p>
+			  					<p>2. Share your thoughts on the quote either in the comments section or share it directly to your social media 
+									</p>
+									<p class="share-icons"><i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-linkedin" aria-hidden="true"></i> <i class="fa fa-envelope" aria-hidden="true"></i></p>
 			  			</div>
-					<span class="highlight-modal-button">Start Highlighting</span>
-					</div>
-
-        		</div>
+						<span class="highlight-modal-button">Start Highlighting</span>
+						</div>
+					<div class="side-modal-2"></div>
+        </div>
 
 
 				<div class="download-modal">
-					
+					<div class="side-modal-1"></div>
 					<div class="download-modal-wrapper">
 						<h2>The Bix Book</h2>
-						<div class="img-wrapper"><img src="" alt=""></div>
+						<div class="img-wrapper">
+							<p>With your download, you will receive the full 38 stories and an accompanying interactive workbook that follows each story.</p>
+							<p>If you enjoy the first three stories in The Bix Book, why not download it now and receive all of the book’s engaging content?</p>
+							<img src="<?php echo(get_template_directory_uri());?>/images/bix-logo-blue.png" alt="bix logo"/>
+						</div>
 						<a class="download-page-link" href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>/#buy-book-anchor">Download the Book</a>
 					</div>
-
+					<div class="side-modal-2"></div>
 				</div>
+				
 		</div>
 	</div>
 

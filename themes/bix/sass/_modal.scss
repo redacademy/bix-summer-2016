@@ -29,7 +29,23 @@
 .highlight-modal {
     text-align: center;
     background: $color__orange;
-
+    position: relative;
+    .side-modal-1{
+      position: absolute;
+      width: 5%;
+      height: 100%;
+      left:0;
+      top:0;
+      background-color: $color__gray;
+    }
+    .side-modal-2{
+      position: absolute;
+      width: 5%;
+      height: 100%;
+      right:0;
+      top:0;
+      background-color: $color__gray;
+    }
     .highlight-modal-wrapper {
       display: flex;
       align-items: center;
@@ -38,9 +54,30 @@
       flex-flow: column nowrap;
 
         .img-wrapper {
-            width: 75%;
+            width: 100%;
             height: 50%;
-            background: white;
+            background: $color__orange;
+            margin-top: 20px;
+
+
+          img{
+            max-width: 500px;
+            height: auto;
+          }
+          p{
+            font-size: .75rem;
+            text-align: left;
+            max-width: 500px;
+            line-height: 20px;
+            margin: 0 auto;
+          }
+          .share-icons{
+            text-align: center;
+          .fa{
+            font-size: 1.2rem;
+            padding: 10px;
+            }
+          }
         }
         h2 {
             text-transform: uppercase;
@@ -50,16 +87,19 @@
             font-weight: 400;
             border: 3px solid white;
             border-width: 3px 0;
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
 
         p {
           color: #ffffff;
           font-family: $font__main;
-          font-size: .75rem;
-          text-transform: capitalize;
-          margin: 1rem;
+          font-weight: 300;
+          line-height: 10px;
+          margin-bottom: 0;
+          font-size: 1.2rem;
+          letter-spacing: 1.5px;
         }
+
 
         .highlight-modal-button{
           @include btn;
@@ -73,7 +113,7 @@
 
 .comment-modal {
     background: $color__blue;
-
+    
     .comment-modal-wrapper {
         display: flex;
         align-items: center;
@@ -103,8 +143,24 @@
 }
 
 .download-modal {
-    background: $color__gray;
-
+    background: $color__orange;
+    position: relative;
+    .side-modal-1{
+      position: absolute;
+      width: 5%;
+      height: 100%;
+      left:0;
+      top:0;
+      background-color: $color__gray;
+    }
+    .side-modal-2{
+      position: absolute;
+      width: 5%;
+      height: 100%;
+      right:0;
+      top:0;
+      background-color: $color__gray;
+    }
     .download-modal-wrapper {
         display: flex;
         align-items: center;
@@ -121,10 +177,21 @@
         border: 3px solid white;
         border-width: 3px 0;
     }
+    p{
+        font-weight: 300;
+        color: #fff;
+    }
     .img-wrapper {
         width: 75%;
         height: 50%;
-        background: white;
+        background: $color__orange;
+        padding: 0px;
+      img{
+        width: 100px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
     }
     .download-page-link {
         @include btn;
