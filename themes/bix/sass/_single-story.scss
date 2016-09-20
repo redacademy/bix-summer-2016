@@ -303,10 +303,12 @@
 			margin-right: 30px;
 		}
 	}
+
+}
+
+@media all and (min-width: 900px) {
 	.bottom-toolbar-wrapper-slide-up {
 		transition: 0.5s;
 		bottom: 50px;
 	}
-
-
 }
