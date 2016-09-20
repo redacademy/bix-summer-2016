@@ -1,5 +1,5 @@
 /*!
-Theme Name: Bix 
+Theme Name: Bix
 Theme URI: http://underscores.me/
 Author: Mark, Mac, Chris
 Author URI: http://www.redacademy.com
@@ -2999,7 +2999,7 @@ strong {
 # 404 page
 --------------------------------------------------------------*/
 .error-404 {
-  width: 80%;
+  width: 96%;
   padding: 3rem 4rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 4rem auto; }
@@ -3466,12 +3466,9 @@ strong {
 
 @media (max-width: 600px) {
   .unlock-download-modal, .start-download-modal, .thankyou-modal {
-<<<<<<< d4d8fbc48353400f361bd7ffd9e6f6558ab4b580
     width: 80%;
     height: 80%;
-    padding: 1rem; } }
-=======
-    width: 80%; }
+    padding: 1rem; }
   .highlight-modal .highlight-modal-wrapper .img-wrapper p {
     max-width: 300px; }
   .highlight-modal .highlight-modal-wrapper h2 {
@@ -3499,4 +3496,3 @@ strong {
     font-size: 1rem; }
   .comment-modal .comment-section-link {
     font-size: .75rem; } }
->>>>>>> modal responsive tool bar

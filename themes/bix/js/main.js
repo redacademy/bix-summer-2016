@@ -3,7 +3,7 @@ $(document).ready(function(){
     // on scroll behaviours
         // show on scroll up
         // var lastScrollTop = 0;
-        window.onscroll = function() {   
+        window.onscroll = function() {
             // variables
             var $navContainer = $(".desktop-nav-wrapper .desktop-nav-container"),
                 $mainNavigation = $(".mobile-nav-wrapper .main-navigation"),
@@ -118,7 +118,7 @@ $(document).ready(function(){
         $desktopNavContainer.fadeOut('slow');
         $('.download-modal').fadeIn('slow');
     });
-    
+
     var $closeOnClick = $('.single-story-modal-container, .comment-section-link, .download-page-link, .highlight-modal-button');
 
     $closeOnClick.on('click', function(){
