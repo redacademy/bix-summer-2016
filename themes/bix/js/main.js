@@ -48,7 +48,8 @@ $(document).ready(function(){
                 $toolbarWrapper.removeClass("bottom-toolbar-wrapper-slide-up");
                 clearTimeout( $.data( that, "scrollCheck" ) );
                 $.data( that, "scrollCheck", setTimeout(function() {
-                    if (window.pageYOffset > 500) {
+                	var $bottomHeight = $( document ).height() - 1500;
+                    if (window.pageYOffset > 500 && window.pageYOffset < $bottomHeight) {
                         $toolbarWrapper.addClass("bottom-toolbar-wrapper-slide-up");
                     }
                 }, 750) );
