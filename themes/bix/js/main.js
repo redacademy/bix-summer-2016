@@ -98,48 +98,73 @@ $(document).ready(function(){
             }
           });
         });
+
     // Single Story Modal Buttons
+    var $desktopNavContainer = $('.desktop-nav-container'),
+    	$singleStoryModalOverlay = $('.single-story-modal-overlay');
+
     $('.comment-modal-button').on('click', function(){
-        $('.single-story-modal-overlay').fadeIn('slow');
-        $('.desktop-nav-container').fadeOut('slow');
+        $singleStoryModalOverlay.fadeIn('slow');
+        $desktopNavContainer.fadeOut('slow');
         $('.comment-modal').fadeIn('slow');
     });
     $('.highlight-modal-button').on('click', function(){
-        $('.single-story-modal-overlay').fadeIn('slow');
-        $('.desktop-nav-container').fadeOut('slow');
+        $singleStoryModalOverlay.fadeIn('slow');
+        $desktopNavContainer.fadeOut('slow');
         $('.highlight-modal').fadeIn('slow');
     });
     $('.download-modal-button').on('click', function(){
-        $('.single-story-modal-overlay').fadeIn('slow');
-        $('.desktop-nav-container').fadeOut('slow');
+        $singleStoryModalOverlay.fadeIn('slow');
+        $desktopNavContainer.fadeOut('slow');
         $('.download-modal').fadeIn('slow');
     });
-    $('.single-story-modal-container, .comment-section-link, .download-page-link, .highlight-modal-button').on('click', function(){
-        if(!$('.single-story-modal-container, .comment-section-link, .download-page-link, .highlight-modal-button').is(event.target)) {
+    
+    var $closeOnClick = $('.single-story-modal-container, .comment-section-link, .download-page-link, .highlight-modal-button');
+
+    $closeOnClick.on('click', function(){
+        if(!$closeOnClick.is(event.target)) {
             // do nothing
         }
         else {
-            $('.single-story-modal-overlay').fadeOut('slow');
-            $('.desktop-nav-container').fadeIn('slow');
+            $singleStoryModalOverlay.fadeOut('slow');
+            $desktopNavContainer.fadeIn('slow');
             $('.comment-modal, .highlight-modal, .download-modal').fadeOut('slow');
         }
     });
+
     // BixBook Page Modals
+    var $bixbookModalOverlay = $('.bix-book-modal-overlay');
+
     $('.btn-download').on('click', function(){
-        $('.bix-book-modal-overlay').fadeIn('slow');
-        $('.desktop-nav-container').fadeOut('slow');
-        $('.thankyou-modal').fadeIn('slow');
+        $bixbookModalOverlay.fadeIn('slow');
+        $desktopNavContainer.fadeOut('slow');
+        $('.unlock-download-modal').fadeIn('slow');
     });
     $('.bix-book-modal-container, i.fa-close').on('click', function(){
         if(!$('.bix-book-modal-container, i.fa-close').is(event.target)) {
             // do nothing
         }
         else {
-            $('.bix-book-modal-overlay').fadeOut('slow');
-            $('.desktop-nav-container').fadeIn('slow');
+            $bixbookModalOverlay.fadeOut('slow');
+            $desktopNavContainer.fadeIn('slow');
             $('.unlock-download-modal, .start-download-modal, .thankyou-modal').fadeOut('slow');
         }
     });
+
+// Bix Book Download
+	$('#unlockEmailForm').submit(function(event){
+		alert('submitted');
+	    event.preventDefault();
+        $('.unlock-download-modal').fadeOut('slow');
+        $('.start-download-modal').fadeIn('slow');
+	});
+
+	$('#startDownload').click(function(event){
+	    event.preventDefault();
+        $('.start-download-modal').fadeOut('slow');
+        $('.thankyou-modal').fadeIn('slow');
+	});
+
 //Email Alert Message
     $(function() {
       $('#updates').on('submit', 'form', function(event) {

@@ -182,8 +182,7 @@
         width: 95%;
         height: 80%;
         padding: 1rem;
-        position: relative;
-        i.fa-close {
+        &-wrapper i.fa-close {
             position: absolute;
             top: 0;
             right: 0;
@@ -196,6 +195,7 @@
             }
         }
     }
+
     .download-later-button {
         cursor: pointer;
         @include btn;

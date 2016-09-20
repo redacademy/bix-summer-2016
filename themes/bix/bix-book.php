@@ -17,14 +17,16 @@ get_header(); ?>
 			<div class="bix-book-modal-container">
 
 				<div class="unlock-download-modal">
-				<i class="fa fa-close" aria-hidden="true"></i>
 
 					<div class="unlock-download-modal-wrapper">
+					<i class="fa fa-close" aria-hidden="true"></i>
+
 			            <h2>Thank your for your interest in <strong>The Bix Book</strong></h2>
 			            <p>Please leave your email to unlock the download link:</p>
-			            <form action="post">
+			            
+			            <form action="post" id="unlockEmailForm">
 			            	<input class="unlock-email" id="unlockEmail" type="text" name="email" placeholder="Enter your email address"/>
-							<button type="submit">Unlock Download</button>
+							<button type="submit" id="unlockEmailSubmit">Unlock Download</button>
 			            </form>
 
 			        </div>
@@ -32,13 +34,14 @@ get_header(); ?>
 				</div>
 
 				<div class="start-download-modal">
-				<i class="fa fa-close" aria-hidden="true"></i>
-
+				
 					<div class="start-download-modal-wrapper">
+					<i class="fa fa-close" aria-hidden="true"></i>
+
 						<h2>Click the button bellow to start downloading <strong>The Bix Book</strong>:</h2>
 						<p>Download <span class="blue-highlight">The Bix Book</span> to your device</p>
 						<i class="fa fa-download" aria-hidden="true"></i>
-						<button>Start Download</button>
+						<button id="startDownload">Start Download</button>
 					</div>
 
 				</div>
@@ -50,7 +53,7 @@ get_header(); ?>
 						<!-- <img src="<?php echo(get_template_directory_uri());?>/images/thank-you-image.png" alt="thank you"/> -->
 						<p> Listening is having the person speaking experience being heard</p>
 						<p>- "Bix Bickson"</p>
-						<a class="thank-you-button">Return to Homepage</a>
+						<a class="thank-you-button" href="<?php echo get_page_link(11) ?>">Return to Homepage</a>
 
 		   			</div>
 

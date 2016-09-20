@@ -3229,15 +3229,14 @@ strong {
   position: absolute;
   width: 95%;
   height: 80%;
-  padding: 1rem;
-  position: relative; }
-  .unlock-download-modal i.fa-close, .start-download-modal i.fa-close, .thankyou-modal i.fa-close {
+  padding: 1rem; }
+  .unlock-download-modal-wrapper i.fa-close, .start-download-modal-wrapper i.fa-close, .thankyou-modal-wrapper i.fa-close {
     position: absolute;
     top: 0;
     right: 0;
     margin: 1rem;
     font-size: 1.5rem; }
-    .unlock-download-modal i.fa-close:hover, .start-download-modal i.fa-close:hover, .thankyou-modal i.fa-close:hover {
+    .unlock-download-modal-wrapper i.fa-close:hover, .start-download-modal-wrapper i.fa-close:hover, .thankyou-modal-wrapper i.fa-close:hover {
       cursor: pointer;
       color: white;
       transform: scale(1.3); }
