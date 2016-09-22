@@ -27,32 +27,28 @@ get_header(); ?>
 				<div class="highlight-modal">
 					
 					<div class="highlight-modal-wrapper">
-
 			    		<h2>Highlight And Share</h2>
-			    		<p>Is there an interesting quote from the story that speaks to you?</p>
-			    		<p>Use the highlight tool to share your thoughts </p>
+			    		<p>Is there an interesting quote from the story that speaks to you?<br>Use the highlight tool to share your thoughts </p>
 			  			<div class="img-wrapper">
-			  			
-			  			<img src="<?php echo(get_template_directory_uri());?>/images/highlight.jpg" alt="bix logo"/>
-			  					<p>1. Use the curser to highlight a quote you like...</p>
-			  					<p>2. Share your thoughts on the quote either in the comments section or share it directly to your social media 
-									</p>
+
+			  					<div class="instructions">
+			  						<p>1. Use the curser to highlight a quote you like...</p>
+			  						<p>2. Share your thoughts on the quote either in the comments section or share it directly to your social media.</p>
+			  					</div>
+			  					<img src="<?php echo(get_template_directory_uri());?>/images/highlight.jpg" alt="bix logo"/>
+			  					
 			  			</div>
 						<span class="highlight-modal-button">Start Highlighting</span>
-						</div>
+					</div>
 					
-        </div>
+        		</div>
 
 
 				<div class="download-modal">
 					
 					<div class="download-modal-wrapper">
 						<h2>Download <i class="fa fa-download" aria-hidden="true"></i> The Bix Book</h2>
-						<div class="img-wrapper">
-							<p>With your download, you will receive the full 38 stories and an accompanying interactive workbook that follows each story.</p>
-							<p>If you enjoy the first three stories in The Bix Book, why not download it now and receive all of the book’s engaging content?</p>
-							
-						</div>
+							<p>With your download, you will receive the full 38 stories and an accompanying interactive workbook that follows each story.<br><br>If you enjoy the first three stories in The Bix Book, why not download it now and receive all of the book’s engaging content?</p>
 						<a class="download-page-link" href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>/#buy-book-anchor">Download the Book</a>
 					</div>
 					
