@@ -15,6 +15,7 @@ get_header(); ?>
 				<div class="comment-modal">
 
 					<div class="comment-modal-wrapper">
+					<i class="fa fa-close single-fa-close" aria-hidden="true"></i>
 						<h2>Leave us a comment</h2>
 						<div class="img-wrapper">
 							<i class="fa fa-commenting-o" aria-hidden="true"></i>
@@ -27,6 +28,7 @@ get_header(); ?>
 				<div class="highlight-modal">
 					
 					<div class="highlight-modal-wrapper">
+					<i class="fa fa-close single-fa-close" aria-hidden="true"></i>
 			    		<h2>Highlight And Share</h2>
 			    		<p>Is there an interesting quote from the story that speaks to you?<br>Use the highlight tool to share your thoughts </p>
 			  			<div class="img-wrapper">
@@ -47,6 +49,7 @@ get_header(); ?>
 				<div class="download-modal">
 					
 					<div class="download-modal-wrapper">
+					<i class="fa fa-close single-fa-close" aria-hidden="true"></i>
 						<h2>Download <i class="fa fa-download" aria-hidden="true"></i> The Bix Book</h2>
 							<p>With your download, you will receive the full 38 stories and an accompanying interactive workbook that follows each story.<br><br>If you enjoy the first three stories in The Bix Book, why not download it now and receive all of the book’s engaging content?</p>
 						<a class="download-page-link" href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>/#buy-book-anchor">Download the Book</a>

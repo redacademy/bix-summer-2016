@@ -64,7 +64,8 @@ $(document).ready(function(){
             $('.fa-bars').slideToggle(750);
             $('.fa-chevron-up').slideToggle(750);
         });
-        $menuContainer.on('click', function(){
+        $menuContainer.on('click', function(event){
+            var event = window.event || event;
             if($('.mobile-nav-wrapper #mobile-primary-menu, .menu-item').is(event.target)) {
                 // do none
             }
@@ -124,9 +125,10 @@ $(document).ready(function(){
 	        $('.download-modal').fadeIn('slow');
 	    });
 
-	    var $closeOnClick = $('.single-story-modal-container, .comment-section-link, .download-page-link, .highlight-modal-button');
+	    var $closeOnClick = $('.single-story-modal-container, .comment-section-link, .download-page-link, .highlight-modal-button, i.single-fa-close');
 
-	    $closeOnClick.on('click', function(){
+	    $closeOnClick.on('click', function(event){
+            var event = window.event || event;
 	        if(!$closeOnClick.is(event.target)) {
 	            // do nothing
 	        }
@@ -140,13 +142,14 @@ $(document).ready(function(){
     // BixBook Page Modals
 	    var $bixbookModalOverlay = $('.bix-book-modal-overlay');
 
-	    $('.donate-later-button').on('click', function(){
+	    $('.donate-later-button').on('click', function(event){
 	        $bixbookModalOverlay.fadeIn('slow');
 	        $desktopNavContainer.fadeOut('slow');
 	        $('.unlock-download-modal').fadeIn('slow');
 	    });
-	    $('.bix-book-modal-container, i.fa-close').on('click', function(){
-	        if(!$('.bix-book-modal-container, i.fa-close').is(event.target)) {
+	    $('.bix-book-modal-container, i.download-fa-close').on('click', function(event){
+            var event = window.event || event;
+	        if(!$('.bix-book-modal-container, i.download-fa-close').is(event.target)) {
 	            // do nothing
 	        }
 	        else {
@@ -165,6 +168,7 @@ $(document).ready(function(){
 	});
 
 	$('#startDownload').click(function(event){
+        var event = window.event || event;
 	    event.preventDefault();
         $('.start-download-modal').fadeOut('slow');
         $('.thankyou-modal').fadeIn('slow');

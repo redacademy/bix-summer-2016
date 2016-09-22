@@ -3056,6 +3056,18 @@ strong {
   width: 80%;
   height: 80%;
   padding: 1rem; }
+  .highlight-modal-wrapper, .comment-modal-wrapper, .download-modal-wrapper {
+    position: relative; }
+    .highlight-modal-wrapper i.single-fa-close, .comment-modal-wrapper i.single-fa-close, .download-modal-wrapper i.single-fa-close {
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1rem;
+      font-size: 1.5rem; }
+      .highlight-modal-wrapper i.single-fa-close:hover, .comment-modal-wrapper i.single-fa-close:hover, .download-modal-wrapper i.single-fa-close:hover {
+        cursor: pointer;
+        transform: scale(1.3); }
 
 .highlight-modal {
   text-align: center;
@@ -3251,13 +3263,13 @@ strong {
   padding: 0.5rem; }
   .unlock-download-modal-wrapper, .start-download-modal-wrapper, .thankyou-modal-wrapper {
     position: relative; }
-    .unlock-download-modal-wrapper i.fa-close, .start-download-modal-wrapper i.fa-close, .thankyou-modal-wrapper i.fa-close {
+    .unlock-download-modal-wrapper i.download-fa-close, .start-download-modal-wrapper i.download-fa-close, .thankyou-modal-wrapper i.download-fa-close {
       position: absolute;
       top: 0;
       right: 0;
       margin: 1rem;
       font-size: 1.5rem; }
-      .unlock-download-modal-wrapper i.fa-close:hover, .start-download-modal-wrapper i.fa-close:hover, .thankyou-modal-wrapper i.fa-close:hover {
+      .unlock-download-modal-wrapper i.download-fa-close:hover, .start-download-modal-wrapper i.download-fa-close:hover, .thankyou-modal-wrapper i.download-fa-close:hover {
         cursor: pointer;
         transform: scale(1.3); }
 
@@ -3463,7 +3475,7 @@ strong {
 @media (max-width: 600px) {
   .highlight-modal, .comment-modal, .download-modal {
     width: 95%;
-    height: 80%; }
+    height: 95%; }
     .highlight-modal h2, .comment-modal h2, .download-modal h2 {
       font-size: 1.5rem; }
   .unlock-download-modal, .start-download-modal, .thankyou-modal {

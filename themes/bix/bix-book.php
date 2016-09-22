@@ -19,7 +19,7 @@ get_header(); ?>
 				<div class="unlock-download-modal">
 
 					<div class="unlock-download-modal-wrapper">
-					<i class="fa fa-close" aria-hidden="true"></i>
+					<i class="fa fa-close download-fa-close" aria-hidden="true"></i>
 
 			            <h2>Thank your for your interest in <strong>The Bix Book</strong></h2>
 			            <p>Please leave your email to unlock the download link:</p>
@@ -36,7 +36,7 @@ get_header(); ?>
 				<div class="start-download-modal">
 				
 					<div class="start-download-modal-wrapper">
-					<i class="fa fa-close" aria-hidden="true"></i>
+					<i class="fa fa-close download-fa-close" aria-hidden="true"></i>
 
 						<h2>Click the button bellow to start downloading <strong>The Bix Book</strong>:</h2>
 						<p>Download <span class="blue-highlight">The Bix Book</span> to your device</p>
