@@ -168,6 +168,7 @@ $(document).ready(function(){
 	    event.preventDefault();
         $('.start-download-modal').fadeOut('slow');
         $('.thankyou-modal').fadeIn('slow');
+        
 	});
 
 
