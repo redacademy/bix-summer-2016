@@ -86,7 +86,7 @@ get_header(); ?>
 							<i class="fa fa-book" aria-hidden="true"></i>
 						</div>
 					</div>
-
+					
 					<div class="next-story">
 						<?php if ( get_next_post() ) { // check if theres previous post?>
 							<p>Read the Next Story</p>

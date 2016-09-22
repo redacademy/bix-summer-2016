@@ -156,7 +156,7 @@ $(document).ready(function(){
 	        }
 	    });
 
-Bix Book Download
+//Bix Book Download
 	$('#unlockEmailForm').submit(function(event){
 		alert('submitted');
 	    event.preventDefault();
