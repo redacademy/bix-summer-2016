@@ -50,7 +50,7 @@ get_header(); ?>
 
 					<div class="thankyou-modal-wrapper">
 						<h2> Thanks for <span class="footer-orange">Downloading<span></h1>
-						<!-- <img src="<?php echo(get_template_directory_uri());?>/images/thank-you-image.png" alt="thank you"/> -->
+						
 						<p> Listening is having the person speaking experience being heard</p>
 						<p>- "Bix Bickson"</p>
 						<a class="thank-you-button" href="<?php echo get_page_link(11) ?>">Return to Homepage</a>
@@ -140,7 +140,7 @@ get_header(); ?>
 
 					<div class="donate-now">
 				     <a class="btn btn-donate" href="http://www.paypal.com">Donate Now</a>
-             <?php // get_template_part( 'template-parts/content', 'modal' ); ?>
+             
 						 <p class="book-buy-light"> Download the Bix Book Now </p>
 						 <p class="btn donate-later-button"> Donate Later </p>
 			  	</div>

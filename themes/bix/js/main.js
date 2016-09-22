@@ -156,7 +156,7 @@ $(document).ready(function(){
 	        }
 	    });
 
-// Bix Book Download
+Bix Book Download
 	$('#unlockEmailForm').submit(function(event){
 		alert('submitted');
 	    event.preventDefault();
@@ -170,13 +170,14 @@ $(document).ready(function(){
         $('.thankyou-modal').fadeIn('slow');
 	});
 
+
 //Email Alert Message
     $(function() {
       $('#updates').on('submit', 'form', function(event) {
         event.preventDefault();
         var $emailInput = $('#email-input')
         if ( $emailInput.val().length > 5 ) {
-          alert($emailInput.val() + " -> The Bix Book thanks you for your message :)");
+          alert($emailInput.val() + " -> The Bix Book thanks you :)");
           $emailInput.val('');
         } else {
           alert('Please submit a valid email address.');
