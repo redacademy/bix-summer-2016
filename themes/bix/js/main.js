@@ -8,7 +8,7 @@ $(document).ready(function(){
             var $navContainer = $(".desktop-nav-wrapper .desktop-nav-container"),
                 $mainNavigation = $(".mobile-nav-wrapper .main-navigation"),
                 $navWrapper = $(".mobile-nav-wrapper"),
-                $toolbarWrapper = $(".bottom-toolbar-wrapper"),  
+                $toolbarWrapper = $(".bottom-toolbar-wrapper"),    
                 that = this;
             // desktop
             if (window.pageYOffset > 60) {

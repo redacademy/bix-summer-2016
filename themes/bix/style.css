@@ -2886,6 +2886,74 @@ strong {
         padding: 5px 20px;
         font-size: 1.5rem; } }
 
+.page-template-checkout article {
+  margin-top: 20px; }
+
+.page-template-checkout .donations {
+  max-width: 320px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.page-template-checkout .the-bix-book {
+  max-width: 150px;
+  margin: 0 auto;
+  display: block; }
+
+.page-template-checkout .edd_empty_cart {
+  display: none; }
+
+.page-template-checkout .edd_price_options ul {
+  max-width: 175px;
+  margin: 0 auto; }
+
+.page-template-checkout button, .page-template-checkout input[type=button], .page-template-checkout input[type=reset], .page-template-checkout input[type=submit] {
+  text-shadow: none; }
+
+.page-template-checkout #edd-purchase-button, .page-template-checkout .edd-submit, .page-template-checkout input[type=submit].edd-submit {
+  color: #fff;
+  text-decoration: none;
+  border: solid #fff 2px;
+  border-radius: 30px;
+  background-color: #70b3cb;
+  font-weight: 500;
+  font-size: 1.1rem;
+  width: 150px;
+  transition: all ease 0.4s;
+  margin-bottom: 20px; }
+  .page-template-checkout #edd-purchase-button:hover, .page-template-checkout .edd-submit:hover, .page-template-checkout input[type=submit].edd-submit:hover {
+    color: #70b3cb;
+    border: solid #70b3cb 2px;
+    background-color: #fff; }
+
+.page-template-checkout .edd_purchase_submit_wrapper {
+  text-align: center; }
+
+.page-template-checkout .edd_download_file_link {
+  color: #F9AC31;
+  font-size: 2.2rem; }
+
+.page-template-checkout p {
+  color: #70b3cb; }
+
+@media (min-width: 600px) {
+  .page-template-checkout .donations {
+    max-width: 500px;
+    margin: 0 auto; } }
+
+@media (min-width: 700px) {
+  .page-template-checkout .donations {
+    max-width: 80%;
+    margin: 0 auto;
+    border: solid 1px #444444; }
+  .donate-title, p {
+    text-align: center; } }
+
+@media (min-width: 1024px) {
+  .page-template-checkout .donations {
+    max-width: 900px;
+    padding: 50px; } }
+
 .footer-content-area {
   background-color: #444444;
   max-width: 100%;
