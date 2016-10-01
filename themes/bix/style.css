@@ -3448,7 +3448,7 @@ strong {
   .start-download-modal i.fa-download {
     font-size: 4rem;
     color: #70b3cb; }
-  .start-download-modal button {
+  .start-download-modal a.download-link {
     color: #fff;
     text-decoration: none;
     border: solid #fff 2px;
@@ -3461,7 +3461,7 @@ strong {
     text-shadow: none;
     padding: 0.5rem 3rem;
     margin: 1rem; }
-    .start-download-modal button:hover {
+    .start-download-modal a.download-link:hover {
       color: #70b3cb;
       border: solid #70b3cb 2px;
       background-color: #fff; }

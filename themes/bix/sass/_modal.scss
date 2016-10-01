@@ -309,7 +309,7 @@
           font-size: 4rem;
           color: $color__blue;
         }
-        button {
+        a.download-link {
           @include btn;
           box-shadow: none;
           text-shadow: none;

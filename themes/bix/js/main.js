@@ -160,16 +160,16 @@ $(document).ready(function(){
 	    });
 
 //Bix Book Download
-	$('#wpcf7-form').submit(function(event){
-		alert('submitted');
-	    event.preventDefault();
+	$('.wpcf7-form').submit(function(event){
+		alert('Than you for your interest in the book!');
+	    // event.preventDefault();
         $('.unlock-download-modal').fadeOut('slow');
         $('.start-download-modal').fadeIn('slow');
 	});
 
-	$('#startDownload').click(function(event){
+	$('a.download-link').click(function(event){
         var event = window.event || event;
-	    event.preventDefault();
+	    // event.preventDefault();
         $('.start-download-modal').fadeOut('slow');
         $('.thankyou-modal').fadeIn('slow');
         

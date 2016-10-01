@@ -43,7 +43,8 @@ get_header(); ?>
 						<h2>Click the button bellow to start downloading <strong>The Bix Book</strong>:</h2>
 						<p>Download <span class="blue-highlight">The Bix Book</span> to your device</p>
 						<i class="fa fa-download" aria-hidden="true"></i>
-						<button id="startDownload">Start Download</button>
+						<?php echo do_shortcode('[download id="99"]'); ?>
+						<!-- <a href="//localhost:3000/bix/download/99/" id="startDownload">Start Download</a> -->
 					</div>
 
 				</div>
