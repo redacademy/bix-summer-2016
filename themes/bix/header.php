@@ -70,7 +70,7 @@
 					</nav><!-- #site-navigation -->
 				</div>
 			</div>
-			
+			<?php //phpinfo(); ?>
 			</header><!-- #masthead -->
 		
 			<div id="content" class="site-content">

@@ -23,11 +23,13 @@ get_header(); ?>
 
 			            <h2>Thank your for your interest in <strong>The Bix Book</strong></h2>
 			            <p>Please leave your email to unlock the download link:</p>
+
+			            <?php echo do_shortcode('[contact-form-7 id="103" title="Donate Later"]'); ?>
 			            
-			            <form action="post" id="unlockEmailForm">
+			            <!-- <form action="post" id="unlockEmailForm">
 			            	<input class="unlock-email" id="unlockEmail" type="text" name="email" placeholder="Enter your email address"/>
 							<button type="submit" id="unlockEmailSubmit">Unlock Download</button>
-			            </form>
+			            </form> -->
 
 			        </div>
 

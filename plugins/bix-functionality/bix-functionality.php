@@ -55,3 +55,7 @@ include_once( RF_DIR . '/lib/functions/taxonomies.php' );
  * @since 1.0.0
  */
 include_once( RF_DIR . '/lib/functions/hide-default-posts.php' );
+
+@ini_set( 'upload_max_size' , '128M' );
+@ini_set( 'post_max_size', '130M');
+@ini_set( 'max_execution_time', '300' );

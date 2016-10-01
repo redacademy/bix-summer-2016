@@ -160,7 +160,7 @@ $(document).ready(function(){
 	    });
 
 //Bix Book Download
-	$('#unlockEmailForm').submit(function(event){
+	$('#wpcf7-form').submit(function(event){
 		alert('submitted');
 	    event.preventDefault();
         $('.unlock-download-modal').fadeOut('slow');
