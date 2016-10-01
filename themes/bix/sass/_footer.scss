@@ -70,7 +70,9 @@ padding-left: 10px;
 	flex-direction: row;
 	justify-content: flex-start;
 	margin: 10px 0px 20px 10%;
-  
+  a{
+  	color:$color__gray;
+  }
 	.fa-stack{
 		font-size: 1.8rem;
 		&:hover{

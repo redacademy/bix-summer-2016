@@ -3029,6 +3029,8 @@ strong {
   -ms-flex-pack: start;
       justify-content: flex-start;
   margin: 10px 0px 20px 10%; }
+  .icons a {
+    color: #444444; }
   .icons .fa-stack {
     font-size: 1.8rem; }
     .icons .fa-stack:hover {
