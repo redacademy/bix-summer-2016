@@ -24,12 +24,7 @@ get_header(); ?>
 			            <h2>Thank your for your interest in <strong>The Bix Book</strong></h2>
 			            <p>Please leave your email to unlock the download link:</p>
 
-			            <?php echo do_shortcode('[contact-form-7 id="103" title="Donate Later"]'); ?>
-			            
-			            <!-- <form action="post" id="unlockEmailForm">
-			            	<input class="unlock-email" id="unlockEmail" type="text" name="email" placeholder="Enter your email address"/>
-							<button type="submit" id="unlockEmailSubmit">Unlock Download</button>
-			            </form> -->
+			            <?php echo do_shortcode('[contact-form-7 id="131" title="Donate Later"]'); ?>
 
 			        </div>
 
@@ -43,8 +38,7 @@ get_header(); ?>
 						<h2>Click the button bellow to start downloading <strong>The Bix Book</strong>:</h2>
 						<p>Download <span class="blue-highlight">The Bix Book</span> to your device</p>
 						<i class="fa fa-download" aria-hidden="true"></i>
-						<?php echo do_shortcode('[download id="99"]'); ?>
-						<!-- <a href="//localhost:3000/bix/download/99/" id="startDownload">Start Download</a> -->
+						<?php echo do_shortcode('[download id="132"]'); ?>
 					</div>
 
 				</div>
