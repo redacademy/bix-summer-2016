@@ -161,10 +161,13 @@ $(document).ready(function(){
 
 //Bix Book Download
 	$('.wpcf7-form').submit(function(event){
-		alert('Than you for your interest in the book!');
-	    // event.preventDefault();
-        $('.unlock-download-modal').fadeOut('slow');
-        $('.start-download-modal').fadeIn('slow');
+        if ($('.wpcf7-form').valid()) {
+    		alert('Than you for your interest in the book!');
+            $('.unlock-download-modal').fadeOut('slow');
+            $('.start-download-modal').fadeIn('slow');
+        } else {
+            event.preventDefault();
+        }
 	});
 
 	$('a.download-link').click(function(event){

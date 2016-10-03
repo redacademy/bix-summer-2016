@@ -3385,7 +3385,8 @@ strong {
     font-family: "Titillium Web", sans-serif;
     color: #444444;
     font-size: 1.2rem;
-    text-align: center; }
+    text-align: center;
+    margin: 0.5rem; }
   .unlock-download-modal form {
     display: -ms-flexbox;
     display: flex;
@@ -3393,13 +3394,19 @@ strong {
         align-items: center;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
-    width: 80%;
     max-width: 500px; }
-    .unlock-download-modal form input {
-      width: 100%;
-      border-radius: 0;
-      height: 50px; }
-    .unlock-download-modal form button {
+    .unlock-download-modal form p {
+      margin: 10px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+      .unlock-download-modal form p input {
+        border-radius: 0;
+        width: 100%; }
+    .unlock-download-modal form .wpcf7-submit {
       color: #fff;
       text-decoration: none;
       border: solid #fff 2px;
@@ -3411,8 +3418,10 @@ strong {
       box-shadow: none;
       text-shadow: none;
       padding: 0.5rem 3rem;
-      margin: 1rem; }
-      .unlock-download-modal form button:hover {
+      margin: 1rem;
+      height: 50px;
+      width: 230px; }
+      .unlock-download-modal form .wpcf7-submit:hover {
         color: #70b3cb;
         border: solid #70b3cb 2px;
         background-color: #fff; }
