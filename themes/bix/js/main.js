@@ -174,8 +174,7 @@ $(document).ready(function(){
         var event = window.event || event;
 	    // event.preventDefault();
         $('.start-download-modal').fadeOut('slow');
-        $('.thankyou-modal').fadeIn('slow');
-        
+        $('.thankyou-modal').fadeIn('slow');      
 	});
 
 
