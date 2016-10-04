@@ -16,35 +16,35 @@
 }
  
 @media #{$tablet} {
- .container{
- 	max-width: 1024px;
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	margin: 0 auto;
- }
+	.container{
+		max-width: 1024px;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		margin: 0 auto;
+	}
 }
 
 //Highlight Plugin Tool
 #selectionSharerPopover-inner{
-  border-radius: 5px;
-  border: 1px solid;
-  border-color: $color__blue;
-  box-shadow: $color__blue;
-  background: $color__blue;
+	border-radius: 5px;
+	border: 1px solid;
+	border-color: $color__blue;
+	box-shadow: $color__blue;
+	background: $color__blue;
 }
 
 #selectionSharerPopover .selectionSharerPopover-arrow{
-  background-color: $color__blue;
-  border: 2px solid $color__blue;
+	background-color: $color__blue;
+	border: 2px solid $color__blue;
 }
 
 #selectionSharerPopover:after{
 	background: $color__blue;
-  box-shadow: 0 0 2px $color__blue;
+	box-shadow: 0 0 2px $color__blue;
 }
 
 ::selection {
-  background: $color__orange; 
-  color: #fff;
+	background: $color__orange; 
+	color: #fff;
 }
