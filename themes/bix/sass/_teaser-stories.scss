@@ -16,187 +16,186 @@
 
 .teaser-section1{
 	max-width:100%;
-  margin: 50px 0;
-
+	margin: 50px 0;
 	.more-stories{
 		background: url(../../images/about-bickson2.jpg) no-repeat center left;
-    background-size: cover;
-    min-height: 500px;
-    overflow: hidden;
-    position: relative;
-  	div{
-      position: absolute;
-      bottom: 80px;
-      width: 100%;
-      height: 80px;
-      background-color: rgba(255,255,255,.6);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    h2{
-      font-weight: 500;
-      text-transform: uppercase;
-      span{
-        color:#fff;
-      }
-    }
-  }
-  .teaser-content{
-    width: 100%;
-    padding: 0 30px;
-    h2{
-      color: $color__orange;
-      text-align: center;
-      border-bottom: 2px solid $color__orange;
-      border-top: 2px solid $color__orange;
-      font-weight: 500;
-      text-transform: uppercase;
-      font-size: 1.3rem;
-      width: 200px;
-      margin: 0 auto;
-      margin-top: 30px;
-    }
-    p{
-      text-align: center;
-      font-weight: 300;
-      span{
-        font-weight: 500;
-      }
-    }
-    .btn-download,.btn-expand{
-      @include btn;
-      padding: 10px 30px;
-      width: 250px;
-      text-transform: uppercase;
-      margin: 0 auto;
-      display:block;
-      text-align: center;
-    }
-    .btn-expand{
-      width: 100px;
-      padding: 2px 10px;
-      font-size: 1rem;
-      text-transform: capitalize;
-    }
-    .table-contents-container{
-      border: 1px solid $color__blue;
-      position: relative;
-      div{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 50px;
-        background-color: rgba(112,179,203,.9);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  }
+		background-size: cover;
+		min-height: 500px;
+		overflow: hidden;
+		position: relative;
+		div{
+			position: absolute;
+			bottom: 80px;
+			width: 100%;
+			height: 80px;
+			background-color: rgba(255,255,255,.6);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		h2{
+			font-weight: 500;
+			text-transform: uppercase;
+			span{
+				color:#fff;
+			}
+		}
+	}
+
+	.teaser-content{
+		width: 100%;
+		padding: 0 30px;
+		h2{
+			color: $color__orange;
+			text-align: center;
+			border-bottom: 2px solid $color__orange;
+			border-top: 2px solid $color__orange;
+			font-weight: 500;
+			text-transform: uppercase;
+			font-size: 1.3rem;
+			width: 200px;
+			margin: 0 auto;
+			margin-top: 30px;
+		}
+		p{
+			text-align: center;
+			font-weight: 300;
+			span{
+				font-weight: 500;
+			}
+		}
+
+		.btn-download,.btn-expand{
+			@include btn;
+			padding: 10px 30px;
+			width: 250px;
+			text-transform: uppercase;
+			margin: 0 auto;
+			display:block;
+			text-align: center;
+		}
+
+		.btn-expand{
+			width: 100px;
+			padding: 2px 10px;
+			font-size: 1rem;
+			text-transform: capitalize;
+		}
+		.table-contents-container{
+			border: 1px solid $color__blue;
+			position: relative;
+			div{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 50px;
+				background-color: rgba(112,179,203,.9);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
 }
 
 
 @media #{$tablet}{
-  .teaser-banner{
-    background: url(../../images/teaser-stories-banner.jpg) no-repeat center left;
-    background-size: cover;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
-    .site-logo,.teaser-title,p{
-      display: unset;
-      max-width: 250px;
-    }
-    .teaser-title{
-      color:#fff;
-      border-bottom: solid 2px #fff;
-      border-top: solid 2px #fff;
-      font-size: 1.5rem;
-      padding:10px 0;
-      width: 250px;
-      text-transform: capitalize;
-      font-weight: 500;
-      text-align: center;
-    }
-    p{
-    	color: #fff;
-    	font-weight: 300; 
-      
-    }
-  }
+	.teaser-banner{
+		background: url(../../images/teaser-stories-banner.jpg) no-repeat center left;
+		background-size: cover;
+		height: 70vh;
+		overflow: hidden;
+		position: relative;
+		.site-logo,.teaser-title,p{
+			display: unset;
+			max-width: 250px;
+		}
+		.teaser-title{
+			color:#fff;
+			border-bottom: solid 2px #fff;
+			border-top: solid 2px #fff;
+			font-size: 1.5rem;
+			padding:10px 0;
+			width: 250px;
+			text-transform: capitalize;
+			font-weight: 500;
+			text-align: center;
+		}
+		p{
+			color: #fff;
+			font-weight: 300; 
+		}
+	}
 }
 
 @media #{$tablet-medium}{
-  
-.teaser-section1{
-  max-width:80%;
-  .more-stories{
-    min-height: 550px;
-    div{
-      height: 50px;
-    }
-    h2{
-      font-size: 1.6rem;
-      span{
-        color:$color__orange;
-      }
-    }
-  }
-  .teaser-content{
-    border: 1px solid $color__gray;
-    h2{
-      display: none;
-    }
-    p{
-      font-size: 1.5rem;
-    }
-    .table-contents-container{
-      max-width: 450px;
-      margin: 0 auto;
-      margin-bottom: 50px;
-      div{
-        height: 70px;
-        }
-      }
-    }
-  }
+	.teaser-section1{
+		max-width:80%;
+		.more-stories{
+			min-height: 550px;
+			div{
+				height: 50px;
+			}
+			h2{
+				font-size: 1.6rem;
+				span{
+					color:$color__orange;
+				}
+			}
+		}
+		.teaser-content{
+			border: 1px solid $color__gray;
+			h2{
+				display: none;
+			}
+			p{
+				font-size: 1.5rem;
+			}
+			.table-contents-container{
+				max-width: 450px;
+				margin: 0 auto;
+				margin-bottom: 50px;
+				div{
+					height: 70px;
+				}
+			}
+		}
+	}
 }
 
 @media #{$desktop}{
-  
-.teaser-section1{
-  max-width:100%;
-  .more-stories{
-    min-height: 550px;
-    div{
-      height: 50px;
-    }
-    h2{
-      font-size: 1.8rem;
-      span{
-        color:$color__orange;
-      }
-    }
-  }
-  .teaser-content{
-    padding: 30px 90px;
+	.teaser-section1{
+		max-width:100%;
+		.more-stories{
+			min-height: 550px;
+			div{
+				height: 50px;
+			}
+			h2{
+				font-size: 1.8rem;
+				span{
+					color:$color__orange;
+				}
+			}
+		}
+		.teaser-content{
+			padding: 30px 90px;
 
-    p{
-      font-size: 1.9rem;
-    }
-    .table-contents-container{
-      max-width: 550px;
-      div{
-        height: 100px;
-        }
-      }
-    .btn-expand{
-      width: 250px;
-      padding: 5px 20px;
-      font-size: 1.5rem;
-      } 
-    }
-  }
+			p{
+				font-size: 1.9rem;
+			}
+			.table-contents-container{
+				max-width: 550px;
+				div{
+					height: 100px;
+				}
+			}
+			.btn-expand{
+				width: 250px;
+				padding: 5px 20px;
+				font-size: 1.5rem;
+			} 
+		}
+	}
 }
 
