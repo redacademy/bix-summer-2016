@@ -182,20 +182,4 @@ $(document).ready(function(){
                 event.preventDefault();
             }
         });
-
-
-    //Email Alert Message
-        $(function() {
-          $('#updates').on('submit', 'form', function(event) {
-            event.preventDefault();
-            var $emailInput = $('#email-input')
-            if ( $emailInput.val().length > 5 ) {
-              alert($emailInput.val() + " -> The Bix Book thanks you :)");
-              $emailInput.val('');
-            } else {
-              alert('Please submit a valid email address.');
-              event.preventDefault();
-            }
-          });
-        });
 }(jQuery));

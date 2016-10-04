@@ -3011,7 +3011,7 @@ strong {
       flex-flow: column nowrap;
   -ms-flex-align: center;
       align-items: center; }
-  .form-position form .error {
+  .form-position form label.error {
     color: white;
     margin-top: 10px; }
   .form-position form .ajax-loader {
