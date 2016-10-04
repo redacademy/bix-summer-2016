@@ -24,7 +24,7 @@ get_header(); ?>
 			            <h2>Thank your for your interest in <strong>The Bix Book</strong></h2>
 			            <p>Please leave your email to unlock the download link:</p>
 
-			            <?php echo do_shortcode('[contact-form-7 id="131" title="Donate Later"]'); ?>
+			            <?php echo do_shortcode('[contact-form-7 id="131" title="Donate Later" html_class="wpcf7-form-download"]'); ?>
 
 			        </div>
 

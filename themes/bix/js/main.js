@@ -157,10 +157,10 @@ $(document).ready(function(){
 	        }
 	    });
 
-    //Bix Book Download Process / Modals
-    	$('.wpcf7-form').submit(function(event){
-            if ($('.wpcf7-form').valid()) {
-        		alert('Than you for your interest in the book!');
+    // Bix Book Download Process / Modals
+    	$('.wpcf7-form-download').submit(function(event){
+            if ($('.wpcf7-form-download').valid()) {
+        		alert('Thank you for your interest in the book!');
                 $('.unlock-download-modal').fadeOut('slow');
                 $('.start-download-modal').fadeIn('slow');
             } else {
@@ -173,6 +173,15 @@ $(document).ready(function(){
             $('.start-download-modal').fadeOut('slow');
             $('.thankyou-modal').fadeIn('slow');      
     	});
+
+    // Footer Comments
+        $('.wpcf7-form-footer').submit(function(event){
+            if ($('.wpcf7-form-footer').valid()) {
+                alert('Your message has been sent!');
+            } else {
+                event.preventDefault();
+            }
+        });
 
 
     //Email Alert Message

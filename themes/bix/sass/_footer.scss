@@ -83,10 +83,11 @@
 		}
 	}
 	.wpcf7-response-output {
-		background: white;
-		color: $color__gray;
-		border-color: $color__orange;
-		width: 80%;
+		display: none !important;
+		// background: white;
+		// color: $color__gray;
+		// border-color: $color__orange;
+		// width: 80%;
 	}
 }
 

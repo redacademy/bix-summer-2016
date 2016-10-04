@@ -16,7 +16,7 @@
 					<h2> Bix<span class="footer-orange">{At}</span>Bickson2.Com </h2>
 				</div>
 				<div class ="form-position" id="updates">
-					<?php echo do_shortcode('[contact-form-7 id="140" title="Footer Comments"]'); ?>
+					<?php echo do_shortcode('[contact-form-7 id="140" title="Footer Comments" html_class="wpcf7-form-footer"]'); ?>
 			 		<!-- <form action="#" method="post">
 			        	<input type="text" id="email-input" name="email" placeholder="Your Email"/>
 	 					<textarea name="message" placeholder="Drop A Line..."></textarea>

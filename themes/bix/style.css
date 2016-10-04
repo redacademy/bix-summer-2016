@@ -3064,10 +3064,7 @@ strong {
     border: 2px solid #fff; }
 
 .form-position .wpcf7-response-output {
-  background: white;
-  color: #444444;
-  border-color: #F9AC31;
-  width: 80%; }
+  display: none !important; }
 
 .icons {
   display: -ms-flexbox;
