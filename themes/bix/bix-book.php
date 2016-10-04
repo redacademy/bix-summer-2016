@@ -5,7 +5,7 @@ Template Name: Bix-Book Template Page
 /**
  * The template for displaying all pages.
  *
- * @package RED_Starter_Theme
+ * @package Bix_Theme
  */
 
 get_header(); ?>

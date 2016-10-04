@@ -25,6 +25,9 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+
+		<meta property=”fb:app_id” content=”172273116512743” />
+
 	</head>
 
 	<body <?php body_class(); ?>>

@@ -1,8 +1,6 @@
 (function($){
 $(document).ready(function(){
     // On scroll behaviours
-        // show on scroll up
-        // var lastScrollTop = 0;
         window.onscroll = function() {
             // variables
             var $navContainer = $(".desktop-nav-wrapper .desktop-nav-container"),
@@ -59,10 +57,10 @@ $(document).ready(function(){
         var $menuContainer = $('.mobile-nav-wrapper .menu-main-menu-container'),
             $mobileMenu = $('.mobile-nav-wrapper #mobile-primary-menu');
         $('.menu-button').on('click', function(){
-            $mobileMenu.slideToggle(750);
-            $menuContainer.fadeToggle(750);
-            $('.fa-bars').slideToggle(750);
-            $('.fa-chevron-up').slideToggle(750);
+            $mobileMenu.slideToggle(400);
+            $menuContainer.fadeToggle(400);
+            $('.fa-bars').slideToggle(400);
+            $('.fa-chevron-up').slideToggle(400);
         });
         $menuContainer.on('click', function(event){
             var event = window.event || event;
@@ -70,10 +68,10 @@ $(document).ready(function(){
                 // do none
             }
             else {
-                $mobileMenu.slideToggle(750);
-                $menuContainer.fadeToggle(750);
-                $('.fa-bars').slideToggle(750);
-                $('.fa-chevron-up').slideToggle(750);
+                $mobileMenu.slideToggle(400);
+                $menuContainer.fadeToggle(400);
+                $('.fa-bars').slideToggle(400);
+                $('.fa-chevron-up').slideToggle(400);
             }
         });
     	// sub menu display only on single post page
@@ -159,7 +157,7 @@ $(document).ready(function(){
 	        }
 	    });
 
-//Bix Book Download
+//Bix Book Download Process / Modals
 	$('.wpcf7-form').submit(function(event){
         if ($('.wpcf7-form').valid()) {
     		alert('Than you for your interest in the book!');
@@ -172,7 +170,6 @@ $(document).ready(function(){
 
 	$('a.download-link').click(function(event){
         var event = window.event || event;
-	    // event.preventDefault();
         $('.start-download-modal').fadeOut('slow');
         $('.thankyou-modal').fadeIn('slow');      
 	});
