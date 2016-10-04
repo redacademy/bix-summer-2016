@@ -16,12 +16,13 @@
 					<h2> Bix<span class="footer-orange">{At}</span>Bickson2.Com </h2>
 				</div>
 				<div class ="form-position" id="updates">
-			 		<form action="#" method="post">
+					<?php echo do_shortcode('[contact-form-7 id="140" title="Footer Comments"]'); ?>
+			 		<!-- <form action="#" method="post">
 			        	<input type="text" id="email-input" name="email" placeholder="Your Email"/>
 	 					<textarea name="message" placeholder="Drop A Line..."></textarea>
 						<br>
 	 					<button class="footer_button">Send</button>
-			        </form>
+			        </form> -->
 			    </div>
 			</footer>
 			<div class ="icons icon-footer">

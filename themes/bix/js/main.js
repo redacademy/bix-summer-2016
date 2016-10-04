@@ -157,36 +157,36 @@ $(document).ready(function(){
 	        }
 	    });
 
-//Bix Book Download Process / Modals
-	$('.wpcf7-form').submit(function(event){
-        if ($('.wpcf7-form').valid()) {
-    		alert('Than you for your interest in the book!');
-            $('.unlock-download-modal').fadeOut('slow');
-            $('.start-download-modal').fadeIn('slow');
-        } else {
+    //Bix Book Download Process / Modals
+    	$('.wpcf7-form').submit(function(event){
+            if ($('.wpcf7-form').valid()) {
+        		alert('Than you for your interest in the book!');
+                $('.unlock-download-modal').fadeOut('slow');
+                $('.start-download-modal').fadeIn('slow');
+            } else {
+                event.preventDefault();
+            }
+    	});
+
+    	$('a.download-link').click(function(event){
+            var event = window.event || event;
+            $('.start-download-modal').fadeOut('slow');
+            $('.thankyou-modal').fadeIn('slow');      
+    	});
+
+
+    //Email Alert Message
+        $(function() {
+          $('#updates').on('submit', 'form', function(event) {
             event.preventDefault();
-        }
-	});
-
-	$('a.download-link').click(function(event){
-        var event = window.event || event;
-        $('.start-download-modal').fadeOut('slow');
-        $('.thankyou-modal').fadeIn('slow');      
-	});
-
-
-//Email Alert Message
-    $(function() {
-      $('#updates').on('submit', 'form', function(event) {
-        event.preventDefault();
-        var $emailInput = $('#email-input')
-        if ( $emailInput.val().length > 5 ) {
-          alert($emailInput.val() + " -> The Bix Book thanks you :)");
-          $emailInput.val('');
-        } else {
-          alert('Please submit a valid email address.');
-          event.preventDefault();
-        }
-      });
-    });
+            var $emailInput = $('#email-input')
+            if ( $emailInput.val().length > 5 ) {
+              alert($emailInput.val() + " -> The Bix Book thanks you :)");
+              $emailInput.val('');
+            } else {
+              alert('Please submit a valid email address.');
+              event.preventDefault();
+            }
+          });
+        });
 }(jQuery));
