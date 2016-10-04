@@ -17,12 +17,6 @@
 				</div>
 				<div class ="form-position" id="updates">
 					<?php echo do_shortcode('[contact-form-7 id="140" title="Footer Comments" html_class="wpcf7-form-footer"]'); ?>
-			 		<!-- <form action="#" method="post">
-			        	<input type="text" id="email-input" name="email" placeholder="Your Email"/>
-	 					<textarea name="message" placeholder="Drop A Line..."></textarea>
-						<br>
-	 					<button class="footer_button">Send</button>
-			        </form> -->
 			    </div>
 			</footer>
 			<div class ="icons icon-footer">
