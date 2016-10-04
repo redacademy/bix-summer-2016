@@ -3105,212 +3105,6 @@ strong {
     border: solid #70b3cb 2px;
     background-color: #fff; }
 
-.single-story-modal-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 5; }
-
-.single-story-modal-container {
-  height: 100%;
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  position: relative; }
-
-.highlight-modal, .comment-modal, .download-modal {
-  display: none;
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  padding: 1rem; }
-  .highlight-modal-wrapper, .comment-modal-wrapper, .download-modal-wrapper {
-    position: relative; }
-    .highlight-modal-wrapper i.single-fa-close, .comment-modal-wrapper i.single-fa-close, .download-modal-wrapper i.single-fa-close {
-      color: white;
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin: 1rem;
-      font-size: 1.5rem; }
-      .highlight-modal-wrapper i.single-fa-close:hover, .comment-modal-wrapper i.single-fa-close:hover, .download-modal-wrapper i.single-fa-close:hover {
-        cursor: pointer;
-        transform: scale(1.3); }
-
-.highlight-modal {
-  text-align: center;
-  background: #70b3cb;
-  position: relative; }
-  .highlight-modal .highlight-modal-wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    width: 100%;
-    height: 100%;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .highlight-modal .highlight-modal-wrapper .img-wrapper {
-      width: 75%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center; }
-      .highlight-modal .highlight-modal-wrapper .img-wrapper img {
-        max-width: 350px;
-        height: auto; }
-      .highlight-modal .highlight-modal-wrapper .img-wrapper p {
-        font-size: .75rem;
-        text-align: left;
-        max-width: 350px;
-        margin: 1rem auto;
-        line-height: 1rem; }
-      .highlight-modal .highlight-modal-wrapper .img-wrapper .share-icons {
-        text-align: center; }
-        .highlight-modal .highlight-modal-wrapper .img-wrapper .share-icons .fa {
-          font-size: 1.2rem;
-          padding: 10px; }
-  .highlight-modal h2 {
-    text-align: center;
-    color: white;
-    font-family: "Titillium Web", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
-    border: 3px solid white;
-    border-width: 3px 0;
-    margin-bottom: 0; }
-  .highlight-modal p {
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    margin: 1rem 2rem;
-    font-weight: 300; }
-  .highlight-modal .highlight-modal-button {
-    color: #fff;
-    text-decoration: none;
-    border: solid #fff 2px;
-    border-radius: 30px;
-    background-color: #70b3cb;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: all ease 0.4s;
-    padding: 0.5rem 3rem;
-    margin: 1rem;
-    cursor: pointer; }
-    .highlight-modal .highlight-modal-button:hover {
-      color: #70b3cb;
-      border: solid #70b3cb 2px;
-      background-color: #fff; }
-
-.comment-modal {
-  background: #70b3cb;
-  position: relative; }
-  .comment-modal .comment-modal-wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    width: 100%;
-    height: 100%; }
-  .comment-modal h2 {
-    text-align: center;
-    color: white;
-    font-family: "Titillium Web", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
-    border: 3px solid white;
-    border-width: 3px 0;
-    margin-bottom: 0; }
-  .comment-modal .img-wrapper {
-    background: #70b3cb;
-    text-align: center; }
-    .comment-modal .img-wrapper .fa-commenting-o {
-      font-size: 8rem;
-      color: #fff; }
-  .comment-modal .comment-section-link {
-    color: #fff;
-    text-decoration: none;
-    border: solid #fff 2px;
-    border-radius: 30px;
-    background-color: #70b3cb;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: all ease 0.4s;
-    padding: 0.5rem 3rem;
-    margin: 1rem; }
-    .comment-modal .comment-section-link:hover {
-      color: #70b3cb;
-      border: solid #70b3cb 2px;
-      background-color: #fff; }
-
-.download-modal {
-  background: #70b3cb;
-  position: relative; }
-  .download-modal .download-modal-wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    width: 100%;
-    height: 100%; }
-  .download-modal h2 {
-    text-align: center;
-    color: white;
-    font-family: "Titillium Web", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
-    border: 3px solid white;
-    border-width: 3px 0;
-    margin-bottom: 0; }
-  .download-modal p {
-    text-align: center;
-    max-width: 500px;
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    margin: 2rem;
-    font-weight: 300; }
-  .download-modal .download-img {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 10px; }
-  .download-modal .download-page-link {
-    color: #fff;
-    text-decoration: none;
-    border: solid #fff 2px;
-    border-radius: 30px;
-    background-color: #70b3cb;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: all ease 0.4s;
-    padding: 0.5rem 3rem;
-    margin: 1rem; }
-    .download-modal .download-page-link:hover {
-      color: #70b3cb;
-      border: solid #70b3cb 2px;
-      background-color: #fff; }
-
 .bix-book-modal-overlay {
   display: none;
   position: fixed;
@@ -3576,3 +3370,209 @@ strong {
   .download-modal .download-page-link {
     padding: 0.5rem 1rem;
     margin: 0rem; } }
+
+.single-story-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5; }
+
+.single-story-modal-container {
+  height: 100%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative; }
+
+.highlight-modal, .comment-modal, .download-modal {
+  display: none;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  padding: 1rem; }
+  .highlight-modal-wrapper, .comment-modal-wrapper, .download-modal-wrapper {
+    position: relative; }
+    .highlight-modal-wrapper i.single-fa-close, .comment-modal-wrapper i.single-fa-close, .download-modal-wrapper i.single-fa-close {
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1rem;
+      font-size: 1.5rem; }
+      .highlight-modal-wrapper i.single-fa-close:hover, .comment-modal-wrapper i.single-fa-close:hover, .download-modal-wrapper i.single-fa-close:hover {
+        cursor: pointer;
+        transform: scale(1.3); }
+
+.highlight-modal {
+  text-align: center;
+  background: #70b3cb;
+  position: relative; }
+  .highlight-modal .highlight-modal-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 100%;
+    height: 100%;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .highlight-modal .highlight-modal-wrapper .img-wrapper {
+      width: 75%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .highlight-modal .highlight-modal-wrapper .img-wrapper img {
+        max-width: 350px;
+        height: auto; }
+      .highlight-modal .highlight-modal-wrapper .img-wrapper p {
+        font-size: .75rem;
+        text-align: left;
+        max-width: 350px;
+        margin: 1rem auto;
+        line-height: 1rem; }
+      .highlight-modal .highlight-modal-wrapper .img-wrapper .share-icons {
+        text-align: center; }
+        .highlight-modal .highlight-modal-wrapper .img-wrapper .share-icons .fa {
+          font-size: 1.2rem;
+          padding: 10px; }
+  .highlight-modal h2 {
+    text-align: center;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    border: 3px solid white;
+    border-width: 3px 0;
+    margin-bottom: 0; }
+  .highlight-modal p {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin: 1rem 2rem;
+    font-weight: 300; }
+  .highlight-modal .highlight-modal-button {
+    color: #fff;
+    text-decoration: none;
+    border: solid #fff 2px;
+    border-radius: 30px;
+    background-color: #70b3cb;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all ease 0.4s;
+    padding: 0.5rem 3rem;
+    margin: 1rem;
+    cursor: pointer; }
+    .highlight-modal .highlight-modal-button:hover {
+      color: #70b3cb;
+      border: solid #70b3cb 2px;
+      background-color: #fff; }
+
+.comment-modal {
+  background: #70b3cb;
+  position: relative; }
+  .comment-modal .comment-modal-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    height: 100%; }
+  .comment-modal h2 {
+    text-align: center;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    border: 3px solid white;
+    border-width: 3px 0;
+    margin-bottom: 0; }
+  .comment-modal .img-wrapper {
+    background: #70b3cb;
+    text-align: center; }
+    .comment-modal .img-wrapper .fa-commenting-o {
+      font-size: 8rem;
+      color: #fff; }
+  .comment-modal .comment-section-link {
+    color: #fff;
+    text-decoration: none;
+    border: solid #fff 2px;
+    border-radius: 30px;
+    background-color: #70b3cb;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all ease 0.4s;
+    padding: 0.5rem 3rem;
+    margin: 1rem; }
+    .comment-modal .comment-section-link:hover {
+      color: #70b3cb;
+      border: solid #70b3cb 2px;
+      background-color: #fff; }
+
+.download-modal {
+  background: #70b3cb;
+  position: relative; }
+  .download-modal .download-modal-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    height: 100%; }
+  .download-modal h2 {
+    text-align: center;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    border: 3px solid white;
+    border-width: 3px 0;
+    margin-bottom: 0; }
+  .download-modal p {
+    text-align: center;
+    max-width: 500px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin: 2rem;
+    font-weight: 300; }
+  .download-modal .download-img {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px; }
+  .download-modal .download-page-link {
+    color: #fff;
+    text-decoration: none;
+    border: solid #fff 2px;
+    border-radius: 30px;
+    background-color: #70b3cb;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all ease 0.4s;
+    padding: 0.5rem 3rem;
+    margin: 1rem; }
+    .download-modal .download-page-link:hover {
+      color: #70b3cb;
+      border: solid #70b3cb 2px;
+      background-color: #fff; }
