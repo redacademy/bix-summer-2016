@@ -2926,12 +2926,18 @@ strong {
     border: solid #70b3cb 2px;
     background-color: #fff; }
 
-.page-template-checkout .edd_purchase_submit_wrapper {
+.page-template-checkout .edd_purchase_submit_wrapper, .page-template-checkout #edd_purchase_submit, .page-template-checkout .edd_purchase_receipt_files {
   text-align: center; }
 
 .page-template-checkout .edd_download_file_link {
-  color: #F9AC31;
-  font-size: 2.2rem; }
+  color: #fff;
+  font-size: 2.2rem;
+  padding: 10px;
+  background-color: #F9AC31;
+  border-radius: 10px;
+  text-decoration: none; }
+  .page-template-checkout .edd_download_file_link:hover {
+    background-color: #70b3cb; }
 
 .page-template-checkout p {
   color: #70b3cb; }

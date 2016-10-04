@@ -43,13 +43,20 @@
 	    background-color: #fff;
 	  }
    }
-   .edd_purchase_submit_wrapper{
+   .edd_purchase_submit_wrapper,#edd_purchase_submit,.edd_purchase_receipt_files {
    	text-align: center;
    }
-
+   
    .edd_download_file_link{
-   	color:$color__orange;
+   	color:#fff;
    	font-size: 2.2rem;
+   	padding: 10px;
+   	background-color: $color__orange;
+   	border-radius: 10px;
+   	text-decoration: none;
+   	&:hover{
+   		background-color: $color__blue;
+   	}
    }
    p{
    	color:$color__blue;
