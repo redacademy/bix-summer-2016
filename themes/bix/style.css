@@ -44,6 +44,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Global Mixins
+--------------------------------------------------------------*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -281,6 +284,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+/*--------------------------------------------------------------
+# Flickity Plugin
+--------------------------------------------------------------*/
 /*! Flickity v2.0.3
 http://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -910,6 +916,9 @@ object {
 .gallery-caption {
   display: block; }
 
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 * {
   box-size: border-box; }
 
@@ -961,10 +970,6 @@ object {
   background: #F9AC31;
   color: #fff; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
@@ -1221,6 +1226,9 @@ strong {
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-top: 0; } }
 
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
 .home-banner {
   background: url(../../images/bix_book_homepage.jpg) no-repeat center top;
   background-size: cover;
@@ -1861,7 +1869,7 @@ strong {
         line-height: 28px; } }
 
 /*--------------------------------------------------------------
-# Single Story
+# Single Story Page
 --------------------------------------------------------------*/
 .single-story-site .stories-banner {
   display: none; }
@@ -2128,6 +2136,9 @@ strong {
     transition: 0.5s;
     bottom: 50px; } }
 
+/*--------------------------------------------------------------
+# Bix Book Page
+--------------------------------------------------------------*/
 /* -------------- Top Section - Banner -------------*/
 .bix-book-banner {
   display: -ms-flexbox;
@@ -2531,6 +2542,9 @@ strong {
   .book-purchase {
     width: 100%; } }
 
+/*--------------------------------------------------------------
+# Stories Page
+--------------------------------------------------------------*/
 /* ----------------- Top Section - Banner -------------*/
 .stories-banner {
   display: -ms-flexbox;
@@ -2709,6 +2723,9 @@ strong {
   .stories-main {
     max-width: 1024px; } }
 
+/*--------------------------------------------------------------
+# Teaser Stories Page
+--------------------------------------------------------------*/
 .teaser-banner {
   display: -ms-flexbox;
   display: flex;
@@ -2887,6 +2904,9 @@ strong {
         padding: 5px 20px;
         font-size: 1.5rem; } }
 
+/*--------------------------------------------------------------
+# Bix Book Page - Donation Process
+--------------------------------------------------------------*/
 .page-template-checkout article {
   margin-top: 20px; }
 
@@ -2961,6 +2981,9 @@ strong {
     max-width: 900px;
     padding: 50px; } }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 .footer-content-area {
   background-color: #444444;
   max-width: 100%;
@@ -3105,6 +3128,9 @@ strong {
     border: solid #70b3cb 2px;
     background-color: #fff; }
 
+/*--------------------------------------------------------------
+# Bix Book Page - Modals
+--------------------------------------------------------------*/
 .bix-book-modal-overlay {
   display: none;
   position: fixed;
@@ -3371,6 +3397,9 @@ strong {
     padding: 0.5rem 1rem;
     margin: 0rem; } }
 
+/*--------------------------------------------------------------
+# Single Story Page - Modals
+--------------------------------------------------------------*/
 .single-story-modal-overlay {
   display: none;
   position: fixed;
