@@ -2128,7 +2128,7 @@ strong {
     transition: 0.5s;
     bottom: 50px; } }
 
-/* ----------------- Top Section - Banner -------------*/
+/* -------------- Top Section - Banner -------------*/
 .bix-book-banner {
   display: -ms-flexbox;
   display: flex;
@@ -2163,7 +2163,7 @@ strong {
   -ms-flex-pack: center;
       justify-content: center; }
 
-/* ----------------- Section 1 - Content -------------*/
+/* -------------- Section 1 - Content -------------*/
 .book-section1 {
   background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../../images/bix-book-banner-sm.jpg) no-repeat 20% top;
   background-size: cover;
@@ -2202,7 +2202,7 @@ strong {
     .ribbon .book-section1-inside p, .ribbon-heading .book-section1-inside p {
       font-weight: 300; }
 
-/* ----------------- Section 2 - Carousel -------------*/
+/* -------------- Section 2 - Carousel -------------*/
 .main-carousel {
   /* arrow color */
   /* hide disabled button */ }
@@ -2361,6 +2361,7 @@ strong {
       font-weight: bold;
       margin-bottom: 0; }
 
+/* -------------- Breakpoints -------------*/
 @media (min-width: 600px) {
   .bix-book-banner {
     background: url(../../images/bix-book-banner-lg.jpg) no-repeat center left;
@@ -3021,11 +3022,10 @@ strong {
     color: #70b3cb;
     border: solid #70b3cb 2px;
     background-color: #fff; }
-
-.footer_button:hover {
-  box-shadow: none;
-  text-shadow: none;
-  border: 2px solid #fff; }
+  .footer_button:hover {
+    box-shadow: none;
+    text-shadow: none;
+    border: 2px solid #fff; }
 
 .icons {
   display: -ms-flexbox;

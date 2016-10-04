@@ -1,9 +1,9 @@
 .footer-content-area {
 	background-color: #444444;
-  max-width: 100%;
-  text-align: center;
-  overflow: hidden;
-  min-height:450px;
+	max-width: 100%;
+	text-align: center;
+	overflow: hidden;
+	min-height:450px;
 }
 .footer-wrapper{
 	position: relative;
@@ -32,36 +32,35 @@
 	text-transform: uppercase;
 }
 
-.form-position input{
-width: 80%;
-border: #F9AC31 solid 2px;
-margin-bottom: 10px;
-padding-left: 10px;
-}
-
-.form-position textarea {
-	width: 80%;
-	height: 40vh;
-	border: #F9AC31 solid 2px;
-	padding-left: 10px;
-	margin-bottom: 20px;
+.form-position {
+	input{
+		width: 80%;
+		border: #F9AC31 solid 2px;
+		margin-bottom: 10px;
+		padding-left: 10px;
+	}
+	textarea {
+		width: 80%;
+		height: 40vh;
+		border: #F9AC31 solid 2px;
+		padding-left: 10px;
+		margin-bottom: 20px;
+	}
 }
 
 .footer_button {
- @include btn;
- font-size: 1rem;
- width: 180px;
- padding: 10px;
- text-align: center;
- box-shadow: none;
- text-shadow: none;
-
-}
-
-.footer_button:hover {
+	@include btn;
+	font-size: 1rem;
+	width: 180px;
+	padding: 10px;
+	text-align: center;
 	box-shadow: none;
 	text-shadow: none;
-  border: 2px solid #fff;
+	&:hover {
+		box-shadow: none;
+		text-shadow: none;
+		border: 2px solid #fff;
+	}
 }
 
 
@@ -70,9 +69,9 @@ padding-left: 10px;
 	flex-direction: row;
 	justify-content: flex-start;
 	margin: 10px 0px 20px 10%;
-  a{
-  	color:$color__gray;
-  }
+	a{
+		color:$color__gray;
+	}
 	.fa-stack{
 		font-size: 1.8rem;
 		&:hover{
@@ -80,46 +79,46 @@ padding-left: 10px;
 			cursor: pointer;
 		}
 	}
-
- }
+}
 
 .icon-background {
-    color: #fff;
-	}
+	color: #fff;
+}
 
 .footer-orange {
 	color: $color__orange;
 }
 
 @media #{$tablet-medium} {
-   .footer-form {
-		 display: flex;
-		 flex-direction: row;
-		 justify-content: space-between;
-		 padding: 5%;
-	 }
+	.footer-form {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 5%;
+	}
 
-  .form-position textarea {
+	.form-position textarea {
 		height: 40vh;
 	}
-	 .icons {
-	 	position: absolute;
-	 	bottom: 100px;
-	 	left: 30px; 
-	 }
+	.icons {
+		position: absolute;
+		bottom: 100px;
+		left: 30px; 
+	}
 }
+
 @media #{$tablet-large}{
 	.icons {
-	 	left: 35px; 
-	 }
+		left: 35px; 
+	}
 }
-@media #{$desktop}{
 
+@media #{$desktop}{
 	.footer-wrapper{
 		max-width: 1024px;
 		margin: 0 auto;
 	}
 	.icons {
-	 	left: 40px; 
-	 }
+		left: 40px; 
+	}
 }
