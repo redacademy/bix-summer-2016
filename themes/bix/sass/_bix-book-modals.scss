@@ -190,63 +190,7 @@
 
 // breakpoints
 
-@media #{$tablet-large-desktop}{
-
-	//Highlight Modal
-	.highlight-modal {
-		.highlight-modal-wrapper {
-			.img-wrapper {
-				display: none;
-				p{
-					max-width: 350px;
-				}
-			}
-			.highlight-modal-button{
-				padding: 0.5rem 1rem;
-				margin: 0;
-				cursor: pointer;
-			}
-		}
-	}
-	//Download Modal
-	.download-modal {
-		.fa-download{
-			font-size: 1.5rem;
-		}
-		.download-page-link {
-			padding: 0.5rem 1rem;
-			margin: 0rem;
-			font-size: 1rem;
-		}
-	}
-	//Comments Modal
-	.comment-modal {
-		.img-wrapper {
-			display: flex;
-			justify-content: center;
-			align-items:center;
-			.fa-commenting-o{
-				font-size: 5rem;
-			}
-		}
-		.comment-section-link {
-			padding: 0.5rem 1rem;
-			margin: 0rem;
-			margin-top: 20px;
-		}
-	}
-
-}
-
 @media #{$tablet-desktop}{
-
-	.highlight-modal, .comment-modal, .download-modal {
-		width: 95%;
-		height: 95%;
-		h2 {
-			font-size: 1.5rem;
-		}
-	}
 
 	.unlock-download-modal, .start-download-modal, .thankyou-modal {
 		width: 95%;
@@ -257,24 +201,4 @@
 		}
 	}
 
-	//Highlight Modal
-	.highlight-modal {
-		.highlight-modal-wrapper {
-			.img-wrapper {
-				p{
-					max-width: 300px;
-				}
-			}
-		}
-	}
-	//Download Modal
-	.download-modal {
-		.fa-download{
-			font-size: 1rem;
-		}
-		.download-page-link {
-			padding: 0.5rem 1rem;
-			margin: 0rem;
-		}
-	}
 }
