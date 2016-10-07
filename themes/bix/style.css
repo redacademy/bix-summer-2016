@@ -541,7 +541,8 @@ textarea {
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    margin-left: 10px; }
     .mobile-nav-wrapper .logo-link img {
       height: 25px; }
   .mobile-nav-wrapper .menu-button {
