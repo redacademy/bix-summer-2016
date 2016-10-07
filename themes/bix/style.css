@@ -561,7 +561,8 @@ textarea {
         justify-content: center; }
     .mobile-nav-wrapper .menu-button-wrapper i {
       position: absolute;
-      top: 0; }
+      top: 0;
+      right: 10px; }
   .mobile-nav-wrapper i.fa-bars {
     color: #70b3cb; }
   .mobile-nav-wrapper i.fa-chevron-up {
@@ -1146,7 +1147,7 @@ strong {
       align-items: center;
   margin: 1rem 2rem;
   height: 230px;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
   .company-section-website h3 {
     text-align: center;
     font-family: "Titillium Web", sans-serif;
@@ -1250,7 +1251,7 @@ strong {
     left: -9999px; }
 
 .banner-info-wrapper {
-  min-height: 430px;
+  min-height: 400px;
   margin-top: 20px;
   display: -ms-flexbox;
   display: flex;
@@ -1261,7 +1262,7 @@ strong {
   -ms-flex-align: center;
       align-items: center; }
   .banner-info-wrapper .site-logo {
-    max-width: 250px;
+    max-width: 150px;
     height: auto;
     margin-bottom: -10px;
     margin-top: 40px; }
@@ -1270,7 +1271,7 @@ strong {
     font-weight: bold;
     font-family: "Titillium Web", sans-serif;
     letter-spacing: 1px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #fff;
     margin-bottom: 15px; }
   .banner-info-wrapper .bix-book-subheading {
@@ -1316,7 +1317,13 @@ strong {
 
 @media (min-width: 700px) {
   .home-banner {
-    background: url(../../images/bix_book_homepage_lg.jpg) no-repeat center top; } }
+    background: url(../../images/bix_book_homepage_lg.jpg) no-repeat center top; }
+  .banner-info-wrapper {
+    min-height: 400px; }
+    .banner-info-wrapper .site-logo {
+      max-width: 220px; }
+    .banner-info-wrapper .bix-book-title {
+      font-size: 1.8rem; } }
 
 @media (min-width: 1024px) {
   .banner-info-wrapper .site-logo {
