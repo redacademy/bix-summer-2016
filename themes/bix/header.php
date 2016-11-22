@@ -43,7 +43,7 @@
 				<div class="mobile-nav-wrapper <?php echo is_front_page() ? "mobile-nav-wrapper-home" : ""; ?>">
 					<nav id="site-navigation" class="main-navigation" >
 						<a href="<?php echo home_url()?>" class="logo-link">
-							<img src="<?php echo get_template_directory_uri() . "/images/bix-logo-blue.png"?>" alt="">
+							<img src="<?php echo get_template_directory_uri() . "/images/bix-logo-black.png"?>" alt="">
 						</a>
 
 						<div class="menu-button">

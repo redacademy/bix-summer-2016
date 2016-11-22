@@ -18,12 +18,14 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 			<div class="banner-info-wrapper">
-				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
 					<h2 class="bix-book-title">The Bix Book</h2>
 					<h3 class="bix-book-subheading">Transformational Stories</h3>
 
+					<p class="front-page-author">Bix Bickson</p>
+					<p>with <span class="front-page-co-author">Anika Martins</span></p>
+
 					<a class="btn btn-download" href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>/#buy-book-anchor">Download Book</a>
-					<a class="btn btn-down" href="#scroll"><i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+					<!-- <a class="btn btn-down" href="#scroll"><i class="fa fa-angle-down" aria-hidden="true"></i> </a> -->
 			</div>
 		</section>
 

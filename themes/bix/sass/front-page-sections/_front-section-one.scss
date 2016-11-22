@@ -34,19 +34,19 @@
     font-family: $font__header;
     letter-spacing: 1px;
     font-size: 1.4rem;
-    color: #fff;
     margin-bottom:15px;
   }
   .bix-book-subheading{
     font-weight: 100;
     padding: 5px 20px;
-    border-top: solid #fff 2px;
-    border-bottom: solid #fff 2px;
-    color: #fff;
+    border-top: solid $color__gray 2px;
+    border-bottom: solid $color__gray 2px;
     margin-bottom: 60px;
   }
   .btn-download{
-   @include btn;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
     padding: 8px 46px;
     margin-bottom: 25px;
     font-weight: 300;
@@ -59,6 +59,13 @@
       font-size: 30px;
     }
   }
+}
+
+.front-page-author {
+  text-transform: uppercase;
+}
+.front-page-co-author {
+  text-transform: uppercase;
 }
 
 @media #{$tablet-medium}{

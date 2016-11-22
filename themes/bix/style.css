@@ -1270,31 +1270,20 @@ strong {
     font-family: "Titillium Web", sans-serif;
     letter-spacing: 1px;
     font-size: 1.4rem;
-    color: #fff;
     margin-bottom: 15px; }
   .banner-info-wrapper .bix-book-subheading {
     font-weight: 100;
     padding: 5px 20px;
-    border-top: solid #fff 2px;
-    border-bottom: solid #fff 2px;
-    color: #fff;
+    border-top: solid #444444 2px;
+    border-bottom: solid #444444 2px;
     margin-bottom: 60px; }
   .banner-info-wrapper .btn-download {
     color: #fff;
     text-decoration: none;
-    border: solid #fff 2px;
-    border-radius: 30px;
-    background-color: #9d9d9d;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: all ease 0.4s;
+    text-transform: uppercase;
     padding: 8px 46px;
     margin-bottom: 25px;
     font-weight: 300; }
-    .banner-info-wrapper .btn-download:hover {
-      color: #9d9d9d;
-      border: solid #9d9d9d 2px;
-      background-color: #fff; }
   .banner-info-wrapper .btn-down {
     border: solid #fff 2px;
     border-radius: 50%;
@@ -1312,6 +1301,12 @@ strong {
     margin-bottom: 10px; }
     .banner-info-wrapper .btn-down .fa {
       font-size: 30px; }
+
+.front-page-author {
+  text-transform: uppercase; }
+
+.front-page-co-author {
+  text-transform: uppercase; }
 
 @media (min-width: 700px) {
   .home-banner {
