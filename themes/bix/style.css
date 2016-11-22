@@ -565,7 +565,7 @@ textarea {
       top: 0;
       right: 10px; }
   .mobile-nav-wrapper i.fa-bars {
-    color: #70b3cb; }
+    color: #3f4042; }
   .mobile-nav-wrapper i.fa-chevron-up {
     color: white;
     display: none; }
@@ -583,7 +583,7 @@ textarea {
     display: none;
     margin: 0;
     padding: 10px 25px;
-    border-top: 46px solid #70b3cb;
+    border-top: 46px solid #3f4042;
     position: absolute;
     top: 0;
     right: 0;
@@ -597,7 +597,7 @@ textarea {
         font-family: "Titillium Web", sans-serif;
         font-size: 18px;
         text-decoration: none;
-        color: #70b3cb;
+        color: #3f4042;
         text-transform: uppercase; }
       .mobile-nav-wrapper ul.menu li.current-menu-item a {
         color: #F9AC31;
@@ -609,7 +609,7 @@ textarea {
     .mobile-nav-wrapper ul.sub-menu li {
       margin: 5px 0; }
       .mobile-nav-wrapper ul.sub-menu li a {
-        color: #70b3cb;
+        color: #3f4042;
         border-color: white;
         text-transform: none;
         font-size: 15px; }
@@ -712,7 +712,7 @@ textarea {
       padding: 0;
       font-family: "Titillium Web", sans-serif;
       text-decoration: none;
-      color: #70b3cb;
+      color: #3f4042;
       text-transform: uppercase; }
     .desktop-nav-wrapper li:hover {
       transition: 1s;

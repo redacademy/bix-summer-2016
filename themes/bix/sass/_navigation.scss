@@ -2,6 +2,9 @@
 # Navigation
 --------------------------------------------------------------*/
 
+// nav variables
+$grey_link: #3f4042;
+
 // mobile nav
 
 	.mobile-nav-wrapper {
@@ -61,7 +64,7 @@
 		}
 
 		i.fa-bars {
-			color: $color__blue;
+			color: $grey_link;
 		}
 
 		i.fa-chevron-up {
@@ -85,7 +88,7 @@
 			display: none;
 			margin: 0;
 			padding: 10px 25px;
-			border-top: 46px solid $color__blue;
+			border-top: 46px solid $grey_link;
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -99,7 +102,7 @@
 					font-family: $font__header;
 					font-size: $font-size__main;
 					text-decoration: none;
-					color: $color__blue;
+					color: $grey_link;
 					text-transform: uppercase;
 				}
 				&.current-menu-item a {
@@ -116,7 +119,7 @@
 			li {
 				margin: 5px 0;
 				a {
-					color: $color__blue;
+					color: $grey_link;
 					border-color: white;
 					text-transform: none;
 					font-size: $font-size__main - 3px;
@@ -231,10 +234,6 @@
 			text-align: center;
 			margin: 0;
 			padding: 9.5px 0;
-
-			&:first-child {
-				// display: none;
-			}
 			
 			&.current-menu-item {
 				border-top: solid 10px $color__orange;
@@ -245,7 +244,7 @@
 				padding: 0;
 				font-family: $font__header;
 				text-decoration: none;
-				color: $color__blue;
+				color: $grey_link;
 				text-transform: uppercase;
 			}
 

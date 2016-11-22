@@ -61,12 +61,6 @@
 				<div id="desktopNavigation" class="desktop-nav-wrapper <?php echo is_front_page() ? "desktop-nav-wrapper-home" : ""; ?>">
 					<div class="desktop-nav-container">
 						<nav id="site-navigation-2" class="main-navigation">
-						
-							<!-- <a href="<?php echo home_url()?>" class="logo-link <?php echo is_front_page() ? "current-page" : ""; ?>">
-								<img src="<?php echo is_front_page() ? 
-								get_template_directory_uri() . "/images/bix-logo-orange.png" : 
-								get_template_directory_uri() . "/images/bix-logo-blue.png"; ?>" alt="">
-							</a> -->
 
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'desktop-primary-menu' ) ); ?>
 
