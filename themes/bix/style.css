@@ -1249,8 +1249,11 @@ strong {
     left: -9999px; }
 
 .banner-info-wrapper {
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.8);
   min-height: 400px;
-  margin-top: 20px;
+  min-width: 280px;
+  outline: solid rgba(255, 255, 255, 0.5) 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1269,20 +1272,15 @@ strong {
     font-weight: bold;
     font-family: "Titillium Web", sans-serif;
     letter-spacing: 1px;
-    font-size: 1.4rem;
-    margin-bottom: 15px; }
+    font-size: 1.4rem; }
   .banner-info-wrapper .bix-book-subheading {
     font-weight: 100;
-    padding: 5px 20px;
     border-top: solid #444444 2px;
-    border-bottom: solid #444444 2px;
-    margin-bottom: 60px; }
+    border-bottom: solid #444444 2px; }
   .banner-info-wrapper .btn-download {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 8px 46px;
-    margin-bottom: 25px;
     font-weight: 300; }
   .banner-info-wrapper .btn-down {
     border: solid #fff 2px;
@@ -1312,24 +1310,25 @@ strong {
   .home-banner {
     background: url(../../images/bix_book_homepage_lg.jpg) no-repeat center top; }
   .banner-info-wrapper {
-    min-height: 400px; }
+    min-height: 50vh; }
     .banner-info-wrapper .site-logo {
       max-width: 220px; }
     .banner-info-wrapper .bix-book-title {
       font-size: 1.8rem; } }
 
 @media (min-width: 1024px) {
-  .banner-info-wrapper .site-logo {
-    max-width: 310px; }
-  .banner-info-wrapper .bix-book-title {
-    letter-spacing: 1.3px;
-    font-size: 2.3rem; }
-  .banner-info-wrapper .bix-book-subheading {
-    font-size: 1.3rem;
-    letter-spacing: 1.5px;
-    padding: 5px 5px;
-    width: 100%;
-    text-align: center; } }
+  .banner-info-wrapper {
+    min-width: 400px; }
+    .banner-info-wrapper .site-logo {
+      max-width: 310px; }
+    .banner-info-wrapper .bix-book-title {
+      letter-spacing: 1.3px;
+      font-size: 2.3rem; }
+    .banner-info-wrapper .bix-book-subheading {
+      font-size: 1.3rem;
+      letter-spacing: 1.5px;
+      padding: 5px 5px;
+      text-align: center; } }
 
 .quote-wrapper-front, .quote-wrapper-front-2 {
   height: auto; }

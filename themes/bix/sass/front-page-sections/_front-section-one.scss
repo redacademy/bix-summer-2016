@@ -16,8 +16,11 @@
 	}
 }
 .banner-info-wrapper{
+  margin: 20px;
+  background: rgba(255,255,255,0.8);
   min-height: 400px;
-  margin-top: 20px;
+  min-width: 280px;
+  outline: solid rgba(255,255,255,0.5) 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,21 +37,21 @@
     font-family: $font__header;
     letter-spacing: 1px;
     font-size: 1.4rem;
-    margin-bottom:15px;
+    //margin-bottom:15px;
   }
   .bix-book-subheading{
     font-weight: 100;
-    padding: 5px 20px;
+    //padding: 5px 20px;
     border-top: solid $color__gray 2px;
     border-bottom: solid $color__gray 2px;
-    margin-bottom: 60px;
+    //margin-bottom: 60px;
   }
   .btn-download{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 8px 46px;
-    margin-bottom: 25px;
+    //padding: 8px 46px;
+    //margin-bottom: 25px;
     font-weight: 300;
   }
 
@@ -73,7 +76,7 @@
     background: url(../../images/bix_book_homepage_lg.jpg) no-repeat center top;
   }
     .banner-info-wrapper{
-      min-height: 400px;
+      min-height: 50vh;
       .site-logo{
         max-width: 220px;
       }
@@ -85,6 +88,7 @@
 
 @media #{$desktop} {
   .banner-info-wrapper{
+    min-width: 400px;
     .site-logo{
     max-width: 310px;
   }
@@ -96,7 +100,7 @@
       font-size: 1.3rem;
       letter-spacing: 1.5px;
       padding: 5px 5px;
-      width: 100%;
+      //width: 100%;
       text-align: center;
     }
   }
