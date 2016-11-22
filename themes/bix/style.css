@@ -2973,9 +2973,7 @@ strong {
   .page-template-checkout .donations {
     max-width: 80%;
     margin: 0 auto;
-    border: solid 1px #444444; }
-  .donate-title, p {
-    text-align: center; } }
+    border: solid 1px #444444; } }
 
 @media (min-width: 1024px) {
   .page-template-checkout .donations {
