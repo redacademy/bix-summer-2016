@@ -125,7 +125,7 @@
 		height: 70px;
 		background: white;
 		bottom: -70px;
-		border: 1px solid $color__blue;
+		border: 1px solid $grey_dark;
 		border-left: 0;
 		border-right: 0;
 		z-index: 3;
@@ -142,7 +142,7 @@
 	}
 	.tools {
 		font-size: 2rem;
-		color: $color__blue;
+		color: $grey_dark;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -160,7 +160,7 @@
 	}
 	.next-story {
 		display: none;
-		border-left: solid 1px $color__blue;
+		border-left: solid 1px $grey_dark;
 		padding: 0 20px;
 		font-family: $font__header;
 		p{
@@ -170,7 +170,7 @@
 		a {
 			text-decoration: none;
 			text-transform: uppercase;
-			color: $color__blue;
+			color: $grey_dark;
 			&:hover {
 				color: $color__orange;
 				cursor: pointer;

@@ -61,7 +61,7 @@
 		}
 
 		i.fa-bars {
-			color: $grey_link;
+			color: $grey_dark;
 		}
 
 		i.fa-chevron-up {
@@ -85,7 +85,7 @@
 			display: none;
 			margin: 0;
 			padding: 10px 25px;
-			border-top: 46px solid $grey_link;
+			border-top: 46px solid $grey_dark;
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -99,7 +99,7 @@
 					font-family: $font__header;
 					font-size: $font-size__main;
 					text-decoration: none;
-					color: $grey_link;
+					color: $grey_dark;
 					text-transform: uppercase;
 				}
 				&.current-menu-item a {
@@ -116,7 +116,7 @@
 			li {
 				margin: 5px 0;
 				a {
-					color: $grey_link;
+					color: $grey_dark;
 					border-color: white;
 					text-transform: none;
 					font-size: $font-size__main - 3px;
@@ -241,7 +241,7 @@
 				padding: 0;
 				font-family: $font__header;
 				text-decoration: none;
-				color: $grey_link;
+				color: $grey_dark;
 				text-transform: uppercase;
 			}
 

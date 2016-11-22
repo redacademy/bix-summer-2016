@@ -1033,7 +1033,6 @@ strong {
   .author-section-intro p {
     font-family: "Titillium Web", sans-serif;
     margin: 1rem 2rem;
-    text-align: center;
     width: 100%;
     padding: 0 10px; }
   .author-section-intro p:nth-child(2n) {
@@ -1155,11 +1154,11 @@ strong {
   .company-section-website .website-img-link {
     height: 100%;
     max-width: 400px;
-    border: solid 1px #70b3cb; }
+    border: solid 1px #F9AC31; }
   .company-section-website .website-text-link {
     font-family: "Titillium Web", sans-serif;
     text-decoration: none;
-    color: #70b3cb; }
+    color: #F9AC31; }
 
 @media all and (min-width: 600px) {
   .about-banner {
@@ -1285,7 +1284,7 @@ strong {
     text-decoration: none;
     border: solid #fff 2px;
     border-radius: 30px;
-    background-color: #70b3cb;
+    background-color: #9d9d9d;
     font-weight: 500;
     font-size: 1.1rem;
     transition: all ease 0.4s;
@@ -1293,8 +1292,8 @@ strong {
     margin-bottom: 25px;
     font-weight: 300; }
     .banner-info-wrapper .btn-download:hover {
-      color: #70b3cb;
-      border: solid #70b3cb 2px;
+      color: #9d9d9d;
+      border: solid #9d9d9d 2px;
       background-color: #fff; }
   .banner-info-wrapper .btn-down {
     border: solid #fff 2px;
@@ -1400,7 +1399,7 @@ strong {
       align-items: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(112, 179, 203, 0.8);
+  background-color: rgba(25, 25, 25, 0.8);
   opacity: 0;
   transition: opacity .3s ease;
   visibility: hidden; }
@@ -1558,14 +1557,14 @@ strong {
     text-decoration: none;
     border: solid #fff 2px;
     border-radius: 30px;
-    background-color: #70b3cb;
+    background-color: #9d9d9d;
     font-weight: 500;
     font-size: 1.1rem;
     transition: all ease 0.4s;
     padding: 8px 46px; }
     .sample-story-front .btn-download:hover {
-      color: #70b3cb;
-      border: solid #70b3cb 2px;
+      color: #9d9d9d;
+      border: solid #9d9d9d 2px;
       background-color: #fff; }
 
 @media (min-width: 600px) {
@@ -1654,15 +1653,15 @@ strong {
       text-decoration: none;
       border: solid #fff 2px;
       border-radius: 30px;
-      background-color: #70b3cb;
+      background-color: #9d9d9d;
       font-weight: 500;
       font-size: 1.1rem;
       transition: all ease 0.4s;
       padding: 10px 80px;
       margin-top: 20px; }
       .home-book .book-summary .btn-discover:hover {
-        color: #70b3cb;
-        border: solid #70b3cb 2px;
+        color: #9d9d9d;
+        border: solid #9d9d9d 2px;
         background-color: #fff; }
 
 @media (min-width: 600px) {
@@ -1802,14 +1801,14 @@ strong {
       text-decoration: none;
       border: solid #fff 2px;
       border-radius: 30px;
-      background-color: #70b3cb;
+      background-color: #9d9d9d;
       font-weight: 500;
       font-size: 1.1rem;
       transition: all ease 0.4s;
       padding: 10px 80px; }
       .home-author .home-author-info .btn-explore:hover {
-        color: #70b3cb;
-        border: solid #70b3cb 2px;
+        color: #9d9d9d;
+        border: solid #9d9d9d 2px;
         background-color: #fff; }
 
 @media (min-width: 600px) {
@@ -1985,7 +1984,7 @@ strong {
   height: 70px;
   background: white;
   bottom: -70px;
-  border: 1px solid #70b3cb;
+  border: 1px solid #3f4042;
   border-left: 0;
   border-right: 0;
   z-index: 3;
@@ -2007,7 +2006,7 @@ strong {
 
 .tools {
   font-size: 2rem;
-  color: #70b3cb;
+  color: #3f4042;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -2025,7 +2024,7 @@ strong {
 
 .next-story {
   display: none;
-  border-left: solid 1px #70b3cb;
+  border-left: solid 1px #3f4042;
   padding: 0 20px;
   font-family: "Titillium Web", sans-serif; }
   .next-story p {
@@ -2034,7 +2033,7 @@ strong {
   .next-story a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #70b3cb; }
+    color: #3f4042; }
     .next-story a:hover {
       color: #F9AC31;
       cursor: pointer; }
@@ -2276,7 +2275,7 @@ strong {
   .main-carousel .flickity-page-dots {
     bottom: 10px; }
   .main-carousel .flickity-page-dots .dot {
-    background: #70b3cb;
+    background: #9d9d9d;
     width: 20px;
     height: 20px; }
   .main-carousel .flickity-prev-next-button {
@@ -2286,9 +2285,9 @@ strong {
   .main-carousel .flickity-prev-next-button:hover {
     background: transparent; }
   .main-carousel .flickity-prev-next-button .arrow {
-    fill: #70b3cb; }
+    fill: #9d9d9d; }
   .main-carousel .flickity-prev-next-button.no-svg {
-    color: #70b3cb; }
+    color: #9d9d9d; }
   .main-carousel .flickity-prev-next-button:disabled {
     display: none; }
 
@@ -2323,7 +2322,7 @@ strong {
       text-align: center;
       letter-spacing: 1.5px; }
       .book-purchase .book-purchase-info .book-buy-light span {
-        color: #70b3cb; }
+        color: #9d9d9d; }
     .book-purchase .book-purchase-info .paypal {
       position: relative;
       top: 5px;
@@ -2345,7 +2344,7 @@ strong {
       text-decoration: none;
       border: solid #fff 2px;
       border-radius: 30px;
-      background-color: #70b3cb;
+      background-color: #9d9d9d;
       font-weight: 500;
       font-size: 1.1rem;
       transition: all ease 0.4s;
@@ -2354,15 +2353,15 @@ strong {
       text-align: center;
       width: 230px; }
       .book-purchase .book-purchase-info .btn-donate:hover {
-        color: #70b3cb;
-        border: solid #70b3cb 2px;
+        color: #9d9d9d;
+        border: solid #9d9d9d 2px;
         background-color: #fff; }
     .book-purchase .book-purchase-info .donate-later-button {
       color: #fff;
       text-decoration: none;
       border: solid #fff 2px;
       border-radius: 30px;
-      background-color: #70b3cb;
+      background-color: #9d9d9d;
       font-weight: 500;
       font-size: 1.1rem;
       transition: all ease 0.4s;
@@ -2372,8 +2371,8 @@ strong {
       width: 230px;
       cursor: pointer; }
       .book-purchase .book-purchase-info .donate-later-button:hover {
-        color: #70b3cb;
-        border: solid #70b3cb 2px;
+        color: #9d9d9d;
+        border: solid #9d9d9d 2px;
         background-color: #fff; }
     .book-purchase .book-purchase-info .book-or {
       font-weight: bold;
@@ -2512,7 +2511,7 @@ strong {
   .main-carousel .flickity-page-dots {
     bottom: 10px; }
   .main-carousel .flickity-page-dots .dot {
-    background: #70b3cb;
+    background: #9d9d9d;
     width: 25px;
     height: 25px; }
   .main-carousel .flickity-prev-next-button {
@@ -2631,7 +2630,7 @@ strong {
     bottom: 0px;
     width: 100%;
     height: auto;
-    background-color: rgba(112, 179, 203, 0.8);
+    background-color: rgba(25, 25, 25, 0.8);
     opacity: 1;
     transition: opacity .3s ease;
     color: #fff;
@@ -2641,7 +2640,7 @@ strong {
       text-decoration: none;
       border: solid #fff 2px;
       border-radius: 30px;
-      background-color: #70b3cb;
+      background-color: #9d9d9d;
       font-weight: 500;
       font-size: 1.1rem;
       transition: all ease 0.4s;
@@ -2656,8 +2655,8 @@ strong {
       text-align: center;
       margin: 0 auto; }
       .stories-main .entry-content .btn-stories:hover {
-        color: #70b3cb;
-        border: solid #70b3cb 2px;
+        color: #9d9d9d;
+        border: solid #9d9d9d 2px;
         background-color: #fff; }
     .stories-main .entry-content p {
       font-weight: 300; }
@@ -2804,7 +2803,7 @@ strong {
       text-decoration: none;
       border: solid #fff 2px;
       border-radius: 30px;
-      background-color: #70b3cb;
+      background-color: #9d9d9d;
       font-weight: 500;
       font-size: 1.1rem;
       transition: all ease 0.4s;
@@ -2815,8 +2814,8 @@ strong {
       display: block;
       text-align: center; }
       .teaser-section1 .teaser-content .btn-download:hover, .teaser-section1 .teaser-content .btn-expand:hover {
-        color: #70b3cb;
-        border: solid #70b3cb 2px;
+        color: #9d9d9d;
+        border: solid #9d9d9d 2px;
         background-color: #fff; }
     .teaser-section1 .teaser-content .btn-expand {
       width: 100px;
@@ -2824,14 +2823,14 @@ strong {
       font-size: 1rem;
       text-transform: capitalize; }
     .teaser-section1 .teaser-content .table-contents-container {
-      border: 1px solid #70b3cb;
+      border: 1px solid #3f4042;
       position: relative; }
       .teaser-section1 .teaser-content .table-contents-container div {
         position: absolute;
         bottom: 0;
         width: 100%;
         height: 50px;
-        background-color: rgba(112, 179, 203, 0.9);
+        background-color: rgba(25, 25, 25, 0.9);
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
@@ -3051,7 +3050,7 @@ strong {
   text-decoration: none;
   border: solid #fff 2px;
   border-radius: 30px;
-  background-color: #70b3cb;
+  background-color: #9d9d9d;
   font-weight: 500;
   font-size: 1.1rem;
   transition: all ease 0.4s;
@@ -3063,8 +3062,8 @@ strong {
   box-shadow: none;
   text-shadow: none; }
   .form-position input.wpcf7-submit:hover {
-    color: #70b3cb;
-    border: solid #70b3cb 2px;
+    color: #9d9d9d;
+    border: solid #9d9d9d 2px;
     background-color: #fff; }
   .form-position input.wpcf7-submit:hover {
     box-shadow: none;
@@ -3087,7 +3086,7 @@ strong {
   .icons .fa-stack {
     font-size: 1.8rem; }
     .icons .fa-stack:hover {
-      color: #70b3cb;
+      color: #F9AC31;
       cursor: pointer; }
 
 .icon-background {
@@ -3140,7 +3139,7 @@ strong {
   text-decoration: none;
   border: solid #fff 2px;
   border-radius: 30px;
-  background-color: #70b3cb;
+  background-color: #9d9d9d;
   font-weight: 500;
   font-size: 1.1rem;
   transition: all ease 0.4s;
@@ -3148,8 +3147,8 @@ strong {
   padding: 10px 12px;
   text-transform: uppercase; }
   .btn-return:hover {
-    color: #70b3cb;
-    border: solid #70b3cb 2px;
+    color: #9d9d9d;
+    border: solid #9d9d9d 2px;
     background-color: #fff; }
 
 /*--------------------------------------------------------------
@@ -3199,14 +3198,14 @@ strong {
   text-decoration: none;
   border: solid #fff 2px;
   border-radius: 30px;
-  background-color: #70b3cb;
+  background-color: #9d9d9d;
   font-weight: 500;
   font-size: 1.1rem;
   transition: all ease 0.4s;
   padding: 0.5rem 3rem; }
   .download-later-button:hover {
-    color: #70b3cb;
-    border: solid #70b3cb 2px;
+    color: #9d9d9d;
+    border: solid #9d9d9d 2px;
     background-color: #fff; }
 
 .unlock-download-modal {
@@ -3261,7 +3260,7 @@ strong {
       text-decoration: none;
       border: solid #fff 2px;
       border-radius: 30px;
-      background-color: #70b3cb;
+      background-color: #9d9d9d;
       font-weight: 500;
       font-size: 1.1rem;
       transition: all ease 0.4s;
@@ -3272,8 +3271,8 @@ strong {
       height: 50px;
       width: 230px; }
       .unlock-download-modal form .wpcf7-submit:hover {
-        color: #70b3cb;
-        border: solid #70b3cb 2px;
+        color: #9d9d9d;
+        border: solid #9d9d9d 2px;
         background-color: #fff; }
 
 .start-download-modal {
@@ -3312,7 +3311,7 @@ strong {
     text-decoration: none;
     border: solid #fff 2px;
     border-radius: 30px;
-    background-color: #70b3cb;
+    background-color: #9d9d9d;
     font-weight: 500;
     font-size: 1.1rem;
     transition: all ease 0.4s;
@@ -3321,8 +3320,8 @@ strong {
     padding: 0.5rem 3rem;
     margin: 1rem; }
     .start-download-modal a.download-link:hover {
-      color: #70b3cb;
-      border: solid #70b3cb 2px;
+      color: #9d9d9d;
+      border: solid #9d9d9d 2px;
       background-color: #fff; }
 
 .thankyou-modal {
@@ -3359,7 +3358,7 @@ strong {
     text-decoration: none;
     border: solid #fff 2px;
     border-radius: 30px;
-    background-color: #70b3cb;
+    background-color: #9d9d9d;
     font-weight: 500;
     font-size: 1.1rem;
     transition: all ease 0.4s;
@@ -3368,8 +3367,8 @@ strong {
     cursor: pointer;
     text-align: center; }
     .thankyou-modal .thank-you-button:hover {
-      color: #70b3cb;
-      border: solid #70b3cb 2px;
+      color: #9d9d9d;
+      border: solid #9d9d9d 2px;
       background-color: #fff; }
 
 @media (max-width: 600px) {
@@ -3425,7 +3424,7 @@ strong {
 
 .highlight-modal {
   text-align: center;
-  background: #70b3cb;
+  background: #3f4042;
   position: relative; }
   .highlight-modal .highlight-modal-wrapper {
     display: -ms-flexbox;
@@ -3480,7 +3479,7 @@ strong {
     text-decoration: none;
     border: solid #fff 2px;
     border-radius: 30px;
-    background-color: #70b3cb;
+    background-color: #9d9d9d;
     font-weight: 500;
     font-size: 1.1rem;
     transition: all ease 0.4s;
@@ -3488,12 +3487,12 @@ strong {
     margin: 1rem;
     cursor: pointer; }
     .highlight-modal .highlight-modal-button:hover {
-      color: #70b3cb;
-      border: solid #70b3cb 2px;
+      color: #9d9d9d;
+      border: solid #9d9d9d 2px;
       background-color: #fff; }
 
 .comment-modal {
-  background: #70b3cb;
+  background: #3f4042;
   position: relative; }
   .comment-modal .comment-modal-wrapper {
     display: -ms-flexbox;
@@ -3516,7 +3515,7 @@ strong {
     border-width: 3px 0;
     margin-bottom: 0; }
   .comment-modal .img-wrapper {
-    background: #70b3cb;
+    background: #3f4042;
     text-align: center; }
     .comment-modal .img-wrapper .fa-commenting-o {
       font-size: 8rem;
@@ -3526,19 +3525,19 @@ strong {
     text-decoration: none;
     border: solid #fff 2px;
     border-radius: 30px;
-    background-color: #70b3cb;
+    background-color: #9d9d9d;
     font-weight: 500;
     font-size: 1.1rem;
     transition: all ease 0.4s;
     padding: 0.5rem 3rem;
     margin: 1rem; }
     .comment-modal .comment-section-link:hover {
-      color: #70b3cb;
-      border: solid #70b3cb 2px;
+      color: #9d9d9d;
+      border: solid #9d9d9d 2px;
       background-color: #fff; }
 
 .download-modal {
-  background: #70b3cb;
+  background: #3f4042;
   position: relative; }
   .download-modal .download-modal-wrapper {
     display: -ms-flexbox;
@@ -3578,15 +3577,15 @@ strong {
     text-decoration: none;
     border: solid #fff 2px;
     border-radius: 30px;
-    background-color: #70b3cb;
+    background-color: #9d9d9d;
     font-weight: 500;
     font-size: 1.1rem;
     transition: all ease 0.4s;
     padding: 0.5rem 3rem;
     margin: 1rem; }
     .download-modal .download-page-link:hover {
-      color: #70b3cb;
-      border: solid #70b3cb 2px;
+      color: #9d9d9d;
+      border: solid #9d9d9d 2px;
       background-color: #fff; }
 
 @media (max-width: 900px) {

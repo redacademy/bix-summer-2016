@@ -27,7 +27,7 @@ get_header(); ?>
 				<div class="author-section">
 					<div class="author-section-title">
 						<img src="<?php echo get_template_directory_uri() . "/images/about-bix-bickson.jpg"?>" alt="">
-						<h2>About <span class="orange-highlight">Bix</span> Bickson</h2>
+						<h2>About Bix Bickson</h2>
 					</div>
 					<div class="border-wrapper">
 						<div class="author-section-intro">

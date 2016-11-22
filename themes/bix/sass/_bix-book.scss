@@ -156,7 +156,7 @@
 			bottom:10px;
 		}
 		.flickity-page-dots .dot{
-			background: $color__blue;
+			background: $grey_light;
 			width: 20px;
 			height: 20px;
 		}
@@ -170,10 +170,10 @@
 		}
 		/* arrow color */
 		.flickity-prev-next-button .arrow {
-			fill: $color__blue;
+			fill: $grey_light;
 		}
 		.flickity-prev-next-button.no-svg {
-			color: $color__blue;
+			color: $grey_light;
 		}
 		/* hide disabled button */
 		.flickity-prev-next-button:disabled {
@@ -214,7 +214,7 @@
 				text-align: center;
 				letter-spacing: 1.5px;
 				span{
-					color:$color__blue;
+					color:$grey_light;
 				}
 			}
 			.paypal{
@@ -455,7 +455,7 @@
 				bottom:10px;
 			}
 			.flickity-page-dots .dot{
-				background: $color__blue;
+				background: $grey_light;
 				width: 25px;
 				height: 25px;
 			}

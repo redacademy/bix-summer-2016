@@ -86,14 +86,14 @@
 			text-transform: capitalize;
 		}
 		.table-contents-container{
-			border: 1px solid $color__blue;
+			border: 1px solid $grey_dark;
 			position: relative;
 			div{
 				position: absolute;
 				bottom: 0;
 				width: 100%;
 				height: 50px;
-				background-color: rgba(112,179,203,.9);
+				background-color: rgba(25,25,25,.9);
 				display: flex;
 				justify-content: center;
 				align-items: center;

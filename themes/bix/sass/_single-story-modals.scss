@@ -46,7 +46,7 @@
 //Highlight Modal
 	.highlight-modal {
 		text-align: center;
-		background: $color__blue;
+		background: $grey_dark;
 		position: relative;
 
 		.highlight-modal-wrapper {
@@ -110,7 +110,7 @@
 
 //Comments Modal
 	.comment-modal {
-		background: $color__blue;
+		background: $grey_dark;
 		position: relative;
 		.comment-modal-wrapper {
 			display: flex;
@@ -131,7 +131,7 @@
 			margin-bottom: 0;
 		}
 		.img-wrapper {
-			background: $color__blue;
+			background: $grey_dark;
 			text-align: center;
 			.fa-commenting-o{
 				font-size: 8rem;
@@ -147,7 +147,7 @@
 
 //Download Modal
 	.download-modal {
-		background: $color__blue;
+		background: $grey_dark;
 		position: relative;
 
 		.download-modal-wrapper {

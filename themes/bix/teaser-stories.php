@@ -25,7 +25,7 @@ get_header(); ?>
 			<section class="teaser-section1">
 				<div class="more-stories">
 					<div>
-						<h2>Want <span>more</span> Stories?</h2>
+						<h2>Want more Stories?</h2>
 					</div>
 				</div>
 				
