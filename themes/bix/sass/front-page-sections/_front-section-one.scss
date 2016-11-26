@@ -17,27 +17,27 @@
 }
 .banner-info-wrapper{
   margin: 20px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.7);
   min-height: 400px;
   min-width: 280px;
-  outline: solid rgba(255,255,255,0.5) 20px;
+  outline: solid rgba(255,255,255,0.4) 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    .site-logo{
-      max-width: 150px;
-      height: auto;
-      margin-bottom:-10px;
-      margin-top: 40px;
-    }
+  .site-logo{
+    max-width: 150px;
+    height: auto;
+    margin-bottom:-10px;
+    margin-top: 40px;
+  }
   .bix-book-title{
     text-transform: uppercase;
     font-weight: bold;
     font-family: $font__header;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
     font-size: 1.4rem;
-    //margin-bottom:15px;
+    margin: 10px;
   }
   .bix-book-subheading{
     font-weight: 100;
@@ -47,6 +47,8 @@
     //margin-bottom: 60px;
   }
   .btn-download{
+    background-color: black;
+    padding: 5px 20px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -65,17 +67,25 @@
 }
 
 .front-page-author {
+  font-size: 1.5rem;
   text-transform: uppercase;
+  margin: 0;
 }
 .front-page-co-author {
-  text-transform: uppercase;
+  margin: 0;
+  span{
+    text-transform: uppercase;
+  }
 }
 
+
 @media #{$tablet-medium}{
-  .home-banner{
-    background: url(../../images/bix_book_homepage_lg.jpg) no-repeat center top;
-  }
+    .home-banner{
+      align-items: none;
+    }
     .banner-info-wrapper{
+      position: absolute;
+      left: 10vw; 
       min-height: 50vh;
       .site-logo{
         max-width: 220px;

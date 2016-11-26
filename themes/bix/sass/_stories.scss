@@ -16,7 +16,9 @@
     overflow: hidden;
 	}	
 	.stories-header{
-		width: 80%;
+		background-color: rgba(255,255,255,0.5);
+
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -133,6 +135,9 @@
 	    }	
 		}	
 	}
+	.stories-container {
+		
+	}
 }
 
 @media #{$tablet-medium}{
@@ -150,35 +155,43 @@
 
 @media #{$tablet-large}{
 	.stories-banner{
-    background: url(../../images/teaser-stories-banner.jpg) no-repeat center left;
-    background-size: cover;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 50px;
-    .site-logo{
-      visibility: visible;
-    	height: auto;
-    	width: 250px;
-    	overflow: auto;
-      max-width: 250px;
-    } 
-    .stories-title {
-      color:#fff;
-      border-bottom: solid 2px #fff;
-      border-top: solid 2px #fff;
-      padding:10px 0;
-      width: 250px;
-      text-transform: capitalize;
-      font-weight: 500;
-	   	&:after{
-	   		content:" Stories"
-	   	}
-    }
-    .stories-subtitle{
-    	color: #fff;
-    }
-  }
+	    background: url(../../images/teaser-stories-banner.jpg) no-repeat center left;
+	    background-size: cover;
+	    height: 70vh;
+	    overflow: hidden;
+	    position: relative;
+	    margin-bottom: 50px;
+	    .site-logo{
+	      	visibility: visible;
+	    	height: auto;
+	    	width: 250px;
+	    	overflow: auto;
+	      	max-width: 250px;
+	    } 
+	    .stories-title {
+		    color: #fff;
+		    border-bottom: solid 2px #fff;
+		    border-top: solid 2px #fff;
+		    padding:10px 0;
+		    width: 250px;
+		    text-transform: capitalize;
+		    font-weight: 500;
+		   	&:after{
+		   		content:" Stories"
+		   	}
+	    }
+	    .stories-subtitle{
+	    	color: black;
+	    }
+	    .btn-download{
+		    background-color: black;
+		    padding: 5px 20px;
+		    color: #fff;
+		    text-decoration: none;
+		    text-transform: uppercase;
+		    font-weight: 300;
+		  }
+	}
 
 	.stories-main{
 		.entry-content{

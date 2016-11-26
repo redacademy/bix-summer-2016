@@ -1250,10 +1250,10 @@ strong {
 
 .banner-info-wrapper {
   margin: 20px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   min-height: 400px;
   min-width: 280px;
-  outline: solid rgba(255, 255, 255, 0.5) 20px;
+  outline: solid rgba(255, 255, 255, 0.4) 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1271,13 +1271,16 @@ strong {
     text-transform: uppercase;
     font-weight: bold;
     font-family: "Titillium Web", sans-serif;
-    letter-spacing: 1px;
-    font-size: 1.4rem; }
+    letter-spacing: 5px;
+    font-size: 1.4rem;
+    margin: 10px; }
   .banner-info-wrapper .bix-book-subheading {
     font-weight: 100;
     border-top: solid #444444 2px;
     border-bottom: solid #444444 2px; }
   .banner-info-wrapper .btn-download {
+    background-color: black;
+    padding: 5px 20px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -1301,15 +1304,23 @@ strong {
       font-size: 30px; }
 
 .front-page-author {
-  text-transform: uppercase; }
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0; }
 
 .front-page-co-author {
-  text-transform: uppercase; }
+  margin: 0; }
+  .front-page-co-author span {
+    text-transform: uppercase; }
 
 @media (min-width: 700px) {
   .home-banner {
-    background: url(../../images/bix_book_homepage_lg.jpg) no-repeat center top; }
+    -ms-flex-align: none;
+        -ms-grid-row-align: none;
+        align-items: none; }
   .banner-info-wrapper {
+    position: absolute;
+    left: 10vw;
     min-height: 50vh; }
     .banner-info-wrapper .site-logo {
       max-width: 220px; }
@@ -2562,7 +2573,8 @@ strong {
     width: 0;
     overflow: hidden; }
   .stories-banner .stories-header {
-    width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -2702,7 +2714,14 @@ strong {
       .stories-banner .stories-title:after {
         content: " Stories"; }
     .stories-banner .stories-subtitle {
-      color: #fff; }
+      color: black; }
+    .stories-banner .btn-download {
+      background-color: black;
+      padding: 5px 20px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 300; }
   .stories-main .entry-content {
     opacity: 0; }
     .stories-main .entry-content .btn-stories {
