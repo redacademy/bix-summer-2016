@@ -11,19 +11,28 @@
 	max-width: 100%;
 	.site-logo{
 		visibility: hidden;
-    height: 0;
-    width: 0;
-    overflow: hidden;
+	    height: 0;
+	    width: 0;
+	    overflow: hidden;
 	}	
 	.stories-header{
-		background-color: rgba(255,255,255,0.5);
+		background: rgba(255,255,255,0.5);
 
-		width: 100%;
+	}
+	.stories-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;	
-		text-align: center;	
+		align-items: flex-start;
+		
+	}
+	.stories-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: 10vw;
+		padding: 1rem;
 	}
 	.stories-title{
 	  width: 100%;
@@ -95,20 +104,20 @@
 
 		.btn-stories{
 			@include btn;
-     text-decoration: none;
-     background-color: transparent;
-     padding: 10px 20px;
-     font-size: 1.1rem;
-     opacity: 1;
-     transition: opacity .3s ease;
-     width: 200px;
-     display: block;
-     text-align: center;
-     margin: 0 auto;
-    }	
-    p{
-    	font-weight: 300;
-    }
+		     text-decoration: none;
+		     background-color: transparent;
+		     padding: 10px 20px;
+		     font-size: 1.1rem;
+		     opacity: 1;
+		     transition: opacity .3s ease;
+		     width: 200px;
+		     display: block;
+		     text-align: center;
+		     margin: 0 auto;
+		    }	
+		    p{
+		    	font-weight: 300;
+    		}
 	}	
 
 .stories-title{
@@ -135,7 +144,10 @@
 	    }	
 		}	
 	}
-	.stories-container {
+	.stories-banner {
+		align-items: initial;
+	}
+	.stories-header {
 		
 	}
 }

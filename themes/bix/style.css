@@ -2573,8 +2573,17 @@ strong {
     width: 0;
     overflow: hidden; }
   .stories-banner .stories-header {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
+    background: rgba(255, 255, 255, 0.5); }
+  .stories-banner .stories-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .stories-banner .stories-content {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -2583,7 +2592,8 @@ strong {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    text-align: center; }
+    margin-left: 10vw;
+    padding: 1rem; }
   .stories-banner .stories-title {
     width: 100%;
     color: #F9AC31;
@@ -2679,7 +2689,11 @@ strong {
     margin-bottom: 50px;
     max-width: 100%; }
   .stories-main .entry-content .btn-stories {
-    width: 250px; } }
+    width: 250px; }
+  .stories-banner {
+    -ms-flex-align: initial;
+        -ms-grid-row-align: initial;
+        align-items: initial; } }
 
 @media (min-width: 700px) {
   .stories-banner .stories-title {
