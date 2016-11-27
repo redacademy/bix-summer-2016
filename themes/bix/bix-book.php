@@ -61,8 +61,13 @@ get_header(); ?>
 
 		<section class="bix-book-banner">
 			<div class="bix-book-header">
-				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
-				<h2 class="the-bix-book-title">The Bix Book</h2>
+				<!-- <img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/> -->
+				<div class="bix-book-header-container">
+					<h1>the Bix Book</h1>
+					<h2 class="the-bix-book-title">Transformational Stories</h2>
+					<a class="btn btn-download" href="<?php echo get_permalink( get_page_by_path( 'bix-book' ) )?>/#buy-book-anchor">Download Book</a>
+				</div>
+				
 			</div>
 		</section>
 

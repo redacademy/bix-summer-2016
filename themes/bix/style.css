@@ -1176,7 +1176,7 @@ strong {
     .about-banner .about-title {
       visibility: visible;
       height: auto;
-      width: 250px;
+      width: auto;
       overflow: hidden;
       max-width: 250px;
       color: #fff;
@@ -1191,9 +1191,8 @@ strong {
     .about-banner p {
       visibility: visible;
       height: auto;
-      width: 250px;
+      width: auto;
       overflow: hidden;
-      max-width: 250px;
       color: #fff;
       font-weight: 300;
       margin-top: 0;
@@ -2165,6 +2164,13 @@ strong {
     height: 0;
     width: 0;
     overflow: hidden; }
+  .bix-book-banner .btn-download {
+    background-color: black;
+    padding: 5px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300; }
 
 .the-bix-book-title {
   width: 100%;
@@ -2388,7 +2394,7 @@ strong {
   .bix-book-banner {
     background: url(../../images/bix-book-banner-lg.jpg) no-repeat center left;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
     position: relative; }
     .bix-book-banner .site-logo {
@@ -2398,14 +2404,26 @@ strong {
       overflow: auto;
       max-width: 250px; }
     .bix-book-banner .the-bix-book-title {
-      color: #fff;
-      border-bottom: solid 2px #fff;
-      border-top: solid 2px #fff;
+      color: black;
+      border-bottom: solid 2px black;
+      border-top: solid 2px black;
       font-size: 1.5rem;
       padding: 10px 0;
-      width: 250px;
+      width: auto;
       text-transform: capitalize;
       font-weight: 500; }
+  .bix-book-header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5); }
+  .bix-book-header-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
   .book-section1 {
     background: none;
     padding: 0px 0;
@@ -2707,7 +2725,7 @@ strong {
   .stories-banner {
     background: url(../../images/teaser-stories-banner.jpg) no-repeat center left;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
     position: relative;
     margin-bottom: 50px; }

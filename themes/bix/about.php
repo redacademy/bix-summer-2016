@@ -15,9 +15,9 @@ get_header(); ?>
 
 		<section class="about-banner">
 			<div class="about-header">
-				<img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/>
-				<h2 class="about-title">About Bix</h2>
-				<p>About the Author</p>
+				<!-- <img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/> -->
+				<h2 class="about-title">About Bix Bickson</h2>
+				<p>The author of the bix book transformational stories</p>
 			</div>
 		</section>
 
