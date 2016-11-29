@@ -31,7 +31,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-left: 10vw;
 		padding: 1rem;
 	}
 	.stories-title{
@@ -53,7 +52,15 @@
 		font-weight: 300;
 		display: block;
 		width: 100%;
-		
+		text-align: center;
+	}
+	.btn-download{
+	    background-color: black;
+	    padding: 5px 20px;
+	    color: #fff;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    font-weight: 300;
 	}
 }
 
@@ -144,9 +151,6 @@
 	    }	
 		}	
 	}
-	.stories-banner {
-		align-items: initial;
-	}
 	.stories-header {
 		
 	}
@@ -195,14 +199,14 @@
 	    .stories-subtitle{
 	    	color: black;
 	    }
-	    .btn-download{
-		    background-color: black;
-		    padding: 5px 20px;
-		    color: #fff;
-		    text-decoration: none;
-		    text-transform: uppercase;
-		    font-weight: 300;
-		  }
+	}
+
+	.stories-banner {
+		align-items: initial;
+	}
+
+	.stories-content {
+		margin-left: 10vw;
 	}
 
 	.stories-main{

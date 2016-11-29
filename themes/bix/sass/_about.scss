@@ -2,7 +2,7 @@
 # About Page
 --------------------------------------------------------------*/
 .about-banner{
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	max-width: 100%;
@@ -227,6 +227,7 @@ h3 {
 	@media all and (min-width: 600px) {
 		
 	.about-banner{
+		display: flex;
 	    background: url(../../images/about-page-banner-lg.jpg) no-repeat center left;
 	    background-size: cover;
 	    height: 80vh;
