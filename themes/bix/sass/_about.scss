@@ -5,8 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	height:0;
+	max-width: 100%;
 	.site-logo,.about-title,p{
 		visibility: hidden;
 	    height: 0;
@@ -14,11 +13,24 @@
 	    overflow: hidden;
 	}
 	.about-header{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;			
+		background: rgba(255,255,255,0.5);			
 	}
+}
+
+.about-header-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.about-header-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10vw;
+	padding: 1rem;
 }
 
 h3 {
@@ -217,7 +229,7 @@ h3 {
 	.about-banner{
 	    background: url(../../images/about-page-banner-lg.jpg) no-repeat center left;
 	    background-size: cover;
-	    height: 70vh;
+	    height: 80vh;
 	    overflow: hidden;
 	    position: relative;
 
@@ -235,9 +247,9 @@ h3 {
 			width: auto;
 			overflow: hidden;
 			max-width: 250px;
-			color:#fff;
-			border-bottom: solid 2px #fff;
-			border-top: solid 2px #fff;
+			color:black;
+			border-bottom: solid 2px black;
+			border-top: solid 2px black;
 			font-size: 1.5rem;
 			padding:10px 0;
 			width: 250px;

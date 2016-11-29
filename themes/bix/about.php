@@ -16,8 +16,13 @@ get_header(); ?>
 		<section class="about-banner">
 			<div class="about-header">
 				<!-- <img class="site-logo" src="<?php echo(get_template_directory_uri());?>/images/bix-logo.png" alt="bix logo"/> -->
-				<h2 class="about-title">About Bix Bickson</h2>
-				<p>The author of the bix book transformational stories</p>
+				<div class="about-header-container">
+					<div class="about-header-content">
+						<h2 class="about-title">About Bix Bickson</h2>
+						<p>The author of the bix book transformational stories</p>
+					</div>
+				</div>
+				
 			</div>
 		</section>
 
@@ -64,7 +69,7 @@ get_header(); ?>
 				<div class="company-section">
 					<div class="company-section-title">
 						<img src="<?php echo get_template_directory_uri() . "/images/about-bickson2.jpg"?>" alt="">
-						<h2>About <span class="orange-highlight">Bickson<sup>2</sup></span></h2>
+						<!-- <h2>About <span class="orange-highlight">Bickson<sup>2</sup></span></h2> -->
 					</div>
 					<div class="border-wrapper">
 						<div class="company-section-content-wrapper">
