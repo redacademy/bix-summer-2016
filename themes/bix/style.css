@@ -228,8 +228,8 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Univers_Condensed';
-  src: url("./fonts/unvr57x-webfont.eot");
-  src: url("./fonts/unvr57x-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/unvr57x-webfont.woff2") format("woff2"), url("./fonts/unvr57x-webfont.woff") format("woff"), url("./fonts/unvr57x-webfont.ttf") format("truetype"), url("./fonts/unvr57x-webfont.svg#univers_condensedmedium") format("svg");
+  src: url("../../fonts/unvr57x-1-webfont.eot");
+  src: url("../../fonts/unvr57x-1-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/unvr57x-1-webfont.woff2") format("woff2"), url("../../fonts/unvr57x-1-webfont.woff") format("woff"), url("../../fonts/unvr57x-1-webfont.ttf") format("truetype"), url("../../fonts/unvr57x-1-webfont.svg#univers_condensedmedium") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1217,13 +1217,11 @@ strong {
       color: black;
       border-bottom: solid 2px black;
       border-top: solid 2px black;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: bold;
       padding: 10px 0;
       font-weight: 700;
-      text-align: center;
-      width: 40vw;
-      max-width: 400px; }
+      text-align: center; }
     .about-banner p {
       visibility: visible;
       height: auto;
@@ -1236,7 +1234,8 @@ strong {
       margin-bottom: 0;
       text-align: center;
       text-transform: uppercase;
-      font-family: "Univers_Condensed", sans-serif; }
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; }
   .about-page-banner {
     display: block; }
   .author-section, .company-section {
@@ -1300,7 +1299,8 @@ strong {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  padding: 0 10px; }
   .banner-info-wrapper .site-logo {
     max-width: 150px;
     height: auto;
@@ -1308,19 +1308,21 @@ strong {
     margin-top: 40px; }
   .banner-info-wrapper .bix-book-title {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
     font-family: "Univers_Condensed", sans-serif;
     letter-spacing: 5px;
     font-size: 2rem;
-    margin: 0; }
+    margin: 0;
+    color: black; }
   .banner-info-wrapper .bix-book-subheading {
     text-align: center;
     text-transform: uppercase;
     width: 80%;
+    font-size: .8rem;
     font-family: "Univers_Condensed", sans-serif;
     font-weight: 100;
-    border-top: solid #444444 2px;
-    border-bottom: solid #444444 2px;
+    border-top: solid #444444 1px;
+    border-bottom: solid #444444 1px;
     margin: 0.5rem;
     padding: 0.5rem; }
   .banner-info-wrapper .front-page-author {
@@ -1332,12 +1334,17 @@ strong {
   .banner-info-wrapper .btn-download {
     background-color: black;
     padding: 5px 20px;
+    border: solid 1px black;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 1rem;
     font-weight: 500;
-    font-family: "Univers_Condensed", sans-serif; }
+    font-family: "Univers_Condensed", sans-serif;
+    transition: all ease 0.4s; }
+    .banner-info-wrapper .btn-download:hover {
+      background-color: #fff;
+      color: black; }
   .banner-info-wrapper .btn-down {
     border: solid #fff 2px;
     border-radius: 50%;
@@ -1389,7 +1396,7 @@ strong {
       font-size: 3.2rem;
       margin: 0; }
     .banner-info-wrapper .bix-book-subheading {
-      font-size: 1.3rem;
+      font-size: 1rem;
       letter-spacing: 1.5px;
       padding: 5px 5px; } }
 
@@ -1642,25 +1649,6 @@ strong {
   .home-book .book-logo {
     max-width: 300px;
     height: auto; }
-  .home-book .home-book-text {
-    text-align: center; }
-  .home-book .book-title {
-    text-transform: uppercase;
-    font-weight: normal;
-    font-family: "Titillium Web", sans-serif;
-    letter-spacing: 1px;
-    font-size: 1.8rem;
-    color: #444444;
-    margin-bottom: 0;
-    line-height: 0; }
-  .home-book .book-subheading {
-    font-weight: 100;
-    padding: 5px 5px;
-    border-top: solid #444444 2px;
-    border-bottom: solid #444444 2px;
-    color: #444444;
-    font-size: .8rem;
-    margin-bottom: 0; }
   .home-book h3 {
     font-size: 1.3rem;
     line-height: 0;
@@ -1799,7 +1787,6 @@ strong {
       -ms-flex-order: 2;
           order: 2;
       max-width: 410px;
-      width: 30%;
       margin: 0;
       padding: 0; }
     .home-book .book-logo {
@@ -2213,7 +2200,8 @@ strong {
   -ms-flex-align: center;
       align-items: center; }
   .bix-book-banner h1 {
-    margin: 0; }
+    margin: 0;
+    color: black; }
   .bix-book-banner .site-logo {
     visibility: hidden;
     height: 0;
@@ -2228,7 +2216,12 @@ strong {
     margin-top: 0;
     font-weight: 500;
     font-family: "Univers_Condensed", sans-serif;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    border: solid 1px black;
+    transition: all ease 0.4s; }
+    .bix-book-banner .btn-download:hover {
+      background-color: #fff;
+      color: black; }
 
 .bix-book-header-container {
   text-align: center;
@@ -2248,16 +2241,24 @@ strong {
   text-transform: uppercase;
   font-family: "Univers_Condensed", sans-serif;
   font-weight: 100;
-  border-top: solid #444444 2px;
-  border-bottom: solid #444444 2px;
+  border-top: solid #444444 1px;
+  border-bottom: solid #444444 1px;
   margin: 0.5rem;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  font-size: 1rem; }
 
 .book-title-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  .book-title-wrapper .book-title-pay {
+    color: #F9AC31;
+    font-weight: 900;
+    border-top: 1px solid #F9AC31;
+    border-bottom: 1px solid #F9AC31; }
+    .book-title-wrapper .book-title-pay span {
+      font-weight: 500; }
 
 /* -------------- Section 1 - Content -------------*/
 .book-section1 {
@@ -2478,7 +2479,8 @@ strong {
       letter-spacing: 1.5px;
       padding: 5px 5px; }
     .bix-book-banner .the-bix-book-title {
-      font-size: 3.2rem; }
+      font-size: 3.2rem;
+      font-weight: 500; }
   .bix-book-header {
     width: 100%;
     background: rgba(255, 255, 255, 0.5); }
@@ -2697,17 +2699,22 @@ strong {
     width: 80%;
     display: block;
     text-align: center;
-    font-family: "Univers_Condensed", sans-serif;
+    font-family: "Roboto", sans-serif;
     letter-spacing: 0.1rem; }
   .stories-banner .btn-download {
     background-color: black;
+    border: solid 1px black;
     padding: 5px 20px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 0;
     font-weight: 500;
-    font-family: "Univers_Condensed", sans-serif; }
+    font-family: "Univers_Condensed", sans-serif;
+    transition: all ease 0.4s; }
+    .stories-banner .btn-download:hover {
+      background-color: #fff;
+      color: black; }
 
 /* ----------------- Stories Section -------------*/
 .stories-article {
@@ -2814,10 +2821,11 @@ strong {
       max-width: 250px; }
     .stories-banner .stories-title {
       color: black;
-      border-bottom: solid 2px black;
-      border-top: solid 2px black;
+      border-bottom: solid 1px black;
+      border-top: solid 1px black;
       padding: 10px 0;
-      width: 90%; }
+      width: 70%;
+      font-size: 2.5rem; }
       .stories-banner .stories-title:after {
         content: " Stories"; }
     .stories-banner .stories-subtitle {

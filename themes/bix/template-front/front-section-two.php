@@ -39,9 +39,9 @@
 	<div class="quote-wrapper-text">
 		<p class="quotes-text">
 			<span class="quotes">"</span> 
-				It is the creation of 
-				<span class="quotes-text-orange">Knowledge</span> 
-				that will afford and Organization continued success. 
+				Our Ability to learn -
+				<span class="quotes-text-orange">Learning to Learn</span> 
+				- is the most needed transformation in ourselves and in our organizations.
 				<span class="quotes">"</span>
 		</p>	
 	</div>

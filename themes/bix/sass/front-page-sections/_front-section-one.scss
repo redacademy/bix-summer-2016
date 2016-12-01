@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
   .site-logo{
     max-width: 150px;
     height: auto;
@@ -33,20 +34,22 @@
   }
   .bix-book-title{
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
     font-family: $font__univers;
     letter-spacing: 5px;
     font-size: 2rem;
     margin: 0;
+    color: black;
   }
   .bix-book-subheading{
     text-align: center;
     text-transform: uppercase;
     width: 80%;
+    font-size: .8rem;
     font-family: $font__univers;
     font-weight: 100;
-    border-top: solid $color__gray 2px;
-    border-bottom: solid $color__gray 2px;
+    border-top: solid $color__gray 1px;
+    border-bottom: solid $color__gray 1px;
     margin: 0.5rem;
     padding: 0.5rem;
   }
@@ -62,12 +65,18 @@
   .btn-download{
     background-color: black;
     padding: 5px 20px;
+    border: solid 1px black;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 1rem;
     font-weight: 500;
     font-family: $font__univers;
+    transition: all ease 0.4s;
+    &:hover{
+      background-color: #fff;
+      color: black;
+    }
   }
 
   .btn-down{
@@ -120,7 +129,7 @@
       margin: 0;
     }
     .bix-book-subheading{
-      font-size: 1.3rem;
+      font-size: 1rem;
       letter-spacing: 1.5px;
       padding: 5px 5px;
     }

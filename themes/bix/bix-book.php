@@ -124,7 +124,7 @@ get_header(); ?>
 
 			<section id="buy-book-anchor" class="book-section3 book-purchase">
 				<div class="book-title-wrapper">
-					<h2 class="the-bix-book-title"><span>Paying for</span> the Bix Book</h2>
+					<h2 class="the-bix-book-title book-title-pay"><span>Paying for</span> the Bix Book</h2>
 				</div>
 				<div class="book-purchase-info">
 					<?php if ( CFS()->get( 'paying_for_the_book_description' ) ) : ?>
@@ -141,11 +141,11 @@ get_header(); ?>
 					</p>
 
 					<div class="donate-now">
-				     <a class="btn btn-donate" href="<?php echo get_permalink( get_page_by_path( 'checkout' ) )?>">Donate Now</a>
+				     <a class="btn btn-donate" href="<?php echo get_permalink( get_page_by_path( 'checkout' ) )?>">Pay What You Feel</a>
                
             
 						 <p class="book-buy-light"> Download the Bix Book Now </p>
-						 <p class="btn donate-later-button"> Donate Later </p>
+						 <p class="btn donate-later-button"> Pay Later </p>
 			  	</div>
 				</div>
 		</section>

@@ -6,33 +6,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   .book-logo{
     max-width: 300px;
     height: auto;
   }
 
-  .home-book-text{
-    text-align: center;
-  }
-  .book-title{
-    text-transform: uppercase;
-    font-weight: normal;
-    font-family: $font__header;
-    letter-spacing: 1px;
-    font-size: 1.8rem;
-    color:$color__gray;
-    margin-bottom:0;
-    line-height: 0;
-  }
-  .book-subheading{
-    font-weight: 100;
-    padding: 5px 5px;
-    border-top: solid $color__gray 2px;
-    border-bottom: solid $color__gray 2px;
-    color: $color__gray;
-    font-size: .8rem;
-    margin-bottom: 0;
-  }
   h3{
     font-size: 1.3rem;
     line-height: 0;
@@ -166,7 +145,6 @@
     .book-logo-wrapper{
       order: 2;
       max-width: 410px;
-      width: 30%;
       margin: 0;
       padding:0;
     }

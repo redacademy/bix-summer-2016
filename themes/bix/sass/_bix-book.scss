@@ -10,6 +10,7 @@
 		align-items: center;
 		h1 {
 			margin: 0;
+			color: black;
 		}
 		.site-logo{
 			visibility: hidden;
@@ -27,6 +28,12 @@
 		    font-weight: 500;
 		    font-family: $font__univers;
 		    margin-top: 1rem;
+		    border: solid 1px black;
+		    transition: all ease 0.4s;
+		    &:hover{
+		      background-color: #fff;
+		      color: black;
+		    }
 		  }
 	}
 
@@ -50,14 +57,24 @@
     text-transform: uppercase;
     font-family: $font__univers;
     font-weight: 100;
-    border-top: solid $color__gray 2px;
-    border-bottom: solid $color__gray 2px;
+    border-top: solid $color__gray 1px;
+    border-bottom: solid $color__gray 1px;
     margin: 0.5rem;
     padding: 0.5rem;
+    font-size: 1rem;
 	}
 	.book-title-wrapper{
 		display: flex;
 		justify-content: center;
+		.book-title-pay {
+			color: $color__orange;
+			font-weight: 900;
+			border-top: 1px solid $color__orange;
+			border-bottom: 1px solid $color__orange;
+			span {
+				font-weight: 500;
+			}
+		}
 	}
 
 /* -------------- Section 1 - Content -------------*/
@@ -309,6 +326,7 @@
 			}
 			.the-bix-book-title{
 		      font-size: 3.2rem;
+		      font-weight: 500;
 		    }
 		}
 		.bix-book-header {
