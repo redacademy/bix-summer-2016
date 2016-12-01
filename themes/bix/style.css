@@ -226,6 +226,13 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Univers_Condensed';
+  src: url("./fonts/unvr57x-webfont.eot");
+  src: url("./fonts/unvr57x-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/unvr57x-webfont.woff2") format("woff2"), url("./fonts/unvr57x-webfont.woff") format("woff"), url("./fonts/unvr57x-webfont.ttf") format("truetype"), url("./fonts/unvr57x-webfont.svg#univers_condensedmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body,
 button,
 input,
@@ -1283,21 +1290,35 @@ strong {
   .banner-info-wrapper .bix-book-title {
     text-transform: uppercase;
     font-weight: bold;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Univers_Condensed", sans-serif;
     letter-spacing: 5px;
-    font-size: 1.4rem;
-    margin: 10px; }
+    font-size: 2rem;
+    margin: 0; }
   .banner-info-wrapper .bix-book-subheading {
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    font-family: "Univers_Condensed", sans-serif;
     font-weight: 100;
     border-top: solid #444444 2px;
-    border-bottom: solid #444444 2px; }
+    border-bottom: solid #444444 2px;
+    margin: 0.5rem;
+    padding: 0.5rem; }
+  .banner-info-wrapper .front-page-author {
+    font-family: "Univers_Condensed", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1; }
+  .banner-info-wrapper .front-page-co-author {
+    font-family: "Univers_Condensed", sans-serif; }
   .banner-info-wrapper .btn-download {
     background-color: black;
     padding: 5px 20px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 300; }
+    margin-top: 1rem;
+    font-weight: 500;
+    font-family: "Univers_Condensed", sans-serif; }
   .banner-info-wrapper .btn-down {
     border: solid #fff 2px;
     border-radius: 50%;
@@ -1346,13 +1367,12 @@ strong {
     .banner-info-wrapper .site-logo {
       max-width: 310px; }
     .banner-info-wrapper .bix-book-title {
-      letter-spacing: 1.3px;
-      font-size: 2.3rem; }
+      font-size: 3.2rem;
+      margin: 0; }
     .banner-info-wrapper .bix-book-subheading {
       font-size: 1.3rem;
       letter-spacing: 1.5px;
-      padding: 5px 5px;
-      text-align: center; } }
+      padding: 5px 5px; } }
 
 .quote-wrapper-front, .quote-wrapper-front-2 {
   height: auto; }
