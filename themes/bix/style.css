@@ -2657,26 +2657,30 @@ strong {
     border-bottom: solid 2px #F9AC31;
     border-top: solid 2px #F9AC31;
     font-size: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
     padding: 3px 0;
-    width: 230px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
+    font-family: "Univers_Condensed", sans-serif;
     margin-bottom: 0;
-    margin-top: 20px; }
+    margin-top: 10px; }
   .stories-banner .stories-subtitle {
     font-weight: 300;
+    width: 80%;
     display: block;
-    width: 100%;
-    text-align: center; }
+    text-align: center;
+    font-family: "Univers_Condensed", sans-serif;
+    letter-spacing: 0.1rem; }
   .stories-banner .btn-download {
     background-color: black;
     padding: 5px 20px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 300; }
+    margin-top: 0;
+    font-weight: 500;
+    font-family: "Univers_Condensed", sans-serif; }
 
 /* ----------------- Stories Section -------------*/
 .stories-article {
@@ -2754,11 +2758,13 @@ strong {
     margin-bottom: 50px;
     max-width: 100%; }
   .stories-main .entry-content .btn-stories {
-    width: 250px; } }
+    width: 250px; }
+  .stories-banner .stories-subtitle {
+    width: 65%; } }
 
 @media (min-width: 700px) {
   .stories-banner .stories-title {
-    font-size: 1.5rem; }
+    font-size: 2rem; }
   /* ----------------- Stories Section -------------*/
   .stories-main {
     max-width: 80%;
@@ -2779,23 +2785,21 @@ strong {
       overflow: auto;
       max-width: 250px; }
     .stories-banner .stories-title {
-      color: #fff;
-      border-bottom: solid 2px #fff;
-      border-top: solid 2px #fff;
+      color: black;
+      border-bottom: solid 2px black;
+      border-top: solid 2px black;
       padding: 10px 0;
-      width: 250px;
-      text-transform: capitalize;
-      font-weight: 500; }
+      width: 90%; }
       .stories-banner .stories-title:after {
         content: " Stories"; }
     .stories-banner .stories-subtitle {
-      color: black; }
+      color: white; }
   .stories-banner {
     -ms-flex-align: initial;
         -ms-grid-row-align: initial;
         align-items: initial; }
   .stories-content {
-    margin-left: 10vw; }
+    margin-left: 4vw; }
   .stories-main .entry-content {
     opacity: 0; }
     .stories-main .entry-content .btn-stories {
