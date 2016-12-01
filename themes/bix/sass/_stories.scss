@@ -176,6 +176,7 @@
 @media #{$tablet-large}{
 	.stories-banner{
 	    background: url(../../images/teaser-stories-banner.jpg) no-repeat center left;
+	    background-position: center;
 	    background-size: cover;
 	    height: 80vh;
 	    overflow: hidden;

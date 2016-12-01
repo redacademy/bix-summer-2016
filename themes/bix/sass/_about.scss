@@ -15,6 +15,21 @@
 	.about-header{
 		background: rgba(255,255,255,0.5);			
 	}
+	.about-title {
+		width: 100%;
+	  color:$color__orange;
+	  border-bottom: solid 2px $color__orange;
+	  border-top: solid 2px $color__orange;
+	  font-size: 1rem;
+	  letter-spacing: 5px;
+	  padding:3px 0;
+	  text-align: center;
+	  text-transform: uppercase;
+	  font-weight: bold;
+	  font-family: $font__univers;
+	  margin-bottom: 0;
+	  margin-top: 10px; 
+	}
 }
 
 .about-header-container {
@@ -229,6 +244,7 @@ h3 {
 	.about-banner{
 		display: flex;
 	    background: url(../../images/about-page-banner-lg.jpg) no-repeat center left;
+	    background-position: center;
 	    background-size: cover;
 	    height: 80vh;
 	    overflow: hidden;
@@ -247,27 +263,31 @@ h3 {
 			height: auto;
 			width: auto;
 			overflow: hidden;
-			max-width: 250px;
 			color:black;
 			border-bottom: solid 2px black;
 			border-top: solid 2px black;
-			font-size: 1.5rem;
+			font-size: 2rem;
+			font-weight: bold;
 			padding:10px 0;
-			width: 250px;
-			text-transform: capitalize;
-			font-weight: 500;
+			font-weight: 700;
 			text-align: center;
+		    width: 40vw;
+		    max-width: 400px;
 	    }
 	    
 	    p{
 			visibility: visible;
 			height: auto;
-			width: auto;
+			width: 50vw;
+			max-width: 300px;
 			overflow: hidden;
 			color: #fff;
-			font-weight: 300;
-			margin-top: 0;
+			letter-spacing: 2px;
+			margin-top: 10px;
+			margin-bottom: 0;
 			text-align: center;
+			text-transform: uppercase;
+			font-family: $font__univers;
 	    }
 	}
 		.about-page-banner{
