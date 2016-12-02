@@ -1381,7 +1381,8 @@ strong {
   .banner-info-wrapper {
     position: absolute;
     left: 10vw;
-    min-height: 50vh; }
+    min-height: 50vh;
+    bottom: 20%; }
     .banner-info-wrapper .site-logo {
       max-width: 220px; }
     .banner-info-wrapper .bix-book-title {
